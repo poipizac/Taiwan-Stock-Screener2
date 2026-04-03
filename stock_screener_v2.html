@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>全台股市場 10 倍股掃描儀表板</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f1f3f5;
+            padding: 20px;
+            font-family: 'Segoe UI', 'Microsoft JhengHei', sans-serif;
+        }
+
+        .header-info {
+            background: linear-gradient(135deg, #141e30, #243b55);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .strategy-selector {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .btn-strategy {
+            border-radius: 30px;
+            padding: 12px 35px;
+            font-weight: 700;
+            margin: 0 12px;
+            border: 2px solid #243b55;
+            background: white;
+        }
+
+        .btn-check:checked+.btn-strategy {
+            background-color: #243b55;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .up-red {
+            color: #d32f2f !important;
+            font-weight: bold;
+        }
+
+        /* 台股紅漲 */
+        .down-green {
+            color: #388e3c !important;
+            font-weight: bold;
+        }
+
+        /* 台股綠跌 */
+
+        .table {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            font-size: 0.9em;
+        }
+
+        .table thead {
+            background: #1a1a1a;
+            color: #ffffff;
+        }
+
+        .badge-sector {
+            background-color: #f0f7ff;
+            color: #0050b3;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            border: 1px solid #91d5ff;
+        }
+
+        .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+            background: #243b55 !important;
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-info text-center">
+        <h1>🔍 全台股市場掃描系統 (抗封鎖版)</h1>
+        <p>全市場強勢股濾網 (Price &gt; 200MA) | 10倍股選股技術濾網已啟動</p>
+    </div>
+
+    <div class="strategy-selector">
+        <input type="radio" class="btn-check" name="strategy" id="strat_original" autocomplete="off" checked=""
+            onclick="switchStrategy('original')">
+        <label class="btn btn-outline-dark btn-strategy" for="strat_original">📋 全市場強勢股一覽</label>
+
+        <input type="radio" class="btn-check" name="strategy" id="strat_ten_fold" autocomplete="off"
+            onclick="switchStrategy('ten_fold')">
+        <label class="btn btn-outline-danger btn-strategy" for="strat_ten_fold">🚀 10倍股選股 (爆發潛力)</label>
+    </div>
+
+    <div class="card shadow-sm p-4 border-0 rounded-4">
+        <div id="loader" class="text-center py-5">
+            <div class="spinner-grow text-primary" role="status"></div>
+            <p class="mt-3 text-muted">正在同步最新全市場股票數據，請稍候...</p>
+        </div>
+        
+        <!-- 乾淨的 TABLE 結構，讓 DataTables 自動掛載 -->
+        <table id="stockTable" class="table table-hover" width="100%" style="display:none;">
+            <thead>
+                <tr>
+                    <th>代號</th>
+                    <th>標的名稱</th>
+                    <th>現價</th>
+                    <th>PB</th>
+                    <th>YoY%</th>
+                    <th>MoM%</th>
+                    <th>EPS</th>
+                    <th class="col-indicator">乖離倍數</th>
+                    <th>產業分類</th>
+                </tr>
+            </thead>
+            <tbody id="stockBody">
+                <!-- 資料注入點 -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script>
+        let table;
+        let currentStrategy = 'original';
+
+        $(document).ready(function () { 
+            fetchData(); 
+        });
+
+        async function fetchData() {
+            try {
+                const res = await fetch('stock_data.json?t=' + new Date().getTime());
+                const data = await res.json();
+                
+                // 如果表格已初始化，先銷毀才能徹底重新渲染
+                if ($.fn.DataTable.isDataTable('#stockTable')) {
+                    $('#stockTable').DataTable().destroy();
+                }
+                
+                renderTable(data);
+            } catch (err) { 
+                console.error("載入 JSON 失敗，五秒後重試", err);
+                setTimeout(fetchData, 5000); 
+            }
+        }
+
+        function getColorClass(val) {
+            val = parseFloat(val);
+            if (isNaN(val) || val === 0) return "";
+            return val > 0 ? "up-red" : "down-green";
+        }
+
+        function renderTable(stockList) {
+            const body = $('#stockBody');
+            body.empty();
+
+            stockList.forEach(s => {
+                // 將技術指標掛在 tr 的 data- 屬性上，供 DataTables 搜尋引擎使用
+                const row = `<tr data-sma200="${s.sma200}" data-high120="${s.high120}">
+                    <td><code>${s.ticker}</code></td>
+                    <td class="fw-bold"><a href="https://tw.stock.yahoo.com/quote/${s.ticker}" target="_blank" style="text-decoration:none;">${s.name}</a></td>
+                    <td class="text-center fw-bold">${s.close}</td>
+                    <td class="text-center ${getColorClass(s.pb)}">${s.pb}</td>
+                    <td class="text-center ${getColorClass(s.yoy)}">${s.yoy}%</td>
+                    <td class="text-center ${getColorClass(s.mom)}">${s.mom}%</td>
+                    <td class="text-center ${getColorClass(s.eps)} font-monospace">${s.eps}</td>
+                    <td class="text-center col-indicator font-monospace">${s.ratio}</td>
+                    <td><span class="badge-sector">${s.industry}</span></td>
+                </tr>`;
+                body.append(row);
+            });
+
+            $('#loader').hide();
+            $('#stockTable').show();
+
+            // 啟動 DataTables
+            table = $('#stockTable').DataTable({
+                "language": { "url": "//cdn.datatables.net/plug-ins/1.13.4/i18n/zh-HANT.json" },
+                "order": [[7, "asc"]], // 預設依據乖離倍數低到高排序
+                "pageLength": 50,
+                "autoWidth": false
+            });
+
+            // 註冊 DataTables 全域過濾邏輯
+            $.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
+                const node = table.row(dataIndex).node();
+                const close = parseFloat(data[2]);
+                const ratio = parseFloat(data[7]);
+                const sma200 = parseFloat($(node).attr('data-sma200'));
+                const h120 = parseFloat($(node).attr('data-high120'));
+
+                if (currentStrategy === 'original') {
+                    // 全市場強勢股濾網：僅顯示現價 > 200MA
+                    return (close > sma200);
+                } else if (currentStrategy === 'ten_fold') {
+                    // 10倍股選股濾網 (爆發潛力)
+                    // 條件 1: 現價 > 200MA
+                    // 條件 2: 現價 >= 120日高點
+                    // 條件 3: 乖離倍數 <= 1.2
+                    return (close > sma200 && close >= h120 && ratio <= 1.2);
+                }
+                return true;
+            });
+            
+            // 初始化後馬上觸發一次過濾繪製
+            table.draw();
+        }
+
+        function switchStrategy(strat) {
+            currentStrategy = strat;
+            table.draw();
+        }
+    </script>
+</body>
+</html>
