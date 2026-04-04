@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <title>全台股市場 10 倍股掃描儀表板</title>
@@ -33,6 +33,7 @@
             margin: 0 12px;
             border: 2px solid #243b55;
             background: white;
+            transition: all 0.3s ease;
         }
 
         .btn-check:checked+.btn-strategy {
@@ -41,18 +42,27 @@
             transform: scale(1.05);
         }
 
+        /* 投信短線按鈕特殊樣式 */
+        .btn-momentum {
+            border-color: #d32f2f;
+            color: #d32f2f;
+        }
+
+        .btn-check:checked+.btn-momentum {
+            background-color: #d32f2f;
+            border-color: #d32f2f;
+            color: white;
+        }
+
         .up-red {
             color: #d32f2f !important;
             font-weight: bold;
         }
 
-        /* 台股紅漲 */
         .down-green {
             color: #388e3c !important;
             font-weight: bold;
         }
-
-        /* 台股綠跌 */
 
         .table {
             background: white;
@@ -79,45 +89,42 @@
             background: #243b55 !important;
             color: white !important;
         }
+
+        .momentum-row {
+            background-color: #fff9f9 !important;
+        }
     </style>
 </head>
 
 <body>
     <div class="header-info text-center">
-        <h1>🔍 全台股市場掃描系統 (抗封鎖版)</h1>
-        <p>全市場強勢股濾網 (Price &gt; 200MA) | 10倍股選股技術濾網已啟動</p>
+        <h1>🔍 台股選股儀表板 -Funnel Strategy-</h1>
+        <p>全市場強勢股濾網 | 10倍股潛力掃描 | 🚀 短線爆量投信突破股 已啟動</p>
     </div>
 
     <div class="strategy-selector">
         <input type="radio" class="btn-check" name="strategy" id="strat_original" autocomplete="off" checked=""
-            onclick="switchStrategy('original')">
+            onclick="switchDataSource('stock_data.json', 'original')">
         <label class="btn btn-outline-dark btn-strategy" for="strat_original">📋 全市場強勢股一覽</label>
 
         <input type="radio" class="btn-check" name="strategy" id="strat_ten_fold" autocomplete="off"
-            onclick="switchStrategy('ten_fold')">
-        <label class="btn btn-outline-danger btn-strategy" for="strat_ten_fold">🚀 10倍股選股 (爆發潛力)</label>
+            onclick="switchDataSource('stock_data.json', 'ten_fold')">
+        <label class="btn btn-outline-dark btn-strategy" for="strat_ten_fold">🚀 10倍股選股 (中長線)</label>
+
+        <input type="radio" class="btn-check" name="strategy" id="strat_momentum" autocomplete="off"
+            onclick="switchDataSource('momentum_data.json', 'momentum')">
+        <label class="btn btn-outline-danger btn-strategy btn-momentum" for="strat_momentum">🔥 投信爆量突破股 (短線)</label>
     </div>
 
     <div class="card shadow-sm p-4 border-0 rounded-4">
         <div id="loader" class="text-center py-5">
             <div class="spinner-grow text-primary" role="status"></div>
-            <p class="mt-3 text-muted">正在同步最新全市場股票數據，請稍候...</p>
+            <p class="mt-3 text-muted">正在載入選股數據，請稍候...</p>
         </div>
-        
-        <!-- 乾淨的 TABLE 結構，讓 DataTables 自動掛載 -->
+
         <table id="stockTable" class="table table-hover" width="100%" style="display:none;">
-            <thead>
-                <tr>
-                    <th>代號</th>
-                    <th>標的名稱</th>
-                    <th>現價</th>
-                    <th>PB</th>
-                    <th>YoY%</th>
-                    <th>MoM%</th>
-                    <th>EPS</th>
-                    <th class="col-indicator">乖離倍數</th>
-                    <th>產業分類</th>
-                </tr>
+            <thead id="tableHead">
+                <!-- 動態注入標題 -->
             </thead>
             <tbody id="stockBody">
                 <!-- 資料注入點 -->
@@ -131,25 +138,33 @@
     <script>
         let table;
         let currentStrategy = 'original';
+        let currentSource = 'stock_data.json';
 
-        $(document).ready(function () { 
-            fetchData(); 
+        $(document).ready(function () {
+            fetchData();
         });
+
+        async function switchDataSource(source, strategy) {
+            currentSource = source;
+            currentStrategy = strategy;
+            $('#loader').show();
+            $('#stockTable').hide();
+            await fetchData();
+        }
 
         async function fetchData() {
             try {
-                const res = await fetch('stock_data.json?t=' + new Date().getTime());
+                const res = await fetch(currentSource + '?t=' + new Date().getTime());
                 const data = await res.json();
-                
-                // 如果表格已初始化，先銷毀才能徹底重新渲染
+
                 if ($.fn.DataTable.isDataTable('#stockTable')) {
                     $('#stockTable').DataTable().destroy();
                 }
-                
+
                 renderTable(data);
-            } catch (err) { 
-                console.error("載入 JSON 失敗，五秒後重試", err);
-                setTimeout(fetchData, 5000); 
+            } catch (err) {
+                console.error("載入 JSON 失敗", err);
+                $('#loader').html('<p class="text-danger">資料載入失敗，可能尚無選股結果或檔案不存在。</p>');
             }
         }
 
@@ -160,22 +175,63 @@
         }
 
         function renderTable(stockList) {
+            const head = $('#tableHead');
             const body = $('#stockBody');
+            head.empty();
             body.empty();
 
+            // 根據不同策略顯示不同標題
+            if (currentStrategy === 'momentum') {
+                head.append(`
+                    <tr>
+                        <th>代號</th>
+                        <th>標的名稱</th>
+                        <th>現價</th>
+                        <th>今日成交量</th>
+                        <th>5日均量</th>
+                        <th>營收YoY%</th>
+                        <th>投信買超(張)</th>
+                    </tr>
+                `);
+            } else {
+                head.append(`
+                    <tr>
+                        <th>代號</th>
+                        <th>標的名稱</th>
+                        <th>現價</th>
+                        <th>PB</th>
+                        <th>YoY%</th>
+                        <th>MoM%</th>
+                        <th class="col-indicator">乖離倍數</th>
+                        <th>產業分類</th>
+                    </tr>
+                `);
+            }
+
             stockList.forEach(s => {
-                // 將技術指標掛在 tr 的 data- 屬性上，供 DataTables 搜尋引擎使用
-                const row = `<tr data-sma200="${s.sma200}" data-high120="${s.high120}">
-                    <td><code>${s.ticker}</code></td>
-                    <td class="fw-bold"><a href="https://tw.stock.yahoo.com/quote/${s.ticker}" target="_blank" style="text-decoration:none;">${s.name}</a></td>
-                    <td class="text-center fw-bold">${s.close}</td>
-                    <td class="text-center ${getColorClass(s.pb)}">${s.pb}</td>
-                    <td class="text-center ${getColorClass(s.yoy)}">${s.yoy}%</td>
-                    <td class="text-center ${getColorClass(s.mom)}">${s.mom}%</td>
-                    <td class="text-center ${getColorClass(s.eps)} font-monospace">${s.eps}</td>
-                    <td class="text-center col-indicator font-monospace">${s.ratio}</td>
-                    <td><span class="badge-sector">${s.industry}</span></td>
-                </tr>`;
+                let row = '';
+                if (currentStrategy === 'momentum') {
+                    row = `<tr class="momentum-row">
+                        <td><code>${s.ticker || s.代號}</code></td>
+                        <td class="fw-bold"><a href="https://tw.stock.yahoo.com/quote/${s.ticker || s.代號}" target="_blank" style="text-decoration:none;">${s.name || s.名稱}</a></td>
+                        <td class="text-center fw-bold">${s.price || s.現價}</td>
+                        <td class="text-center">${parseInt(s.volume || s.今日成交量).toLocaleString()}</td>
+                        <td class="text-center">${parseInt(s.avg_vol_5d || s['5日均量']).toLocaleString()}</td>
+                        <td class="text-center ${getColorClass(s.yoy || s['營收YoY%'])}">${s.yoy || s['營收YoY%']}</td>
+                        <td class="text-center text-primary fw-bold">${s['投信近3日買賣超(張)'] || 0}</td>
+                    </tr>`;
+                } else {
+                    row = `<tr data-sma200="${s.sma200}" data-high120="${s.high120}">
+                        <td><code>${s.ticker}</code></td>
+                        <td class="fw-bold"><a href="https://tw.stock.yahoo.com/quote/${s.ticker}" target="_blank" style="text-decoration:none;">${s.name}</a></td>
+                        <td class="text-center fw-bold">${s.close}</td>
+                        <td class="text-center ${getColorClass(s.pb)}">${s.pb}</td>
+                        <td class="text-center ${getColorClass(s.yoy)}">${s.yoy}%</td>
+                        <td class="text-center ${getColorClass(s.mom)}">${s.mom}%</td>
+                        <td class="text-center col-indicator font-monospace">${s.ratio}</td>
+                        <td><span class="badge-sector">${s.industry}</span></td>
+                    </tr>`;
+                }
                 body.append(row);
             });
 
@@ -183,42 +239,41 @@
             $('#stockTable').show();
 
             // 啟動 DataTables
+            let orderCol = (currentStrategy === 'momentum') ? 6 : 6;
+            let orderDir = (currentStrategy === 'momentum') ? "desc" : "asc";
+
             table = $('#stockTable').DataTable({
                 "language": { "url": "//cdn.datatables.net/plug-ins/1.13.4/i18n/zh-HANT.json" },
-                "order": [[7, "asc"]], // 預設依據乖離倍數低到高排序
+                "order": [[orderCol, orderDir]],
                 "pageLength": 50,
-                "autoWidth": false
+                "autoWidth": false,
+                "destroy": true
             });
 
-            // 註冊 DataTables 全域過濾邏輯
-            $.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
-                const node = table.row(dataIndex).node();
-                const close = parseFloat(data[2]);
-                const ratio = parseFloat(data[7]);
-                const sma200 = parseFloat($(node).attr('data-sma200'));
-                const h120 = parseFloat($(node).attr('data-high120'));
+            // 註冊 DataTables 全域過濾邏輯 (僅針對 stock_data.json)
+            if (currentSource === 'stock_data.json') {
+                $.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
+                    const node = table.row(dataIndex).node();
+                    const close = parseFloat(data[2]);
+                    const ratio = parseFloat(data[6]);
+                    const sma200 = parseFloat($(node).attr('data-sma200'));
+                    const h120 = parseFloat($(node).attr('data-high120'));
 
-                if (currentStrategy === 'original') {
-                    // 全市場強勢股濾網：僅顯示現價 > 200MA
-                    return (close > sma200);
-                } else if (currentStrategy === 'ten_fold') {
-                    // 10倍股選股濾網 (爆發潛力)
-                    // 條件 1: 現價 > 200MA
-                    // 條件 2: 現價 >= 120日高點
-                    // 條件 3: 乖離倍數 <= 1.2
-                    return (close > sma200 && close >= h120 && ratio <= 1.2);
-                }
-                return true;
-            });
-            
-            // 初始化後馬上觸發一次過濾繪製
-            table.draw();
-        }
-
-        function switchStrategy(strat) {
-            currentStrategy = strat;
-            table.draw();
+                    if (currentStrategy === 'original') {
+                        return (close > sma200);
+                    } else if (currentStrategy === 'ten_fold') {
+                        return (close > sma200 && close >= h120 && ratio <= 1.2);
+                    }
+                    return true;
+                });
+                table.draw();
+            } else {
+                // 如果是 momentum，清除篩選器以免影響顯示
+                $.fn.dataTable.ext.search.pop();
+                table.draw();
+            }
         }
     </script>
 </body>
+
 </html>
