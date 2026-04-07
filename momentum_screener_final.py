@@ -156,6 +156,27 @@ if __name__ == "__main__":
     if final_results:
         # 儲存至 JSON 檔案供網頁前端使用
         MOMENTUM_OUTPUT = 'momentum_data.json'
+        
+        # --- 新增：處理連續進榜天數 ---
+        consecutive_map = {}
+        try:
+            if os.path.exists(MOMENTUM_OUTPUT):
+                with open(MOMENTUM_OUTPUT, 'r', encoding='utf-8') as f:
+                    old_data = json.load(f)
+                    for item in old_data:
+                        # 相容舊版欄位名 (ticker 或 代號)
+                        t = item.get('ticker') or item.get('代號')
+                        days = item.get('consecutive_days', 1)
+                        if t:
+                            consecutive_map[t] = days
+        except Exception as e:
+            print(f"[系統] 讀取舊資料失敗 (首次執行或檔案損壞): {e}")
+
+        for item in final_results:
+            t = item.get('ticker')
+            item['consecutive_days'] = consecutive_map.get(t, 0) + 1
+        # ----------------------------
+
         try:
             with open(MOMENTUM_OUTPUT, 'w', encoding='utf-8') as f:
                 json.dump(final_results, f, ensure_ascii=False, indent=4)
@@ -171,11 +192,12 @@ if __name__ == "__main__":
             'price': '現價',
             'volume': '今日成交量',
             'avg_vol_5d': '5日均量',
-            'yoy': '營收YoY%'
+            'yoy': '營收YoY%',
+            'consecutive_days': '連續進榜(天)'
         }, inplace=True)
         
         # 重新排序顯示欄位 (去掉輔助欄位 stock_id)
-        display_cols = ['代號', '名稱', '現價', '今日成交量', '5日均量', '營收YoY%', '投信近3日買賣超(張)']
+        display_cols = ['代號', '名稱', '現價', '今日成交量', '5日均量', '營收YoY%', '投信近3日買賣超(張)', '連續進榜(天)']
         print(df_final[display_cols].to_string(index=False))
         print("\n" + "★"*58)
         print(f"篩選結算：符合『技術 + 基本 + 籌碼』三面向之終極標的，共 {len(df_final)} 檔。")

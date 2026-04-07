@@ -191,6 +191,7 @@
                         <th>5日均量</th>
                         <th>營收YoY%</th>
                         <th>投信買超(張)</th>
+                        <th>連續進榜(天)</th>
                     </tr>
                 `);
             } else {
@@ -204,6 +205,7 @@
                         <th>MoM%</th>
                         <th class="col-indicator">乖離倍數</th>
                         <th>產業分類</th>
+                        <th>連續進榜(天)</th>
                     </tr>
                 `);
             }
@@ -211,6 +213,8 @@
             stockList.forEach(s => {
                 let row = '';
                 if (currentStrategy === 'momentum') {
+                    const days = s.consecutive_days || s['連續進榜(天)'] || 1;
+                    const daysClass = days >= 3 ? "up-red" : "";
                     row = `<tr class="momentum-row">
                         <td><code>${s.ticker || s.代號}</code></td>
                         <td class="fw-bold"><a href="https://tw.stock.yahoo.com/quote/${s.ticker || s.代號}" target="_blank" style="text-decoration:none;">${s.name || s.名稱}</a></td>
@@ -219,8 +223,11 @@
                         <td class="text-center">${parseInt(s.avg_vol_5d || s['5日均量']).toLocaleString()}</td>
                         <td class="text-center ${getColorClass(s.yoy || s['營收YoY%'])}">${s.yoy || s['營收YoY%']}</td>
                         <td class="text-center text-primary fw-bold">${s['投信近3日買賣超(張)'] || 0}</td>
+                        <td class="text-center ${daysClass}">${days}</td>
                     </tr>`;
                 } else {
+                    const days = s.consecutive_days || 1;
+                    const daysClass = days >= 3 ? "up-red" : "";
                     row = `<tr data-sma200="${s.sma200}" data-high120="${s.high120}">
                         <td><code>${s.ticker}</code></td>
                         <td class="fw-bold"><a href="https://tw.stock.yahoo.com/quote/${s.ticker}" target="_blank" style="text-decoration:none;">${s.name}</a></td>
@@ -230,6 +237,7 @@
                         <td class="text-center ${getColorClass(s.mom)}">${s.mom}%</td>
                         <td class="text-center col-indicator font-monospace">${s.ratio}</td>
                         <td><span class="badge-sector">${s.industry}</span></td>
+                        <td class="text-center ${daysClass}">${days}</td>
                     </tr>`;
                 }
                 body.append(row);
@@ -239,7 +247,7 @@
             $('#stockTable').show();
 
             // 啟動 DataTables
-            let orderCol = (currentStrategy === 'momentum') ? 6 : 6;
+            let orderCol = (currentStrategy === 'momentum') ? 7 : 6;
             let orderDir = (currentStrategy === 'momentum') ? "desc" : "asc";
 
             table = $('#stockTable').DataTable({

@@ -41,8 +41,10 @@ def save_checkpoint(done_tickers, results):
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=4)
 
-def process_batch(batch_data, monthly_data, tickers, codes_dict):
+def process_batch(batch_data, monthly_data, tickers, codes_dict, history_counts=None):
     """ 處理技術面、月報酬 (Price MoM) 與基本面數據 (雲端抗封鎖版) """
+    if history_counts is None:
+        history_counts = {}
     batch_results = []
     for ticker in tickers:
         try:
@@ -100,7 +102,8 @@ def process_batch(batch_data, monthly_data, tickers, codes_dict):
                 "eps": clean(info.get('trailingEps')),
                 "yoy": clean(info.get('revenueGrowth', 0) * 100),
                 "mom": clean(mom),
-                "industry": industry
+                "industry": industry,
+                "consecutive_days": history_counts.get(ticker, 0) + 1
             })
             
             # 雲端抗封鎖：單一股票處理完後隨機延遲 (0.2~0.8s) 模擬人類請求
@@ -120,6 +123,22 @@ def run_robust_scanner():
     done_tickers_set = set(checkpoint["done_tickers"])
     results = checkpoint["results"]
     
+    # --- 新增：載入歷史進榜天數 ---
+    history_counts = {}
+    if os.path.exists(OUTPUT_FILE):
+        try:
+            with open(OUTPUT_FILE, 'r', encoding='utf-8') as f:
+                old_data = json.load(f)
+                for item in old_data:
+                    # 相容可能存在的欄位名稱
+                    t = item.get('ticker')
+                    days = item.get('consecutive_days', 1)
+                    if t:
+                        history_counts[t] = days
+        except Exception as e:
+            print(f"[HISTORY] Load failed/Empty: {e}")
+    # ----------------------------
+    
     total_count = len(all_tickers)
     print(f"[CLOUD-SCAN] Initializing cloud engine... Progress: {len(done_tickers_set)}/{total_count}")
 
@@ -136,7 +155,7 @@ def run_robust_scanner():
             data_monthly = yf.download(batch_to_do, period='2mo', interval='1mo', group_by='ticker', threads=True, progress=False)
             
             if not data_daily.empty:
-                batch_res = process_batch(data_daily, data_monthly, batch_to_do, codes_dict)
+                batch_res = process_batch(data_daily, data_monthly, batch_to_do, codes_dict, history_counts)
                 results.extend(batch_res)
                 for t in batch_to_do:
                     done_tickers_set.add(t)
