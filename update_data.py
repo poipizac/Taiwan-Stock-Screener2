@@ -5,6 +5,7 @@ import os
 import twstock
 import time
 import random
+from datetime import datetime
 from tqdm import tqdm
 
 # 設定檔案路徑 (GitHub Actions 環境中使用相對路徑)
@@ -41,7 +42,7 @@ def save_checkpoint(done_tickers, results):
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=4)
 
-def process_batch(batch_data, monthly_data, tickers, codes_dict, history_counts=None):
+def process_batch(batch_data, monthly_data, tickers, codes_dict, history_counts=None, is_today=False):
     """ 處理技術面、月報酬 (Price MoM) 與基本面數據 (雲端抗封鎖版) """
     if history_counts is None:
         history_counts = {}
@@ -103,7 +104,7 @@ def process_batch(batch_data, monthly_data, tickers, codes_dict, history_counts=
                 "yoy": clean(info.get('revenueGrowth', 0) * 100),
                 "mom": clean(mom),
                 "industry": industry,
-                "consecutive_days": history_counts.get(ticker, 0) + 1
+                "consecutive_days": history_counts.get(ticker, 1) if is_today else history_counts.get(ticker, 0) + 1
             })
             
             # 雲端抗封鎖：單一股票處理完後隨機延遲 (0.2~0.8s) 模擬人類請求
@@ -125,8 +126,15 @@ def run_robust_scanner():
     
     # --- 新增：載入歷史進榜天數 ---
     history_counts = {}
+    is_today = False
     if os.path.exists(OUTPUT_FILE):
         try:
+            # 獲取檔案最後修改日期 (YYYY-MM-DD)
+            mtime = os.path.getmtime(OUTPUT_FILE)
+            last_modified_date = datetime.fromtimestamp(mtime).strftime('%Y-%m-%d')
+            today_date = datetime.now().strftime('%Y-%m-%d')
+            is_today = (last_modified_date == today_date)
+
             with open(OUTPUT_FILE, 'r', encoding='utf-8') as f:
                 old_data = json.load(f)
                 for item in old_data:
@@ -155,7 +163,7 @@ def run_robust_scanner():
             data_monthly = yf.download(batch_to_do, period='2mo', interval='1mo', group_by='ticker', threads=True, progress=False)
             
             if not data_daily.empty:
-                batch_res = process_batch(data_daily, data_monthly, batch_to_do, codes_dict, history_counts)
+                batch_res = process_batch(data_daily, data_monthly, batch_to_do, codes_dict, history_counts, is_today)
                 results.extend(batch_res)
                 for t in batch_to_do:
                     done_tickers_set.add(t)

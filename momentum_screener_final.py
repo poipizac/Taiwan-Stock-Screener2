@@ -159,8 +159,15 @@ if __name__ == "__main__":
         
         # --- 新增：處理連續進榜天數 ---
         consecutive_map = {}
+        is_today = False
         try:
             if os.path.exists(MOMENTUM_OUTPUT):
+                # 獲取檔案最後修改日期 (YYYY-MM-DD)
+                mtime = os.path.getmtime(MOMENTUM_OUTPUT)
+                last_modified_date = datetime.fromtimestamp(mtime).strftime('%Y-%m-%d')
+                today_date = datetime.now().strftime('%Y-%m-%d')
+                is_today = (last_modified_date == today_date)
+
                 with open(MOMENTUM_OUTPUT, 'r', encoding='utf-8') as f:
                     old_data = json.load(f)
                     for item in old_data:
@@ -174,7 +181,12 @@ if __name__ == "__main__":
 
         for item in final_results:
             t = item.get('ticker')
-            item['consecutive_days'] = consecutive_map.get(t, 0) + 1
+            if is_today:
+                # 同一天重複執行：若在舊名單中則維持不變，不在則設為 1
+                item['consecutive_days'] = consecutive_map.get(t, 1)
+            else:
+                # 不同天執行：若在舊名單中則 +1，不在則設為 1
+                item['consecutive_days'] = consecutive_map.get(t, 0) + 1
         # ----------------------------
 
         try:
