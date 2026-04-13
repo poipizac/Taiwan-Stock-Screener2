@@ -13,15 +13,23 @@ import twstock
 warnings.filterwarnings("ignore")
 DL = DataLoader()
 
-# 若環境中有 FinMind Token 則登入 (此處預設為無，使用公開資料限額)
-# DL.login(token="YOUR_FINMIND_TOKEN")
+# 若環境中有 FinMind Token 則登入
+FINMIND_TOKEN = os.getenv('FINMIND_TOKEN')
+if FINMIND_TOKEN:
+    try:
+        DL.login(token=FINMIND_TOKEN)
+        print("[系統] 已成功登入 FinMind Token。")
+    except Exception as e:
+        print(f"[警告] FinMind 登入失敗: {e}")
 
 def load_tickers_from_json(file_path):
-    """ 從 JSON 檔案讀取 Tickers """
+    """ 從 JSON 檔案讀取 Tickers (支援新版 dict 結構) """
     if os.path.exists(file_path):
         try:
             with open(file_path, 'r', encoding='utf-8') as f:
-                data = json.load(f)
+                content = json.load(f)
+                # 判斷是新版 dict {"data": [...]} 還是舊版 list [...]
+                data = content.get("data", []) if isinstance(content, dict) else content
                 return [item['ticker'] for item in data if 'ticker' in item]
         except Exception as e:
             print(f"[警告] 讀取 JSON 失敗: {e}")
@@ -157,21 +165,27 @@ if __name__ == "__main__":
         # 儲存至 JSON 檔案供網頁前端使用
         MOMENTUM_OUTPUT = 'momentum_data.json'
         
-        # --- 新增：處理連續進榜天數 ---
+        # --- 新增：處理連續進榜天數 (雲端記憶版) ---
         consecutive_map = {}
         is_today = False
         try:
             if os.path.exists(MOMENTUM_OUTPUT):
-                # 獲取檔案最後修改日期 (YYYY-MM-DD)
-                mtime = os.path.getmtime(MOMENTUM_OUTPUT)
-                last_modified_date = datetime.fromtimestamp(mtime).strftime('%Y-%m-%d')
-                today_date = datetime.now().strftime('%Y-%m-%d')
-                is_today = (last_modified_date == today_date)
-
                 with open(MOMENTUM_OUTPUT, 'r', encoding='utf-8') as f:
-                    old_data = json.load(f)
+                    old_json = json.load(f)
+                    
+                    # 相容新舊結構
+                    if isinstance(old_json, dict):
+                        last_run_date = old_json.get("last_run", "")
+                        old_data = old_json.get("data", [])
+                    else:
+                        mtime = os.path.getmtime(MOMENTUM_OUTPUT)
+                        last_run_date = datetime.fromtimestamp(mtime).strftime('%Y-%m-%d')
+                        old_data = old_json
+
+                    today_date = datetime.now().strftime('%Y-%m-%d')
+                    is_today = (last_run_date == today_date)
+
                     for item in old_data:
-                        # 相容舊版欄位名 (ticker 或 代號)
                         t = item.get('ticker') or item.get('代號')
                         days = item.get('consecutive_days', 1)
                         if t:
@@ -182,16 +196,19 @@ if __name__ == "__main__":
         for item in final_results:
             t = item.get('ticker')
             if is_today:
-                # 同一天重複執行：若在舊名單中則維持不變，不在則設為 1
                 item['consecutive_days'] = consecutive_map.get(t, 1)
             else:
-                # 不同天執行：若在舊名單中則 +1，不在則設為 1
                 item['consecutive_days'] = consecutive_map.get(t, 0) + 1
-        # ----------------------------
-
+        
+        # 儲存結果 (新結構)
+        today_str = datetime.now().strftime('%Y-%m-%d')
+        output_dict = {
+            "last_run": today_str,
+            "data": final_results
+        }
         try:
             with open(MOMENTUM_OUTPUT, 'w', encoding='utf-8') as f:
-                json.dump(final_results, f, ensure_ascii=False, indent=4)
+                json.dump(output_dict, f, ensure_ascii=False, indent=4)
             print(f"[系統] 成功將結果儲存至 {MOMENTUM_OUTPUT}")
         except Exception as e:
             print(f"[錯誤] 儲存 JSON 失敗: {e}")

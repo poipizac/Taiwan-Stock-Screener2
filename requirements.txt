@@ -2,3 +2,4 @@ yfinance
 pandas
 twstock
 tqdm
+FinMind

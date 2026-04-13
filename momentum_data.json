@@ -1,35 +1,38 @@
-[
-    {
-        "ticker": "5439.TWO",
-        "stock_id": "5439",
-        "name": "高技",
-        "price": 359.5,
-        "volume": 14298895,
-        "avg_vol_5d": 6996767.0,
-        "yoy": "132.0%",
-        "投信近3日買賣超(張)": 1994.0,
-        "consecutive_days": 1
-    },
-    {
-        "ticker": "6451.TW",
-        "stock_id": "6451",
-        "name": "訊芯-KY",
-        "price": 475.0,
-        "volume": 9987805,
-        "avg_vol_5d": 4977391.0,
-        "yoy": "22.2%",
-        "投信近3日買賣超(張)": 81.0,
-        "consecutive_days": 1
-    },
-    {
-        "ticker": "6515.TW",
-        "stock_id": "6515",
-        "name": "穎崴",
-        "price": 8560.0,
-        "volume": 525335,
-        "avg_vol_5d": 217696.0,
-        "yoy": "45.1%",
-        "投信近3日買賣超(張)": 119.5,
-        "consecutive_days": 1
-    }
-]
+{
+    "last_run": "2026-04-13",
+    "data": [
+        {
+            "ticker": "5439.TWO",
+            "stock_id": "5439",
+            "name": "高技",
+            "price": 359.5,
+            "volume": 14298895,
+            "avg_vol_5d": 6996767.0,
+            "yoy": "132.0%",
+            "投信近3日買賣超(張)": 1994.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6451.TW",
+            "stock_id": "6451",
+            "name": "訊芯-KY",
+            "price": 475.0,
+            "volume": 9987805,
+            "avg_vol_5d": 4977391.0,
+            "yoy": "22.2%",
+            "投信近3日買賣超(張)": 81.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6515.TW",
+            "stock_id": "6515",
+            "name": "穎崴",
+            "price": 8560.0,
+            "volume": 525335,
+            "avg_vol_5d": 217696.0,
+            "yoy": "45.1%",
+            "投信近3日買賣超(張)": 119.5,
+            "consecutive_days": 1
+        }
+    ]
+}

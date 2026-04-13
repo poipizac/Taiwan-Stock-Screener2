@@ -155,13 +155,16 @@
         async function fetchData() {
             try {
                 const res = await fetch(currentSource + '?t=' + new Date().getTime());
-                const data = await res.json();
+                const result = await res.json();
+                
+                // 支援新版 {"last_run": "...", "data": [...]} 與舊版純陣列結構
+                const stockList = Array.isArray(result) ? result : (result.data || []);
 
                 if ($.fn.DataTable.isDataTable('#stockTable')) {
                     $('#stockTable').DataTable().destroy();
                 }
 
-                renderTable(data);
+                renderTable(stockList);
             } catch (err) {
                 console.error("載入 JSON 失敗", err);
                 $('#loader').html('<p class="text-danger">資料載入失敗，可能尚無選股結果或檔案不存在。</p>');

@@ -36,13 +36,18 @@ def load_checkpoint():
     return {"done_tickers": [], "results": []}
 
 def save_checkpoint(done_tickers, results):
-    """ 持續存檔進度 """
+    """ 持續存檔進度 (支援雲端記憶結構) """
+    today_str = datetime.now().strftime('%Y-%m-%d')
     checkpoint = {"done_tickers": done_tickers, "results": results}
     with open(CHECKPOINT_FILE, 'w', encoding='utf-8') as f:
         json.dump(checkpoint, f, ensure_ascii=False, indent=4)
-    # 同步更新正式輸出 JSON
+    # 同步更新正式輸出 JSON (採用新結構)
+    output_dict = {
+        "last_run": today_str,
+        "data": results
+    }
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
-        json.dump(results, f, ensure_ascii=False, indent=4)
+        json.dump(output_dict, f, ensure_ascii=False, indent=4)
 
 
 def process_batch(batch_data, monthly_data, tickers, codes_dict, history_counts=None, is_today=False):
@@ -117,14 +122,22 @@ def run_robust_scanner():
     is_today = False
     if os.path.exists(OUTPUT_FILE):
         try:
-            # 獲取檔案最後修改日期 (YYYY-MM-DD)
-            mtime = os.path.getmtime(OUTPUT_FILE)
-            last_modified_date = datetime.fromtimestamp(mtime).strftime('%Y-%m-%d')
-            today_date = datetime.now().strftime('%Y-%m-%d')
-            is_today = (last_modified_date == today_date)
-
             with open(OUTPUT_FILE, 'r', encoding='utf-8') as f:
-                old_data = json.load(f)
+                old_json = json.load(f)
+                
+                # 相容舊版陣列與新版字典結構
+                if isinstance(old_json, dict):
+                    last_run_date = old_json.get("last_run", "")
+                    old_data = old_json.get("data", [])
+                else:
+                    # 舊版陣列：回退到檔案修改日期
+                    mtime = os.path.getmtime(OUTPUT_FILE)
+                    last_run_date = datetime.fromtimestamp(mtime).strftime('%Y-%m-%d')
+                    old_data = old_json
+
+                today_date = datetime.now().strftime('%Y-%m-%d')
+                is_today = (last_run_date == today_date)
+
                 for item in old_data:
                     t = item.get('ticker')
                     days = item.get('consecutive_days', 1)
