@@ -13,14 +13,26 @@ import twstock
 warnings.filterwarnings("ignore")
 DL = DataLoader()
 
-# 若環境中有 FinMind Token 則登入
+# 若環境中有 FinMind Token 則進行 Token 登入
 FINMIND_TOKEN = os.getenv('FINMIND_TOKEN')
 if FINMIND_TOKEN:
     try:
-        DL.login(token=FINMIND_TOKEN)
-        print("[系統] 已成功登入 FinMind Token。")
+        # 使用最新支援的 login_by_token 方法
+        DL.login_by_token(api_token=FINMIND_TOKEN)
+        print("[系統] 已成功通過 FinMind Token 驗證。")
     except Exception as e:
-        print(f"[警告] FinMind 登入失敗: {e}")
+        print(f"[警告] FinMind 登入失敗 (可能為 Token 過期或 API 變動): {e}")
+
+def get_all_taiwan_tickers():
+    """ 獲取所有上市與上櫃股票代號並加上正確後綴 """
+    print("[資訊] 正在從 twstock 抓取全市場完整代號列表...")
+    codes = twstock.codes
+    tickers = []
+    for code, info in codes.items():
+        if info.type == '股票' and info.market in ['上市', '上櫃'] and len(code) == 4:
+            suffix = '.TW' if info.market == '上市' else '.TWO'
+            tickers.append(f"{code}{suffix}")
+    return sorted(tickers)
 
 def load_tickers_from_json(file_path):
     """ 從 JSON 檔案讀取 Tickers (支援新版 dict 結構) """
@@ -146,8 +158,8 @@ if __name__ == "__main__":
     # 1. 讀取標的
     all_tickers = load_tickers_from_json(JSON_PATH)
     if not all_tickers:
-        print("[資訊] 使用自定義清單。")
-        all_tickers = ['2330.TW', '2317.TW', '2454.TW', '3231.TW', '2603.TW', '2609.TW']
+        print("[資訊] JSON 歷史資料不存在或內容為空，切換至『全市場掃描』模式。")
+        all_tickers = get_all_taiwan_tickers()
         
     # 2. 第一階段漏斗 (yfinance)
     stage1_passers = get_stage1_candidates(all_tickers)
