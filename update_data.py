@@ -48,15 +48,17 @@ def save_checkpoint(done_tickers, results):
 def fetch_single_ticker(ticker, codes_dict, history_counts, is_today):
     """ 抓取單一標的完整數據，失敗立刻返回 None 絕不卡死 """
     try:
-        # 1. 抓取歷史資料 (強制 3 秒超時)
-        df_daily = yf.download(ticker, period='2y', progress=False, ignore_tz=True, timeout=3)
+        tk = yf.Ticker(ticker)
+        
+        # 1. 抓取歷史資料 (改用 tk.history 保證回傳扁平的 DataFrame)
+        df_daily = tk.history(period='2y', timeout=3)
         
         # 防呆檢查：如果 df 為空或缺少必要欄位 'Close'
         if df_daily.empty or 'Close' not in df_daily.columns:
             return None
             
         # 2. 抓取月線資料 (計算 MoM)
-        df_monthly = yf.download(ticker, period='2mo', interval='1mo', progress=False, ignore_tz=True, timeout=3)
+        df_monthly = tk.history(period='2mo', interval='1mo', timeout=3)
         
         # 即使月線抓取失敗，我們仍可繼續處理日線資料，只需給予 MoM 預設值
         has_monthly = not df_monthly.empty and 'Close' in df_monthly.columns
@@ -87,7 +89,6 @@ def fetch_single_ticker(ticker, codes_dict, history_counts, is_today):
                     mom = ((current_mo - prev_mo) / prev_mo) * 100
         
         # 3. 抓取基本面 info
-        tk = yf.Ticker(ticker)
         # yfinance 的 info 屬性會發起網路請求
         info = tk.info
         
