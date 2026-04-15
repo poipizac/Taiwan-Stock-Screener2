@@ -44,91 +44,85 @@ def save_checkpoint(done_tickers, results):
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(output_dict, f, ensure_ascii=False, indent=4)
 
-# --- 核心修改：移除 Session，交由 YF 自行處理 TLS 指紋 ---
 def fetch_single_ticker(ticker, codes_dict, history_counts, is_today):
-    """ 抓取單一標的完整數據，失敗立刻返回 None 絕不卡死 """
+    """ 抓取單一標的完整數據 """
     for attempt in range(2):
         try:
             tk = yf.Ticker(ticker)
-        
-        # 1. 抓取歷史資料 (改用 tk.history 保證回傳扁平的 DataFrame)
-        df_daily = tk.history(period='2y', timeout=3)
-        
-        # 防呆檢查：如果 df 為空或缺少必要欄位 'Close'
-        if df_daily.empty or 'Close' not in df_daily.columns:
-            return None
-            
-        # 2. 抓取月線資料 (計算 MoM)
-        df_monthly = tk.history(period='2mo', interval='1mo', timeout=3)
-        
-        # 即使月線抓取失敗，我們仍可繼續處理日線資料，只需給予 MoM 預設值
-        has_monthly = not df_monthly.empty and 'Close' in df_monthly.columns
 
-        hist = df_daily.dropna(subset=['Close'])
-        if len(hist) < 200:
-            return None
-            
-        stock_id = ticker.split('.')[0]
-        name = codes_dict[stock_id].name if stock_id in codes_dict else ticker
-        industry = codes_dict[stock_id].group if stock_id in codes_dict else '未知'
-        
-        # 指標計算
-        last_close = hist['Close'].iloc[-1]
-        sma10 = hist['Close'].rolling(window=10).mean().iloc[-1]
-        sma200 = hist['Close'].rolling(window=200).mean().iloc[-1]
-        high120 = hist['High'].rolling(window=120).max().shift(1).iloc[-1]
-        
-        # 月報酬 (Price MoM%)
-        mom = 0.0
-        if has_monthly:
-            # 確保提取時不會報錯
-            hist_mo = df_monthly.dropna(subset=['Close'])
-            if len(hist_mo) >= 2:
-                current_mo = hist_mo['Close'].iloc[-1]
-                prev_mo = hist_mo['Close'].iloc[-2]
-                if prev_mo > 0:
-                    mom = ((current_mo - prev_mo) / prev_mo) * 100
-        
-        # 3. 抓取基本面 info
-        # yfinance 的 info 屬性會發起網路請求
-        info = tk.info
-        
-        def clean(val, default=0):
-            return round(float(val), 2) if pd.notnull(val) and val is not None else default
+            # 1. 抓取歷史資料 (2年長度用以計算SMA200與120高)
+            df_daily = tk.history(period='2y', timeout=5)
 
-        res = {
-            "ticker": ticker,
-            "name": name,
-            "close": clean(last_close),
-            "sma200": clean(sma200),
-            "high120": clean(high120),
-            "ratio": clean(sma10 / sma200 if sma200 > 0 else 0),
-            "pb": clean(info.get('priceToBook')),
-            "eps": clean(info.get('trailingEps')),
-            "yoy": clean(info.get('revenueGrowth', 0) * 100),
-            "mom": clean(mom),
-            "industry": industry,
-            "consecutive_days": history_counts.get(ticker, 1) if is_today else history_counts.get(ticker, 0) + 1
-        }
-        
-        # 強制減速帶：每處理完一檔股票，隨機等待 2~4 秒以稀釋請求頻率
-        time.sleep(random.uniform(2.0, 4.0))
-        return res
-        
-    except Exception as e:
-        err_msg = str(e)
-        if "Too Many Requests" in err_msg or "Rate limited" in err_msg or "429" in err_msg:
-            print(f"[{ticker}] 觸發 Rate Limit! 暫停 60 秒後重試... (Error: {err_msg})")
-            if attempt == 0:
-                time.sleep(60)
-                continue
-            else:
+            if df_daily.empty or 'Close' not in df_daily.columns:
                 return None
-        else:
-            # 其他錯誤直接印出並放棄
-            print(f"[{ticker}] 抓取失敗: {err_msg}")
-            return None
-    
+
+            # 2. 抓取月線資料 (計算 MoM)
+            df_monthly = tk.history(period='2mo', interval='1mo', timeout=5)
+            has_monthly = not df_monthly.empty and 'Close' in df_monthly.columns
+
+            hist = df_daily.dropna(subset=['Close'])
+            if len(hist) < 200:
+                return None
+
+            stock_id = ticker.split('.')[0]
+            name = codes_dict[stock_id].name if stock_id in codes_dict else ticker
+            industry = codes_dict[stock_id].group if stock_id in codes_dict else '未知'
+
+            # 指標計算
+            last_close = hist['Close'].iloc[-1]
+            sma10 = hist['Close'].rolling(window=10).mean().iloc[-1]
+            sma200 = hist['Close'].rolling(window=200).mean().iloc[-1]
+            high120 = hist['High'].rolling(window=120).max().shift(1).iloc[-1]
+
+            # 月報酬 (Price MoM%)
+            mom = 0.0
+            if has_monthly:
+                hist_mo = df_monthly.dropna(subset=['Close'])
+                if len(hist_mo) >= 2:
+                    current_mo = hist_mo['Close'].iloc[-1]
+                    prev_mo = hist_mo['Close'].iloc[-2]
+                    if prev_mo > 0:
+                        mom = ((current_mo - prev_mo) / prev_mo) * 100
+
+            # 3. 抓取基本面 info
+            info = tk.info
+
+            def clean(val, default=0):
+                try:
+                    return round(float(val), 2) if pd.notnull(val) and val is not None else default
+                except:
+                    return default
+
+            res = {
+                "ticker": ticker,
+                "name": name,
+                "close": clean(last_close),
+                "sma200": clean(sma200),
+                "high120": clean(high120),
+                "ratio": clean(sma10 / sma200 if sma200 > 0 else 0),
+                "pb": clean(info.get('priceToBook')),
+                "eps": clean(info.get('trailingEps')),
+                "yoy": clean(info.get('revenueGrowth', 0) * 100),
+                "mom": clean(mom),
+                "industry": industry,
+                "consecutive_days": history_counts.get(ticker, 1) if is_today else history_counts.get(ticker, 0) + 1
+            }
+
+            # 禮貌延遲，避免過快被封鎖
+            time.sleep(random.uniform(1.0, 2.5))
+            return res
+
+        except Exception as e:
+            err_msg = str(e)
+            if "Too Many Requests" in err_msg or "429" in err_msg:
+                print(f"[{ticker}] 觸發 Rate Limit! 暫停 60 秒... (嘗試 {attempt+1}/2)")
+                if attempt == 0:
+                    time.sleep(60)
+                    continue
+            else:
+                print(f"[{ticker}] 抓取錯誤: {err_msg}")
+            break # 非 429 錯誤或第二次嘗試失敗則跳出
+
     return None
 
 def run_robust_scanner():
@@ -139,15 +133,15 @@ def run_robust_scanner():
     done_tickers_set = set(checkpoint["done_tickers"])
     results = checkpoint["results"]
     
-    # 載入歷史天數
+    # 載入歷史天數邏輯
     history_counts = {}
     is_today = False
     if os.path.exists(OUTPUT_FILE):
         try:
             with open(OUTPUT_FILE, 'r', encoding='utf-8') as f:
                 old_json = json.load(f)
-                old_data = old_json.get("data", []) if isinstance(old_json, dict) else old_json
-                last_run_date = old_json.get("last_run", "") if isinstance(old_json, dict) else ""
+                old_data = old_json.get("data", [])
+                last_run_date = old_json.get("last_run", "")
                 today_date = datetime.now().strftime('%Y-%m-%d')
                 is_today = (last_run_date == today_date)
                 for item in old_data:
@@ -155,21 +149,19 @@ def run_robust_scanner():
                     if t: history_counts[t] = item.get('consecutive_days', 1)
         except: pass
 
-    # 過濾已完成
     tickers_to_scan = [t for t in all_tickers if t not in done_tickers_set]
-    total_to_scan = len(tickers_to_scan)
-    print(f"[ENGINE-V3.1] Starting Optimized Scanner (No Session). Remaining: {total_to_scan}/{len(all_tickers)}")
+    print(f"[ENGINE-V3.2] Starting Scanner. Remaining: {len(tickers_to_scan)}/{len(all_tickers)}")
 
-    # 併發處理 (不使用自訂 session)
-    chunk_size = 20
+    # 分批處理
+    chunk_size = 30
     for i in range(0, len(tickers_to_scan), chunk_size):
         chunk = tickers_to_scan[i:i + chunk_size]
         
-        # 併發執行單檔抓取 (max_workers 設為 6)
-        with ThreadPoolExecutor(max_workers=6) as executor:
+        # 併發執行 (限制 max_workers 以降低請求強度)
+        with ThreadPoolExecutor(max_workers=5) as executor:
             future_to_ticker = {executor.submit(fetch_single_ticker, t, codes_dict, history_counts, is_today): t for t in chunk}
             
-            for future in tqdm(as_completed(future_to_ticker), total=len(chunk), desc=f"Chunk {i//chunk_size + 1}"):
+            for future in tqdm(as_completed(future_to_ticker), total=len(chunk), desc=f"批次 {i//chunk_size + 1}"):
                 ticker = future_to_ticker[future]
                 try:
                     res = future.result()
@@ -177,15 +169,17 @@ def run_robust_scanner():
                         results.append(res)
                     done_tickers_set.add(ticker)
                 except Exception as e:
-                    print(f"[FUTURE-ERROR] {ticker}: {e}")
+                    print(f"[UNEXPECTED] {ticker}: {e}")
         
-        # 每組完成後存檔並稍作休息 (較長的禮貌性延遲)
+        # 每一大批次完成後存檔
         save_checkpoint(list(done_tickers_set), results)
-        time.sleep(random.uniform(2.0, 4.0))
+        print(f"Progress Saved: {len(done_tickers_set)} tickers processed.")
+        time.sleep(5) # 批次間休息
 
-    print(f"\n--- [COMPLETED] Final Results: {len(results)} ---")
+    # 清除暫存進度
     if os.path.exists(CHECKPOINT_FILE):
         os.remove(CHECKPOINT_FILE)
+    print(f"\n--- [COMPLETED] Final Results: {len(results)} ---")
 
 if __name__ == "__main__":
     run_robust_scanner()
