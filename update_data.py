@@ -5,7 +5,6 @@ import os
 import twstock
 import time
 import random
-import requests
 from datetime import datetime
 from tqdm import tqdm
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -13,20 +12,6 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 # 設定檔案路徑
 CHECKPOINT_FILE = './.scan_checkpoint.json'
 OUTPUT_FILE = './stock_data.json'
-
-# --- 核心修改 1: 偽裝真實瀏覽器 Session ---
-def get_session():
-    session = requests.Session()
-    # 使用常見的 Windows Chrome User-Agent
-    session.headers.update({
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-        'Accept-Language': 'zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7',
-        'Cache-Control': 'no-cache',
-        'Pragma': 'no-cache',
-        'Connection': 'keep-alive',
-    })
-    return session
 
 def get_all_taiwan_tickers():
     """ 獲取所有上市與上櫃股票代號並加上正確後綴 """
@@ -59,18 +44,18 @@ def save_checkpoint(done_tickers, results):
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(output_dict, f, ensure_ascii=False, indent=4)
 
-# --- 核心修改 2 & 3: 單檔抓取、偽裝 Session 與 3s 強制超時 ---
-def fetch_single_ticker(ticker, session, codes_dict, history_counts, is_today):
+# --- 核心修改：移除 Session，交由 YF 自行處理 TLS 指紋 ---
+def fetch_single_ticker(ticker, codes_dict, history_counts, is_today):
     """ 抓取單一標的完整數據，失敗立刻返回 None 絕不卡死 """
     try:
         # 1. 抓取歷史資料 (強制 3 秒超時)
-        # 使用 yf.download 抓取單檔
-        df_daily = yf.download(ticker, period='2y', session=session, progress=False, ignore_tz=True, timeout=3)
+        # 注意：不傳入 session，讓 yfinance 使用其優化過的 curl_cffi 機制
+        df_daily = yf.download(ticker, period='2y', progress=False, ignore_tz=True, timeout=3)
         if df_daily.empty:
             return None
             
         # 2. 抓取月線資料 (計算 MoM)
-        df_monthly = yf.download(ticker, period='2mo', interval='1mo', session=session, progress=False, ignore_tz=True, timeout=3)
+        df_monthly = yf.download(ticker, period='2mo', interval='1mo', progress=False, ignore_tz=True, timeout=3)
         
         hist = df_daily.dropna(subset=['Close'])
         if len(hist) < 200:
@@ -97,8 +82,8 @@ def fetch_single_ticker(ticker, session, codes_dict, history_counts, is_today):
                     mom = ((current_mo - prev_mo) / prev_mo) * 100
         
         # 3. 抓取基本面 info
-        tk = yf.Ticker(ticker, session=session)
-        # yfinance 的 info 屬性會發起網路請求，這也是常見卡死點
+        tk = yf.Ticker(ticker)
+        # yfinance 的 info 屬性會發起網路請求
         info = tk.info
         
         def clean(val, default=0):
@@ -119,7 +104,7 @@ def fetch_single_ticker(ticker, session, codes_dict, history_counts, is_today):
             "consecutive_days": history_counts.get(ticker, 1) if is_today else history_counts.get(ticker, 0) + 1
         }
     except Exception as e:
-        # 核心優化：印出具體錯誤原因以便偵測
+        # 印出具體錯誤原因以便偵測 (保留防護網)
         print(f"[{ticker}] 抓取失敗: {e}")
         return None
 
@@ -150,19 +135,16 @@ def run_robust_scanner():
     # 過濾已完成
     tickers_to_scan = [t for t in all_tickers if t not in done_tickers_set]
     total_to_scan = len(tickers_to_scan)
-    print(f"[ENGINE-V3] Starting Overhaul Scanner. Remaining: {total_to_scan}/{len(all_tickers)}")
+    print(f"[ENGINE-V3.1] Starting Optimized Scanner (No Session). Remaining: {total_to_scan}/{len(all_tickers)}")
 
-    # 核心修改 4: 使用 ThreadPoolExecutor 併發處理
-    session = get_session()
-    
-    # 每次處理 20 個標的就存一次檔
+    # 併發處理 (不使用自訂 session)
     chunk_size = 20
     for i in range(0, len(tickers_to_scan), chunk_size):
         chunk = tickers_to_scan[i:i + chunk_size]
         
-        # 併發執行單檔抓取 (max_workers 設為 6，適中不激進)
+        # 併發執行單檔抓取 (max_workers 設為 6)
         with ThreadPoolExecutor(max_workers=6) as executor:
-            future_to_ticker = {executor.submit(fetch_single_ticker, t, session, codes_dict, history_counts, is_today): t for t in chunk}
+            future_to_ticker = {executor.submit(fetch_single_ticker, t, codes_dict, history_counts, is_today): t for t in chunk}
             
             for future in tqdm(as_completed(future_to_ticker), total=len(chunk), desc=f"Chunk {i//chunk_size + 1}"):
                 ticker = future_to_ticker[future]
@@ -174,7 +156,7 @@ def run_robust_scanner():
                 except Exception as e:
                     print(f"[FUTURE-ERROR] {ticker}: {e}")
         
-        # 每組完成後存檔並稍作休息
+        # 每組完成後存檔並稍作休息 (禮貌性延遲)
         save_checkpoint(list(done_tickers_set), results)
         time.sleep(random.uniform(1.0, 2.0))
 
