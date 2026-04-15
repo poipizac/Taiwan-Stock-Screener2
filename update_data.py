@@ -81,18 +81,19 @@ def process_batch(batch_data, monthly_data, tickers, codes_dict, history_counts=
                     if prev_mo > 0:
                         mom = ((current_mo - prev_mo) / prev_mo) * 100
             
-            # 3. 獲取 Ticker 物件 info (加入 Retry 機制應對 Rate Limit)
+            # 3. 獲取 Ticker 物件 info (加入 Timeout 概念與 Retry 機制)
             info = {}
-            for attempt in range(2): # 最多兩次嘗試
+            for attempt in range(2): 
                 try:
                     tk = yf.Ticker(ticker)
+                    # 這裡 tk.info 有時會因為網路問題卡死，我們確保它在 try 區塊內
                     info = tk.info if tk else {}
-                    if info: # 抓到資料就跳出
+                    if info: 
                         break
-                except Exception:
+                except Exception as e:
+                    print(f"[INFO-WARN] {ticker} info attempt {attempt+1} failed: {e}")
                     if attempt == 0:
-                        print(f"[RETRY] {ticker} info failed, waiting 2s...")
-                        time.sleep(2)
+                        time.sleep(1.5)
             
             def clean(val, default=0):
                 return round(float(val), 2) if pd.notnull(val) and val is not None else default
@@ -112,8 +113,8 @@ def process_batch(batch_data, monthly_data, tickers, codes_dict, history_counts=
                 "consecutive_days": history_counts.get(ticker, 1) if is_today else history_counts.get(ticker, 0) + 1
             })
             
-            # 雲端抗封鎖：單一股票處理完後隨機延遲 (0.2~0.8s) 模擬人類請求
-            time.sleep(random.uniform(0.2, 0.8))
+            # 雲端抗封鎖：單一股票處理完後隨機延遲 (0.5~1.0s) 模擬人類請求
+            time.sleep(random.uniform(0.5, 1.0))
             
         except Exception as e:
             print(f"[ERROR] Skip {ticker} due to: {e}")
@@ -170,9 +171,9 @@ def run_robust_scanner():
             continue
             
         try:
-            # 1. 批次下載歷史資料
-            data_daily = yf.download(batch_to_do, period='2y', group_by='ticker', threads=True, progress=False)
-            data_monthly = yf.download(batch_to_do, period='2mo', interval='1mo', group_by='ticker', threads=True, progress=False)
+            # 1. 批次下載歷史資料 (關閉多執行緒以提升穩定性，加入 ignore_tz=True)
+            data_daily = yf.download(batch_to_do, period='2y', group_by='ticker', threads=False, progress=False, ignore_tz=True)
+            data_monthly = yf.download(batch_to_do, period='2mo', interval='1mo', group_by='ticker', threads=False, progress=False, ignore_tz=True)
             
             if not data_daily.empty:
                 batch_res = process_batch(data_daily, data_monthly, batch_to_do, codes_dict, history_counts, is_today)
@@ -184,7 +185,7 @@ def run_robust_scanner():
             save_checkpoint(list(done_tickers_set), results)
             
             # 3. 批次間平衡速度與穩定性：避免頻繁觸發 yfinance 的 IP 鎖定
-            time.sleep(1.0)
+            time.sleep(2.0)
             
         except Exception as e:
             print(f"[BATCH-ERROR] Exception in batch: {e}. Moving on...")
