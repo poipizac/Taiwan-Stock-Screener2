@@ -212,36 +212,66 @@ if __name__ == "__main__":
             else:
                 item['consecutive_days'] = consecutive_map.get(t, 0) + 1
         
-        # 儲存結果 (新結構)
+        # 準備最終輸出結構
         today_str = datetime.now().strftime('%Y-%m-%d')
-        output_dict = {
-            "last_run": today_str,
+        final_output = {
+            "scan_date": today_str,
+            "data_date": today_str,
+            "empty_today": False,
             "data": final_results
         }
+
+        # 如果今天沒有篩選結果，嘗試抓取舊資料
+        if len(final_results) == 0:
+            print("[警告] 本次投信突破股篩選結果為空，正在嘗試載入現有資料備份...")
+            if os.path.exists(MOMENTUM_OUTPUT):
+                try:
+                    with open(MOMENTUM_OUTPUT, 'r', encoding='utf-8') as f:
+                        old_json = json.load(f)
+                        if isinstance(old_json, dict):
+                            old_data = old_json.get("data", [])
+                            old_data_date = old_json.get("data_date") or old_json.get("last_run") or today_str
+                        else:
+                            old_data = old_json
+                            old_data_date = today_str
+                        
+                        final_output["data"] = old_data
+                        final_output["data_date"] = old_data_date
+                        final_output["empty_today"] = True
+                        print(f"[系統] 已更新 scan_date，並維持顯示 {old_data_date} 的資料。")
+                except:
+                    final_output["empty_today"] = True
+        
         try:
             with open(MOMENTUM_OUTPUT, 'w', encoding='utf-8') as f:
-                json.dump(output_dict, f, ensure_ascii=False, indent=4)
+                json.dump(final_output, f, ensure_ascii=False, indent=4)
             print(f"[系統] 成功將結果儲存至 {MOMENTUM_OUTPUT}")
         except Exception as e:
             print(f"[錯誤] 儲存 JSON 失敗: {e}")
 
-        df_final = pd.DataFrame(final_results)
-        # 整理欄位名稱以符合用戶要求
-        df_final.rename(columns={
-            'ticker': '代號',
-            'name': '名稱',
-            'price': '現價',
-            'volume': '今日成交量',
-            'avg_vol_5d': '5日均量',
-            'yoy': '營收YoY%',
-            'consecutive_days': '連續進榜(天)'
-        }, inplace=True)
-        
-        # 重新排序顯示欄位 (去掉輔助欄位 stock_id)
-        display_cols = ['代號', '名稱', '現價', '今日成交量', '5日均量', '營收YoY%', '投信近3日買賣超(張)', '連續進榜(天)']
-        print(df_final[display_cols].to_string(index=False))
-        print("\n" + "★"*58)
-        print(f"篩選結算：符合『技術 + 基本 + 籌碼』三面向之終極標的，共 {len(df_final)} 檔。")
+        # 如果 final_results 為空，下面的 DataFrame 操作會報錯，所以加個檢查
+        if len(final_output["data"]) > 0:
+            df_final = pd.DataFrame(final_output["data"])
+            # 整理欄位名稱以符合用戶要求
+            df_final.rename(columns={
+                'ticker': '代號',
+                'name': '名稱',
+                'price': '現價',
+                'volume': '今日成交量',
+                'avg_vol_5d': '5日均量',
+                'yoy': '營收YoY%',
+                'consecutive_days': '連續進榜(天)'
+            }, inplace=True)
+            
+            # 重新排序顯示欄位 (去掉輔助欄位 stock_id)
+            display_cols = ['代號', '名稱', '現價', '今日成交量', '5日均量', '營收YoY%', '投信近3日買賣超(張)', '連續進榜(天)']
+            # 確保欄位都存在
+            cols_to_print = [c for c in display_cols if c in df_final.columns]
+            print(df_final[cols_to_print].to_string(index=False))
+            print("\n" + "★"*58)
+            print(f"篩選結算：符合條件之標的，顯示數量： {len(df_final)} 檔。")
+        else:
+            print("目前無歷史資料也無今日結果。")
     else:
         print("目前無標的同時符合『技術面、基本面與投信買超』之終極條件。")
     print("★"*58)

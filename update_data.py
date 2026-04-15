@@ -40,7 +40,14 @@ def save_checkpoint(done_tickers, results):
     checkpoint = {"done_tickers": done_tickers, "results": results}
     with open(CHECKPOINT_FILE, 'w', encoding='utf-8') as f:
         json.dump(checkpoint, f, ensure_ascii=False, indent=4)
-    output_dict = {"last_run": today_str, "data": results}
+    
+    # 即時更新輸出檔案，採用新結構
+    output_dict = {
+        "scan_date": today_str,
+        "data_date": today_str,
+        "empty_today": False,
+        "data": results
+    }
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(output_dict, f, ensure_ascii=False, indent=4)
 
@@ -140,8 +147,15 @@ def run_robust_scanner():
         try:
             with open(OUTPUT_FILE, 'r', encoding='utf-8') as f:
                 old_json = json.load(f)
-                old_data = old_json.get("data", [])
-                last_run_date = old_json.get("last_run", "")
+                
+                # 支援新舊結構
+                if isinstance(old_json, dict):
+                    old_data = old_json.get("data", [])
+                    last_run_date = old_json.get("scan_date") or old_json.get("last_run", "")
+                else:
+                    old_data = old_json
+                    last_run_date = ""
+
                 today_date = datetime.now().strftime('%Y-%m-%d')
                 is_today = (last_run_date == today_date)
                 for item in old_data:
@@ -176,10 +190,39 @@ def run_robust_scanner():
         print(f"Progress Saved: {len(done_tickers_set)} tickers processed.")
         time.sleep(5) # 批次間休息
 
+    # 最終落地方案：如果最後一刻還是沒抓到任何資料（results是空的）
+    if len(results) == 0:
+        print("[警告] 本次全掃描結果為空，正在嘗試載入現有資料備份...")
+        if os.path.exists(OUTPUT_FILE):
+            try:
+                with open(OUTPUT_FILE, 'r', encoding='utf-8') as f:
+                    old_json = json.load(f)
+                    today_str = datetime.now().strftime('%Y-%m-%d')
+                    
+                    if isinstance(old_json, dict):
+                        old_data = old_json.get("data", [])
+                        old_data_date = old_json.get("data_date") or old_json.get("last_run") or "未知"
+                    else:
+                        old_data = old_json
+                        old_data_date = "未知"
+                    
+                    final_output = {
+                        "scan_date": today_str,
+                        "data_date": old_data_date,
+                        "empty_today": True,
+                        "data": old_data
+                    }
+                    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+                        json.dump(final_output, f, ensure_ascii=False, indent=4)
+                    print(f"[系統] 已更新 scan_date，並維持顯示 {old_data_date} 的資料。")
+            except Exception as e:
+                print(f"[錯誤] 讀取備份資料失敗: {e}")
+    else:
+        print(f"\n--- [COMPLETED] Final Results: {len(results)} ---")
+
     # 清除暫存進度
     if os.path.exists(CHECKPOINT_FILE):
         os.remove(CHECKPOINT_FILE)
-    print(f"\n--- [COMPLETED] Final Results: {len(results)} ---")
 
 if __name__ == "__main__":
     run_robust_scanner()
