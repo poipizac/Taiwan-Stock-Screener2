@@ -49,14 +49,18 @@ def fetch_single_ticker(ticker, codes_dict, history_counts, is_today):
     """ 抓取單一標的完整數據，失敗立刻返回 None 絕不卡死 """
     try:
         # 1. 抓取歷史資料 (強制 3 秒超時)
-        # 注意：不傳入 session，讓 yfinance 使用其優化過的 curl_cffi 機制
         df_daily = yf.download(ticker, period='2y', progress=False, ignore_tz=True, timeout=3)
-        if df_daily.empty:
+        
+        # 防呆檢查：如果 df 為空或缺少必要欄位 'Close'
+        if df_daily.empty or 'Close' not in df_daily.columns:
             return None
             
         # 2. 抓取月線資料 (計算 MoM)
         df_monthly = yf.download(ticker, period='2mo', interval='1mo', progress=False, ignore_tz=True, timeout=3)
         
+        # 即使月線抓取失敗，我們仍可繼續處理日線資料，只需給予 MoM 預設值
+        has_monthly = not df_monthly.empty and 'Close' in df_monthly.columns
+
         hist = df_daily.dropna(subset=['Close'])
         if len(hist) < 200:
             return None
@@ -71,9 +75,10 @@ def fetch_single_ticker(ticker, codes_dict, history_counts, is_today):
         sma200 = hist['Close'].rolling(window=200).mean().iloc[-1]
         high120 = hist['High'].rolling(window=120).max().shift(1).iloc[-1]
         
-        # 月報酬
+        # 月報酬 (Price MoM%)
         mom = 0.0
-        if not df_monthly.empty:
+        if has_monthly:
+            # 確保提取時不會報錯
             hist_mo = df_monthly.dropna(subset=['Close'])
             if len(hist_mo) >= 2:
                 current_mo = hist_mo['Close'].iloc[-1]
