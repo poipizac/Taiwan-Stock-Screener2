@@ -119,8 +119,8 @@ def fetch_single_ticker(ticker, session, codes_dict, history_counts, is_today):
             "consecutive_days": history_counts.get(ticker, 1) if is_today else history_counts.get(ticker, 0) + 1
         }
     except Exception as e:
-        # 如果超時或出錯，紀錄一聲就走，絕不回頭
-        # print(f"[TIMEOUT/ERROR] {ticker}: {e}")
+        # 核心優化：印出具體錯誤原因以便偵測
+        print(f"[{ticker}] 抓取失敗: {e}")
         return None
 
 def run_robust_scanner():
