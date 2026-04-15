@@ -47,8 +47,9 @@ def save_checkpoint(done_tickers, results):
 # --- 核心修改：移除 Session，交由 YF 自行處理 TLS 指紋 ---
 def fetch_single_ticker(ticker, codes_dict, history_counts, is_today):
     """ 抓取單一標的完整數據，失敗立刻返回 None 絕不卡死 """
-    try:
-        tk = yf.Ticker(ticker)
+    for attempt in range(2):
+        try:
+            tk = yf.Ticker(ticker)
         
         # 1. 抓取歷史資料 (改用 tk.history 保證回傳扁平的 DataFrame)
         df_daily = tk.history(period='2y', timeout=3)
@@ -95,7 +96,7 @@ def fetch_single_ticker(ticker, codes_dict, history_counts, is_today):
         def clean(val, default=0):
             return round(float(val), 2) if pd.notnull(val) and val is not None else default
 
-        return {
+        res = {
             "ticker": ticker,
             "name": name,
             "close": clean(last_close),
@@ -109,10 +110,26 @@ def fetch_single_ticker(ticker, codes_dict, history_counts, is_today):
             "industry": industry,
             "consecutive_days": history_counts.get(ticker, 1) if is_today else history_counts.get(ticker, 0) + 1
         }
+        
+        # 強制減速帶：每處理完一檔股票，隨機等待 2~4 秒以稀釋請求頻率
+        time.sleep(random.uniform(2.0, 4.0))
+        return res
+        
     except Exception as e:
-        # 印出具體錯誤原因以便偵測 (保留防護網)
-        print(f"[{ticker}] 抓取失敗: {e}")
-        return None
+        err_msg = str(e)
+        if "Too Many Requests" in err_msg or "Rate limited" in err_msg or "429" in err_msg:
+            print(f"[{ticker}] 觸發 Rate Limit! 暫停 60 秒後重試... (Error: {err_msg})")
+            if attempt == 0:
+                time.sleep(60)
+                continue
+            else:
+                return None
+        else:
+            # 其他錯誤直接印出並放棄
+            print(f"[{ticker}] 抓取失敗: {err_msg}")
+            return None
+    
+    return None
 
 def run_robust_scanner():
     all_tickers = get_all_taiwan_tickers()
@@ -162,9 +179,9 @@ def run_robust_scanner():
                 except Exception as e:
                     print(f"[FUTURE-ERROR] {ticker}: {e}")
         
-        # 每組完成後存檔並稍作休息 (禮貌性延遲)
+        # 每組完成後存檔並稍作休息 (較長的禮貌性延遲)
         save_checkpoint(list(done_tickers_set), results)
-        time.sleep(random.uniform(1.0, 2.0))
+        time.sleep(random.uniform(2.0, 4.0))
 
     print(f"\n--- [COMPLETED] Final Results: {len(results)} ---")
     if os.path.exists(CHECKPOINT_FILE):
