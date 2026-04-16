@@ -41,7 +41,7 @@ def save_checkpoint(done_tickers, results):
     with open(CHECKPOINT_FILE, 'w', encoding='utf-8') as f:
         json.dump(checkpoint, f, ensure_ascii=False, indent=4)
     
-    # 即時更新輸出檔案，採用新結構
+    # 即時更新輸出檔案
     output_dict = {
         "scan_date": today_str,
         "data_date": today_str,
@@ -52,59 +52,49 @@ def save_checkpoint(done_tickers, results):
         json.dump(output_dict, f, ensure_ascii=False, indent=4)
 
 def fetch_single_ticker(ticker, codes_dict, history_counts, is_today):
-    """ 抓取單一標的完整數據 """
+    """ 抓取單一標的完整數據 - 依據 10倍飆股策略 重寫 """
     for attempt in range(2):
         try:
             tk = yf.Ticker(ticker)
 
-            # 1. 抓取歷史資料 (2年長度用以計算SMA200與120高)
-            df_daily = tk.history(period='2y', timeout=5)
+            # 1. 抓取歷史資料 (依照要求：period='1y', timeout=3)
+            hist = tk.history(period='1y', timeout=3)
 
-            if df_daily.empty or 'Close' not in df_daily.columns:
+            if hist.empty or 'Close' not in hist.columns or len(hist) < 200:
                 return None
 
-            # 2. 抓取月線資料 (計算 MoM)
-            df_monthly = tk.history(period='2mo', interval='1mo', timeout=5)
-            has_monthly = not df_monthly.empty and 'Close' in df_monthly.columns
+            # 2. 數據清洗與技術指標計算 (核心重寫內容)
+            hist = hist.dropna(subset=['Close'])
+            
+            # 使用 pandas 算出要求之指標
+            sma200 = hist['Close'].rolling(window=200).mean().iloc[-1]
+            sma10 = hist['Close'].rolling(window=10).mean().iloc[-1]
+            high120 = hist['High'].tail(120).max()
+            close_price = hist['Close'].iloc[-1]
 
-            hist = df_daily.dropna(subset=['Close'])
-            if len(hist) < 200:
+            # 3. 嚴格篩選條件 (if判斷式)，必須同時滿足：
+            # - close_price > sma200 (站上200日均線)
+            # - close_price >= high120 (突破120日新高)
+            # - (sma10 / sma200) <= 2.0 (均線乖離率不可過大)
+            if not (close_price > sma200 and close_price >= high120 and (sma10 / sma200) <= 2.0):
                 return None
+
+            # --- 符合條件，繼續抓取基本面與處理連續天數 ---
+            
+            # 抓取月線資料 (計算 MoM)
+            df_monthly = tk.history(period='2mo', interval='1mo', timeout=3)
+            mom = 0.0
+            if not df_monthly.empty and len(df_monthly) >= 2:
+                current_mo = df_monthly['Close'].iloc[-1]
+                prev_mo = df_monthly['Close'].iloc[-2]
+                if prev_mo > 0:
+                    mom = ((current_mo - prev_mo) / prev_mo) * 100
 
             stock_id = ticker.split('.')[0]
             name = codes_dict[stock_id].name if stock_id in codes_dict else ticker
             industry = codes_dict[stock_id].group if stock_id in codes_dict else '未知'
-
-            # 指標計算
-            last_close = hist['Close'].iloc[-1]
-            sma10 = hist['Close'].rolling(window=10).mean().iloc[-1]
-            sma200 = hist['Close'].rolling(window=200).mean().iloc[-1]
-            # 120日高點濾網 (過去 120 個交易日的最高價，不含今日則用 shift(1))
-            high120 = hist['High'].rolling(window=120).max().shift(1).iloc[-1]
-
-            # --- 10倍飆股策略核心過濾條件 ---
-            # 1. 站上長均線：Close > 200MA
-            cond1 = last_close > sma200
-            # 2. 突破新高：Close >= 120日高點
-            cond2 = last_close >= high120
-            # 3. 均線糾結濾網：10MA/200MA < 2
-            ratio = sma10 / sma200 if sma200 > 0 else 0
-            cond3 = ratio < 2.0
-
-            if not (cond1 and cond2 and cond3):
-                return None
-
-            # 月報酬 (Price MoM%)
-            mom = 0.0
-            if has_monthly:
-                hist_mo = df_monthly.dropna(subset=['Close'])
-                if len(hist_mo) >= 2:
-                    current_mo = hist_mo['Close'].iloc[-1]
-                    prev_mo = hist_mo['Close'].iloc[-2]
-                    if prev_mo > 0:
-                        mom = ((current_mo - prev_mo) / prev_mo) * 100
-
-            # 3. 抓取基本面 info
+            
+            # 抓取基本面 info
             info = tk.info
 
             def clean(val, default=0):
@@ -113,13 +103,14 @@ def fetch_single_ticker(ticker, codes_dict, history_counts, is_today):
                 except:
                     return default
 
+            # 將結果存入結果列表中 (對應前端欄位)
             res = {
                 "ticker": ticker,
                 "name": name,
-                "close": clean(last_close),
+                "close": clean(close_price),
                 "sma200": clean(sma200),
                 "high120": clean(high120),
-                "ratio": clean(ratio),
+                "ratio": clean(sma10 / sma200 if sma200 > 0 else 0),
                 "pb": clean(info.get('priceToBook')),
                 "eps": clean(info.get('trailingEps')),
                 "yoy": clean(info.get('revenueGrowth', 0) * 100),
@@ -177,14 +168,14 @@ def run_robust_scanner():
         except: pass
 
     tickers_to_scan = [t for t in all_tickers if t not in done_tickers_set]
-    print(f"[ENGINE-V3.2] Starting Scanner. Remaining: {len(tickers_to_scan)}/{len(all_tickers)}")
+    print(f"[ENGINE-V4.0] 10倍飆股策略啟動. 剩餘掃描: {len(tickers_to_scan)}/{len(all_tickers)}")
 
     # 分批處理
     chunk_size = 30
     for i in range(0, len(tickers_to_scan), chunk_size):
         chunk = tickers_to_scan[i:i + chunk_size]
         
-        # 併發執行 (限制 max_workers 以降低請求強度)
+        # 併發執行
         with ThreadPoolExecutor(max_workers=5) as executor:
             future_to_ticker = {executor.submit(fetch_single_ticker, t, codes_dict, history_counts, is_today): t for t in chunk}
             
@@ -203,9 +194,9 @@ def run_robust_scanner():
         print(f"Progress Saved: {len(done_tickers_set)} tickers processed.")
         time.sleep(5) # 批次間休息
 
-    # 最終落地方案：如果最後一刻還是沒抓到任何資料（results是空的）
+    # 最終落地方案：如果最後一刻還是沒抓到任何資料
     if len(results) == 0:
-        print("[警告] 本次全掃描結果為空，正在嘗試載入現有資料備份...")
+        print("[警告] 本次掃描無符合條件之標的，正在執行空名單保護邏輯...")
         if os.path.exists(OUTPUT_FILE):
             try:
                 with open(OUTPUT_FILE, 'r', encoding='utf-8') as f:
@@ -227,11 +218,11 @@ def run_robust_scanner():
                     }
                     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
                         json.dump(final_output, f, ensure_ascii=False, indent=4)
-                    print(f"[系統] 已更新 scan_date，且今日無標的 (empty_today: true)，維持顯示 {old_data_date} 的資料。")
+                    print(f"[系統] 已更新 scan_date，標記為 empty_today，維持顯示 {old_data_date} 的資料。")
             except Exception as e:
                 print(f"[錯誤] 讀取備份資料失敗: {e}")
     else:
-        print(f"\n--- [COMPLETED] Final Results: {len(results)} ---")
+        print(f"\n--- [完成] 最終篩選出 {len(results)} 檔標的 ---")
 
     # 清除暫存進度
     if os.path.exists(CHECKPOINT_FILE):
