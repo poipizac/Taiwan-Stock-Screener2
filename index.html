@@ -114,7 +114,7 @@
         <input type="radio" class="btn-check" name="strategy" id="strat_momentum" autocomplete="off"
             onclick="switchDataSource('momentum_data.json', 'momentum')">
         <label class="btn btn-outline-danger btn-strategy btn-momentum" for="strat_momentum">🔥 投信爆量突破股 (短線)</label>
-        
+
         <div id="dataDateDisplay" class="text-muted mt-3" style="font-size: 0.95em;"></div>
     </div>
 
@@ -158,10 +158,10 @@
             try {
                 const res = await fetch(currentSource + '?t=' + new Date().getTime());
                 const result = await res.json();
-                
+
                 // 支援新版 {"data": [...]} 與舊版純陣列結構
                 const stockList = Array.isArray(result) ? result : (result.data || []);
-                
+
                 // 更新日期顯示邏輯
                 const scanDate = result.scan_date || result.last_run || "未知";
                 const dataDate = result.data_date || result.last_run || "未知";
@@ -286,7 +286,7 @@
                     if (currentStrategy === 'original') {
                         return (close > sma200);
                     } else if (currentStrategy === 'ten_fold') {
-                        return (close > sma200 && close >= h120 && ratio <= 1.2);
+                        return (close > sma200 && close >= h120 && ratio < 2.0);
                     }
                     return true;
                 });

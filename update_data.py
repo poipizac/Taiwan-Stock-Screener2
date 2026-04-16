@@ -79,7 +79,20 @@ def fetch_single_ticker(ticker, codes_dict, history_counts, is_today):
             last_close = hist['Close'].iloc[-1]
             sma10 = hist['Close'].rolling(window=10).mean().iloc[-1]
             sma200 = hist['Close'].rolling(window=200).mean().iloc[-1]
+            # 120日高點濾網 (過去 120 個交易日的最高價，不含今日則用 shift(1))
             high120 = hist['High'].rolling(window=120).max().shift(1).iloc[-1]
+
+            # --- 10倍飆股策略核心過濾條件 ---
+            # 1. 站上長均線：Close > 200MA
+            cond1 = last_close > sma200
+            # 2. 突破新高：Close >= 120日高點
+            cond2 = last_close >= high120
+            # 3. 均線糾結濾網：10MA/200MA < 2
+            ratio = sma10 / sma200 if sma200 > 0 else 0
+            cond3 = ratio < 2.0
+
+            if not (cond1 and cond2 and cond3):
+                return None
 
             # 月報酬 (Price MoM%)
             mom = 0.0
@@ -106,7 +119,7 @@ def fetch_single_ticker(ticker, codes_dict, history_counts, is_today):
                 "close": clean(last_close),
                 "sma200": clean(sma200),
                 "high120": clean(high120),
-                "ratio": clean(sma10 / sma200 if sma200 > 0 else 0),
+                "ratio": clean(ratio),
                 "pb": clean(info.get('priceToBook')),
                 "eps": clean(info.get('trailingEps')),
                 "yoy": clean(info.get('revenueGrowth', 0) * 100),
@@ -214,7 +227,7 @@ def run_robust_scanner():
                     }
                     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
                         json.dump(final_output, f, ensure_ascii=False, indent=4)
-                    print(f"[系統] 已更新 scan_date，並維持顯示 {old_data_date} 的資料。")
+                    print(f"[系統] 已更新 scan_date，且今日無標的 (empty_today: true)，維持顯示 {old_data_date} 的資料。")
             except Exception as e:
                 print(f"[錯誤] 讀取備份資料失敗: {e}")
     else:
