@@ -1,40 +1,18 @@
 {
-    "scan_date": "2026-04-16",
-    "data_date": "2026-04-16",
+    "scan_date": "2026-04-17",
+    "data_date": "2026-04-17",
     "empty_today": false,
     "data": [
-        {
-            "ticker": "5314.TWO",
-            "stock_id": "5314",
-            "name": "世紀*",
-            "price": 81.0,
-            "volume": 9489629,
-            "avg_vol_5d": 3676407.0,
-            "yoy": "317.6%",
-            "投信近3日買賣超(張)": 7.0,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "6584.TWO",
-            "stock_id": "6584",
-            "name": "南俊國際",
-            "price": 676.0,
-            "volume": 1645310,
-            "avg_vol_5d": 617274.0,
-            "yoy": "34.0%",
-            "投信近3日買賣超(張)": 51.0,
-            "consecutive_days": 1
-        },
         {
             "ticker": "8150.TW",
             "stock_id": "8150",
             "name": "南茂",
-            "price": 73.7,
-            "volume": 50398385,
-            "avg_vol_5d": 17113855.0,
+            "price": 67.3,
+            "volume": 72507935,
+            "avg_vol_5d": 25302734.0,
             "yoy": "20.8%",
-            "投信近3日買賣超(張)": 25.0,
-            "consecutive_days": 1
+            "投信近3日買賣超(張)": 30.0,
+            "consecutive_days": 2
         }
     ]
 }

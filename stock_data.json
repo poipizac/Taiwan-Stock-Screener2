@@ -200,20 +200,6 @@
             "consecutive_days": 1
         },
         {
-            "ticker": "3581.TWO",
-            "name": "博磊",
-            "close": 119.0,
-            "sma200": 56.63,
-            "high120": 119.0,
-            "ratio": 1.48,
-            "pb": 6.7,
-            "eps": 0.81,
-            "yoy": 41.5,
-            "mom": 78.14,
-            "industry": "半導體業",
-            "consecutive_days": 5
-        },
-        {
             "ticker": "3587.TWO",
             "name": "閎康",
             "close": 367.0,
@@ -226,6 +212,20 @@
             "mom": 70.7,
             "industry": "其他電子業",
             "consecutive_days": 1
+        },
+        {
+            "ticker": "3581.TWO",
+            "name": "博磊",
+            "close": 119.0,
+            "sma200": 56.63,
+            "high120": 119.0,
+            "ratio": 1.48,
+            "pb": 6.7,
+            "eps": 0.81,
+            "yoy": 41.5,
+            "mom": 78.14,
+            "industry": "半導體業",
+            "consecutive_days": 5
         },
         {
             "ticker": "3693.TWO",
@@ -256,20 +256,6 @@
             "consecutive_days": 1
         },
         {
-            "ticker": "4904.TW",
-            "name": "遠傳",
-            "close": 97.4,
-            "sma200": 88.73,
-            "high120": 97.4,
-            "ratio": 1.07,
-            "pb": 3.81,
-            "eps": 3.8,
-            "yoy": 12.1,
-            "mom": 5.98,
-            "industry": "通信網路業",
-            "consecutive_days": 1
-        },
-        {
             "ticker": "4908.TWO",
             "name": "前鼎",
             "close": 170.5,
@@ -280,6 +266,20 @@
             "eps": 1.97,
             "yoy": -33.3,
             "mom": 69.65,
+            "industry": "通信網路業",
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "4904.TW",
+            "name": "遠傳",
+            "close": 97.4,
+            "sma200": 88.73,
+            "high120": 97.4,
+            "ratio": 1.07,
+            "pb": 3.81,
+            "eps": 3.8,
+            "yoy": 12.1,
+            "mom": 5.98,
             "industry": "通信網路業",
             "consecutive_days": 1
         },
@@ -298,20 +298,6 @@
             "consecutive_days": 1
         },
         {
-            "ticker": "4958.TW",
-            "name": "臻鼎-KY",
-            "close": 282.0,
-            "sma200": 161.13,
-            "high120": 282.0,
-            "ratio": 1.56,
-            "pb": 2.43,
-            "eps": 6.77,
-            "yoy": 1.3,
-            "mom": 36.56,
-            "industry": "電子零組件業",
-            "consecutive_days": 1
-        },
-        {
             "ticker": "4956.TW",
             "name": "光鋐",
             "close": 49.75,
@@ -326,17 +312,17 @@
             "consecutive_days": 2
         },
         {
-            "ticker": "4977.TW",
-            "name": "眾達-KY",
-            "close": 235.5,
-            "sma200": 126.74,
-            "high120": 235.5,
+            "ticker": "4958.TW",
+            "name": "臻鼎-KY",
+            "close": 282.0,
+            "sma200": 161.13,
+            "high120": 282.0,
             "ratio": 1.56,
-            "pb": 4.61,
-            "eps": 4.42,
-            "yoy": -36.0,
-            "mom": 33.05,
-            "industry": "通信網路業",
+            "pb": 2.43,
+            "eps": 6.77,
+            "yoy": 1.3,
+            "mom": 36.56,
+            "industry": "電子零組件業",
             "consecutive_days": 1
         },
         {
@@ -354,17 +340,17 @@
             "consecutive_days": 5
         },
         {
-            "ticker": "5244.TW",
-            "name": "弘凱",
-            "close": 46.2,
-            "sma200": 41.82,
-            "high120": 46.2,
-            "ratio": 0.97,
-            "pb": 1.77,
-            "eps": 0.5,
-            "yoy": 0.1,
-            "mom": 22.87,
-            "industry": "光電業",
+            "ticker": "4977.TW",
+            "name": "眾達-KY",
+            "close": 235.5,
+            "sma200": 126.74,
+            "high120": 235.5,
+            "ratio": 1.56,
+            "pb": 4.61,
+            "eps": 4.42,
+            "yoy": -36.0,
+            "mom": 33.05,
+            "industry": "通信網路業",
             "consecutive_days": 1
         },
         {
@@ -382,17 +368,17 @@
             "consecutive_days": 1
         },
         {
-            "ticker": "6146.TWO",
-            "name": "耕興",
-            "close": 221.0,
-            "sma200": 175.22,
-            "high120": 221.0,
-            "ratio": 1.16,
-            "pb": 3.91,
-            "eps": 10.74,
-            "yoy": 1.0,
-            "mom": 16.93,
-            "industry": "其他電子業",
+            "ticker": "5244.TW",
+            "name": "弘凱",
+            "close": 46.2,
+            "sma200": 41.82,
+            "high120": 46.2,
+            "ratio": 0.97,
+            "pb": 1.77,
+            "eps": 0.5,
+            "yoy": 0.1,
+            "mom": 22.87,
+            "industry": "光電業",
             "consecutive_days": 1
         },
         {
@@ -407,6 +393,20 @@
             "yoy": -3.3,
             "mom": 57.58,
             "industry": "電子零組件業",
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6146.TWO",
+            "name": "耕興",
+            "close": 221.0,
+            "sma200": 175.22,
+            "high120": 221.0,
+            "ratio": 1.16,
+            "pb": 3.91,
+            "eps": 10.74,
+            "yoy": 1.0,
+            "mom": 16.93,
+            "industry": "其他電子業",
             "consecutive_days": 1
         },
         {
@@ -438,20 +438,6 @@
             "consecutive_days": 1
         },
         {
-            "ticker": "6278.TW",
-            "name": "台表科",
-            "close": 157.0,
-            "sma200": 102.52,
-            "high120": 157.0,
-            "ratio": 1.13,
-            "pb": 2.0,
-            "eps": 9.32,
-            "yoy": 2.0,
-            "mom": 69.73,
-            "industry": "光電業",
-            "consecutive_days": 1
-        },
-        {
             "ticker": "6415.TW",
             "name": "矽力*-KY",
             "close": 332.5,
@@ -463,6 +449,20 @@
             "yoy": 5.5,
             "mom": 19.37,
             "industry": "半導體業",
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6278.TW",
+            "name": "台表科",
+            "close": 157.0,
+            "sma200": 102.52,
+            "high120": 157.0,
+            "ratio": 1.13,
+            "pb": 2.0,
+            "eps": 9.32,
+            "yoy": 2.0,
+            "mom": 69.73,
+            "industry": "光電業",
             "consecutive_days": 1
         },
         {
@@ -606,34 +606,6 @@
             "consecutive_days": 1
         },
         {
-            "ticker": "8182.TWO",
-            "name": "加高",
-            "close": 39.05,
-            "sma200": 26.56,
-            "high120": 39.05,
-            "ratio": 1.18,
-            "pb": 1.15,
-            "eps": 0.44,
-            "yoy": 1.9,
-            "mom": 37.99,
-            "industry": "電子零組件業",
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "8147.TWO",
-            "name": "正淩",
-            "close": 162.0,
-            "sma200": 113.6,
-            "high120": 162.0,
-            "ratio": 1.29,
-            "pb": 4.47,
-            "eps": 2.88,
-            "yoy": 28.4,
-            "mom": 24.62,
-            "industry": "電子零組件業",
-            "consecutive_days": 1
-        },
-        {
             "ticker": "8215.TW",
             "name": "明基材",
             "close": 29.25,
@@ -662,16 +634,30 @@
             "consecutive_days": 1
         },
         {
-            "ticker": "8358.TWO",
-            "name": "金居",
-            "close": 367.5,
-            "sma200": 211.96,
-            "high120": 367.5,
-            "ratio": 1.38,
-            "pb": 12.35,
-            "eps": 4.21,
-            "yoy": 26.8,
-            "mom": 55.39,
+            "ticker": "8147.TWO",
+            "name": "正淩",
+            "close": 162.0,
+            "sma200": 113.6,
+            "high120": 162.0,
+            "ratio": 1.29,
+            "pb": 4.47,
+            "eps": 2.88,
+            "yoy": 28.4,
+            "mom": 24.62,
+            "industry": "電子零組件業",
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "8182.TWO",
+            "name": "加高",
+            "close": 39.05,
+            "sma200": 26.56,
+            "high120": 39.05,
+            "ratio": 1.18,
+            "pb": 1.15,
+            "eps": 0.44,
+            "yoy": 1.9,
+            "mom": 37.99,
             "industry": "電子零組件業",
             "consecutive_days": 1
         },
@@ -687,6 +673,20 @@
             "yoy": 5.7,
             "mom": 44.28,
             "industry": "半導體業",
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "8358.TWO",
+            "name": "金居",
+            "close": 367.5,
+            "sma200": 211.96,
+            "high120": 367.5,
+            "ratio": 1.38,
+            "pb": 12.35,
+            "eps": 4.21,
+            "yoy": 26.8,
+            "mom": 55.39,
+            "industry": "電子零組件業",
             "consecutive_days": 1
         },
         {
