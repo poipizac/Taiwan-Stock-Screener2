@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-04-17",
-    "data_date": "2026-04-17",
+    "scan_date": "2026-04-18",
+    "data_date": "2026-04-18",
     "empty_today": false,
     "data": [
         {
@@ -8,11 +8,11 @@
             "stock_id": "8150",
             "name": "南茂",
             "price": 67.3,
-            "volume": 72507935,
+            "volume": 72084287,
             "avg_vol_5d": 25302734.0,
             "yoy": "20.8%",
             "投信近3日買賣超(張)": 30.0,
-            "consecutive_days": 2
+            "consecutive_days": 3
         }
     ]
 }
