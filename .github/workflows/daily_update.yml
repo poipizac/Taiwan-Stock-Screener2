@@ -3,8 +3,8 @@ name: Daily Stock Update
 # 設定觸發條件
 on:
   schedule:
-    # 台灣時間 18:30 (UTC 10:30) 執行
-    - cron: '43 10 * * *'
+    # 對應台灣時間 19:43 執行
+    - cron: '43 11 * * *'
   
   workflow_dispatch: 
 
