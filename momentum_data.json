@@ -1,18 +1,18 @@
 {
-    "scan_date": "2026-04-18",
-    "data_date": "2026-04-18",
+    "scan_date": "2026-04-21",
+    "data_date": "2026-04-21",
     "empty_today": false,
     "data": [
         {
-            "ticker": "8150.TW",
-            "stock_id": "8150",
-            "name": "南茂",
-            "price": 67.3,
-            "volume": 72084287,
-            "avg_vol_5d": 25302734.0,
-            "yoy": "20.8%",
-            "投信近3日買賣超(張)": 30.0,
-            "consecutive_days": 3
+            "ticker": "2451.TW",
+            "stock_id": "2451",
+            "name": "創見",
+            "price": 265.5,
+            "volume": 13307614,
+            "avg_vol_5d": 6440441.0,
+            "yoy": "171.9%",
+            "投信近3日買賣超(張)": 216.1,
+            "consecutive_days": 1
         }
     ]
 }
