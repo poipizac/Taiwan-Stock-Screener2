@@ -1,17 +1,50 @@
 {
-    "scan_date": "2026-04-21",
-    "data_date": "2026-04-21",
+    "scan_date": "2026-04-22",
+    "data_date": "2026-04-22",
     "empty_today": false,
     "data": [
         {
-            "ticker": "2451.TW",
-            "stock_id": "2451",
-            "name": "創見",
-            "price": 265.5,
-            "volume": 13307614,
-            "avg_vol_5d": 6440441.0,
-            "yoy": "171.9%",
-            "投信近3日買賣超(張)": 216.1,
+            "ticker": "2317.TW",
+            "stock_id": "2317",
+            "name": "鴻海",
+            "price": 221.0,
+            "volume": 139061095,
+            "avg_vol_5d": 51002499.0,
+            "yoy": "22.3%",
+            "投信近3日買賣超(張)": 5442.1,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "2421.TW",
+            "stock_id": "2421",
+            "name": "建準",
+            "price": 147.0,
+            "volume": 10486964,
+            "avg_vol_5d": 4945860.0,
+            "yoy": "27.5%",
+            "投信近3日買賣超(張)": 3.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "3260.TWO",
+            "stock_id": "3260",
+            "name": "威剛",
+            "price": 421.5,
+            "volume": 50846577,
+            "avg_vol_5d": 23336888.0,
+            "yoy": "60.9%",
+            "投信近3日買賣超(張)": 607.1,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "3264.TWO",
+            "stock_id": "3264",
+            "name": "欣銓",
+            "price": 210.0,
+            "volume": 35585086,
+            "avg_vol_5d": 16862867.0,
+            "yoy": "20.4%",
+            "投信近3日買賣超(張)": 4406.4,
             "consecutive_days": 1
         }
     ]
