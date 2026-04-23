@@ -1,50 +1,39 @@
 {
-    "scan_date": "2026-04-22",
-    "data_date": "2026-04-22",
+    "scan_date": "2026-04-23",
+    "data_date": "2026-04-23",
     "empty_today": false,
     "data": [
         {
             "ticker": "2317.TW",
             "stock_id": "2317",
             "name": "鴻海",
-            "price": 221.0,
-            "volume": 139061095,
-            "avg_vol_5d": 51002499.0,
+            "price": 225.0,
+            "volume": 172426367,
+            "avg_vol_5d": 64361358.0,
             "yoy": "22.3%",
-            "投信近3日買賣超(張)": 5442.1,
+            "投信近3日買賣超(張)": 5918.4,
+            "consecutive_days": 2
+        },
+        {
+            "ticker": "3665.TW",
+            "stock_id": "3665",
+            "name": "貿聯-KY",
+            "price": 2755.0,
+            "volume": 6669740,
+            "avg_vol_5d": 2620113.0,
+            "yoy": "37.3%",
+            "投信近3日買賣超(張)": 358.9,
             "consecutive_days": 1
         },
         {
-            "ticker": "2421.TW",
-            "stock_id": "2421",
-            "name": "建準",
-            "price": 147.0,
-            "volume": 10486964,
-            "avg_vol_5d": 4945860.0,
-            "yoy": "27.5%",
-            "投信近3日買賣超(張)": 3.0,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "3260.TWO",
-            "stock_id": "3260",
-            "name": "威剛",
-            "price": 421.5,
-            "volume": 50846577,
-            "avg_vol_5d": 23336888.0,
-            "yoy": "60.9%",
-            "投信近3日買賣超(張)": 607.1,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "3264.TWO",
-            "stock_id": "3264",
-            "name": "欣銓",
-            "price": 210.0,
-            "volume": 35585086,
-            "avg_vol_5d": 16862867.0,
-            "yoy": "20.4%",
-            "投信近3日買賣超(張)": 4406.4,
+            "ticker": "6531.TW",
+            "stock_id": "6531",
+            "name": "愛普*",
+            "price": 785.0,
+            "volume": 27351827,
+            "avg_vol_5d": 7952184.0,
+            "yoy": "52.5%",
+            "投信近3日買賣超(張)": 409.0,
             "consecutive_days": 1
         }
     ]
