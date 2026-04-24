@@ -1,39 +1,28 @@
 {
-    "scan_date": "2026-04-23",
-    "data_date": "2026-04-23",
+    "scan_date": "2026-04-24",
+    "data_date": "2026-04-24",
     "empty_today": false,
     "data": [
         {
-            "ticker": "2317.TW",
-            "stock_id": "2317",
-            "name": "鴻海",
-            "price": 225.0,
-            "volume": 172426367,
-            "avg_vol_5d": 64361358.0,
-            "yoy": "22.3%",
-            "投信近3日買賣超(張)": 5918.4,
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "3665.TW",
-            "stock_id": "3665",
-            "name": "貿聯-KY",
-            "price": 2755.0,
-            "volume": 6669740,
-            "avg_vol_5d": 2620113.0,
-            "yoy": "37.3%",
-            "投信近3日買賣超(張)": 358.9,
+            "ticker": "2059.TW",
+            "stock_id": "2059",
+            "name": "川湖",
+            "price": 3795.0,
+            "volume": 1668396,
+            "avg_vol_5d": 785833.0,
+            "yoy": "59.7%",
+            "投信近3日買賣超(張)": 198.1,
             "consecutive_days": 1
         },
         {
-            "ticker": "6531.TW",
-            "stock_id": "6531",
-            "name": "愛普*",
-            "price": 785.0,
-            "volume": 27351827,
-            "avg_vol_5d": 7952184.0,
-            "yoy": "52.5%",
-            "投信近3日買賣超(張)": 409.0,
+            "ticker": "2855.TW",
+            "stock_id": "2855",
+            "name": "統一證",
+            "price": 35.25,
+            "volume": 16734720,
+            "avg_vol_5d": 5560722.0,
+            "yoy": "115.0%",
+            "投信近3日買賣超(張)": 393.0,
             "consecutive_days": 1
         }
     ]
