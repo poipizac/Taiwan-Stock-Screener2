@@ -1,29 +1,18 @@
 {
-    "scan_date": "2026-04-26",
-    "data_date": "2026-04-26",
+    "scan_date": "2026-04-27",
+    "data_date": "2026-04-27",
     "empty_today": false,
     "data": [
         {
-            "ticker": "2059.TW",
-            "stock_id": "2059",
-            "name": "川湖",
-            "price": 3795.0,
-            "volume": 1582435,
-            "avg_vol_5d": 785833.0,
-            "yoy": "59.7%",
-            "投信近3日買賣超(張)": 198.1,
-            "consecutive_days": 4
-        },
-        {
-            "ticker": "2855.TW",
-            "stock_id": "2855",
-            "name": "統一證",
-            "price": 35.25,
-            "volume": 16698439,
-            "avg_vol_5d": 5560722.0,
-            "yoy": "115.0%",
-            "投信近3日買賣超(張)": 393.0,
-            "consecutive_days": 2
+            "ticker": "2330.TW",
+            "stock_id": "2330",
+            "name": "台積電",
+            "price": 2265.0,
+            "volume": 76616040,
+            "avg_vol_5d": 33944844.0,
+            "yoy": "35.1%",
+            "投信近3日買賣超(張)": 7206.3,
+            "consecutive_days": 1
         }
     ]
 }
