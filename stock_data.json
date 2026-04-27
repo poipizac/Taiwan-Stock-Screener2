@@ -116,20 +116,6 @@
             "consecutive_days": 1
         },
         {
-            "ticker": "6441.TWO",
-            "name": "廣錠",
-            "close": 27.6,
-            "sma200": 24.03,
-            "high120": 27.6,
-            "ratio": 0.94,
-            "pb": 1.44,
-            "eps": -5.16,
-            "yoy": -71.7,
-            "mom": 40.1,
-            "industry": "電腦及週邊設備業",
-            "consecutive_days": 1
-        },
-        {
             "ticker": "6435.TWO",
             "name": "大中",
             "close": 200.5,
@@ -141,6 +127,20 @@
             "yoy": 26.8,
             "mom": 38.28,
             "industry": "半導體業",
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6441.TWO",
+            "name": "廣錠",
+            "close": 27.6,
+            "sma200": 24.03,
+            "high120": 27.6,
+            "ratio": 0.94,
+            "pb": 1.44,
+            "eps": -5.16,
+            "yoy": -71.7,
+            "mom": 40.1,
+            "industry": "電腦及週邊設備業",
             "consecutive_days": 1
         },
         {
