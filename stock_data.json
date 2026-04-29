@@ -46,6 +46,20 @@
             "consecutive_days": 1
         },
         {
+            "ticker": "3511.TWO",
+            "name": "矽瑪",
+            "close": 23.2,
+            "sma200": 20.53,
+            "high120": 23.2,
+            "ratio": 1.03,
+            "pb": 1.43,
+            "eps": -1.18,
+            "yoy": 1.1,
+            "mom": 27.47,
+            "industry": "電子零組件業",
+            "consecutive_days": 1
+        },
+        {
             "ticker": "3455.TWO",
             "name": "由田",
             "close": 239.0,
@@ -60,17 +74,17 @@
             "consecutive_days": 1
         },
         {
-            "ticker": "3511.TWO",
-            "name": "矽瑪",
-            "close": 23.2,
-            "sma200": 20.53,
-            "high120": 23.2,
-            "ratio": 1.03,
-            "pb": 1.43,
-            "eps": -1.18,
-            "yoy": 1.1,
-            "mom": 27.47,
-            "industry": "電子零組件業",
+            "ticker": "4949.TW",
+            "name": "有成精密",
+            "close": 102.5,
+            "sma200": 47.29,
+            "high120": 102.5,
+            "ratio": 1.92,
+            "pb": 4.16,
+            "eps": 1.89,
+            "yoy": 3.4,
+            "mom": 56.58,
+            "industry": "光電業",
             "consecutive_days": 1
         },
         {
@@ -88,17 +102,17 @@
             "consecutive_days": 6
         },
         {
-            "ticker": "4949.TW",
-            "name": "有成精密",
-            "close": 102.5,
-            "sma200": 47.29,
-            "high120": 102.5,
-            "ratio": 1.92,
-            "pb": 4.16,
-            "eps": 1.89,
-            "yoy": 3.4,
-            "mom": 56.58,
-            "industry": "光電業",
+            "ticker": "6197.TW",
+            "name": "佳必琪",
+            "close": 206.5,
+            "sma200": 156.27,
+            "high120": 206.5,
+            "ratio": 1.19,
+            "pb": 5.02,
+            "eps": 8.29,
+            "yoy": 11.6,
+            "mom": 30.28,
+            "industry": "電子零組件業",
             "consecutive_days": 1
         },
         {
@@ -113,20 +127,6 @@
             "yoy": -11.4,
             "mom": 61.4,
             "industry": "通信網路業",
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "6197.TW",
-            "name": "佳必琪",
-            "close": 206.5,
-            "sma200": 156.27,
-            "high120": 206.5,
-            "ratio": 1.19,
-            "pb": 5.02,
-            "eps": 8.29,
-            "yoy": 11.6,
-            "mom": 30.28,
-            "industry": "電子零組件業",
             "consecutive_days": 1
         },
         {
