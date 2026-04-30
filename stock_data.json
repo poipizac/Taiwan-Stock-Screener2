@@ -4,20 +4,6 @@
     "empty_today": false,
     "data": [
         {
-            "ticker": "1595.TWO",
-            "name": "川寶",
-            "close": 72.8,
-            "sma200": 39.6,
-            "high120": 72.8,
-            "ratio": 1.53,
-            "pb": 1.44,
-            "eps": -1.95,
-            "yoy": -11.1,
-            "mom": 81.55,
-            "industry": "電子零組件業",
-            "consecutive_days": 1
-        },
-        {
             "ticker": "1597.TW",
             "name": "直得",
             "close": 143.5,
@@ -29,6 +15,20 @@
             "yoy": 32.3,
             "mom": 69.82,
             "industry": "電機機械",
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "1595.TWO",
+            "name": "川寶",
+            "close": 72.8,
+            "sma200": 39.6,
+            "high120": 72.8,
+            "ratio": 1.53,
+            "pb": 1.44,
+            "eps": -1.95,
+            "yoy": -11.1,
+            "mom": 81.55,
+            "industry": "電子零組件業",
             "consecutive_days": 1
         },
         {
@@ -102,20 +102,6 @@
             "consecutive_days": 7
         },
         {
-            "ticker": "6224.TW",
-            "name": "聚鼎",
-            "close": 73.3,
-            "sma200": 43.3,
-            "high120": 73.3,
-            "ratio": 1.43,
-            "pb": 2.84,
-            "eps": 0.66,
-            "yoy": -10.5,
-            "mom": 91.86,
-            "industry": "電子零組件業",
-            "consecutive_days": 2
-        },
-        {
             "ticker": "6234.TWO",
             "name": "高僑",
             "close": 52.8,
@@ -127,6 +113,20 @@
             "yoy": -6.4,
             "mom": 89.25,
             "industry": "光電業",
+            "consecutive_days": 2
+        },
+        {
+            "ticker": "6224.TW",
+            "name": "聚鼎",
+            "close": 73.3,
+            "sma200": 43.3,
+            "high120": 73.3,
+            "ratio": 1.43,
+            "pb": 2.84,
+            "eps": 0.66,
+            "yoy": -10.5,
+            "mom": 91.86,
+            "industry": "電子零組件業",
             "consecutive_days": 2
         },
         {
@@ -144,20 +144,6 @@
             "consecutive_days": 3
         },
         {
-            "ticker": "8027.TWO",
-            "name": "鈦昇",
-            "close": 193.5,
-            "sma200": 101.08,
-            "high120": 193.5,
-            "ratio": 1.57,
-            "pb": 7.68,
-            "eps": -0.93,
-            "yoy": 67.5,
-            "mom": 39.71,
-            "industry": "電機機械",
-            "consecutive_days": 1
-        },
-        {
             "ticker": "8064.TWO",
             "name": "東捷",
             "close": 104.0,
@@ -170,6 +156,20 @@
             "mom": 64.3,
             "industry": "光電業",
             "consecutive_days": 2
+        },
+        {
+            "ticker": "8027.TWO",
+            "name": "鈦昇",
+            "close": 193.5,
+            "sma200": 101.08,
+            "high120": 193.5,
+            "ratio": 1.57,
+            "pb": 7.68,
+            "eps": -0.93,
+            "yoy": 67.5,
+            "mom": 39.71,
+            "industry": "電機機械",
+            "consecutive_days": 1
         },
         {
             "ticker": "8291.TWO",
