@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-04-30",
-    "data_date": "2026-04-30",
+    "scan_date": "2026-05-01",
+    "data_date": "2026-05-01",
     "empty_today": false,
     "data": [
         {
@@ -8,22 +8,22 @@
             "stock_id": "2455",
             "name": "全新",
             "price": 347.5,
-            "volume": 24605041,
+            "volume": 24156364,
             "avg_vol_5d": 10906084.0,
             "yoy": "32.8%",
             "投信近3日買賣超(張)": 578.0,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "2467.TW",
             "stock_id": "2467",
             "name": "志聖",
             "price": 609.0,
-            "volume": 5894745,
+            "volume": 5755364,
             "avg_vol_5d": 1603669.0,
             "yoy": "30.8%",
             "投信近3日買賣超(張)": 61.0,
-            "consecutive_days": 2
+            "consecutive_days": 3
         }
     ]
 }
