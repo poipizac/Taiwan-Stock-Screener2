@@ -1,29 +1,40 @@
 {
-    "scan_date": "2026-05-03",
-    "data_date": "2026-05-03",
+    "scan_date": "2026-05-04",
+    "data_date": "2026-05-04",
     "empty_today": false,
     "data": [
+        {
+            "ticker": "1785.TWO",
+            "stock_id": "1785",
+            "name": "光洋科",
+            "price": 170.0,
+            "volume": 48620099,
+            "avg_vol_5d": 19841908.0,
+            "yoy": "36.1%",
+            "投信近3日買賣超(張)": 332.0,
+            "consecutive_days": 1
+        },
         {
             "ticker": "2455.TW",
             "stock_id": "2455",
             "name": "全新",
-            "price": 347.5,
-            "volume": 24156364,
-            "avg_vol_5d": 10906084.0,
+            "price": 355.0,
+            "volume": 33277842,
+            "avg_vol_5d": 14814659.0,
             "yoy": "32.8%",
-            "投信近3日買賣超(張)": 578.0,
-            "consecutive_days": 5
+            "投信近3日買賣超(張)": 2629.0,
+            "consecutive_days": 6
         },
         {
-            "ticker": "2467.TW",
-            "stock_id": "2467",
-            "name": "志聖",
-            "price": 609.0,
-            "volume": 5755364,
-            "avg_vol_5d": 1603669.0,
-            "yoy": "30.8%",
-            "投信近3日買賣超(張)": 61.0,
-            "consecutive_days": 5
+            "ticker": "2820.TW",
+            "stock_id": "2820",
+            "name": "華票",
+            "price": 16.9,
+            "volume": 2928810,
+            "avg_vol_5d": 1081981.0,
+            "yoy": "36.0%",
+            "投信近3日買賣超(張)": 46.0,
+            "consecutive_days": 1
         }
     ]
 }
