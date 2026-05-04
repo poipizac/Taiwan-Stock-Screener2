@@ -12,7 +12,7 @@
             "avg_vol_5d": 19841908.0,
             "yoy": "36.1%",
             "投信近3日買賣超(張)": 332.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2455.TW",
@@ -23,7 +23,7 @@
             "avg_vol_5d": 14814659.0,
             "yoy": "32.8%",
             "投信近3日買賣超(張)": 2629.0,
-            "consecutive_days": 6
+            "consecutive_days": 7
         },
         {
             "ticker": "2820.TW",
@@ -34,7 +34,7 @@
             "avg_vol_5d": 1081981.0,
             "yoy": "36.0%",
             "投信近3日買賣超(張)": 46.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         }
     ]
 }

@@ -60,20 +60,6 @@
             "consecutive_days": 5
         },
         {
-            "ticker": "2465.TW",
-            "name": "麗臺",
-            "close": 81.4,
-            "sma200": 60.19,
-            "high120": 81.4,
-            "ratio": 1.17,
-            "pb": 7.04,
-            "eps": 0.56,
-            "yoy": -40.5,
-            "mom": 10.0,
-            "industry": "電腦及週邊設備業",
-            "consecutive_days": 1
-        },
-        {
             "ticker": "2454.TW",
             "name": "聯發科",
             "close": 2870.0,
@@ -85,6 +71,20 @@
             "yoy": -2.7,
             "mom": 9.96,
             "industry": "半導體業",
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "2465.TW",
+            "name": "麗臺",
+            "close": 81.4,
+            "sma200": 60.19,
+            "high120": 81.4,
+            "ratio": 1.17,
+            "pb": 7.04,
+            "eps": 0.56,
+            "yoy": -40.5,
+            "mom": 10.0,
+            "industry": "電腦及週邊設備業",
             "consecutive_days": 1
         },
         {
@@ -158,20 +158,6 @@
             "consecutive_days": 1
         },
         {
-            "ticker": "3532.TW",
-            "name": "台勝科",
-            "close": 207.5,
-            "sma200": 111.7,
-            "high120": 207.5,
-            "ratio": 1.65,
-            "pb": 3.26,
-            "eps": 1.59,
-            "yoy": 4.9,
-            "mom": 9.79,
-            "industry": "半導體業",
-            "consecutive_days": 1
-        },
-        {
             "ticker": "3526.TWO",
             "name": "凡甲",
             "close": 363.0,
@@ -183,6 +169,20 @@
             "yoy": 17.3,
             "mom": 16.74,
             "industry": "電子零組件業",
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "3532.TW",
+            "name": "台勝科",
+            "close": 207.5,
+            "sma200": 111.7,
+            "high120": 207.5,
+            "ratio": 1.65,
+            "pb": 3.26,
+            "eps": 1.59,
+            "yoy": 4.9,
+            "mom": 9.79,
+            "industry": "半導體業",
             "consecutive_days": 1
         },
         {
@@ -214,20 +214,6 @@
             "consecutive_days": 1
         },
         {
-            "ticker": "4542.TWO",
-            "name": "科嶠",
-            "close": 218.5,
-            "sma200": 93.74,
-            "high120": 218.5,
-            "ratio": 1.95,
-            "pb": 10.46,
-            "eps": 1.27,
-            "yoy": 105.5,
-            "mom": 10.4,
-            "industry": "電子零組件業",
-            "consecutive_days": 1
-        },
-        {
             "ticker": "4543.TWO",
             "name": "萬在",
             "close": 42.35,
@@ -239,6 +225,20 @@
             "yoy": 18.3,
             "mom": 10.0,
             "industry": "電機機械",
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "4542.TWO",
+            "name": "科嶠",
+            "close": 218.5,
+            "sma200": 93.74,
+            "high120": 218.5,
+            "ratio": 1.95,
+            "pb": 10.46,
+            "eps": 1.27,
+            "yoy": 105.5,
+            "mom": 10.4,
+            "industry": "電子零組件業",
             "consecutive_days": 1
         },
         {
@@ -270,6 +270,20 @@
             "consecutive_days": 11
         },
         {
+            "ticker": "6222.TWO",
+            "name": "立軒",
+            "close": 23.1,
+            "sma200": 20.05,
+            "high120": 23.1,
+            "ratio": 1.06,
+            "pb": 1.85,
+            "eps": -0.4,
+            "yoy": -60.3,
+            "mom": 6.21,
+            "industry": "光電業",
+            "consecutive_days": 1
+        },
+        {
             "ticker": "6197.TW",
             "name": "佳必琪",
             "close": 228.5,
@@ -284,16 +298,16 @@
             "consecutive_days": 1
         },
         {
-            "ticker": "6222.TWO",
-            "name": "立軒",
-            "close": 23.1,
-            "sma200": 20.05,
-            "high120": 23.1,
-            "ratio": 1.06,
-            "pb": 1.85,
-            "eps": -0.4,
-            "yoy": -60.3,
-            "mom": 6.21,
+            "ticker": "6246.TWO",
+            "name": "臺龍",
+            "close": 18.0,
+            "sma200": 14.65,
+            "high120": 18.0,
+            "ratio": 1.09,
+            "pb": 1.59,
+            "eps": 1.14,
+            "yoy": -4.1,
+            "mom": 9.76,
             "industry": "光電業",
             "consecutive_days": 1
         },
@@ -310,20 +324,6 @@
             "mom": 9.85,
             "industry": "光電業",
             "consecutive_days": 6
-        },
-        {
-            "ticker": "6246.TWO",
-            "name": "臺龍",
-            "close": 18.0,
-            "sma200": 14.65,
-            "high120": 18.0,
-            "ratio": 1.09,
-            "pb": 1.59,
-            "eps": 1.14,
-            "yoy": -4.1,
-            "mom": 9.76,
-            "industry": "光電業",
-            "consecutive_days": 1
         },
         {
             "ticker": "6405.TW",
