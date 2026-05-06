@@ -12,7 +12,7 @@
             "avg_vol_5d": 85562884.0,
             "yoy": "22.3%",
             "投信近3日買賣超(張)": 4030.6,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "2363.TW",
@@ -23,6 +23,39 @@
             "avg_vol_5d": 8895223.0,
             "yoy": "86.0%",
             "投信近3日買賣超(張)": 10.0,
+            "consecutive_days": 2
+        },
+        {
+            "ticker": "3264.TWO",
+            "stock_id": "3264",
+            "name": "欣銓",
+            "price": 226.0,
+            "volume": 27366079,
+            "avg_vol_5d": 11131006.0,
+            "yoy": "20.4%",
+            "投信近3日買賣超(張)": 776.6,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "3443.TW",
+            "stock_id": "3443",
+            "name": "創意",
+            "price": 4955.0,
+            "volume": 4886046,
+            "avg_vol_5d": 1557391.0,
+            "yoy": "63.0%",
+            "投信近3日買賣超(張)": 338.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "3706.TW",
+            "stock_id": "3706",
+            "name": "神達",
+            "price": 87.8,
+            "volume": 36599464,
+            "avg_vol_5d": 8140143.0,
+            "yoy": "30.2%",
+            "投信近3日買賣超(張)": 291.0,
             "consecutive_days": 1
         }
     ]

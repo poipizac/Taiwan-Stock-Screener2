@@ -74,20 +74,6 @@
             "consecutive_days": 1
         },
         {
-            "ticker": "3033.TW",
-            "name": "威健",
-            "close": 42.4,
-            "sma200": 30.98,
-            "high120": 42.4,
-            "ratio": 1.18,
-            "pb": 1.9,
-            "eps": 1.61,
-            "yoy": 13.5,
-            "mom": 18.6,
-            "industry": "電子通路業",
-            "consecutive_days": 1
-        },
-        {
             "ticker": "3034.TW",
             "name": "聯詠",
             "close": 441.5,
@@ -99,6 +85,20 @@
             "yoy": -9.7,
             "mom": 7.95,
             "industry": "半導體業",
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "3033.TW",
+            "name": "威健",
+            "close": 42.4,
+            "sma200": 30.98,
+            "high120": 42.4,
+            "ratio": 1.18,
+            "pb": 1.9,
+            "eps": 1.61,
+            "yoy": 13.5,
+            "mom": 18.6,
+            "industry": "電子通路業",
             "consecutive_days": 1
         },
         {
@@ -228,20 +228,6 @@
             "consecutive_days": 1
         },
         {
-            "ticker": "6173.TWO",
-            "name": "信昌電",
-            "close": 101.0,
-            "sma200": 58.97,
-            "high120": 101.0,
-            "ratio": 1.46,
-            "pb": 1.92,
-            "eps": 3.25,
-            "yoy": 4.2,
-            "mom": 17.85,
-            "industry": "電子零組件業",
-            "consecutive_days": 1
-        },
-        {
             "ticker": "6174.TWO",
             "name": "安碁",
             "close": 41.3,
@@ -256,18 +242,18 @@
             "consecutive_days": 2
         },
         {
-            "ticker": "6224.TW",
-            "name": "聚鼎",
-            "close": 88.3,
-            "sma200": 43.83,
-            "high120": 88.3,
-            "ratio": 1.56,
-            "pb": 3.42,
-            "eps": 0.66,
-            "yoy": -10.5,
-            "mom": 23.13,
+            "ticker": "6173.TWO",
+            "name": "信昌電",
+            "close": 101.0,
+            "sma200": 58.97,
+            "high120": 101.0,
+            "ratio": 1.46,
+            "pb": 1.92,
+            "eps": 3.25,
+            "yoy": 4.2,
+            "mom": 17.85,
             "industry": "電子零組件業",
-            "consecutive_days": 2
+            "consecutive_days": 1
         },
         {
             "ticker": "6229.TWO",
@@ -282,6 +268,20 @@
             "mom": 10.7,
             "industry": "半導體業",
             "consecutive_days": 1
+        },
+        {
+            "ticker": "6224.TW",
+            "name": "聚鼎",
+            "close": 88.3,
+            "sma200": 43.83,
+            "high120": 88.3,
+            "ratio": 1.56,
+            "pb": 3.42,
+            "eps": 0.66,
+            "yoy": -10.5,
+            "mom": 23.13,
+            "industry": "電子零組件業",
+            "consecutive_days": 2
         },
         {
             "ticker": "6261.TWO",
