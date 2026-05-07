@@ -30,6 +30,8 @@ jobs:
         run: python update_data.py
 
       - name: Run Disposition Scraper
+        env:
+          FINMIND_TOKEN: ${{ secrets.FINMIND_TOKEN }}
         run: python fetch_disposition.py  
 
       - name: Run Momentum Screener
