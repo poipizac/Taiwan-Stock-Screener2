@@ -2,270 +2,326 @@ import requests
 import json
 import pandas as pd
 import yfinance as yf
+import twstock
 import re
 import time
 import random
-import io
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # 禁用 SSL 警告
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-COMMON_HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+# 極度擬真的 Chrome 瀏覽器 Headers
+CHROME_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+    "Accept": "application/json, text/javascript, */*; q=0.01",
     "Accept-Language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
+    "Sec-Ch-Ua": '"Chromium";v="125", "Google Chrome";v="125", "Not-A.Brand";v="99"',
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": '"Windows"',
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
 }
 
-def fetch_twse_disposition():
-    """ 抓取上市處置股 (優先 JSON, 失敗則 CSV) """
-    print("Fetching TWSE (Listed) disposition stocks...")
-    url_json = f"https://www.twse.com.tw/rwd/zh/announcement/disposition?response=json&_={int(time.time()*1000)}"
-    url_csv = "https://www.twse.com.tw/rwd/zh/announcement/disposition?response=csv"
-    
-    results = []
-    errors = []
+OUTPUT_FILE = './disposition_data.json'
 
-    # 1. 嘗試 JSON
+
+def roc_date_to_datetime(roc_str):
+    """
+    將民國日期字串 (e.g. '115/05/20') 轉換為 datetime 物件。
+    回傳 None 代表解析失敗。
+    """
     try:
-        resp = requests.get(url_json, headers=COMMON_HEADERS, verify=False, timeout=15)
-        if resp.status_code == 200 and resp.text.strip():
-            if resp.text.strip().startswith('<'): # 可能是 HTML/Cloudflare
-                errors.append("TWSE JSON returned HTML (Blocked)")
-            else:
-                data = resp.json()
-                if 'data' in data:
-                    for item in data['data']:
-                        ticker = item[1]
-                        name = item[2]
-                        period = item[8]
-                        dates = re.findall(r'\d{3}/\d{2}/\d{2}', period)
-                        end_date = dates[-1] if dates else "未知"
-                        results.append({"ticker": f"{ticker}.TW", "name": name, "end_date": end_date})
-                    if results: return results, ""
-        else:
-            errors.append(f"TWSE JSON HTTP {resp.status_code}")
-    except Exception as e:
-        errors.append(f"TWSE JSON Error: {str(e)}")
-
-    # 2. 嘗試 CSV
-    try:
-        resp = requests.get(url_csv, headers=COMMON_HEADERS, verify=False, timeout=15)
-        if resp.status_code == 200 and not resp.text.strip().startswith('<'):
-            # TWSE CSV 通常前幾行是標題，我們找包含 "證券代號" 的那一行
-            lines = resp.text.split('\n')
-            start_idx = 0
-            for idx, line in enumerate(lines):
-                if "證券代號" in line:
-                    start_idx = idx
-                    break
-            df = pd.read_csv(io.StringIO("\n".join(lines[start_idx:])), on_bad_lines='skip')
-            for _, row in df.iterrows():
-                try:
-                    ticker = str(row.iloc[1]).strip()
-                    name = str(row.iloc[2]).strip()
-                    period = str(row.iloc[8]).strip()
-                    dates = re.findall(r'\d{3}/\d{2}/\d{2}', period)
-                    end_date = dates[-1] if dates else "未知"
-                    if ticker and len(ticker) >= 4:
-                        results.append({"ticker": f"{ticker}.TW", "name": name, "end_date": end_date})
-                except: continue
-            if results: return results, ""
-    except Exception as e:
-        errors.append(f"TWSE CSV Error: {str(e)}")
-
-    return results, "; ".join(errors)
-
-def fetch_tpex_disposition():
-    """ 抓取上櫃處置股 (優先 JSON, 失敗則 CSV) """
-    print("Fetching TPEx (OTC) disposition stocks...")
-    url_json = f"https://www.tpex.org.tw/web/bulletin/disposition/disposition_result.php?l=zh-tw&_={int(time.time()*1000)}"
-    url_csv = "https://www.tpex.org.tw/web/bulletin/disposition/disposition_result.php?l=zh-tw&o=csv"
-    
-    results = []
-    errors = []
-
-    # 1. 嘗試 JSON
-    try:
-        resp = requests.get(url_json, headers=COMMON_HEADERS, verify=False, timeout=15)
-        if resp.status_code == 200 and resp.text.strip():
-            if resp.text.strip().startswith('<'):
-                errors.append("TPEx JSON returned HTML (Blocked)")
-            else:
-                data = resp.json()
-                if 'aaData' in data:
-                    for item in data['aaData']:
-                        ticker = item[0]
-                        name = item[1]
-                        period = item[2]
-                        dates = re.findall(r'\d{3}/\d{2}/\d{2}', period)
-                        end_date = dates[-1] if dates else "未知"
-                        results.append({"ticker": f"{ticker}.TWO", "name": name, "end_date": end_date})
-                    if results: return results, ""
-        else:
-            errors.append(f"TPEx JSON HTTP {resp.status_code}")
-    except Exception as e:
-        errors.append(f"TPEx JSON Error: {str(e)}")
-
-    # 2. 嘗試 CSV
-    try:
-        resp = requests.get(url_csv, headers=COMMON_HEADERS, verify=False, timeout=15)
-        if resp.status_code == 200 and not resp.text.strip().startswith('<'):
-            # 上櫃 CSV 第一行通常是標題，我們找包含 "證券代號" 的那一行
-            lines = resp.text.split('\n')
-            start_idx = 0
-            for idx, line in enumerate(lines):
-                if "證券代號" in line:
-                    start_idx = idx
-                    break
-            df = pd.read_csv(io.StringIO("\n".join(lines[start_idx:])), on_bad_lines='skip')
-            for _, row in df.iterrows():
-                try:
-                    ticker = str(row.iloc[0]).strip()
-                    name = str(row.iloc[1]).strip()
-                    period = str(row.iloc[2]).strip()
-                    dates = re.findall(r'\d{3}/\d{2}/\d{2}', period)
-                    end_date = dates[-1] if dates else "未知"
-                    if ticker and len(ticker) >= 4 and ticker.isdigit():
-                        results.append({"ticker": f"{ticker}.TWO", "name": name, "end_date": end_date})
-                except: continue
-            if results: return results, ""
-    except Exception as e:
-        errors.append(f"TPEx CSV Error: {str(e)}")
-
-    return results, "; ".join(errors)
-
-def fetch_finmind_disposition():
-    """ 透過 FinMind API 抓取處置股作為備援 """
-    print("Fetching via FinMind API...")
-    token = os.environ.get('FINMIND_TOKEN', '')
-    try:
-        from FinMind.data import DataLoader
-        dl = DataLoader()
-        if token:
-            dl.login_by_token(token)
-        
-        # 抓取最近 10 天的資料，確保能抓到目前還在處置中的
-        from datetime import timedelta
-        start_date = (datetime.now() - timedelta(days=10)).strftime('%Y-%m-%d')
-        df = dl.get_data(dataset='TaiwanStockDisposition', start_date=start_date)
-        
-        results = []
-        if df is not None and not df.empty:
-            # 轉換為統一格式
-            for _, row in df.iterrows():
-                ticker = str(row['stock_id']).strip()
-                name = str(row['stock_name']).strip()
-                # FinMind 的 end_date 格式通常是 YYYY-MM-DD
-                raw_end = str(row['end_date']).strip()
-                try:
-                    dt = datetime.strptime(raw_end, '%Y-%m-%d')
-                    end_date = f"{dt.year - 1911}/{dt.month:02d}/{dt.day:02d}"
-                except:
-                    end_date = raw_end
-                
-                # 簡單判斷上市上櫃 (這部分可能略有誤差，但作為備援已足夠)
-                # 這裡暫時統一加 .TW，稍後在 main 中會進行處理
-                results.append({"ticker": ticker, "name": name, "end_date": end_date})
-        return results, ""
-    except Exception as e:
-        return [], f"FinMind Error: {str(e)}"
-
-def fetch_fundamental_data(ticker):
-    """ 抓取基本面數據 """
-    try:
-        tk = yf.Ticker(ticker)
-        # 抓取現價與歷史 (1mo 資料足以計算現價與 MoM)
-        hist = tk.history(period='1mo', timeout=10)
-        if hist.empty:
-            return None
-        
-        close_price = hist['Close'].iloc[-1]
-        mom = 0.0
-        if len(hist) >= 2:
-            prev_price = hist['Close'].iloc[0]
-            if prev_price > 0:
-                mom = ((close_price - prev_price) / prev_price) * 100
-
-        info = tk.info
-        
-        def clean(val, default=0):
-            try:
-                if val is None or pd.isna(val): return default
-                return round(float(val), 2)
-            except:
-                return default
-
-        return {
-            "close": clean(close_price),
-            "pb": clean(info.get('priceToBook')),
-            "yoy": clean(info.get('revenueGrowth', 0) * 100),
-            "mom": clean(mom),
-            "industry": info.get('industry', '未知')
-        }
-    except Exception as e:
-        print(f"[{ticker}] Fundamental error: {e}")
+        parts = roc_str.strip().split('/')
+        y = int(parts[0]) + 1911
+        m = int(parts[1])
+        d = int(parts[2])
+        return datetime(y, m, d)
+    except:
         return None
 
-def main():
-    twse_stocks, twse_err = fetch_twse_disposition()
-    tpex_stocks, tpex_err = fetch_tpex_disposition()
-    fm_stocks, fm_err = fetch_finmind_disposition()
-    
-    # 彙整與去重
-    results_map = {}
-    
-    # 處理上市資料
-    for s in twse_stocks:
-        results_map[s['ticker']] = s
-        
-    # 處理上櫃資料
-    for s in tpex_stocks:
-        results_map[s['ticker']] = s
-        
-    # 處理 FinMind 資料 (作為補充)
-    import twstock
-    for s in fm_stocks:
-        ticker = s['ticker']
-        # 判定後綴
-        if ticker in twstock.codes:
-            market = twstock.codes[ticker].market
-            suffix = ".TW" if market == "上市" else ".TWO"
-            full_ticker = f"{ticker}{suffix}"
-            if full_ticker not in results_map:
-                s['ticker'] = full_ticker
-                results_map[full_ticker] = s
 
-    error_msg = f"{twse_err} | {tpex_err} | {fm_err}".strip(" | ")
-    final_list = list(results_map.values())
-    
-    print(f"Total unique stocks found: {len(final_list)}")
-    
-    enriched_results = []
-    for s in final_list:
-        print(f"Enriching {s['ticker']}...")
+def fetch_twse_disposition():
+    """
+    抓取上市處置股。
+    API: https://www.twse.com.tw/rwd/zh/announcement/punish?response=json&startDate=YYYYMMDD&endDate=YYYYMMDD
+    欄位 (fields): [編號, 公布日期, 證券代號, 證券名稱, 累計, 處置條件, 處置起迄時間, 處置措施, 處置內容, 備註]
+    索引: [2]=證券代號, [3]=名稱, [6]=處置起迄時間 (格式: "115/04/17～115/04/30")
+    """
+    print("[TWSE] 開始抓取上市處置股...")
+    today = datetime.now()
+    start_date = (today - timedelta(days=60)).strftime('%Y%m%d')
+    end_date = (today + timedelta(days=30)).strftime('%Y%m%d')
+
+    url = f"https://www.twse.com.tw/rwd/zh/announcement/punish?response=json&startDate={start_date}&endDate={end_date}"
+    headers = {**CHROME_HEADERS, "Referer": "https://www.twse.com.tw/zh/announcement/punish.html"}
+
+    for retry in range(3):
+        try:
+            if retry > 0:
+                wait = 10 * retry
+                print(f"[TWSE] 第 {retry+1} 次嘗試 (等待 {wait} 秒)...")
+                time.sleep(wait)
+
+            resp = requests.get(url, headers=headers, verify=False, timeout=20)
+            print(f"[TWSE] HTTP Status: {resp.status_code}")
+
+            if resp.status_code != 200:
+                continue
+
+            text = resp.text.strip()
+            if text.startswith('<'):
+                print("[TWSE] 收到 HTML 回應 (可能被暫時封鎖)")
+                continue
+
+            data = resp.json()
+            if data.get('stat') != 'OK' or 'data' not in data or not data['data']:
+                return [], "TWSE returned empty data (可能當前無上市處置股)"
+
+            # 成功取得資料，跳出重試迴圈
+            break
+        except Exception as e:
+            if retry == 2:
+                return [], f"TWSE Error: {str(e)}"
+            continue
+    else:
+        return [], "IP Blocked by TWSE (3 次嘗試皆失敗)"
+
+    today_midnight = today.replace(hour=0, minute=0, second=0, microsecond=0)
+
+    # 逐筆解析，取每支股票「最晚的處置迄日」
+    stock_map = {}  # ticker_code -> {"name": ..., "end_date_roc": ..., "end_dt": datetime}
+    for item in data['data']:
+        try:
+            code = str(item[2]).strip()
+            name = str(item[3]).strip()
+            period_str = str(item[6]).strip()
+
+            # 只保留 4 碼股票代號 (排除權證等 6 碼代號)
+            if not (len(code) == 4 and code.isdigit()):
+                continue
+
+            # 解析處置期間："115/04/17～115/04/30"
+            parts = re.split(r'[～~]', period_str)
+            if len(parts) < 2:
+                continue
+
+            end_date_roc = parts[-1].strip()
+            end_dt = roc_date_to_datetime(end_date_roc)
+            if end_dt is None:
+                continue
+
+            # 過濾已解除處置 (處置迄日 < 今天)
+            if end_dt < today_midnight:
+                continue
+
+            # 同一支股票保留最晚的處置迄日
+            if code not in stock_map or end_dt > stock_map[code]['end_dt']:
+                stock_map[code] = {
+                    "name": name,
+                    "end_date_roc": end_date_roc,
+                    "end_dt": end_dt
+                }
+        except Exception:
+            continue
+
+    results = []
+    for code, info in stock_map.items():
+        # 使用 twstock 取得更完整的名稱
+        official_name = twstock.codes[code].name if code in twstock.codes else info['name']
+        results.append({
+            "ticker": f"{code}.TW",
+            "name": official_name,
+            "end_date": info['end_date_roc']
+        })
+
+    print(f"[TWSE] 抓取完成，共 {len(results)} 檔上市處置股")
+    return results, ""
+
+
+def fetch_tpex_disposition():
+    """
+    抓取上櫃處置股。
+    API: https://www.tpex.org.tw/www/zh-tw/bulletin/disposal?response=json&startDate=YYY/MM/DD&endDate=YYY/MM/DD
+    回傳結構: { "tables": [{ "data": [[...], ...] }] }
+    索引: [2]=證券代號, [3]=名稱, [5]=處置起迄時間 (格式: "115/05/08~115/05/21")
+    """
+    print("[TPEx] 開始抓取上櫃處置股...")
+    today = datetime.now()
+    start = today - timedelta(days=60)
+    end = today + timedelta(days=30)
+    start_roc = f"{start.year - 1911}/{start.month:02d}/{start.day:02d}"
+    end_roc = f"{end.year - 1911}/{end.month:02d}/{end.day:02d}"
+
+    url = f"https://www.tpex.org.tw/www/zh-tw/bulletin/disposal?response=json&startDate={start_roc}&endDate={end_roc}"
+    headers = {**CHROME_HEADERS, "Referer": "https://www.tpex.org.tw/www/zh-tw/bulletin/disposal"}
+
+    try:
+        resp = requests.get(url, headers=headers, verify=False, timeout=20)
+        if resp.status_code != 200:
+            return [], f"TPEx HTTP {resp.status_code}"
+
+        text = resp.text.strip()
+        if text.startswith('<'):
+            return [], "IP Blocked by TPEx"
+
+        data = resp.json()
+        tables = data.get('tables', [])
+        if not tables or 'data' not in tables[0] or not tables[0]['data']:
+            return [], "TPEx returned empty data (可能當前無上櫃處置股)"
+
+        today_midnight = today.replace(hour=0, minute=0, second=0, microsecond=0)
+        rows = tables[0]['data']
+
+        stock_map = {}
+        for item in rows:
+            try:
+                code = str(item[2]).strip()
+                name = str(item[3]).strip()
+                period_str = str(item[5]).strip()
+
+                if not (len(code) == 4 and code.isdigit()):
+                    continue
+
+                parts = re.split(r'[～~]', period_str)
+                if len(parts) < 2:
+                    continue
+
+                end_date_roc = parts[-1].strip()
+                end_dt = roc_date_to_datetime(end_date_roc)
+                if end_dt is None:
+                    continue
+
+                if end_dt < today_midnight:
+                    continue
+
+                if code not in stock_map or end_dt > stock_map[code]['end_dt']:
+                    stock_map[code] = {
+                        "name": name,
+                        "end_date_roc": end_date_roc,
+                        "end_dt": end_dt
+                    }
+            except Exception:
+                continue
+
+        results = []
+        for code, info in stock_map.items():
+            official_name = twstock.codes[code].name if code in twstock.codes else info['name']
+            results.append({
+                "ticker": f"{code}.TWO",
+                "name": official_name,
+                "end_date": info['end_date_roc']
+            })
+
+        print(f"[TPEx] 抓取完成，共 {len(results)} 檔上櫃處置股")
+        return results, ""
+
+    except Exception as e:
+        return [], f"TPEx Error: {str(e)}"
+
+
+def fetch_fundamental_data(ticker):
+    """ 使用 yfinance 抓取基本面數據 (現價、PB、YoY%、MoM%) """
+    for attempt in range(2):
+        try:
+            tk = yf.Ticker(ticker)
+            hist = tk.history(period='1mo', timeout=5)
+            if hist.empty:
+                return None
+
+            close_price = hist['Close'].iloc[-1]
+            mom = 0.0
+            if len(hist) >= 2:
+                prev_price = hist['Close'].iloc[0]
+                if prev_price > 0:
+                    mom = ((close_price - prev_price) / prev_price) * 100
+
+            info = tk.info
+
+            def clean(val, default=0):
+                try:
+                    if val is None or pd.isna(val):
+                        return default
+                    return round(float(val), 2)
+                except:
+                    return default
+
+            return {
+                "close": clean(close_price),
+                "pb": clean(info.get('priceToBook')),
+                "yoy": clean(info.get('revenueGrowth', 0) * 100),
+                "mom": clean(mom),
+                "industry": info.get('industry', '未知')
+            }
+        except Exception as e:
+            err = str(e)
+            if "Too Many Requests" in err or "429" in err:
+                print(f"  [{ticker}] Rate limited, 等待 30 秒... (嘗試 {attempt+1}/2)")
+                time.sleep(30)
+                continue
+            print(f"  [{ticker}] yfinance 錯誤: {err}")
+            break
+    return None
+
+
+def main():
+    print("=" * 60)
+    print(f"[處置股爬蟲] 啟動時間: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print("=" * 60)
+
+    twse_stocks, twse_err = fetch_twse_disposition()
+    time.sleep(3)  # 兩個交易所之間間隔
+    tpex_stocks, tpex_err = fetch_tpex_disposition()
+
+    all_stocks = twse_stocks + tpex_stocks
+    all_errors = [e for e in [twse_err, tpex_err] if e]
+    error_msg = " | ".join(all_errors)
+
+    print(f"\n[彙總] 共找到 {len(all_stocks)} 檔處置股 (上市 {len(twse_stocks)} + 上櫃 {len(tpex_stocks)})")
+
+    # 補齊基本面資訊
+    enriched = []
+    for s in all_stocks:
+        print(f"  補齊基本面: {s['ticker']} ({s['name']})...")
         fundamental = fetch_fundamental_data(s['ticker'])
         if fundamental:
             s.update(fundamental)
         else:
             s.update({"close": 0, "pb": 0, "yoy": 0, "mom": 0, "industry": "未知"})
-        enriched_results.append(s)
-        time.sleep(random.uniform(0.5, 1.2))
+        enriched.append(s)
+        time.sleep(random.uniform(0.5, 1.5))
 
     today_str = datetime.now().strftime('%Y-%m-%d')
+
+    # 判斷最終錯誤訊息
+    if not enriched and error_msg:
+        final_error = error_msg
+    elif not enriched and not error_msg:
+        final_error = "當前無任何處置中之有價證券"
+    else:
+        final_error = ""
+
     output = {
         "scan_date": today_str,
         "data_date": today_str,
-        "error_msg": error_msg if not enriched_results else "",
-        "data": enriched_results
+        "error_msg": final_error,
+        "data": enriched
     }
-    
-    with open('disposition_data.json', 'w', encoding='utf-8') as f:
+
+    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(output, f, ensure_ascii=False, indent=4)
-    
-    print(f"Saved {len(enriched_results)} stocks to disposition_data.json. Error log: {output['error_msg']}")
+
+    print(f"\n[完成] 儲存 {len(enriched)} 檔至 {OUTPUT_FILE}")
+    if final_error:
+        print(f"[錯誤記錄] {final_error}")
+
 
 if __name__ == "__main__":
     main()

@@ -1,6 +1,287 @@
 {
-    "scan_date": "2026-05-07",
-    "data_date": "2026-05-07",
-    "error_msg": "TWSE JSON returned HTML (Blocked) | TPEx JSON returned HTML (Blocked) | FinMind Error: FinMind API unexpected response: [{'type': 'enum', 'loc': ['query', 'dataset'], 'msg': \"Input should be 'TaiwanStockGovernmentBankBuySell', 'TaiwanStockBlockTradingDailyReport', 'TaiwanStockWarrantTradingDailyReport', 'TaiwanStockBalanceSheet', 'TaiwanDailyShortSaleBalances', 'TaiwanStockFinancialStatements', 'TaiwanStockInstitutionalInvestorsBuySell', 'TaiwanStockTotalInstitutionalInvestors', 'TaiwanStockShareholding', 'TaiwanStockPER', 'TaiwanStockPrice', 'TaiwanStockPriceAdj', 'TaiwanStockCashFlowsStatement', 'TaiwanStockMonthRevenue', 'TaiwanStockMarginPurchaseShortSale', 'CrudeOilPrices', 'CnnFearGreedIndex', 'TaiwanExchangeRate', 'ExchangeRate', 'TaiwanStockPriceTick', 'TaiwanStockKBar', 'TaiwanFuturesTick', 'TaiwanOptionTick', 'TaiwanFuturesDaily', 'TaiwanOptionDaily', 'TaiwanStockNews', 'UKStockPrice', 'USStockPrice', 'TaiwanStockDividendResult', 'TaiwanStockInfo', 'TaiwanSecuritiesTraderInfo', 'TaiwanStockInfoWithWarrant', 'TaiwanStockSecuritiesLending', 'TaiwanFutOptTickInfo', 'TaiwanFutOptDailyInfo', 'TaiwanStockHoldingSharesPer', 'TaiwanStockDividend', 'TaiwanStockTotalMarginPurchaseShortSale', 'EuropeStockInfo', 'JapanStockInfo', 'GoldPrice', 'InterestRate', 'USStockInfo', 'UKStockInfo', 'TaiwanStockStatisticsOfOrderBookAndTrade', 'TaiwanVariousIndicators5Seconds', 'TaiwanFutOptInstitutionalInvestors', 'TaiwanFuturesDealerTradingVolumeDaily', 'TaiwanOptionDealerTradingVolumeDaily', 'EuropeStockPrice', 'GovernmentBondsYield', 'JapanStockPrice', 'USStockPriceMinute', 'TaiwanStockDayTrading', 'TaiwanStockEvery5SecondsIndex', 'TaiwanFuturesInstitutionalInvestors', 'TaiwanOptionInstitutionalInvestors', 'TaiwanFuturesInstitutionalInvestorsAfterHours', 'TaiwanOptionInstitutionalInvestorsAfterHours', 'TaiwanStockCapitalReductionReferencePrice', 'TaiwanStockTotalReturnIndex', 'TaiwanStockMarketValue', 'TaiwanStock10Year', 'TaiwanStockDelisting', 'TaiwanStockConvertibleBondDaily', 'TaiwanStockConvertibleBondInstitutionalInvestors', 'TaiwanStockConvertibleBondDailyOverview', 'TaiwanStockConvertibleBondInfo', 'TaiwanStockMarginShortSaleSuspension', 'TaiwanTotalExchangeMarginMaintenance', 'TaiwanStockMonthPrice', 'TaiwanStockWeekPrice', 'TaiwanOptionOpenInterestLargeTraders', 'TaiwanFuturesOpenInterestLargeTraders', 'TaiwanStockMarketValueWeight', 'TaiwanBusinessIndicator', 'TaiwanStockDispositionSecuritiesPeriod', 'TaiwanStockIndustryChain', 'TaiwanStockSplitPrice', 'TaiwanStockInfoWithWarrantSummary', 'TaiwanStockTradingDate', 'TaiwanStockParValueChange', 'TaiwanStockSuspended', 'TaiwanStockDayTradingSuspension', 'TaiwanStockDayTradingBorrowingFeeRate', 'TaiwanFuturesSpreadTrading', 'TaiwanFuturesFinalSettlementPrice', 'TaiwanOptionFinalSettlementPrice', 'TaiwanStockPriceLimit', 'TaiwanStockLoanCollateralBalance' or 'TaiwanStockBlockTrade'\", 'input': 'TaiwanStockDisposition', 'ctx': {'expected': \"'TaiwanStockGovernmentBankBuySell', 'TaiwanStockBlockTradingDailyReport', 'TaiwanStockWarrantTradingDailyReport', 'TaiwanStockBalanceSheet', 'TaiwanDailyShortSaleBalances', 'TaiwanStockFinancialStatements', 'TaiwanStockInstitutionalInvestorsBuySell', 'TaiwanStockTotalInstitutionalInvestors', 'TaiwanStockShareholding', 'TaiwanStockPER', 'TaiwanStockPrice', 'TaiwanStockPriceAdj', 'TaiwanStockCashFlowsStatement', 'TaiwanStockMonthRevenue', 'TaiwanStockMarginPurchaseShortSale', 'CrudeOilPrices', 'CnnFearGreedIndex', 'TaiwanExchangeRate', 'ExchangeRate', 'TaiwanStockPriceTick', 'TaiwanStockKBar', 'TaiwanFuturesTick', 'TaiwanOptionTick', 'TaiwanFuturesDaily', 'TaiwanOptionDaily', 'TaiwanStockNews', 'UKStockPrice', 'USStockPrice', 'TaiwanStockDividendResult', 'TaiwanStockInfo', 'TaiwanSecuritiesTraderInfo', 'TaiwanStockInfoWithWarrant', 'TaiwanStockSecuritiesLending', 'TaiwanFutOptTickInfo', 'TaiwanFutOptDailyInfo', 'TaiwanStockHoldingSharesPer', 'TaiwanStockDividend', 'TaiwanStockTotalMarginPurchaseShortSale', 'EuropeStockInfo', 'JapanStockInfo', 'GoldPrice', 'InterestRate', 'USStockInfo', 'UKStockInfo', 'TaiwanStockStatisticsOfOrderBookAndTrade', 'TaiwanVariousIndicators5Seconds', 'TaiwanFutOptInstitutionalInvestors', 'TaiwanFuturesDealerTradingVolumeDaily', 'TaiwanOptionDealerTradingVolumeDaily', 'EuropeStockPrice', 'GovernmentBondsYield', 'JapanStockPrice', 'USStockPriceMinute', 'TaiwanStockDayTrading', 'TaiwanStockEvery5SecondsIndex', 'TaiwanFuturesInstitutionalInvestors', 'TaiwanOptionInstitutionalInvestors', 'TaiwanFuturesInstitutionalInvestorsAfterHours', 'TaiwanOptionInstitutionalInvestorsAfterHours', 'TaiwanStockCapitalReductionReferencePrice', 'TaiwanStockTotalReturnIndex', 'TaiwanStockMarketValue', 'TaiwanStock10Year', 'TaiwanStockDelisting', 'TaiwanStockConvertibleBondDaily', 'TaiwanStockConvertibleBondInstitutionalInvestors', 'TaiwanStockConvertibleBondDailyOverview', 'TaiwanStockConvertibleBondInfo', 'TaiwanStockMarginShortSaleSuspension', 'TaiwanTotalExchangeMarginMaintenance', 'TaiwanStockMonthPrice', 'TaiwanStockWeekPrice', 'TaiwanOptionOpenInterestLargeTraders', 'TaiwanFuturesOpenInterestLargeTraders', 'TaiwanStockMarketValueWeight', 'TaiwanBusinessIndicator', 'TaiwanStockDispositionSecuritiesPeriod', 'TaiwanStockIndustryChain', 'TaiwanStockSplitPrice', 'TaiwanStockInfoWithWarrantSummary', 'TaiwanStockTradingDate', 'TaiwanStockParValueChange', 'TaiwanStockSuspended', 'TaiwanStockDayTradingSuspension', 'TaiwanStockDayTradingBorrowingFeeRate', 'TaiwanFuturesSpreadTrading', 'TaiwanFuturesFinalSettlementPrice', 'TaiwanOptionFinalSettlementPrice', 'TaiwanStockPriceLimit', 'TaiwanStockLoanCollateralBalance' or 'TaiwanStockBlockTrade'\"}}]",
-    "data": []
+    "scan_date": "2026-05-08",
+    "data_date": "2026-05-08",
+    "error_msg": "",
+    "data": [
+        {
+            "ticker": "3455.TWO",
+            "name": "由田",
+            "end_date": "115/05/21",
+            "close": 0,
+            "pb": 6.6,
+            "yoy": -35.5,
+            "mom": 0,
+            "industry": "Electronic Components"
+        },
+        {
+            "ticker": "3581.TWO",
+            "name": "博磊",
+            "end_date": "115/05/21",
+            "close": 0,
+            "pb": 13.0,
+            "yoy": 41.5,
+            "mom": 0,
+            "industry": "Semiconductors"
+        },
+        {
+            "ticker": "4951.TWO",
+            "name": "精拓科",
+            "end_date": "115/05/21",
+            "close": 0,
+            "pb": 4.56,
+            "yoy": 4.0,
+            "mom": 0,
+            "industry": "Semiconductors"
+        },
+        {
+            "ticker": "5386.TWO",
+            "name": "青雲",
+            "end_date": "115/05/21",
+            "close": 0,
+            "pb": 20.31,
+            "yoy": 74.6,
+            "mom": 0,
+            "industry": "Computer Hardware"
+        },
+        {
+            "ticker": "3163.TWO",
+            "name": "波若威",
+            "end_date": "115/05/20",
+            "close": 0,
+            "pb": 28.44,
+            "yoy": 30.7,
+            "mom": 0,
+            "industry": "Communication Equipment"
+        },
+        {
+            "ticker": "4542.TWO",
+            "name": "科嶠",
+            "end_date": "115/05/20",
+            "close": 0,
+            "pb": 10.2,
+            "yoy": 105.5,
+            "mom": 0,
+            "industry": "Specialty Industrial Machinery"
+        },
+        {
+            "ticker": "4908.TWO",
+            "name": "前鼎",
+            "end_date": "115/05/20",
+            "close": 0,
+            "pb": 10.71,
+            "yoy": -33.3,
+            "mom": 0,
+            "industry": "Communication Equipment"
+        },
+        {
+            "ticker": "6683.TWO",
+            "name": "雍智科技",
+            "end_date": "115/05/20",
+            "close": 0,
+            "pb": 24.14,
+            "yoy": 13.3,
+            "mom": 0,
+            "industry": "Semiconductor Equipment & Materials"
+        },
+        {
+            "ticker": "8064.TWO",
+            "name": "東捷",
+            "end_date": "115/05/20",
+            "close": 0,
+            "pb": 5.53,
+            "yoy": 75.9,
+            "mom": 0,
+            "industry": "Semiconductor Equipment & Materials"
+        },
+        {
+            "ticker": "8291.TWO",
+            "name": "尚茂",
+            "end_date": "115/05/20",
+            "close": 0,
+            "pb": 7.61,
+            "yoy": 15.9,
+            "mom": 0,
+            "industry": "Electronic Components"
+        },
+        {
+            "ticker": "8027.TWO",
+            "name": "鈦昇",
+            "end_date": "115/05/19",
+            "close": 0,
+            "pb": 8.09,
+            "yoy": 67.5,
+            "mom": 0,
+            "industry": "Specialty Industrial Machinery"
+        },
+        {
+            "ticker": "6234.TWO",
+            "name": "高僑",
+            "end_date": "115/05/18",
+            "close": 0,
+            "pb": 2.24,
+            "yoy": -6.4,
+            "mom": 0,
+            "industry": "Tools & Accessories"
+        },
+        {
+            "ticker": "9949.TWO",
+            "name": "琉園",
+            "end_date": "115/05/18",
+            "close": 0,
+            "pb": 1.9,
+            "yoy": -12.4,
+            "mom": 0,
+            "industry": "Household & Personal Products"
+        },
+        {
+            "ticker": "4529.TWO",
+            "name": "淳紳",
+            "end_date": "115/05/14",
+            "close": 0,
+            "pb": 1.47,
+            "yoy": -21.7,
+            "mom": 0,
+            "industry": "Electronic Components"
+        },
+        {
+            "ticker": "6735.TWO",
+            "name": "美達科技",
+            "end_date": "115/05/14",
+            "close": 0,
+            "pb": 6.51,
+            "yoy": 74.5,
+            "mom": 0,
+            "industry": "Semiconductor Equipment & Materials"
+        },
+        {
+            "ticker": "7751.TWO",
+            "name": "竑騰",
+            "end_date": "115/05/13",
+            "close": 0,
+            "pb": 23.47,
+            "yoy": 86.4,
+            "mom": 0,
+            "industry": "Semiconductor Equipment & Materials"
+        },
+        {
+            "ticker": "7734.TWO",
+            "name": "印能科技",
+            "end_date": "115/05/12",
+            "close": 0,
+            "pb": 15.83,
+            "yoy": -7.7,
+            "mom": 0,
+            "industry": "Packaging & Containers"
+        },
+        {
+            "ticker": "3228.TWO",
+            "name": "金麗科",
+            "end_date": "115/05/11",
+            "close": 0,
+            "pb": 27.35,
+            "yoy": 12.2,
+            "mom": 0,
+            "industry": "Semiconductors"
+        },
+        {
+            "ticker": "3430.TWO",
+            "name": "奇鈦科",
+            "end_date": "115/05/11",
+            "close": 0,
+            "pb": 4.4,
+            "yoy": 24.9,
+            "mom": 0,
+            "industry": "Specialty Chemicals"
+        },
+        {
+            "ticker": "3631.TWO",
+            "name": "晟楠",
+            "end_date": "115/05/11",
+            "close": 0,
+            "pb": 2.66,
+            "yoy": -87.2,
+            "mom": 0,
+            "industry": "Metal Fabrication"
+        },
+        {
+            "ticker": "4971.TWO",
+            "name": "IET-KY",
+            "end_date": "115/05/11",
+            "close": 0,
+            "pb": 14.87,
+            "yoy": 41.4,
+            "mom": 0,
+            "industry": "Semiconductors"
+        },
+        {
+            "ticker": "6217.TWO",
+            "name": "中探針",
+            "end_date": "115/05/11",
+            "close": 0,
+            "pb": 10.97,
+            "yoy": 15.9,
+            "mom": 0,
+            "industry": "Electronic Components"
+        },
+        {
+            "ticker": "3363.TWO",
+            "name": "上詮",
+            "end_date": "115/05/08",
+            "close": 0,
+            "pb": 33.14,
+            "yoy": 8.6,
+            "mom": 0,
+            "industry": "Communication Equipment"
+        },
+        {
+            "ticker": "4768.TWO",
+            "name": "晶呈科技",
+            "end_date": "115/05/08",
+            "close": 0,
+            "pb": 16.37,
+            "yoy": 147.3,
+            "mom": 0,
+            "industry": "Specialty Chemicals"
+        },
+        {
+            "ticker": "5498.TWO",
+            "name": "凱崴",
+            "end_date": "115/05/08",
+            "close": 0,
+            "pb": 6.86,
+            "yoy": 39.8,
+            "mom": 0,
+            "industry": "Tools & Accessories"
+        },
+        {
+            "ticker": "6423.TWO",
+            "name": "億而得",
+            "end_date": "115/05/08",
+            "close": 0,
+            "pb": 7.37,
+            "yoy": -2.7,
+            "mom": 0,
+            "industry": "Semiconductors"
+        },
+        {
+            "ticker": "6643.TWO",
+            "name": "M31",
+            "end_date": "115/05/08",
+            "close": 0,
+            "pb": 14.21,
+            "yoy": 66.1,
+            "mom": 0,
+            "industry": "Semiconductors"
+        },
+        {
+            "ticker": "8092.TWO",
+            "name": "建暐",
+            "end_date": "115/05/08",
+            "close": 0,
+            "pb": 1.85,
+            "yoy": 4.7,
+            "mom": 0,
+            "industry": "Specialty Industrial Machinery"
+        }
+    ]
 }
