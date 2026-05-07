@@ -115,6 +115,10 @@
             onclick="switchDataSource('momentum_data.json', 'momentum')">
         <label class="btn btn-outline-danger btn-strategy btn-momentum" for="strat_momentum">🔥 投信爆量突破股 (短線)</label>
 
+        <input type="radio" class="btn-check" name="strategy" id="strat_disposition" autocomplete="off"
+            onclick="switchDataSource('disposition_data.json', 'disposition')">
+        <label class="btn btn-outline-warning btn-strategy" for="strat_disposition">⚠️ 處置股一覽</label>
+
         <div id="dataDateDisplay" class="text-muted mt-3" style="font-size: 0.95em;"></div>
     </div>
 
@@ -210,6 +214,19 @@
                         <th>連續進榜(天)</th>
                     </tr>
                 `);
+            } else if (currentStrategy === 'disposition') {
+                head.append(`
+                    <tr>
+                        <th>代號</th>
+                        <th>標的名稱</th>
+                        <th>現價</th>
+                        <th>PB</th>
+                        <th>YoY%</th>
+                        <th>MoM%</th>
+                        <th>解除處置日期</th>
+                        <th>產業分類</th>
+                    </tr>
+                `);
             } else {
                 head.append(`
                     <tr>
@@ -241,6 +258,17 @@
                         <td class="text-center text-primary fw-bold">${s['投信近3日買賣超(張)'] || 0}</td>
                         <td class="text-center ${daysClass}">${days}</td>
                     </tr>`;
+                } else if (currentStrategy === 'disposition') {
+                    row = `<tr class="disposition-row">
+                        <td><code>${s.ticker}</code></td>
+                        <td class="fw-bold"><a href="https://tw.stock.yahoo.com/quote/${s.ticker}" target="_blank" style="text-decoration:none;">${s.name}</a></td>
+                        <td class="text-center fw-bold">${s.close}</td>
+                        <td class="text-center ${getColorClass(s.pb)}">${s.pb}</td>
+                        <td class="text-center ${getColorClass(s.yoy)}">${s.yoy}%</td>
+                        <td class="text-center ${getColorClass(s.mom)}">${s.mom}%</td>
+                        <td class="text-center text-danger fw-bold">${s.end_date}</td>
+                        <td><span class="badge-sector">${s.industry}</span></td>
+                    </tr>`;
                 } else {
                     const days = s.consecutive_days || 1;
                     const daysClass = days >= 3 ? "up-red" : "";
@@ -263,8 +291,8 @@
             $('#stockTable').show();
 
             // 啟動 DataTables
-            let orderCol = (currentStrategy === 'momentum') ? 7 : 6;
-            let orderDir = (currentStrategy === 'momentum') ? "desc" : "asc";
+            let orderCol = (currentStrategy === 'momentum') ? 7 : (currentStrategy === 'disposition' ? 6 : 6);
+            let orderDir = (currentStrategy === 'momentum') ? "desc" : (currentStrategy === 'disposition' ? "asc" : "asc");
 
             table = $('#stockTable').DataTable({
                 "language": { "url": "//cdn.datatables.net/plug-ins/1.13.4/i18n/zh-HANT.json" },
