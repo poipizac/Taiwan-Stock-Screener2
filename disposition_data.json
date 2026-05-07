@@ -6,10 +6,10 @@
             "ticker": "2330.TW",
             "name": "台積電 (測試用)",
             "end_date": "113/05/20",
-            "close": 2320.0,
-            "pb": 10.21,
+            "close": 2310.0,
+            "pb": 10.17,
             "yoy": 35.1,
-            "mom": 24.73,
+            "mom": 24.19,
             "industry": "Semiconductors"
         }
     ]

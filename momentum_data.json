@@ -11,8 +11,8 @@
             "volume": 98159451,
             "avg_vol_5d": 39239262.0,
             "yoy": "36.1%",
-            "投信近3日買賣超(張)": 733.0,
-            "consecutive_days": 1
+            "投信近3日買賣超(張)": 475.6,
+            "consecutive_days": 2
         },
         {
             "ticker": "2357.TW",
@@ -23,7 +23,7 @@
             "avg_vol_5d": 3994347.0,
             "yoy": "31.8%",
             "投信近3日買賣超(張)": 204.3,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2363.TW",
@@ -34,18 +34,7 @@
             "avg_vol_5d": 12237763.0,
             "yoy": "86.0%",
             "投信近3日買賣超(張)": 45.0,
-            "consecutive_days": 3
-        },
-        {
-            "ticker": "8210.TW",
-            "stock_id": "8210",
-            "name": "勤誠",
-            "price": 1290.0,
-            "volume": 8170967,
-            "avg_vol_5d": 2659872.0,
-            "yoy": "74.4%",
-            "投信近3日買賣超(張)": 1018.0,
-            "consecutive_days": 1
+            "consecutive_days": 4
         }
     ]
 }
