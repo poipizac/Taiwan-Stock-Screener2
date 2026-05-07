@@ -4,20 +4,6 @@
     "empty_today": false,
     "data": [
         {
-            "ticker": "1762.TW",
-            "name": "中化生",
-            "close": 35.25,
-            "sma200": 26.81,
-            "high120": 35.25,
-            "ratio": 1.09,
-            "pb": 0.88,
-            "eps": -4.39,
-            "yoy": -60.4,
-            "mom": 24.78,
-            "industry": "生技醫療業",
-            "consecutive_days": 2
-        },
-        {
             "ticker": "1721.TW",
             "name": "三晃",
             "close": 30.0,
@@ -32,18 +18,18 @@
             "consecutive_days": 1
         },
         {
-            "ticker": "2059.TW",
-            "name": "川湖",
-            "close": 4840.0,
-            "sma200": 3355.95,
-            "high120": 4840.0,
-            "ratio": 1.22,
-            "pb": 16.46,
-            "eps": 100.76,
-            "yoy": 37.8,
-            "mom": 23.79,
-            "industry": "電子零組件業",
-            "consecutive_days": 1
+            "ticker": "1762.TW",
+            "name": "中化生",
+            "close": 35.25,
+            "sma200": 26.81,
+            "high120": 35.25,
+            "ratio": 1.09,
+            "pb": 0.88,
+            "eps": -4.39,
+            "yoy": -60.4,
+            "mom": 24.78,
+            "industry": "生技醫療業",
+            "consecutive_days": 2
         },
         {
             "ticker": "2070.TWO",
@@ -60,6 +46,20 @@
             "consecutive_days": 2
         },
         {
+            "ticker": "2059.TW",
+            "name": "川湖",
+            "close": 4840.0,
+            "sma200": 3355.95,
+            "high120": 4840.0,
+            "ratio": 1.22,
+            "pb": 16.46,
+            "eps": 100.76,
+            "yoy": 37.8,
+            "mom": 23.79,
+            "industry": "電子零組件業",
+            "consecutive_days": 1
+        },
+        {
             "ticker": "2107.TW",
             "name": "厚生",
             "close": 26.5,
@@ -74,20 +74,6 @@
             "consecutive_days": 1
         },
         {
-            "ticker": "2301.TW",
-            "name": "光寶科",
-            "close": 203.5,
-            "sma200": 153.73,
-            "high120": 203.5,
-            "ratio": 1.14,
-            "pb": 5.24,
-            "eps": 6.59,
-            "yoy": 19.2,
-            "mom": 22.59,
-            "industry": "電腦及週邊設備業",
-            "consecutive_days": 1
-        },
-        {
             "ticker": "2327.TW",
             "name": "國巨*",
             "close": 371.5,
@@ -99,6 +85,20 @@
             "yoy": 22.7,
             "mom": 17.19,
             "industry": "電子零組件業",
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "2301.TW",
+            "name": "光寶科",
+            "close": 203.5,
+            "sma200": 153.73,
+            "high120": 203.5,
+            "ratio": 1.14,
+            "pb": 5.24,
+            "eps": 6.59,
+            "yoy": 19.2,
+            "mom": 22.59,
+            "industry": "電腦及週邊設備業",
             "consecutive_days": 1
         },
         {
@@ -130,18 +130,18 @@
             "consecutive_days": 2
         },
         {
-            "ticker": "3090.TW",
-            "name": "日電貿",
-            "close": 116.0,
-            "sma200": 87.32,
-            "high120": 116.0,
-            "ratio": 1.17,
-            "pb": 2.41,
-            "eps": 5.41,
-            "yoy": 21.0,
-            "mom": 20.46,
-            "industry": "電子零組件業",
-            "consecutive_days": 1
+            "ticker": "3122.TWO",
+            "name": "笙泉",
+            "close": 39.9,
+            "sma200": 25.74,
+            "high120": 39.9,
+            "ratio": 1.32,
+            "pb": 4.49,
+            "eps": -1.75,
+            "yoy": -17.9,
+            "mom": 22.02,
+            "industry": "半導體業",
+            "consecutive_days": 2
         },
         {
             "ticker": "3094.TW",
@@ -158,18 +158,18 @@
             "consecutive_days": 2
         },
         {
-            "ticker": "3122.TWO",
-            "name": "笙泉",
-            "close": 39.9,
-            "sma200": 25.74,
-            "high120": 39.9,
-            "ratio": 1.32,
-            "pb": 4.49,
-            "eps": -1.75,
-            "yoy": -17.9,
-            "mom": 22.02,
-            "industry": "半導體業",
-            "consecutive_days": 2
+            "ticker": "3090.TW",
+            "name": "日電貿",
+            "close": 116.0,
+            "sma200": 87.32,
+            "high120": 116.0,
+            "ratio": 1.17,
+            "pb": 2.41,
+            "eps": 5.41,
+            "yoy": 21.0,
+            "mom": 20.46,
+            "industry": "電子零組件業",
+            "consecutive_days": 1
         },
         {
             "ticker": "3268.TWO",
@@ -298,20 +298,6 @@
             "consecutive_days": 2
         },
         {
-            "ticker": "6173.TWO",
-            "name": "信昌電",
-            "close": 111.0,
-            "sma200": 59.35,
-            "high120": 111.0,
-            "ratio": 1.49,
-            "pb": 2.11,
-            "eps": 3.25,
-            "yoy": 4.2,
-            "mom": 29.52,
-            "industry": "電子零組件業",
-            "consecutive_days": 2
-        },
-        {
             "ticker": "6182.TWO",
             "name": "合晶",
             "close": 55.6,
@@ -324,6 +310,20 @@
             "mom": 38.65,
             "industry": "半導體業",
             "consecutive_days": 1
+        },
+        {
+            "ticker": "6173.TWO",
+            "name": "信昌電",
+            "close": 111.0,
+            "sma200": 59.35,
+            "high120": 111.0,
+            "ratio": 1.49,
+            "pb": 2.11,
+            "eps": 3.25,
+            "yoy": 4.2,
+            "mom": 29.52,
+            "industry": "電子零組件業",
+            "consecutive_days": 2
         },
         {
             "ticker": "6261.TWO",
@@ -438,20 +438,6 @@
             "consecutive_days": 1
         },
         {
-            "ticker": "8150.TW",
-            "name": "南茂",
-            "close": 98.1,
-            "sma200": 44.95,
-            "high120": 98.1,
-            "ratio": 1.7,
-            "pb": 2.86,
-            "eps": 0.77,
-            "yoy": 20.8,
-            "mom": 40.54,
-            "industry": "半導體業",
-            "consecutive_days": 1
-        },
-        {
             "ticker": "8227.TWO",
             "name": "巨有科技",
             "close": 204.0,
@@ -462,6 +448,20 @@
             "eps": 2.06,
             "yoy": 107.1,
             "mom": 33.33,
+            "industry": "半導體業",
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "8150.TW",
+            "name": "南茂",
+            "close": 98.1,
+            "sma200": 44.95,
+            "high120": 98.1,
+            "ratio": 1.7,
+            "pb": 2.86,
+            "eps": 0.77,
+            "yoy": 20.8,
+            "mom": 40.54,
             "industry": "半導體業",
             "consecutive_days": 1
         },
