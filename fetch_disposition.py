@@ -228,28 +228,38 @@ def fetch_tpex_disposition():
 
 
 def fetch_fundamental_data(ticker):
-    """ 使用 yfinance 抓取基本面數據 (現價、PB、YoY%、MoM%) """
+    """
+    使用 yfinance 抓取基本面數據 (現價、PB、YoY%、MoM%)。
+    邏輯與 update_data.py 的 fetch_single_ticker 完全對齊。
+    """
     for attempt in range(2):
         try:
             tk = yf.Ticker(ticker)
-            hist = tk.history(period='1mo', timeout=5)
-            if hist.empty:
+
+            # 1. 抓取歷史資料 (與 update_data.py 一致：period='1y', timeout=3)
+            hist = tk.history(period='1y', timeout=3)
+
+            if hist.empty or 'Close' not in hist.columns:
                 return None
 
+            hist = hist.dropna(subset=['Close'])
             close_price = hist['Close'].iloc[-1]
-            mom = 0.0
-            if len(hist) >= 2:
-                prev_price = hist['Close'].iloc[0]
-                if prev_price > 0:
-                    mom = ((close_price - prev_price) / prev_price) * 100
 
+            # 2. 抓取月線資料計算 MoM (與 update_data.py 一致)
+            df_monthly = tk.history(period='2mo', interval='1mo', timeout=3)
+            mom = 0.0
+            if not df_monthly.empty and len(df_monthly) >= 2:
+                current_mo = df_monthly['Close'].iloc[-1]
+                prev_mo = df_monthly['Close'].iloc[-2]
+                if prev_mo > 0:
+                    mom = ((current_mo - prev_mo) / prev_mo) * 100
+
+            # 3. 抓取基本面 info
             info = tk.info
 
             def clean(val, default=0):
                 try:
-                    if val is None or pd.isna(val):
-                        return default
-                    return round(float(val), 2)
+                    return round(float(val), 2) if pd.notnull(val) and val is not None else default
                 except:
                     return default
 
