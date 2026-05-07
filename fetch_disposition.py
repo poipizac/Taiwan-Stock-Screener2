@@ -253,12 +253,16 @@ def fetch_fundamental_data(ticker):
                 except:
                     return default
 
+            # 產業分類使用 twstock 的繁體中文分類
+            stock_id = ticker.split('.')[0]
+            industry_zh = twstock.codes[stock_id].group if stock_id in twstock.codes else '未知'
+
             return {
                 "close": clean(close_price),
                 "pb": clean(info.get('priceToBook')),
                 "yoy": clean(info.get('revenueGrowth', 0) * 100),
                 "mom": clean(mom),
-                "industry": info.get('industry', '未知')
+                "industry": industry_zh
             }
         except Exception as e:
             err = str(e)
