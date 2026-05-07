@@ -42,6 +42,6 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           # 加入所有更新後的 JSON 檔案
-          git add *.json
+          git add stock_data.json momentum_data.json disposition_data.json
           git commit -m "🤖 Auto-update daily stock data [Cloud Run]" || echo "No changes to commit"
           git push
