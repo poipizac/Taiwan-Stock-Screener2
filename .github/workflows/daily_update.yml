@@ -29,6 +29,9 @@ jobs:
       - name: Run 10x Stock Scraper
         run: python update_data.py
 
+      - name: Run Disposition Scraper
+        run: python fetch_disposition.py  
+
       - name: Run Momentum Screener
         env:
           FINMIND_TOKEN: ${{ secrets.FINMIND_TOKEN }}
@@ -39,6 +42,6 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           # 加入所有更新後的 JSON 檔案
-          git add stock_data.json momentum_data.json
+          git add *.json
           git commit -m "🤖 Auto-update daily stock data [Cloud Run]" || echo "No changes to commit"
           git push
