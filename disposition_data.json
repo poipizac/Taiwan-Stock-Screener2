@@ -11,7 +11,7 @@
             "pb": 6.6,
             "yoy": -35.5,
             "mom": 0,
-            "industry": "Electronic Components"
+            "industry": "光電業"
         },
         {
             "ticker": "3581.TWO",
@@ -21,7 +21,7 @@
             "pb": 13.0,
             "yoy": 41.5,
             "mom": 0,
-            "industry": "Semiconductors"
+            "industry": "半導體業"
         },
         {
             "ticker": "4951.TWO",
@@ -31,7 +31,7 @@
             "pb": 4.56,
             "yoy": 4.0,
             "mom": 0,
-            "industry": "Semiconductors"
+            "industry": "半導體業"
         },
         {
             "ticker": "5386.TWO",
@@ -41,7 +41,7 @@
             "pb": 20.31,
             "yoy": 74.6,
             "mom": 0,
-            "industry": "Computer Hardware"
+            "industry": "電腦及週邊設備業"
         },
         {
             "ticker": "3163.TWO",
@@ -51,7 +51,7 @@
             "pb": 28.44,
             "yoy": 30.7,
             "mom": 0,
-            "industry": "Communication Equipment"
+            "industry": "通信網路業"
         },
         {
             "ticker": "4542.TWO",
@@ -61,7 +61,7 @@
             "pb": 10.2,
             "yoy": 105.5,
             "mom": 0,
-            "industry": "Specialty Industrial Machinery"
+            "industry": "電子零組件業"
         },
         {
             "ticker": "4908.TWO",
@@ -71,7 +71,7 @@
             "pb": 10.71,
             "yoy": -33.3,
             "mom": 0,
-            "industry": "Communication Equipment"
+            "industry": "通信網路業"
         },
         {
             "ticker": "6683.TWO",
@@ -81,7 +81,7 @@
             "pb": 24.14,
             "yoy": 13.3,
             "mom": 0,
-            "industry": "Semiconductor Equipment & Materials"
+            "industry": "半導體業"
         },
         {
             "ticker": "8064.TWO",
@@ -91,7 +91,7 @@
             "pb": 5.53,
             "yoy": 75.9,
             "mom": 0,
-            "industry": "Semiconductor Equipment & Materials"
+            "industry": "光電業"
         },
         {
             "ticker": "8291.TWO",
@@ -101,7 +101,7 @@
             "pb": 7.61,
             "yoy": 15.9,
             "mom": 0,
-            "industry": "Electronic Components"
+            "industry": "電子零組件業"
         },
         {
             "ticker": "8027.TWO",
@@ -111,7 +111,7 @@
             "pb": 8.09,
             "yoy": 67.5,
             "mom": 0,
-            "industry": "Specialty Industrial Machinery"
+            "industry": "電機機械"
         },
         {
             "ticker": "6234.TWO",
@@ -121,7 +121,7 @@
             "pb": 2.24,
             "yoy": -6.4,
             "mom": 0,
-            "industry": "Tools & Accessories"
+            "industry": "光電業"
         },
         {
             "ticker": "9949.TWO",
@@ -131,7 +131,7 @@
             "pb": 1.9,
             "yoy": -12.4,
             "mom": 0,
-            "industry": "Household & Personal Products"
+            "industry": "文化創意業"
         },
         {
             "ticker": "4529.TWO",
@@ -141,7 +141,7 @@
             "pb": 1.47,
             "yoy": -21.7,
             "mom": 0,
-            "industry": "Electronic Components"
+            "industry": "其他業"
         },
         {
             "ticker": "6735.TWO",
@@ -151,7 +151,7 @@
             "pb": 6.51,
             "yoy": 74.5,
             "mom": 0,
-            "industry": "Semiconductor Equipment & Materials"
+            "industry": "其他電子業"
         },
         {
             "ticker": "7751.TWO",
@@ -161,7 +161,7 @@
             "pb": 23.47,
             "yoy": 86.4,
             "mom": 0,
-            "industry": "Semiconductor Equipment & Materials"
+            "industry": "半導體業"
         },
         {
             "ticker": "7734.TWO",
@@ -171,7 +171,7 @@
             "pb": 15.83,
             "yoy": -7.7,
             "mom": 0,
-            "industry": "Packaging & Containers"
+            "industry": "半導體業"
         },
         {
             "ticker": "3228.TWO",
@@ -181,7 +181,7 @@
             "pb": 27.35,
             "yoy": 12.2,
             "mom": 0,
-            "industry": "Semiconductors"
+            "industry": "半導體業"
         },
         {
             "ticker": "3430.TWO",
@@ -191,7 +191,7 @@
             "pb": 4.4,
             "yoy": 24.9,
             "mom": 0,
-            "industry": "Specialty Chemicals"
+            "industry": "化學工業"
         },
         {
             "ticker": "3631.TWO",
@@ -201,7 +201,7 @@
             "pb": 2.66,
             "yoy": -87.2,
             "mom": 0,
-            "industry": "Metal Fabrication"
+            "industry": "電子零組件業"
         },
         {
             "ticker": "4971.TWO",
@@ -211,7 +211,7 @@
             "pb": 14.87,
             "yoy": 41.4,
             "mom": 0,
-            "industry": "Semiconductors"
+            "industry": "半導體業"
         },
         {
             "ticker": "6217.TWO",
@@ -221,7 +221,7 @@
             "pb": 10.97,
             "yoy": 15.9,
             "mom": 0,
-            "industry": "Electronic Components"
+            "industry": "電子零組件業"
         },
         {
             "ticker": "3363.TWO",
@@ -231,7 +231,7 @@
             "pb": 33.14,
             "yoy": 8.6,
             "mom": 0,
-            "industry": "Communication Equipment"
+            "industry": "通信網路業"
         },
         {
             "ticker": "4768.TWO",
@@ -241,7 +241,7 @@
             "pb": 16.37,
             "yoy": 147.3,
             "mom": 0,
-            "industry": "Specialty Chemicals"
+            "industry": "化學工業"
         },
         {
             "ticker": "5498.TWO",
@@ -251,7 +251,7 @@
             "pb": 6.86,
             "yoy": 39.8,
             "mom": 0,
-            "industry": "Tools & Accessories"
+            "industry": "電子零組件業"
         },
         {
             "ticker": "6423.TWO",
@@ -261,7 +261,7 @@
             "pb": 7.37,
             "yoy": -2.7,
             "mom": 0,
-            "industry": "Semiconductors"
+            "industry": "半導體業"
         },
         {
             "ticker": "6643.TWO",
@@ -271,7 +271,7 @@
             "pb": 14.21,
             "yoy": 66.1,
             "mom": 0,
-            "industry": "Semiconductors"
+            "industry": "半導體業"
         },
         {
             "ticker": "8092.TWO",
@@ -281,7 +281,7 @@
             "pb": 1.85,
             "yoy": 4.7,
             "mom": 0,
-            "industry": "Specialty Industrial Machinery"
+            "industry": "其他電子業"
         }
     ]
 }
