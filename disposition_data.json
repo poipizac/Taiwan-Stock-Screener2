@@ -1,16 +1,6 @@
 {
     "scan_date": "2026-05-07",
     "data_date": "2026-05-07",
-    "data": [
-        {
-            "ticker": "2330.TW",
-            "name": "台積電 (測試用)",
-            "end_date": "113/05/20",
-            "close": 2310.0,
-            "pb": 10.17,
-            "yoy": 35.1,
-            "mom": 24.19,
-            "industry": "Semiconductors"
-        }
-    ]
+    "error_msg": "TWSE JSON returned HTML (Blocked) | TPEx JSON returned HTML (Blocked) | FinMind Error: 'data'",
+    "data": []
 }
