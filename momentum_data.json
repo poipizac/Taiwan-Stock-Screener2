@@ -1,51 +1,51 @@
 {
-    "scan_date": "2026-05-07",
-    "data_date": "2026-05-07",
+    "scan_date": "2026-05-08",
+    "data_date": "2026-05-08",
     "empty_today": false,
     "data": [
         {
-            "ticker": "1785.TWO",
-            "stock_id": "1785",
-            "name": "光洋科",
-            "price": 185.0,
-            "volume": 98159451,
-            "avg_vol_5d": 39239262.0,
-            "yoy": "36.1%",
-            "投信近3日買賣超(張)": 475.6,
-            "consecutive_days": 4
-        },
-        {
-            "ticker": "2354.TW",
-            "stock_id": "2354",
-            "name": "鴻準",
-            "price": 63.3,
-            "volume": 63676187,
-            "avg_vol_5d": 27805019.0,
-            "yoy": "27.9%",
-            "投信近3日買賣超(張)": 4.0,
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "2357.TW",
-            "stock_id": "2357",
-            "name": "華碩",
-            "price": 639.0,
-            "volume": 9840375,
-            "avg_vol_5d": 3994347.0,
-            "yoy": "31.8%",
-            "投信近3日買賣超(張)": 1507.8,
-            "consecutive_days": 4
+            "ticker": "2327.TW",
+            "stock_id": "2327",
+            "name": "國巨*",
+            "price": 389.0,
+            "volume": 96705464,
+            "avg_vol_5d": 44347212.0,
+            "yoy": "22.7%",
+            "投信近3日買賣超(張)": 9357.5,
+            "consecutive_days": 1
         },
         {
             "ticker": "2363.TW",
             "stock_id": "2363",
             "name": "矽統",
-            "price": 57.9,
-            "volume": 27069010,
-            "avg_vol_5d": 12237763.0,
+            "price": 59.4,
+            "volume": 34449923,
+            "avg_vol_5d": 16545273.0,
             "yoy": "86.0%",
-            "投信近3日買賣超(張)": 45.0,
-            "consecutive_days": 6
+            "投信近3日買賣超(張)": 35.0,
+            "consecutive_days": 7
+        },
+        {
+            "ticker": "3211.TWO",
+            "stock_id": "3211",
+            "name": "順達",
+            "price": 381.5,
+            "volume": 15764190,
+            "avg_vol_5d": 7781132.0,
+            "yoy": "35.2%",
+            "投信近3日買賣超(張)": 43.3,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "3551.TWO",
+            "stock_id": "3551",
+            "name": "世禾",
+            "price": 210.0,
+            "volume": 6784451,
+            "avg_vol_5d": 2209298.0,
+            "yoy": "25.5%",
+            "投信近3日買賣超(張)": 90.0,
+            "consecutive_days": 1
         }
     ]
 }
