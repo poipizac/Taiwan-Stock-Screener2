@@ -1,73 +1,62 @@
 {
-    "scan_date": "2026-05-10",
-    "data_date": "2026-05-10",
+    "scan_date": "2026-05-11",
+    "data_date": "2026-05-11",
     "empty_today": false,
     "data": [
         {
-            "ticker": "2327.TW",
-            "stock_id": "2327",
-            "name": "國巨*",
-            "price": 389.0,
-            "volume": 94993275,
-            "avg_vol_5d": 44347212.0,
-            "yoy": "22.7%",
-            "投信近3日買賣超(張)": 9357.5,
-            "consecutive_days": 4
+            "ticker": "2059.TW",
+            "stock_id": "2059",
+            "name": "川湖",
+            "price": 5520.0,
+            "volume": 1793379,
+            "avg_vol_5d": 844511.0,
+            "yoy": "37.8%",
+            "投信近3日買賣超(張)": 258.6,
+            "consecutive_days": 1
         },
         {
-            "ticker": "2363.TW",
-            "stock_id": "2363",
-            "name": "矽統",
-            "price": 59.4,
-            "volume": 34312823,
-            "avg_vol_5d": 16545273.0,
-            "yoy": "86.0%",
-            "投信近3日買賣超(張)": 35.0,
-            "consecutive_days": 10
+            "ticker": "3036.TW",
+            "stock_id": "3036",
+            "name": "文曄",
+            "price": 264.5,
+            "volume": 22013273,
+            "avg_vol_5d": 10807403.0,
+            "yoy": "30.6%",
+            "投信近3日買賣超(張)": 5053.7,
+            "consecutive_days": 1
         },
         {
-            "ticker": "3551.TWO",
-            "stock_id": "3551",
-            "name": "世禾",
-            "price": 210.0,
-            "volume": 6691253,
-            "avg_vol_5d": 2209298.0,
-            "yoy": "25.5%",
-            "投信近3日買賣超(張)": 90.0,
-            "consecutive_days": 4
+            "ticker": "3491.TWO",
+            "stock_id": "3491",
+            "name": "昇達科",
+            "price": 1820.0,
+            "volume": 4393741,
+            "avg_vol_5d": 1763628.0,
+            "yoy": "35.9%",
+            "投信近3日買賣超(張)": 119.4,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "4916.TW",
+            "stock_id": "4916",
+            "name": "事欣科",
+            "price": 67.0,
+            "volume": 9396350,
+            "avg_vol_5d": 4440800.0,
+            "yoy": "34.1%",
+            "投信近3日買賣超(張)": 10.0,
+            "consecutive_days": 1
         },
         {
             "ticker": "6781.TW",
             "stock_id": "6781",
             "name": "AES-KY",
-            "price": 1230.0,
-            "volume": 3340606,
-            "avg_vol_5d": 1538482.0,
+            "price": 1320.0,
+            "volume": 4354395,
+            "avg_vol_5d": 1928342.0,
             "yoy": "39.8%",
-            "投信近3日買賣超(張)": 1.8,
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "7749.TW",
-            "stock_id": "7749",
-            "name": "意騰-KY",
-            "price": 514.0,
-            "volume": 2592120,
-            "avg_vol_5d": 1170290.0,
-            "yoy": "46.2%",
-            "投信近3日買賣超(張)": 3.0,
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "8150.TW",
-            "stock_id": "8150",
-            "name": "南茂",
-            "price": 92.7,
-            "volume": 101044069,
-            "avg_vol_5d": 50080684.0,
-            "yoy": "20.8%",
-            "投信近3日買賣超(張)": 10966.0,
-            "consecutive_days": 2
+            "投信近3日買賣超(張)": 28.2,
+            "consecutive_days": 3
         }
     ]
 }
