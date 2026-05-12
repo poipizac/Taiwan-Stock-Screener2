@@ -1,51 +1,40 @@
 {
-    "scan_date": "2026-05-11",
-    "data_date": "2026-05-11",
+    "scan_date": "2026-05-12",
+    "data_date": "2026-05-12",
     "empty_today": false,
     "data": [
         {
-            "ticker": "2059.TW",
-            "stock_id": "2059",
-            "name": "川湖",
-            "price": 5520.0,
-            "volume": 1793379,
-            "avg_vol_5d": 844511.0,
-            "yoy": "37.8%",
-            "投信近3日買賣超(張)": 258.6,
-            "consecutive_days": 2
+            "ticker": "2851.TW",
+            "stock_id": "2851",
+            "name": "中再保",
+            "price": 34.1,
+            "volume": 10609573,
+            "avg_vol_5d": 2305194.0,
+            "yoy": "29.9%",
+            "投信近3日買賣超(張)": 17.0,
+            "consecutive_days": 1
         },
         {
             "ticker": "3036.TW",
             "stock_id": "3036",
             "name": "文曄",
-            "price": 264.5,
-            "volume": 22013273,
-            "avg_vol_5d": 10807403.0,
+            "price": 275.5,
+            "volume": 43160427,
+            "avg_vol_5d": 13187831.0,
             "yoy": "30.6%",
-            "投信近3日買賣超(張)": 5053.7,
-            "consecutive_days": 2
+            "投信近3日買賣超(張)": 13092.4,
+            "consecutive_days": 3
         },
         {
-            "ticker": "3491.TWO",
-            "stock_id": "3491",
-            "name": "昇達科",
-            "price": 1820.0,
-            "volume": 4393741,
-            "avg_vol_5d": 1763628.0,
-            "yoy": "35.9%",
-            "投信近3日買賣超(張)": 119.4,
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "4916.TW",
-            "stock_id": "4916",
-            "name": "事欣科",
-            "price": 67.0,
-            "volume": 9396350,
-            "avg_vol_5d": 4440800.0,
-            "yoy": "34.1%",
-            "投信近3日買賣超(張)": 10.0,
-            "consecutive_days": 2
+            "ticker": "3374.TWO",
+            "stock_id": "3374",
+            "name": "精材",
+            "price": 255.5,
+            "volume": 33652491,
+            "avg_vol_5d": 15565605.0,
+            "yoy": "23.8%",
+            "投信近3日買賣超(張)": 474.7,
+            "consecutive_days": 1
         }
     ]
 }
