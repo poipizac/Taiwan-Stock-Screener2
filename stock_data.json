@@ -158,20 +158,6 @@
             "consecutive_days": 2
         },
         {
-            "ticker": "6173.TWO",
-            "name": "信昌電",
-            "close": 159.0,
-            "sma200": 61.44,
-            "high120": 159.0,
-            "ratio": 1.83,
-            "pb": 3.02,
-            "eps": 3.25,
-            "yoy": 4.2,
-            "mom": 85.53,
-            "industry": "電子零組件業",
-            "consecutive_days": 8
-        },
-        {
             "ticker": "6166.TW",
             "name": "凌華",
             "close": 111.5,
@@ -186,18 +172,18 @@
             "consecutive_days": 2
         },
         {
-            "ticker": "6195.TWO",
-            "name": "詩肯",
-            "close": 28.4,
-            "sma200": 26.5,
-            "high120": 28.4,
-            "ratio": 0.92,
-            "pb": 1.1,
-            "eps": 0.98,
-            "yoy": -5.5,
-            "mom": 19.83,
-            "industry": "居家生活",
-            "consecutive_days": 1
+            "ticker": "6173.TWO",
+            "name": "信昌電",
+            "close": 159.0,
+            "sma200": 61.44,
+            "high120": 159.0,
+            "ratio": 1.83,
+            "pb": 3.02,
+            "eps": 3.25,
+            "yoy": 4.2,
+            "mom": 85.53,
+            "industry": "電子零組件業",
+            "consecutive_days": 8
         },
         {
             "ticker": "6208.TWO",
@@ -211,6 +197,20 @@
             "yoy": 0.3,
             "mom": 18.87,
             "industry": "半導體業",
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6195.TWO",
+            "name": "詩肯",
+            "close": 28.4,
+            "sma200": 26.5,
+            "high120": 28.4,
+            "ratio": 0.92,
+            "pb": 1.1,
+            "eps": 0.98,
+            "yoy": -5.5,
+            "mom": 19.83,
+            "industry": "居家生活",
             "consecutive_days": 1
         },
         {
@@ -256,20 +256,6 @@
             "consecutive_days": 1
         },
         {
-            "ticker": "6449.TW",
-            "name": "鈺邦",
-            "close": 218.0,
-            "sma200": 166.36,
-            "high120": 218.0,
-            "ratio": 1.08,
-            "pb": 4.13,
-            "eps": 7.25,
-            "yoy": 22.7,
-            "mom": 34.98,
-            "industry": "電子零組件業",
-            "consecutive_days": 1
-        },
-        {
             "ticker": "6446.TW",
             "name": "藥華藥",
             "close": 782.0,
@@ -281,6 +267,20 @@
             "yoy": 59.4,
             "mom": 18.31,
             "industry": "生技醫療業",
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6449.TW",
+            "name": "鈺邦",
+            "close": 218.0,
+            "sma200": 166.36,
+            "high120": 218.0,
+            "ratio": 1.08,
+            "pb": 4.13,
+            "eps": 7.25,
+            "yoy": 22.7,
+            "mom": 34.98,
+            "industry": "電子零組件業",
             "consecutive_days": 1
         },
         {
@@ -312,20 +312,6 @@
             "consecutive_days": 2
         },
         {
-            "ticker": "8069.TWO",
-            "name": "元太",
-            "close": 215.0,
-            "sma200": 195.21,
-            "high120": 215.0,
-            "ratio": 0.82,
-            "pb": 3.6,
-            "eps": 9.07,
-            "yoy": -27.5,
-            "mom": 56.36,
-            "industry": "光電業",
-            "consecutive_days": 1
-        },
-        {
             "ticker": "8105.TW",
             "name": "凌巨",
             "close": 16.2,
@@ -336,6 +322,20 @@
             "eps": -0.3,
             "yoy": 3.9,
             "mom": 21.8,
+            "industry": "光電業",
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "8069.TWO",
+            "name": "元太",
+            "close": 215.0,
+            "sma200": 195.21,
+            "high120": 215.0,
+            "ratio": 0.82,
+            "pb": 3.6,
+            "eps": 9.07,
+            "yoy": -27.5,
+            "mom": 56.36,
             "industry": "光電業",
             "consecutive_days": 1
         },
