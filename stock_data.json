@@ -88,20 +88,6 @@
             "consecutive_days": 1
         },
         {
-            "ticker": "3006.TW",
-            "name": "晶豪科",
-            "close": 238.0,
-            "sma200": 111.93,
-            "high120": 238.0,
-            "ratio": 1.8,
-            "pb": 6.3,
-            "eps": 0.87,
-            "yoy": 150.3,
-            "mom": 40.41,
-            "industry": "半導體業",
-            "consecutive_days": 1
-        },
-        {
             "ticker": "3008.TW",
             "name": "大立光",
             "close": 3135.0,
@@ -113,6 +99,20 @@
             "yoy": 6.6,
             "mom": 24.65,
             "industry": "光電業",
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "3006.TW",
+            "name": "晶豪科",
+            "close": 238.0,
+            "sma200": 111.93,
+            "high120": 238.0,
+            "ratio": 1.8,
+            "pb": 6.3,
+            "eps": 0.87,
+            "yoy": 150.3,
+            "mom": 40.41,
+            "industry": "半導體業",
             "consecutive_days": 1
         },
         {
@@ -312,20 +312,6 @@
             "consecutive_days": 1
         },
         {
-            "ticker": "8016.TW",
-            "name": "矽創",
-            "close": 294.5,
-            "sma200": 201.06,
-            "high120": 294.5,
-            "ratio": 1.28,
-            "pb": 2.85,
-            "eps": 14.55,
-            "yoy": 15.0,
-            "mom": 28.04,
-            "industry": "半導體業",
-            "consecutive_days": 1
-        },
-        {
             "ticker": "8028.TW",
             "name": "昇陽半導體",
             "close": 261.5,
@@ -336,6 +322,20 @@
             "eps": 4.19,
             "yoy": 16.1,
             "mom": 6.73,
+            "industry": "半導體業",
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "8016.TW",
+            "name": "矽創",
+            "close": 294.5,
+            "sma200": 201.06,
+            "high120": 294.5,
+            "ratio": 1.28,
+            "pb": 2.85,
+            "eps": 14.55,
+            "yoy": 15.0,
+            "mom": 28.04,
             "industry": "半導體業",
             "consecutive_days": 1
         },
