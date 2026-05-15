@@ -1,40 +1,40 @@
 {
-    "scan_date": "2026-05-13",
-    "data_date": "2026-05-13",
+    "scan_date": "2026-05-15",
+    "data_date": "2026-05-15",
     "empty_today": false,
     "data": [
         {
-            "ticker": "2542.TW",
-            "stock_id": "2542",
-            "name": "興富發",
-            "price": 42.7,
-            "volume": 29559342,
-            "avg_vol_5d": 10665378.0,
-            "yoy": "36.9%",
-            "投信近3日買賣超(張)": 37.0,
-            "consecutive_days": 2
+            "ticker": "2327.TW",
+            "stock_id": "2327",
+            "name": "國巨*",
+            "price": 455.5,
+            "volume": 116634094,
+            "avg_vol_5d": 55248818.0,
+            "yoy": "22.7%",
+            "投信近3日買賣超(張)": 11926.6,
+            "consecutive_days": 1
         },
         {
-            "ticker": "3044.TW",
-            "stock_id": "3044",
-            "name": "健鼎",
-            "price": 529.0,
-            "volume": 12237123,
-            "avg_vol_5d": 5753487.0,
-            "yoy": "22.4%",
-            "投信近3日買賣超(張)": 36.8,
-            "consecutive_days": 2
+            "ticker": "3004.TW",
+            "stock_id": "3004",
+            "name": "豐達科",
+            "price": 121.0,
+            "volume": 966781,
+            "avg_vol_5d": 356156.0,
+            "yoy": "28.7%",
+            "投信近3日買賣超(張)": 45.0,
+            "consecutive_days": 1
         },
         {
-            "ticker": "5269.TW",
-            "stock_id": "5269",
-            "name": "祥碩",
-            "price": 1430.0,
-            "volume": 6553925,
-            "avg_vol_5d": 3001348.0,
-            "yoy": "85.3%",
-            "投信近3日買賣超(張)": 268.9,
-            "consecutive_days": 2
+            "ticker": "5439.TWO",
+            "stock_id": "5439",
+            "name": "高技",
+            "price": 391.0,
+            "volume": 13187813,
+            "avg_vol_5d": 5888486.0,
+            "yoy": "132.0%",
+            "投信近3日買賣超(張)": 752.0,
+            "consecutive_days": 1
         }
     ]
 }
