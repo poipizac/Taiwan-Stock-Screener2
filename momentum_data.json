@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-05-16",
-    "data_date": "2026-05-16",
+    "scan_date": "2026-05-17",
+    "data_date": "2026-05-17",
     "empty_today": false,
     "data": [
         {
@@ -12,7 +12,7 @@
             "avg_vol_5d": 55248818.0,
             "yoy": "22.7%",
             "投信近3日買賣超(張)": 11926.6,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3004.TW",
@@ -23,7 +23,7 @@
             "avg_vol_5d": 356156.0,
             "yoy": "28.7%",
             "投信近3日買賣超(張)": 45.0,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "5439.TWO",
@@ -34,7 +34,7 @@
             "avg_vol_5d": 5888486.0,
             "yoy": "132.0%",
             "投信近3日買賣超(張)": 752.0,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "6462.TWO",
@@ -45,7 +45,7 @@
             "avg_vol_5d": 1994835.0,
             "yoy": "111.8%",
             "投信近3日買賣超(張)": 3.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         }
     ]
 }
