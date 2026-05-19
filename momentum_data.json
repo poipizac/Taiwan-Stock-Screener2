@@ -1,40 +1,40 @@
 {
-    "scan_date": "2026-05-18",
-    "data_date": "2026-05-18",
+    "scan_date": "2026-05-19",
+    "data_date": "2026-05-19",
     "empty_today": false,
     "data": [
-        {
-            "ticker": "2376.TW",
-            "stock_id": "2376",
-            "name": "技嘉",
-            "price": 330.5,
-            "volume": 39056176,
-            "avg_vol_5d": 16386892.0,
-            "yoy": "59.8%",
-            "投信近3日買賣超(張)": 3126.4,
-            "consecutive_days": 2
-        },
         {
             "ticker": "3004.TW",
             "stock_id": "3004",
             "name": "豐達科",
-            "price": 133.0,
-            "volume": 1723718,
-            "avg_vol_5d": 449900.0,
+            "price": 124.5,
+            "volume": 2060882,
+            "avg_vol_5d": 696891.0,
             "yoy": "28.7%",
-            "投信近3日買賣超(張)": 45.0,
-            "consecutive_days": 5
+            "投信近3日買賣超(張)": 35.0,
+            "consecutive_days": 6
         },
         {
-            "ticker": "3090.TW",
-            "stock_id": "3090",
-            "name": "日電貿",
-            "price": 148.0,
-            "volume": 36729477,
-            "avg_vol_5d": 17570733.0,
-            "yoy": "21.0%",
-            "投信近3日買賣超(張)": 3403.0,
-            "consecutive_days": 2
+            "ticker": "3491.TWO",
+            "stock_id": "3491",
+            "name": "昇達科",
+            "price": 1765.0,
+            "volume": 6581173,
+            "avg_vol_5d": 2127486.0,
+            "yoy": "64.5%",
+            "投信近3日買賣超(張)": 93.6,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "3577.TWO",
+            "stock_id": "3577",
+            "name": "泓格",
+            "price": 126.5,
+            "volume": 4402061,
+            "avg_vol_5d": 1719545.0,
+            "yoy": "22.7%",
+            "投信近3日買賣超(張)": 95.0,
+            "consecutive_days": 1
         }
     ]
 }
