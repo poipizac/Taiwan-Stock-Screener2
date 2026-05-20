@@ -1,39 +1,39 @@
 {
-    "scan_date": "2026-05-19",
-    "data_date": "2026-05-19",
+    "scan_date": "2026-05-20",
+    "data_date": "2026-05-20",
     "empty_today": false,
     "data": [
         {
-            "ticker": "3004.TW",
-            "stock_id": "3004",
-            "name": "豐達科",
-            "price": 124.5,
-            "volume": 2060882,
-            "avg_vol_5d": 696891.0,
-            "yoy": "28.7%",
-            "投信近3日買賣超(張)": 35.0,
-            "consecutive_days": 6
-        },
-        {
-            "ticker": "3491.TWO",
-            "stock_id": "3491",
-            "name": "昇達科",
-            "price": 1765.0,
-            "volume": 6581173,
-            "avg_vol_5d": 2127486.0,
-            "yoy": "64.5%",
-            "投信近3日買賣超(張)": 93.6,
+            "ticker": "2455.TW",
+            "stock_id": "2455",
+            "name": "全新",
+            "price": 400.5,
+            "volume": 27533990,
+            "avg_vol_5d": 2493804.0,
+            "yoy": "32.8%",
+            "投信近3日買賣超(張)": 2192.0,
             "consecutive_days": 1
         },
         {
-            "ticker": "3577.TWO",
-            "stock_id": "3577",
-            "name": "泓格",
+            "ticker": "2495.TW",
+            "stock_id": "2495",
+            "name": "普安",
+            "price": 37.5,
+            "volume": 7613424,
+            "avg_vol_5d": 3372273.0,
+            "yoy": "35.1%",
+            "投信近3日買賣超(張)": 411.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "8109.TWO",
+            "stock_id": "8109",
+            "name": "博大",
             "price": 126.5,
-            "volume": 4402061,
-            "avg_vol_5d": 1719545.0,
-            "yoy": "22.7%",
-            "投信近3日買賣超(張)": 95.0,
+            "volume": 800565,
+            "avg_vol_5d": 239755.0,
+            "yoy": "35.4%",
+            "投信近3日買賣超(張)": 159.0,
             "consecutive_days": 1
         }
     ]
