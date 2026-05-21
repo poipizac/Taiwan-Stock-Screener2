@@ -1,40 +1,95 @@
 {
-    "scan_date": "2026-05-20",
-    "data_date": "2026-05-20",
+    "scan_date": "2026-05-21",
+    "data_date": "2026-05-21",
     "empty_today": false,
     "data": [
+        {
+            "ticker": "2421.TW",
+            "stock_id": "2421",
+            "name": "建準",
+            "price": 152.0,
+            "volume": 8693178,
+            "avg_vol_5d": 4134659.0,
+            "yoy": "20.6%",
+            "投信近3日買賣超(張)": 2675.0,
+            "consecutive_days": 1
+        },
         {
             "ticker": "2455.TW",
             "stock_id": "2455",
             "name": "全新",
-            "price": 400.5,
-            "volume": 27533990,
-            "avg_vol_5d": 2493804.0,
+            "price": 386.5,
+            "volume": 21827252,
+            "avg_vol_5d": 7482188.0,
             "yoy": "32.8%",
-            "投信近3日買賣超(張)": 2192.0,
-            "consecutive_days": 1
+            "投信近3日買賣超(張)": 2828.0,
+            "consecutive_days": 2
         },
         {
             "ticker": "2495.TW",
             "stock_id": "2495",
             "name": "普安",
-            "price": 37.5,
-            "volume": 7613424,
-            "avg_vol_5d": 3372273.0,
+            "price": 40.65,
+            "volume": 10676930,
+            "avg_vol_5d": 4089054.0,
             "yoy": "35.1%",
-            "投信近3日買賣超(張)": 411.0,
+            "投信近3日買賣超(張)": 608.0,
+            "consecutive_days": 2
+        },
+        {
+            "ticker": "3090.TW",
+            "stock_id": "3090",
+            "name": "日電貿",
+            "price": 196.0,
+            "volume": 61109686,
+            "avg_vol_5d": 27857893.0,
+            "yoy": "21.0%",
+            "投信近3日買賣超(張)": 5794.9,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "3163.TWO",
+            "stock_id": "3163",
+            "name": "波若威",
+            "price": 1045.0,
+            "volume": 2598507,
+            "avg_vol_5d": 604660.0,
+            "yoy": "25.2%",
+            "投信近3日買賣超(張)": 129.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "3702.TW",
+            "stock_id": "3702",
+            "name": "大聯大",
+            "price": 123.5,
+            "volume": 43213896,
+            "avg_vol_5d": 11869738.0,
+            "yoy": "27.2%",
+            "投信近3日買賣超(張)": 1637.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6282.TW",
+            "stock_id": "6282",
+            "name": "康舒",
+            "price": 53.6,
+            "volume": 44145823,
+            "avg_vol_5d": 21697942.0,
+            "yoy": "20.5%",
+            "投信近3日買賣超(張)": 141.0,
             "consecutive_days": 1
         },
         {
             "ticker": "8109.TWO",
             "stock_id": "8109",
             "name": "博大",
-            "price": 126.5,
-            "volume": 800565,
-            "avg_vol_5d": 239755.0,
-            "yoy": "35.4%",
-            "投信近3日買賣超(張)": 159.0,
-            "consecutive_days": 1
+            "price": 127.5,
+            "volume": 1412938,
+            "avg_vol_5d": 368051.0,
+            "yoy": "20.6%",
+            "投信近3日買賣超(張)": 275.0,
+            "consecutive_days": 2
         }
     ]
 }
