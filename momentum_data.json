@@ -1,62 +1,84 @@
 {
-    "scan_date": "2026-05-24",
-    "data_date": "2026-05-24",
+    "scan_date": "2026-05-25",
+    "data_date": "2026-05-25",
     "empty_today": false,
     "data": [
+        {
+            "ticker": "2317.TW",
+            "stock_id": "2317",
+            "name": "鴻海",
+            "price": 261.0,
+            "volume": 122545547,
+            "avg_vol_5d": 59202085.0,
+            "yoy": "28.9%",
+            "投信近3日買賣超(張)": 964.4,
+            "consecutive_days": 1
+        },
         {
             "ticker": "2356.TW",
             "stock_id": "2356",
             "name": "英業達",
-            "price": 59.5,
-            "volume": 122076259,
-            "avg_vol_5d": 39550743.0,
+            "price": 65.4,
+            "volume": 134743595,
+            "avg_vol_5d": 53785408.0,
             "yoy": "27.6%",
-            "投信近3日買賣超(張)": 12783.9,
-            "consecutive_days": 3
+            "投信近3日買賣超(張)": 7286.9,
+            "consecutive_days": 4
         },
         {
             "ticker": "2421.TW",
             "stock_id": "2421",
             "name": "建準",
-            "price": 158.5,
-            "volume": 16043140,
-            "avg_vol_5d": 4856531.0,
+            "price": 162.5,
+            "volume": 15501882,
+            "avg_vol_5d": 7242838.0,
             "yoy": "20.6%",
-            "投信近3日買賣超(張)": 2706.0,
-            "consecutive_days": 4
+            "投信近3日買賣超(張)": 2862.0,
+            "consecutive_days": 5
         },
         {
             "ticker": "2436.TW",
             "stock_id": "2436",
             "name": "偉詮電",
-            "price": 77.6,
-            "volume": 12352163,
-            "avg_vol_5d": 4848022.0,
+            "price": 80.5,
+            "volume": 18720724,
+            "avg_vol_5d": 6248669.0,
             "yoy": "31.7%",
-            "投信近3日買賣超(張)": 45.0,
-            "consecutive_days": 3
+            "投信近3日買賣超(張)": 30.0,
+            "consecutive_days": 4
         },
         {
-            "ticker": "2495.TW",
-            "stock_id": "2495",
-            "name": "普安",
-            "price": 44.2,
-            "volume": 23976978,
-            "avg_vol_5d": 5555905.0,
-            "yoy": "35.1%",
-            "投信近3日買賣超(張)": 604.0,
-            "consecutive_days": 5
+            "ticker": "2637.TW",
+            "stock_id": "2637",
+            "name": "慧洋-KY",
+            "price": 75.1,
+            "volume": 5435048,
+            "avg_vol_5d": 2476346.0,
+            "yoy": "28.6%",
+            "投信近3日買賣超(張)": 32.7,
+            "consecutive_days": 1
         },
         {
             "ticker": "3163.TWO",
             "stock_id": "3163",
             "name": "波若威",
-            "price": 1145.0,
-            "volume": 3404797,
-            "avg_vol_5d": 1031787.0,
+            "price": 1210.0,
+            "volume": 7428547,
+            "avg_vol_5d": 1568233.0,
             "yoy": "25.2%",
-            "投信近3日買賣超(張)": 605.0,
-            "consecutive_days": 4
+            "投信近3日買賣超(張)": 869.0,
+            "consecutive_days": 5
+        },
+        {
+            "ticker": "4991.TWO",
+            "stock_id": "4991",
+            "name": "環宇-KY",
+            "price": 840.0,
+            "volume": 6420166,
+            "avg_vol_5d": 1079612.0,
+            "yoy": "51.0%",
+            "投信近3日買賣超(張)": 24.0,
+            "consecutive_days": 1
         }
     ]
 }
