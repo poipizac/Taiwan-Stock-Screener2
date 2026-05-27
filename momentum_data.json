@@ -1,50 +1,17 @@
 {
-    "scan_date": "2026-05-26",
-    "data_date": "2026-05-26",
+    "scan_date": "2026-05-27",
+    "data_date": "2026-05-27",
     "empty_today": false,
     "data": [
         {
-            "ticker": "2356.TW",
-            "stock_id": "2356",
-            "name": "英業達",
-            "price": 62.6,
-            "volume": 192490131,
-            "avg_vol_5d": 75115533.0,
-            "yoy": "27.6%",
-            "投信近3日買賣超(張)": 10007.9,
-            "consecutive_days": 5
-        },
-        {
-            "ticker": "2441.TW",
-            "stock_id": "2441",
-            "name": "超豐",
-            "price": 136.0,
-            "volume": 33264703,
-            "avg_vol_5d": 16343698.0,
-            "yoy": "21.2%",
-            "投信近3日買賣超(張)": 492.0,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "2476.TW",
-            "stock_id": "2476",
-            "name": "鉅祥",
-            "price": 131.0,
-            "volume": 12036969,
-            "avg_vol_5d": 5430957.0,
-            "yoy": "31.7%",
-            "投信近3日買賣超(張)": 167.0,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "3131.TWO",
-            "stock_id": "3131",
-            "name": "弘塑",
-            "price": 3115.0,
-            "volume": 1018770,
-            "avg_vol_5d": 460628.0,
-            "yoy": "75.9%",
-            "投信近3日買賣超(張)": 279.9,
+            "ticker": "2855.TW",
+            "stock_id": "2855",
+            "name": "統一證",
+            "price": 44.9,
+            "volume": 16225053,
+            "avg_vol_5d": 5917627.0,
+            "yoy": "269.5%",
+            "投信近3日買賣超(張)": 33.7,
             "consecutive_days": 1
         }
     ]
