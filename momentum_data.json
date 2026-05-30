@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-05-29",
-    "data_date": "2026-05-29",
+    "scan_date": "2026-05-30",
+    "data_date": "2026-05-30",
     "empty_today": false,
     "data": [
         {
@@ -8,143 +8,143 @@
             "stock_id": "2059",
             "name": "川湖",
             "price": 5065.0,
-            "volume": 838533,
+            "volume": 783397,
             "avg_vol_5d": 349427.0,
             "yoy": "37.8%",
             "投信近3日買賣超(張)": 141.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2317.TW",
             "stock_id": "2317",
             "name": "鴻海",
             "price": 289.0,
-            "volume": 288764856,
+            "volume": 282852094,
             "avg_vol_5d": 75282438.0,
             "yoy": "28.9%",
             "投信近3日買賣超(張)": 7687.1,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2330.TW",
             "stock_id": "2330",
             "name": "台積電",
             "price": 2355.0,
-            "volume": 89398067,
+            "volume": 86132863,
             "avg_vol_5d": 28223233.0,
             "yoy": "35.1%",
             "投信近3日買賣超(張)": 815.5,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2357.TW",
             "stock_id": "2357",
             "name": "華碩",
             "price": 761.0,
-            "volume": 13872160,
+            "volume": 13254380,
             "avg_vol_5d": 4880397.0,
             "yoy": "41.1%",
             "投信近3日買賣超(張)": 1938.2,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2376.TW",
             "stock_id": "2376",
             "name": "技嘉",
             "price": 370.0,
-            "volume": 33372873,
+            "volume": 32706054,
             "avg_vol_5d": 13190115.0,
             "yoy": "59.8%",
             "投信近3日買賣超(張)": 3151.2,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2382.TW",
             "stock_id": "2382",
             "name": "廣達",
             "price": 339.0,
-            "volume": 87161120,
+            "volume": 85801526,
             "avg_vol_5d": 42453019.0,
             "yoy": "66.6%",
             "投信近3日買賣超(張)": 40595.6,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3231.TW",
             "stock_id": "3231",
             "name": "緯創",
             "price": 158.5,
-            "volume": 112478161,
+            "volume": 110656858,
             "avg_vol_5d": 50199835.0,
             "yoy": "144.3%",
             "投信近3日買賣超(張)": 3161.6,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3264.TWO",
             "stock_id": "3264",
             "name": "欣銓",
             "price": 243.5,
-            "volume": 27425489,
+            "volume": 26928532,
             "avg_vol_5d": 10034513.0,
             "yoy": "24.0%",
             "投信近3日買賣超(張)": 127.7,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3706.TW",
             "stock_id": "3706",
             "name": "神達",
             "price": 88.8,
-            "volume": 61231061,
+            "volume": 60762353,
             "avg_vol_5d": 24489917.0,
             "yoy": "34.6%",
             "投信近3日買賣超(張)": 1236.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6584.TWO",
             "stock_id": "6584",
             "name": "南俊國際",
             "price": 744.0,
-            "volume": 1726242,
+            "volume": 1631400,
             "avg_vol_5d": 693917.0,
             "yoy": "73.5%",
             "投信近3日買賣超(張)": 35.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6770.TW",
             "stock_id": "6770",
             "name": "力積電",
             "price": 88.7,
-            "volume": 829287491,
+            "volume": 825215915,
             "avg_vol_5d": 407246644.0,
             "yoy": "22.1%",
             "投信近3日買賣超(張)": 730.0,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "7769.TW",
             "stock_id": "7769",
             "name": "鴻勁",
             "price": 8260.0,
-            "volume": 1851707,
+            "volume": 1768850,
             "avg_vol_5d": 520816.0,
             "yoy": "81.4%",
             "投信近3日買賣超(張)": 511.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "8358.TWO",
             "stock_id": "8358",
             "name": "金居",
             "price": 608.0,
-            "volume": 20523998,
+            "volume": 19924922,
             "avg_vol_5d": 3632777.0,
             "yoy": "46.5%",
             "投信近3日買賣超(張)": 13.7,
-            "consecutive_days": 1
+            "consecutive_days": 2
         }
     ]
 }
