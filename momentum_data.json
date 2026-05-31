@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-05-30",
-    "data_date": "2026-05-30",
+    "scan_date": "2026-05-31",
+    "data_date": "2026-05-31",
     "empty_today": false,
     "data": [
         {
@@ -12,7 +12,7 @@
             "avg_vol_5d": 349427.0,
             "yoy": "37.8%",
             "投信近3日買賣超(張)": 141.0,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "2317.TW",
@@ -23,7 +23,7 @@
             "avg_vol_5d": 75282438.0,
             "yoy": "28.9%",
             "投信近3日買賣超(張)": 7687.1,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "2330.TW",
@@ -34,7 +34,7 @@
             "avg_vol_5d": 28223233.0,
             "yoy": "35.1%",
             "投信近3日買賣超(張)": 815.5,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "2357.TW",
@@ -45,7 +45,7 @@
             "avg_vol_5d": 4880397.0,
             "yoy": "41.1%",
             "投信近3日買賣超(張)": 1938.2,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "2376.TW",
@@ -56,7 +56,7 @@
             "avg_vol_5d": 13190115.0,
             "yoy": "59.8%",
             "投信近3日買賣超(張)": 3151.2,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "2382.TW",
@@ -67,7 +67,7 @@
             "avg_vol_5d": 42453019.0,
             "yoy": "66.6%",
             "投信近3日買賣超(張)": 40595.6,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3231.TW",
@@ -78,7 +78,7 @@
             "avg_vol_5d": 50199835.0,
             "yoy": "144.3%",
             "投信近3日買賣超(張)": 3161.6,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3264.TWO",
@@ -89,7 +89,7 @@
             "avg_vol_5d": 10034513.0,
             "yoy": "24.0%",
             "投信近3日買賣超(張)": 127.7,
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "3706.TW",
@@ -100,7 +100,7 @@
             "avg_vol_5d": 24489917.0,
             "yoy": "34.6%",
             "投信近3日買賣超(張)": 1236.0,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "6584.TWO",
@@ -111,7 +111,7 @@
             "avg_vol_5d": 693917.0,
             "yoy": "73.5%",
             "投信近3日買賣超(張)": 35.0,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "6770.TW",
@@ -122,7 +122,7 @@
             "avg_vol_5d": 407246644.0,
             "yoy": "22.1%",
             "投信近3日買賣超(張)": 730.0,
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "7769.TW",
@@ -133,7 +133,7 @@
             "avg_vol_5d": 520816.0,
             "yoy": "81.4%",
             "投信近3日買賣超(張)": 511.0,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "8358.TWO",
@@ -144,7 +144,7 @@
             "avg_vol_5d": 3632777.0,
             "yoy": "46.5%",
             "投信近3日買賣超(張)": 13.7,
-            "consecutive_days": 2
+            "consecutive_days": 3
         }
     ]
 }
