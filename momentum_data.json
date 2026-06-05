@@ -1,50 +1,17 @@
 {
-    "scan_date": "2026-06-04",
-    "data_date": "2026-06-04",
+    "scan_date": "2026-06-05",
+    "data_date": "2026-06-05",
     "empty_today": false,
     "data": [
         {
-            "ticker": "2072.TW",
-            "stock_id": "2072",
-            "name": "世紀風電",
-            "price": 199.0,
-            "volume": 2022132,
-            "avg_vol_5d": 627270.0,
-            "yoy": "41.4%",
-            "投信近3日買賣超(張)": 155.0,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "2855.TW",
-            "stock_id": "2855",
-            "name": "統一證",
-            "price": 55.5,
-            "volume": 48853703,
-            "avg_vol_5d": 14734995.0,
-            "yoy": "269.5%",
-            "投信近3日買賣超(張)": 28326.7,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "2883.TW",
-            "stock_id": "2883",
-            "name": "凱基金",
-            "price": 27.4,
-            "volume": 526651585,
-            "avg_vol_5d": 122436878.0,
-            "yoy": "150.5%",
-            "投信近3日買賣超(張)": 321686.4,
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "8064.TWO",
-            "stock_id": "8064",
-            "name": "東捷",
-            "price": 169.0,
-            "volume": 42549784,
-            "avg_vol_5d": 15389792.0,
-            "yoy": "75.9%",
-            "投信近3日買賣超(張)": 274.0,
+            "ticker": "2059.TW",
+            "stock_id": "2059",
+            "name": "川湖",
+            "price": 5620.0,
+            "volume": 1324484,
+            "avg_vol_5d": 536128.0,
+            "yoy": "37.8%",
+            "投信近3日買賣超(張)": 105.6,
             "consecutive_days": 1
         }
     ]
