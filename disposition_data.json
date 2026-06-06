@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-06-05",
-    "data_date": "2026-06-05",
+    "scan_date": "2026-06-06",
+    "data_date": "2026-06-06",
     "error_msg": "",
     "data": [
         {
@@ -302,36 +302,6 @@
             "yoy": 64.5,
             "mom": -12.05,
             "industry": "通信網路業"
-        },
-        {
-            "ticker": "3675.TWO",
-            "name": "德微",
-            "end_date": "115/06/05",
-            "close": 384.0,
-            "pb": 7.96,
-            "yoy": 9.5,
-            "mom": -7.02,
-            "industry": "半導體業"
-        },
-        {
-            "ticker": "6538.TWO",
-            "name": "倉和",
-            "end_date": "115/06/05",
-            "close": 123.0,
-            "pb": 2.45,
-            "yoy": -23.1,
-            "mom": -0.4,
-            "industry": "電子零組件業"
-        },
-        {
-            "ticker": "8027.TWO",
-            "name": "鈦昇",
-            "end_date": "115/06/05",
-            "close": 293.0,
-            "pb": 11.26,
-            "yoy": 21.4,
-            "mom": 13.35,
-            "industry": "電機機械"
         }
     ]
 }

@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-06-05",
-    "data_date": "2026-06-05",
+    "scan_date": "2026-06-06",
+    "data_date": "2026-06-06",
     "empty_today": false,
     "data": [
         {
@@ -11,11 +11,11 @@
             "high120": 104.0,
             "ratio": 1.11,
             "pb": 3.88,
-            "eps": 5.59,
+            "eps": 5.6,
             "yoy": 17.8,
             "mom": 13.54,
             "industry": "其他業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "1810.TW",
@@ -24,12 +24,12 @@
             "sma200": 18.73,
             "high120": 22.6,
             "ratio": 1.07,
-            "pb": 0.99,
+            "pb": 0.85,
             "eps": 0.05,
             "yoy": -8.1,
             "mom": 15.9,
             "industry": "玻璃陶瓷",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2461.TW",
@@ -43,7 +43,7 @@
             "yoy": -0.8,
             "mom": 20.0,
             "industry": "其他電子業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2483.TW",
@@ -57,7 +57,7 @@
             "yoy": 14.1,
             "mom": 18.48,
             "industry": "電子零組件業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2882.TW",
@@ -71,7 +71,7 @@
             "yoy": 94.2,
             "mom": 16.69,
             "industry": "金融保險業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3015.TW",
@@ -85,7 +85,7 @@
             "yoy": 0.4,
             "mom": 37.25,
             "industry": "電子零組件業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3114.TWO",
@@ -99,7 +99,7 @@
             "yoy": 15.2,
             "mom": 42.88,
             "industry": "電子零組件業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3213.TWO",
@@ -113,7 +113,7 @@
             "yoy": -4.5,
             "mom": 13.93,
             "industry": "電腦及週邊設備業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3441.TWO",
@@ -127,7 +127,7 @@
             "yoy": 30.5,
             "mom": 11.69,
             "industry": "光電業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "4939.TWO",
@@ -141,7 +141,7 @@
             "yoy": -5.8,
             "mom": 18.77,
             "industry": "電子零組件業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "5426.TWO",
@@ -155,7 +155,7 @@
             "yoy": 6.1,
             "mom": 60.59,
             "industry": "電腦及週邊設備業",
-            "consecutive_days": 4
+            "consecutive_days": 5
         },
         {
             "ticker": "5701.TWO",
@@ -169,7 +169,7 @@
             "yoy": 21.6,
             "mom": 60.75,
             "industry": "觀光餐旅",
-            "consecutive_days": 4
+            "consecutive_days": 5
         },
         {
             "ticker": "6155.TW",
@@ -183,7 +183,7 @@
             "yoy": 5.2,
             "mom": 26.27,
             "industry": "電子零組件業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6270.TWO",
@@ -197,7 +197,7 @@
             "yoy": -3.6,
             "mom": 17.9,
             "industry": "電子通路業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "8454.TW",
@@ -211,7 +211,7 @@
             "yoy": 0.7,
             "mom": 52.81,
             "industry": "數位雲端",
-            "consecutive_days": 8
+            "consecutive_days": 9
         },
         {
             "ticker": "9933.TW",
@@ -225,7 +225,7 @@
             "yoy": -23.2,
             "mom": 9.58,
             "industry": "其他業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         }
     ]
 }
