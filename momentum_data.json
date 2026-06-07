@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-06-06",
-    "data_date": "2026-06-06",
+    "scan_date": "2026-06-07",
+    "data_date": "2026-06-07",
     "empty_today": false,
     "data": [
         {
@@ -12,7 +12,7 @@
             "avg_vol_5d": 536128.0,
             "yoy": "37.8%",
             "投信近3日買賣超(張)": 105.6,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "6139.TW",
@@ -23,7 +23,7 @@
             "avg_vol_5d": 4264650.0,
             "yoy": "141.3%",
             "投信近3日買賣超(張)": 736.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         }
     ]
 }
