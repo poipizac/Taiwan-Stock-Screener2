@@ -1,29 +1,18 @@
 {
-    "scan_date": "2026-06-07",
-    "data_date": "2026-06-07",
+    "scan_date": "2026-06-08",
+    "data_date": "2026-06-08",
     "empty_today": false,
     "data": [
         {
-            "ticker": "2059.TW",
-            "stock_id": "2059",
-            "name": "川湖",
-            "price": 5620.0,
-            "volume": 1251571,
-            "avg_vol_5d": 536128.0,
-            "yoy": "37.8%",
-            "投信近3日買賣超(張)": 105.6,
-            "consecutive_days": 3
-        },
-        {
-            "ticker": "6139.TW",
-            "stock_id": "6139",
-            "name": "亞翔",
-            "price": 808.0,
-            "volume": 9129189,
-            "avg_vol_5d": 4264650.0,
-            "yoy": "141.3%",
-            "投信近3日買賣超(張)": 736.0,
-            "consecutive_days": 2
+            "ticker": "8996.TW",
+            "stock_id": "8996",
+            "name": "高力",
+            "price": 1210.0,
+            "volume": 5824078,
+            "avg_vol_5d": 2706434.0,
+            "yoy": "237.6%",
+            "投信近3日買賣超(張)": 790.0,
+            "consecutive_days": 1
         }
     ]
 }
