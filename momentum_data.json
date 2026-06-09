@@ -1,17 +1,50 @@
 {
-    "scan_date": "2026-06-08",
-    "data_date": "2026-06-08",
+    "scan_date": "2026-06-09",
+    "data_date": "2026-06-09",
     "empty_today": false,
     "data": [
         {
-            "ticker": "8996.TW",
-            "stock_id": "8996",
-            "name": "高力",
-            "price": 1210.0,
-            "volume": 5824078,
-            "avg_vol_5d": 2706434.0,
-            "yoy": "237.6%",
-            "投信近3日買賣超(張)": 790.0,
+            "ticker": "2059.TW",
+            "stock_id": "2059",
+            "name": "川湖",
+            "price": 6795.0,
+            "volume": 2085796,
+            "avg_vol_5d": 595805.0,
+            "yoy": "37.8%",
+            "投信近3日買賣超(張)": 204.6,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "2327.TW",
+            "stock_id": "2327",
+            "name": "國巨*",
+            "price": 826.0,
+            "volume": 50203489,
+            "avg_vol_5d": 21743616.0,
+            "yoy": "22.7%",
+            "投信近3日買賣超(張)": 3637.7,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "2368.TW",
+            "stock_id": "2368",
+            "name": "金像電",
+            "price": 1495.0,
+            "volume": 12012788,
+            "avg_vol_5d": 5736777.0,
+            "yoy": "60.1%",
+            "投信近3日買賣超(張)": 2345.9,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "8021.TW",
+            "stock_id": "8021",
+            "name": "尖點",
+            "price": 506.0,
+            "volume": 9675770,
+            "avg_vol_5d": 1170919.0,
+            "yoy": "51.0%",
+            "投信近3日買賣超(張)": 165.0,
             "consecutive_days": 1
         }
     ]
