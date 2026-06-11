@@ -1,28 +1,61 @@
 {
-    "scan_date": "2026-06-10",
-    "data_date": "2026-06-10",
+    "scan_date": "2026-06-11",
+    "data_date": "2026-06-11",
     "empty_today": false,
     "data": [
+        {
+            "ticker": "1785.TWO",
+            "stock_id": "1785",
+            "name": "光洋科",
+            "price": 145.5,
+            "volume": 31409660,
+            "avg_vol_5d": 11037670.0,
+            "yoy": "76.6%",
+            "投信近3日買賣超(張)": 3.0,
+            "consecutive_days": 1
+        },
         {
             "ticker": "2327.TW",
             "stock_id": "2327",
             "name": "國巨*",
-            "price": 819.0,
-            "volume": 96312013,
-            "avg_vol_5d": 27107481.0,
+            "price": 842.0,
+            "volume": 117315154,
+            "avg_vol_5d": 42470617.0,
             "yoy": "22.7%",
-            "投信近3日買賣超(張)": 11202.9,
-            "consecutive_days": 2
+            "投信近3日買賣超(張)": 17113.2,
+            "consecutive_days": 3
         },
         {
-            "ticker": "2542.TW",
-            "stock_id": "2542",
-            "name": "興富發",
-            "price": 45.45,
-            "volume": 60809817,
-            "avg_vol_5d": 19409716.0,
-            "yoy": "1361.1%",
-            "投信近3日買賣超(張)": 27058.0,
+            "ticker": "3088.TWO",
+            "stock_id": "3088",
+            "name": "艾訊",
+            "price": 145.0,
+            "volume": 3897272,
+            "avg_vol_5d": 1714011.0,
+            "yoy": "29.6%",
+            "投信近3日買賣超(張)": 8.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "3665.TW",
+            "stock_id": "3665",
+            "name": "貿聯-KY",
+            "price": 2160.0,
+            "volume": 5941299,
+            "avg_vol_5d": 2260348.0,
+            "yoy": "29.4%",
+            "投信近3日買賣超(張)": 1023.1,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "8021.TW",
+            "stock_id": "8021",
+            "name": "尖點",
+            "price": 570.0,
+            "volume": 28390929,
+            "avg_vol_5d": 6079523.0,
+            "yoy": "51.0%",
+            "投信近3日買賣超(張)": 1034.0,
             "consecutive_days": 1
         }
     ]
