@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-06-12",
-    "data_date": "2026-06-12",
+    "scan_date": "2026-06-13",
+    "data_date": "2026-06-13",
     "empty_today": false,
     "data": [
         {
@@ -8,11 +8,11 @@
             "stock_id": "1785",
             "name": "光洋科",
             "price": 141.5,
-            "volume": 39256941,
+            "volume": 39046953,
             "avg_vol_5d": 15259203.0,
             "yoy": "76.6%",
             "投信近3日買賣超(張)": 3.0,
-            "consecutive_days": 2
+            "consecutive_days": 3
         }
     ]
 }

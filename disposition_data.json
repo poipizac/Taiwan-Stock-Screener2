@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-06-12",
-    "data_date": "2026-06-12",
+    "scan_date": "2026-06-13",
+    "data_date": "2026-06-13",
     "error_msg": "",
     "data": [
         {
@@ -262,36 +262,6 @@
             "yoy": 44.1,
             "mom": 11.36,
             "industry": "其他電子業"
-        },
-        {
-            "ticker": "6291.TWO",
-            "name": "沛亨",
-            "end_date": "115/06/12",
-            "close": 536.0,
-            "pb": 17.63,
-            "yoy": 49.5,
-            "mom": -21.06,
-            "industry": "半導體業"
-        },
-        {
-            "ticker": "6488.TWO",
-            "name": "環球晶",
-            "end_date": "115/06/12",
-            "close": 864.0,
-            "pb": 4.42,
-            "yoy": -10.3,
-            "mom": -14.88,
-            "industry": "半導體業"
-        },
-        {
-            "ticker": "7828.TWO",
-            "name": "創新服務(../../mainboard/listed/company-detail.html?code=7828)",
-            "end_date": "115/06/12",
-            "close": 1920.0,
-            "pb": 67.66,
-            "yoy": 84.8,
-            "mom": 36.55,
-            "industry": "未知"
         }
     ]
 }
