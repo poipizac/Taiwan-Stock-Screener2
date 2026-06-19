@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-06-18",
-    "data_date": "2026-06-18",
+    "scan_date": "2026-06-19",
+    "data_date": "2026-06-19",
     "error_msg": "",
     "data": [
         {
@@ -262,46 +262,6 @@
             "yoy": 21.6,
             "mom": 49.0,
             "industry": "觀光餐旅"
-        },
-        {
-            "ticker": "3288.TWO",
-            "name": "點晶",
-            "end_date": "115/06/18",
-            "close": 20.9,
-            "pb": 3.2,
-            "yoy": -16.2,
-            "mom": 25.9,
-            "industry": "電子零組件業"
-        },
-        {
-            "ticker": "3523.TWO",
-            "name": "迎輝",
-            "end_date": "115/06/18",
-            "close": 16.55,
-            "pb": 2.68,
-            "yoy": -55.5,
-            "mom": 3.76,
-            "industry": "光電業"
-        },
-        {
-            "ticker": "4707.TWO",
-            "name": "磐亞",
-            "end_date": "115/06/18",
-            "close": 23.0,
-            "pb": 1.44,
-            "yoy": -6.9,
-            "mom": 41.1,
-            "industry": "化學工業"
-        },
-        {
-            "ticker": "8358.TWO",
-            "name": "金居",
-            "end_date": "115/06/18",
-            "close": 700.0,
-            "pb": 22.32,
-            "yoy": 46.5,
-            "mom": 15.13,
-            "industry": "電子零組件業"
         }
     ]
 }

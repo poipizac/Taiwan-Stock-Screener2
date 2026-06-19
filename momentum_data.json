@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-06-18",
-    "data_date": "2026-06-18",
+    "scan_date": "2026-06-19",
+    "data_date": "2026-06-19",
     "empty_today": false,
     "data": [
         {
@@ -8,66 +8,66 @@
             "stock_id": "2880",
             "name": "華南金",
             "price": 38.35,
-            "volume": 67862220,
+            "volume": 67720385,
             "avg_vol_5d": 29143852.0,
             "yoy": "25.3%",
-            "投信近3日買賣超(張)": 18600.0,
-            "consecutive_days": 1
+            "投信近3日買賣超(張)": 18602.0,
+            "consecutive_days": 2
         },
         {
             "ticker": "2890.TW",
             "stock_id": "2890",
             "name": "永豐金",
             "price": 39.8,
-            "volume": 147400203,
+            "volume": 147188862,
             "avg_vol_5d": 55054073.0,
             "yoy": "39.2%",
-            "投信近3日買賣超(張)": 29033.1,
-            "consecutive_days": 1
+            "投信近3日買賣超(張)": 30408.0,
+            "consecutive_days": 2
         },
         {
             "ticker": "3131.TWO",
             "stock_id": "3131",
             "name": "弘塑",
             "price": 3520.0,
-            "volume": 940847,
+            "volume": 835347,
             "avg_vol_5d": 339807.0,
             "yoy": "75.9%",
             "投信近3日買賣超(張)": 180.4,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3265.TWO",
             "stock_id": "3265",
             "name": "台星科",
             "price": 189.5,
-            "volume": 2956524,
+            "volume": 2907223,
             "avg_vol_5d": 1057545.0,
             "yoy": "20.7%",
             "投信近3日買賣超(張)": 43.6,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3443.TW",
             "stock_id": "3443",
             "name": "創意",
             "price": 4860.0,
-            "volume": 4586160,
+            "volume": 4599361,
             "avg_vol_5d": 2229426.0,
             "yoy": "63.0%",
-            "投信近3日買賣超(張)": 2363.2,
-            "consecutive_days": 1
+            "投信近3日買賣超(張)": 2120.4,
+            "consecutive_days": 2
         },
         {
             "ticker": "6213.TW",
             "stock_id": "6213",
             "name": "聯茂",
             "price": 280.0,
-            "volume": 22233122,
+            "volume": 21638070,
             "avg_vol_5d": 8962427.0,
             "yoy": "20.6%",
-            "投信近3日買賣超(張)": 448.0,
-            "consecutive_days": 1
+            "投信近3日買賣超(張)": 449.0,
+            "consecutive_days": 2
         }
     ]
 }
