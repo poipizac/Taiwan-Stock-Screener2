@@ -1,6 +1,307 @@
 {
-    "scan_date": "2026-06-23",
-    "data_date": "2026-06-23",
-    "error_msg": "IP Blocked by TWSE (3 次嘗試皆失敗) | TPEx HTTP 520",
-    "data": []
+    "scan_date": "2026-06-24",
+    "data_date": "2026-06-24",
+    "error_msg": "",
+    "data": [
+        {
+            "ticker": "3675.TWO",
+            "name": "德微",
+            "end_date": "115/07/08",
+            "close": 413.0,
+            "pb": 8.57,
+            "yoy": 9.5,
+            "mom": 0.0,
+            "industry": "半導體業"
+        },
+        {
+            "ticker": "7712.TWO",
+            "name": "博盛半導體",
+            "end_date": "115/07/08",
+            "close": 204.0,
+            "pb": 3.41,
+            "yoy": 4.5,
+            "mom": 22.16,
+            "industry": "半導體業"
+        },
+        {
+            "ticker": "2061.TWO",
+            "name": "風青",
+            "end_date": "115/07/07",
+            "close": 63.8,
+            "pb": 5.77,
+            "yoy": 6.9,
+            "mom": 75.76,
+            "industry": "電器電纜"
+        },
+        {
+            "ticker": "3624.TWO",
+            "name": "光頡",
+            "end_date": "115/07/09",
+            "close": 147.5,
+            "pb": 4.85,
+            "yoy": 17.6,
+            "mom": 34.09,
+            "industry": "電子零組件業"
+        },
+        {
+            "ticker": "4923.TWO",
+            "name": "力士",
+            "end_date": "115/07/07",
+            "close": 60.6,
+            "pb": 4.69,
+            "yoy": 30.5,
+            "mom": 28.94,
+            "industry": "半導體業"
+        },
+        {
+            "ticker": "5227.TWO",
+            "name": "立凱-KY",
+            "end_date": "115/07/07",
+            "close": 39.2,
+            "pb": 8.78,
+            "yoy": -74.2,
+            "mom": 59.67,
+            "industry": "電子零組件業"
+        },
+        {
+            "ticker": "5468.TWO",
+            "name": "凱鈺",
+            "end_date": "115/07/07",
+            "close": 32.7,
+            "pb": 2.08,
+            "yoy": 64.7,
+            "mom": 89.57,
+            "industry": "半導體業"
+        },
+        {
+            "ticker": "6693.TWO",
+            "name": "廣閎科",
+            "end_date": "115/07/07",
+            "close": 251.0,
+            "pb": 9.94,
+            "yoy": 64.2,
+            "mom": 69.02,
+            "industry": "半導體業"
+        },
+        {
+            "ticker": "8096.TWO",
+            "name": "擎亞",
+            "end_date": "115/07/07",
+            "close": 156.0,
+            "pb": 8.04,
+            "yoy": -30.0,
+            "mom": 27.35,
+            "industry": "電子通路業"
+        },
+        {
+            "ticker": "3163.TWO",
+            "name": "波若威",
+            "end_date": "115/07/03",
+            "close": 840.0,
+            "pb": 21.19,
+            "yoy": 25.2,
+            "mom": -18.45,
+            "industry": "通信網路業"
+        },
+        {
+            "ticker": "3441.TWO",
+            "name": "聯一光",
+            "end_date": "115/07/07",
+            "close": 90.3,
+            "pb": 4.34,
+            "yoy": 24.5,
+            "mom": 70.18,
+            "industry": "光電業"
+        },
+        {
+            "ticker": "6488.TWO",
+            "name": "環球晶",
+            "end_date": "115/07/03",
+            "close": 965.0,
+            "pb": 4.94,
+            "yoy": -10.3,
+            "mom": -4.93,
+            "industry": "半導體業"
+        },
+        {
+            "ticker": "3285.TWO",
+            "name": "微端",
+            "end_date": "115/07/02",
+            "close": 44.2,
+            "pb": 3.16,
+            "yoy": 60.0,
+            "mom": 40.32,
+            "industry": "其他電子業"
+        },
+        {
+            "ticker": "4556.TWO",
+            "name": "旭然",
+            "end_date": "115/07/02",
+            "close": 71.4,
+            "pb": 3.58,
+            "yoy": 18.5,
+            "mom": 82.38,
+            "industry": "其他業"
+        },
+        {
+            "ticker": "4991.TWO",
+            "name": "環宇-KY",
+            "end_date": "115/07/02",
+            "close": 563.0,
+            "pb": 15.97,
+            "yoy": 51.0,
+            "mom": -22.88,
+            "industry": "半導體業"
+        },
+        {
+            "ticker": "6613.TWO",
+            "name": "朋億*",
+            "end_date": "115/07/02",
+            "close": 359.0,
+            "pb": 5.47,
+            "yoy": 9.0,
+            "mom": 35.73,
+            "industry": "其他電子業"
+        },
+        {
+            "ticker": "7828.TWO",
+            "name": "創新服務(../../mainboard/listed/company-detail.html?code=7828)",
+            "end_date": "115/07/02",
+            "close": 2325.0,
+            "pb": 81.94,
+            "yoy": 51.8,
+            "mom": 65.35,
+            "industry": "未知"
+        },
+        {
+            "ticker": "8027.TWO",
+            "name": "鈦昇",
+            "end_date": "115/07/02",
+            "close": 231.5,
+            "pb": 8.9,
+            "yoy": 21.4,
+            "mom": -10.44,
+            "industry": "電機機械"
+        },
+        {
+            "ticker": "8042.TWO",
+            "name": "金山電",
+            "end_date": "115/07/02",
+            "close": 192.0,
+            "pb": 6.38,
+            "yoy": 32.9,
+            "mom": 25.41,
+            "industry": "電子零組件業"
+        },
+        {
+            "ticker": "6173.TWO",
+            "name": "信昌電",
+            "end_date": "115/07/01",
+            "close": 305.0,
+            "pb": 5.86,
+            "yoy": 7.7,
+            "mom": 28.69,
+            "industry": "電子零組件業"
+        },
+        {
+            "ticker": "6187.TWO",
+            "name": "萬潤",
+            "end_date": "115/07/01",
+            "close": 1060.0,
+            "pb": 15.02,
+            "yoy": 13.2,
+            "mom": -5.36,
+            "industry": "半導體業"
+        },
+        {
+            "ticker": "6241.TWO",
+            "name": "易通展",
+            "end_date": "115/07/01",
+            "close": 15.1,
+            "pb": 1.94,
+            "yoy": -14.4,
+            "mom": 52.68,
+            "industry": "通信網路業"
+        },
+        {
+            "ticker": "8291.TWO",
+            "name": "尚茂",
+            "end_date": "115/07/01",
+            "close": 47.5,
+            "pb": 11.23,
+            "yoy": 15.9,
+            "mom": -60.42,
+            "industry": "電子零組件業"
+        },
+        {
+            "ticker": "4402.TWO",
+            "name": "郡都開發",
+            "end_date": "115/06/29",
+            "close": 16.95,
+            "pb": 1.94,
+            "yoy": -27.4,
+            "mom": 41.84,
+            "industry": "紡織纖維"
+        },
+        {
+            "ticker": "5345.TWO",
+            "name": "馥鴻",
+            "end_date": "115/06/29",
+            "close": 31.0,
+            "pb": 5.51,
+            "yoy": 282.4,
+            "mom": 38.08,
+            "industry": "其他業"
+        },
+        {
+            "ticker": "4542.TWO",
+            "name": "科嶠",
+            "end_date": "115/06/26",
+            "close": 390.0,
+            "pb": 15.64,
+            "yoy": 11.6,
+            "mom": 44.44,
+            "industry": "電子零組件業"
+        },
+        {
+            "ticker": "5321.TWO",
+            "name": "美而快",
+            "end_date": "115/06/26",
+            "close": 52.6,
+            "pb": 5.25,
+            "yoy": -22.5,
+            "mom": 0.77,
+            "industry": "數位雲端"
+        },
+        {
+            "ticker": "6127.TWO",
+            "name": "九豪",
+            "end_date": "115/06/26",
+            "close": 85.1,
+            "pb": 7.9,
+            "yoy": -3.3,
+            "mom": 26.45,
+            "industry": "電子零組件業"
+        },
+        {
+            "ticker": "3147.TWO",
+            "name": "大綜",
+            "end_date": "115/06/25",
+            "close": 340.0,
+            "pb": 9.27,
+            "yoy": -5.1,
+            "mom": 86.3,
+            "industry": "資訊服務業"
+        },
+        {
+            "ticker": "3581.TWO",
+            "name": "博磊",
+            "end_date": "115/06/25",
+            "close": 153.0,
+            "pb": 8.62,
+            "yoy": 13.6,
+            "mom": -35.31,
+            "industry": "半導體業"
+        }
+    ]
 }
