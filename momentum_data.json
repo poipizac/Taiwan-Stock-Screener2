@@ -1,61 +1,61 @@
 {
-    "scan_date": "2026-06-24",
-    "data_date": "2026-06-24",
+    "scan_date": "2026-06-25",
+    "data_date": "2026-06-25",
     "empty_today": false,
     "data": [
-        {
-            "ticker": "1560.TW",
-            "stock_id": "1560",
-            "name": "中砂",
-            "price": 749.0,
-            "volume": 3149385,
-            "avg_vol_5d": 1197833.0,
-            "yoy": "29.4%",
-            "投信近3日買賣超(張)": 116.0,
-            "consecutive_days": 1
-        },
         {
             "ticker": "2363.TW",
             "stock_id": "2363",
             "name": "矽統",
-            "price": 69.2,
-            "volume": 34935602,
-            "avg_vol_5d": 15475511.0,
+            "price": 76.1,
+            "volume": 74234132,
+            "avg_vol_5d": 21318352.0,
             "yoy": "123.6%",
             "投信近3日買賣超(張)": 70.0,
-            "consecutive_days": 2
+            "consecutive_days": 3
+        },
+        {
+            "ticker": "2404.TW",
+            "stock_id": "2404",
+            "name": "漢唐",
+            "price": 1365.0,
+            "volume": 5926845,
+            "avg_vol_5d": 2655679.0,
+            "yoy": "76.2%",
+            "投信近3日買賣超(張)": 1049.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6139.TW",
+            "stock_id": "6139",
+            "name": "亞翔",
+            "price": 875.0,
+            "volume": 7511422,
+            "avg_vol_5d": 3271791.0,
+            "yoy": "68.5%",
+            "投信近3日買賣超(張)": 148.0,
+            "consecutive_days": 1
         },
         {
             "ticker": "6462.TWO",
             "stock_id": "6462",
             "name": "神盾",
-            "price": 134.0,
-            "volume": 5074803,
-            "avg_vol_5d": 1686802.0,
+            "price": 124.5,
+            "volume": 5761564,
+            "avg_vol_5d": 2592727.0,
             "yoy": "111.8%",
-            "投信近3日買賣超(張)": 15.0,
-            "consecutive_days": 1
+            "投信近3日買賣超(張)": 10.0,
+            "consecutive_days": 2
         },
         {
-            "ticker": "6683.TWO",
-            "stock_id": "6683",
-            "name": "雍智科技",
-            "price": 1940.0,
-            "volume": 4379156,
-            "avg_vol_5d": 1843493.0,
-            "yoy": "46.3%",
-            "投信近3日買賣超(張)": 46.0,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "8054.TWO",
-            "stock_id": "8054",
-            "name": "安國",
-            "price": 136.5,
-            "volume": 19940591,
-            "avg_vol_5d": 4386107.0,
-            "yoy": "352.3%",
-            "投信近3日買賣超(張)": 20.0,
+            "ticker": "6584.TWO",
+            "stock_id": "6584",
+            "name": "南俊國際",
+            "price": 728.0,
+            "volume": 2268772,
+            "avg_vol_5d": 761807.0,
+            "yoy": "73.5%",
+            "投信近3日買賣超(張)": 38.0,
             "consecutive_days": 1
         }
     ]
