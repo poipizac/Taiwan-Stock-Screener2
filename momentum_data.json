@@ -1,61 +1,39 @@
 {
-    "scan_date": "2026-06-26",
-    "data_date": "2026-06-26",
+    "scan_date": "2026-06-27",
+    "data_date": "2026-06-27",
     "empty_today": false,
     "data": [
-        {
-            "ticker": "3189.TW",
-            "stock_id": "3189",
-            "name": "景碩",
-            "price": 797.0,
-            "volume": 62566788,
-            "avg_vol_5d": 30783101.0,
-            "yoy": "28.8%",
-            "投信近3日買賣超(張)": 8043.0,
-            "consecutive_days": 1
-        },
         {
             "ticker": "5469.TW",
             "stock_id": "5469",
             "name": "瀚宇博",
             "price": 87.4,
-            "volume": 13713701,
+            "volume": 13603841,
             "avg_vol_5d": 5555738.0,
             "yoy": "48.5%",
             "投信近3日買賣超(張)": 1325.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6139.TW",
             "stock_id": "6139",
             "name": "亞翔",
             "price": 878.0,
-            "volume": 10120887,
+            "volume": 9843054,
             "avg_vol_5d": 3891140.0,
             "yoy": "68.5%",
             "投信近3日買賣超(張)": 590.0,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "6191.TW",
             "stock_id": "6191",
             "name": "精成科",
             "price": 100.5,
-            "volume": 25556992,
+            "volume": 25327653,
             "avg_vol_5d": 7771763.0,
             "yoy": "80.9%",
             "投信近3日買賣超(張)": 2134.0,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "6584.TWO",
-            "stock_id": "6584",
-            "name": "南俊國際",
-            "price": 708.0,
-            "volume": 2280127,
-            "avg_vol_5d": 1098333.0,
-            "yoy": "73.5%",
-            "投信近3日買賣超(張)": 142.0,
             "consecutive_days": 2
         }
     ]

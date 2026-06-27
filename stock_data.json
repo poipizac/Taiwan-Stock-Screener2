@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-06-26",
-    "data_date": "2026-06-26",
+    "scan_date": "2026-06-27",
+    "data_date": "2026-06-27",
     "empty_today": false,
     "data": [
         {
@@ -15,7 +15,7 @@
             "yoy": 2.0,
             "mom": 68.43,
             "industry": "化學工業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2483.TW",
@@ -29,7 +29,7 @@
             "yoy": 14.1,
             "mom": 116.73,
             "industry": "電子零組件業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "2906.TW",
@@ -43,7 +43,7 @@
             "yoy": -0.8,
             "mom": 14.98,
             "industry": "貿易百貨業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "5230.TWO",
@@ -57,7 +57,7 @@
             "yoy": 1.2,
             "mom": 42.61,
             "industry": "光電業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "5348.TWO",
@@ -68,10 +68,10 @@
             "ratio": 0.96,
             "pb": 2.43,
             "eps": -1.49,
-            "yoy": 28.6,
+            "yoy": 24.6,
             "mom": 20.92,
             "industry": "運動休閒",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6226.TW",
@@ -85,7 +85,7 @@
             "yoy": -3.6,
             "mom": 40.38,
             "industry": "光電業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "6259.TWO",
@@ -99,7 +99,7 @@
             "yoy": 51.5,
             "mom": 55.37,
             "industry": "電子零組件業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "8342.TWO",
@@ -113,7 +113,7 @@
             "yoy": 1.4,
             "mom": 7.36,
             "industry": "其他業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         }
     ]
 }
