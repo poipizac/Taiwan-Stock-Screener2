@@ -1,40 +1,62 @@
 {
-    "scan_date": "2026-06-27",
-    "data_date": "2026-06-27",
+    "scan_date": "2026-06-29",
+    "data_date": "2026-06-29",
     "empty_today": false,
     "data": [
+        {
+            "ticker": "3706.TW",
+            "stock_id": "3706",
+            "name": "神達",
+            "price": 86.4,
+            "volume": 32023973,
+            "avg_vol_5d": 14406462.0,
+            "yoy": "34.6%",
+            "投信近3日買賣超(張)": 7567.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "5269.TW",
+            "stock_id": "5269",
+            "name": "祥碩",
+            "price": 1475.0,
+            "volume": 2003702,
+            "avg_vol_5d": 726718.0,
+            "yoy": "39.4%",
+            "投信近3日買賣超(張)": 496.0,
+            "consecutive_days": 1
+        },
         {
             "ticker": "5469.TW",
             "stock_id": "5469",
             "name": "瀚宇博",
-            "price": 87.4,
-            "volume": 13603841,
-            "avg_vol_5d": 5555738.0,
+            "price": 89.3,
+            "volume": 17912433,
+            "avg_vol_5d": 7817409.0,
             "yoy": "48.5%",
-            "投信近3日買賣超(張)": 1325.0,
-            "consecutive_days": 2
+            "投信近3日買賣超(張)": 3400.0,
+            "consecutive_days": 3
         },
         {
-            "ticker": "6139.TW",
-            "stock_id": "6139",
-            "name": "亞翔",
-            "price": 878.0,
-            "volume": 9843054,
-            "avg_vol_5d": 3891140.0,
-            "yoy": "68.5%",
-            "投信近3日買賣超(張)": 590.0,
-            "consecutive_days": 3
+            "ticker": "6143.TWO",
+            "stock_id": "6143",
+            "name": "振曜",
+            "price": 93.9,
+            "volume": 1491972,
+            "avg_vol_5d": 530455.0,
+            "yoy": "25.3%",
+            "投信近3日買賣超(張)": 65.7,
+            "consecutive_days": 1
         },
         {
             "ticker": "6191.TW",
             "stock_id": "6191",
             "name": "精成科",
-            "price": 100.5,
-            "volume": 25327653,
-            "avg_vol_5d": 7771763.0,
+            "price": 106.0,
+            "volume": 34420923,
+            "avg_vol_5d": 11686782.0,
             "yoy": "80.9%",
-            "投信近3日買賣超(張)": 2134.0,
-            "consecutive_days": 2
+            "投信近3日買賣超(張)": 4927.0,
+            "consecutive_days": 3
         }
     ]
 }
