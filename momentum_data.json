@@ -1,62 +1,62 @@
 {
-    "scan_date": "2026-06-29",
-    "data_date": "2026-06-29",
+    "scan_date": "2026-06-30",
+    "data_date": "2026-06-30",
     "empty_today": false,
     "data": [
         {
-            "ticker": "3706.TW",
-            "stock_id": "3706",
-            "name": "神達",
-            "price": 86.4,
-            "volume": 32023973,
-            "avg_vol_5d": 14406462.0,
-            "yoy": "34.6%",
-            "投信近3日買賣超(張)": 7567.0,
+            "ticker": "1815.TWO",
+            "stock_id": "1815",
+            "name": "富喬",
+            "price": 111.0,
+            "volume": 68634115,
+            "avg_vol_5d": 31575680.0,
+            "yoy": "36.1%",
+            "投信近3日買賣超(張)": 56.0,
             "consecutive_days": 1
         },
         {
-            "ticker": "5269.TW",
-            "stock_id": "5269",
-            "name": "祥碩",
-            "price": 1475.0,
-            "volume": 2003702,
-            "avg_vol_5d": 726718.0,
-            "yoy": "39.4%",
-            "投信近3日買賣超(張)": 496.0,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "5469.TW",
-            "stock_id": "5469",
-            "name": "瀚宇博",
-            "price": 89.3,
-            "volume": 17912433,
-            "avg_vol_5d": 7817409.0,
-            "yoy": "48.5%",
-            "投信近3日買賣超(張)": 3400.0,
-            "consecutive_days": 3
-        },
-        {
-            "ticker": "6143.TWO",
-            "stock_id": "6143",
-            "name": "振曜",
-            "price": 93.9,
-            "volume": 1491972,
-            "avg_vol_5d": 530455.0,
-            "yoy": "25.3%",
-            "投信近3日買賣超(張)": 65.7,
+            "ticker": "3702.TW",
+            "stock_id": "3702",
+            "name": "大聯大",
+            "price": 107.0,
+            "volume": 16834641,
+            "avg_vol_5d": 7351382.0,
+            "yoy": "27.2%",
+            "投信近3日買賣超(張)": 9486.1,
             "consecutive_days": 1
         },
         {
             "ticker": "6191.TW",
             "stock_id": "6191",
             "name": "精成科",
-            "price": 106.0,
-            "volume": 34420923,
-            "avg_vol_5d": 11686782.0,
+            "price": 106.5,
+            "volume": 39464709,
+            "avg_vol_5d": 15798284.0,
             "yoy": "80.9%",
-            "投信近3日買賣超(張)": 4927.0,
-            "consecutive_days": 3
+            "投信近3日買賣超(張)": 7806.0,
+            "consecutive_days": 4
+        },
+        {
+            "ticker": "8028.TW",
+            "stock_id": "8028",
+            "name": "昇陽半導體",
+            "price": 317.0,
+            "volume": 11596577,
+            "avg_vol_5d": 4882144.0,
+            "yoy": "20.4%",
+            "投信近3日買賣超(張)": 258.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "8227.TWO",
+            "stock_id": "8227",
+            "name": "巨有科技",
+            "price": 214.5,
+            "volume": 5237444,
+            "avg_vol_5d": 1805726.0,
+            "yoy": "88.4%",
+            "投信近3日買賣超(張)": 52.0,
+            "consecutive_days": 1
         }
     ]
 }
