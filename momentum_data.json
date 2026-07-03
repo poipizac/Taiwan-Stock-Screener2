@@ -1,18 +1,40 @@
 {
-    "scan_date": "2026-07-02",
-    "data_date": "2026-07-02",
+    "scan_date": "2026-07-03",
+    "data_date": "2026-07-03",
     "empty_today": false,
     "data": [
         {
-            "ticker": "5439.TWO",
-            "stock_id": "5439",
-            "name": "高技",
-            "price": 348.0,
-            "volume": 4627843,
-            "avg_vol_5d": 1560195.0,
-            "yoy": "78.2%",
-            "投信近3日買賣超(張)": 0.4,
-            "consecutive_days": 2
+            "ticker": "1785.TWO",
+            "stock_id": "1785",
+            "name": "光洋科",
+            "price": 156.0,
+            "volume": 39766498,
+            "avg_vol_5d": 14575362.0,
+            "yoy": "76.6%",
+            "投信近3日買賣超(張)": 294.4,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "1795.TW",
+            "stock_id": "1795",
+            "name": "美時",
+            "price": 199.5,
+            "volume": 3806688,
+            "avg_vol_5d": 1443475.0,
+            "yoy": "82.8%",
+            "投信近3日買賣超(張)": 24.1,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "3004.TW",
+            "stock_id": "3004",
+            "name": "豐達科",
+            "price": 150.0,
+            "volume": 2883752,
+            "avg_vol_5d": 414667.0,
+            "yoy": "28.7%",
+            "投信近3日買賣超(張)": 40.0,
+            "consecutive_days": 1
         }
     ]
 }
