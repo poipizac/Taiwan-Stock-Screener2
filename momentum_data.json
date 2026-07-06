@@ -1,73 +1,117 @@
 {
-    "scan_date": "2026-07-05",
-    "data_date": "2026-07-05",
+    "scan_date": "2026-07-06",
+    "data_date": "2026-07-06",
     "empty_today": false,
     "data": [
         {
-            "ticker": "1785.TWO",
-            "stock_id": "1785",
-            "name": "光洋科",
-            "price": 156.0,
-            "volume": 39363279,
-            "avg_vol_5d": 14575362.0,
-            "yoy": "76.6%",
-            "投信近3日買賣超(張)": 294.4,
-            "consecutive_days": 3
+            "ticker": "1608.TW",
+            "stock_id": "1608",
+            "name": "華榮",
+            "price": 35.4,
+            "volume": 7514652,
+            "avg_vol_5d": 2340075.0,
+            "yoy": "22.2%",
+            "投信近3日買賣超(張)": 286.9,
+            "consecutive_days": 1
         },
         {
-            "ticker": "1795.TW",
-            "stock_id": "1795",
-            "name": "美時",
-            "price": 199.5,
-            "volume": 3672691,
-            "avg_vol_5d": 1443475.0,
-            "yoy": "82.8%",
-            "投信近3日買賣超(張)": 24.1,
-            "consecutive_days": 3
+            "ticker": "2382.TW",
+            "stock_id": "2382",
+            "name": "廣達",
+            "price": 378.0,
+            "volume": 24393671,
+            "avg_vol_5d": 11457289.0,
+            "yoy": "66.6%",
+            "投信近3日買賣超(張)": 6706.1,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "2441.TW",
+            "stock_id": "2441",
+            "name": "超豐",
+            "price": 145.0,
+            "volume": 34889236,
+            "avg_vol_5d": 6526276.0,
+            "yoy": "21.2%",
+            "投信近3日買賣超(張)": 746.0,
+            "consecutive_days": 1
         },
         {
             "ticker": "3004.TW",
             "stock_id": "3004",
             "name": "豐達科",
-            "price": 150.0,
-            "volume": 2828130,
-            "avg_vol_5d": 414667.0,
+            "price": 159.5,
+            "volume": 4341843,
+            "avg_vol_5d": 897661.0,
             "yoy": "28.7%",
             "投信近3日買賣超(張)": 40.0,
-            "consecutive_days": 3
+            "consecutive_days": 4
+        },
+        {
+            "ticker": "3167.TW",
+            "stock_id": "3167",
+            "name": "大量",
+            "price": 905.0,
+            "volume": 6782668,
+            "avg_vol_5d": 1646423.0,
+            "yoy": "130.7%",
+            "投信近3日買賣超(張)": 386.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "3211.TWO",
+            "stock_id": "3211",
+            "name": "順達",
+            "price": 422.5,
+            "volume": 8841301,
+            "avg_vol_5d": 3263308.0,
+            "yoy": "41.5%",
+            "投信近3日買賣超(張)": 356.6,
+            "consecutive_days": 1
         },
         {
             "ticker": "5314.TWO",
             "stock_id": "5314",
             "name": "世紀*",
-            "price": 71.5,
-            "volume": 28768521,
-            "avg_vol_5d": 10493925.0,
+            "price": 67.6,
+            "volume": 34753623,
+            "avg_vol_5d": 15663289.0,
             "yoy": "184.2%",
-            "投信近3日買賣超(張)": 15.0,
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "5439.TWO",
-            "stock_id": "5439",
-            "name": "高技",
-            "price": 351.0,
-            "volume": 8473081,
-            "avg_vol_5d": 2184819.0,
-            "yoy": "78.2%",
-            "投信近3日買賣超(張)": 0.4,
-            "consecutive_days": 2
+            "投信近3日買賣超(張)": 21.0,
+            "consecutive_days": 3
         },
         {
             "ticker": "6143.TWO",
             "stock_id": "6143",
             "name": "振曜",
-            "price": 106.5,
-            "volume": 5063406,
-            "avg_vol_5d": 971709.0,
+            "price": 108.5,
+            "volume": 8512993,
+            "avg_vol_5d": 1758761.0,
             "yoy": "25.3%",
-            "投信近3日買賣超(張)": 78.0,
-            "consecutive_days": 2
+            "投信近3日買賣超(張)": 6.8,
+            "consecutive_days": 3
+        },
+        {
+            "ticker": "8070.TW",
+            "stock_id": "8070",
+            "name": "長華*",
+            "price": 57.2,
+            "volume": 12161564,
+            "avg_vol_5d": 4918598.0,
+            "yoy": "20.4%",
+            "投信近3日買賣超(張)": 4191.4,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "8131.TW",
+            "stock_id": "8131",
+            "name": "福懋科",
+            "price": 82.2,
+            "volume": 22161724,
+            "avg_vol_5d": 4985250.0,
+            "yoy": "32.0%",
+            "投信近3日買賣超(張)": 3.0,
+            "consecutive_days": 1
         }
     ]
 }
