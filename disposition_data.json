@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-07-09",
-    "data_date": "2026-07-09",
+    "scan_date": "2026-07-10",
+    "data_date": "2026-07-10",
     "error_msg": "",
     "data": [
         {
@@ -102,46 +102,6 @@
             "yoy": 46.3,
             "mom": 0.51,
             "industry": "半導體業"
-        },
-        {
-            "ticker": "5425.TWO",
-            "name": "台半",
-            "end_date": "115/07/09",
-            "close": 130.5,
-            "pb": 4.03,
-            "yoy": -2.6,
-            "mom": 8.3,
-            "industry": "半導體業"
-        },
-        {
-            "ticker": "5489.TWO",
-            "name": "彩富",
-            "end_date": "115/07/09",
-            "close": 61.7,
-            "pb": 2.58,
-            "yoy": 12.5,
-            "mom": -2.37,
-            "industry": "其他電子業"
-        },
-        {
-            "ticker": "6620.TWO",
-            "name": "漢達",
-            "end_date": "115/07/09",
-            "close": 99.5,
-            "pb": 3.13,
-            "yoy": 15.9,
-            "mom": 6.79,
-            "industry": "生技醫療業"
-        },
-        {
-            "ticker": "3624.TWO",
-            "name": "光頡",
-            "end_date": "115/07/09",
-            "close": 144.0,
-            "pb": 4.74,
-            "yoy": 17.6,
-            "mom": -4.79,
-            "industry": "電子零組件業"
         }
     ]
 }

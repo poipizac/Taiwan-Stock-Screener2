@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-07-09",
-    "data_date": "2026-07-09",
+    "scan_date": "2026-07-10",
+    "data_date": "2026-07-10",
     "empty_today": false,
     "data": [
         {
@@ -15,7 +15,7 @@
             "yoy": 3.1,
             "mom": 31.42,
             "industry": "通信網路業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "2434.TW",
@@ -29,7 +29,7 @@
             "yoy": 6.0,
             "mom": 42.92,
             "industry": "半導體業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2637.TW",
@@ -38,12 +38,12 @@
             "sma200": 66.59,
             "high120": 83.0,
             "ratio": 1.13,
-            "pb": 1.23,
+            "pb": 1.22,
             "eps": 5.44,
             "yoy": 28.6,
             "mom": 14.33,
             "industry": "航運業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2949.TWO",
@@ -57,7 +57,7 @@
             "yoy": 18.0,
             "mom": 21.45,
             "industry": "數位雲端",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3374.TWO",
@@ -71,7 +71,7 @@
             "yoy": 23.8,
             "mom": 24.43,
             "industry": "半導體業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "5488.TWO",
@@ -85,7 +85,7 @@
             "yoy": 23.4,
             "mom": 24.62,
             "industry": "電子零組件業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6142.TW",
@@ -99,7 +99,7 @@
             "yoy": 2.9,
             "mom": 19.68,
             "industry": "通信網路業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         }
     ]
 }
