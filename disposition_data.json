@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-07-10",
-    "data_date": "2026-07-10",
+    "scan_date": "2026-07-11",
+    "data_date": "2026-07-11",
     "error_msg": "",
     "data": [
         {
@@ -71,36 +71,6 @@
             "pb": 1.89,
             "yoy": -20.5,
             "mom": 9.09,
-            "industry": "半導體業"
-        },
-        {
-            "ticker": "5321.TWO",
-            "name": "美而快",
-            "end_date": "115/07/10",
-            "close": 61.2,
-            "pb": 5.15,
-            "yoy": -22.5,
-            "mom": -2.7,
-            "industry": "數位雲端"
-        },
-        {
-            "ticker": "5464.TWO",
-            "name": "霖宏",
-            "end_date": "115/07/10",
-            "close": 94.5,
-            "pb": 5.75,
-            "yoy": 19.6,
-            "mom": -4.55,
-            "industry": "電子零組件業"
-        },
-        {
-            "ticker": "6683.TWO",
-            "name": "雍智科技",
-            "end_date": "115/07/10",
-            "close": 1725.0,
-            "pb": 16.4,
-            "yoy": 46.3,
-            "mom": 0.51,
             "industry": "半導體業"
         }
     ]

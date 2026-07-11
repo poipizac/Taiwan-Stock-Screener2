@@ -1,91 +1,119 @@
 {
-    "scan_date": "2026-07-10",
-    "data_date": "2026-07-10",
+    "scan_date": "2026-07-11",
+    "data_date": "2026-07-11",
     "empty_today": false,
     "data": [
         {
             "ticker": "2332.TW",
             "name": "友訊",
             "close": 24.05,
-            "sma200": 16.05,
+            "sma200": 16.09,
             "high120": 24.05,
-            "ratio": 1.21,
+            "ratio": 1.25,
             "pb": 1.74,
             "eps": -0.9,
             "yoy": 3.1,
             "mom": 31.42,
             "industry": "通信網路業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "2434.TW",
             "name": "統懋",
             "close": 62.1,
-            "sma200": 31.92,
+            "sma200": 32.09,
             "high120": 62.1,
-            "ratio": 1.59,
+            "ratio": 1.64,
             "pb": 4.91,
             "eps": 0.02,
             "yoy": 6.0,
             "mom": 42.92,
             "industry": "半導體業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "2637.TW",
             "name": "慧洋-KY",
             "close": 83.0,
-            "sma200": 66.59,
+            "sma200": 66.72,
             "high120": 83.0,
-            "ratio": 1.13,
+            "ratio": 1.15,
             "pb": 1.22,
             "eps": 5.44,
             "yoy": 28.6,
             "mom": 14.33,
             "industry": "航運業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "2949.TWO",
             "name": "欣新網",
             "close": 83.8,
-            "sma200": 66.02,
+            "sma200": 66.08,
             "high120": 83.8,
-            "ratio": 1.1,
+            "ratio": 1.12,
             "pb": 2.4,
             "eps": 3.59,
             "yoy": 18.0,
             "mom": 21.45,
             "industry": "數位雲端",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3374.TWO",
             "name": "精材",
             "close": 356.5,
-            "sma200": 180.82,
+            "sma200": 181.91,
             "high120": 356.5,
-            "ratio": 1.7,
+            "ratio": 1.73,
             "pb": 9.54,
             "eps": 4.96,
             "yoy": 23.8,
             "mom": 24.43,
             "industry": "半導體業",
-            "consecutive_days": 2
+            "consecutive_days": 3
+        },
+        {
+            "ticker": "3489.TWO",
+            "name": "森寶",
+            "close": 24.2,
+            "sma200": 18.89,
+            "high120": 24.2,
+            "ratio": 1.12,
+            "pb": 1.82,
+            "eps": -0.09,
+            "yoy": 122.5,
+            "mom": 20.63,
+            "industry": "建材營造業",
+            "consecutive_days": 1
         },
         {
             "ticker": "5488.TWO",
             "name": "松普",
             "close": 16.2,
-            "sma200": 10.47,
+            "sma200": 10.5,
             "high120": 16.2,
-            "ratio": 1.33,
+            "ratio": 1.36,
             "pb": 1.47,
             "eps": 0.11,
             "yoy": 23.4,
             "mom": 24.62,
             "industry": "電子零組件業",
-            "consecutive_days": 2
+            "consecutive_days": 3
+        },
+        {
+            "ticker": "5519.TW",
+            "name": "隆大",
+            "close": 32.81,
+            "sma200": 27.31,
+            "high120": 32.81,
+            "ratio": 1.09,
+            "pb": 1.34,
+            "eps": 4.69,
+            "yoy": -9.5,
+            "mom": 16.57,
+            "industry": "建材營造業",
+            "consecutive_days": 1
         },
         {
             "ticker": "6142.TW",
@@ -93,13 +121,13 @@
             "close": 11.25,
             "sma200": 9.43,
             "high120": 11.25,
-            "ratio": 1.03,
+            "ratio": 1.05,
             "pb": 1.31,
             "eps": -0.26,
             "yoy": 2.9,
             "mom": 19.68,
             "industry": "通信網路業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         }
     ]
 }
