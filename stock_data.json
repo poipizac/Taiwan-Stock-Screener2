@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-07-11",
-    "data_date": "2026-07-11",
+    "scan_date": "2026-07-12",
+    "data_date": "2026-07-12",
     "empty_today": false,
     "data": [
         {
@@ -15,7 +15,7 @@
             "yoy": 3.1,
             "mom": 31.42,
             "industry": "通信網路業",
-            "consecutive_days": 4
+            "consecutive_days": 5
         },
         {
             "ticker": "2434.TW",
@@ -29,7 +29,7 @@
             "yoy": 6.0,
             "mom": 42.92,
             "industry": "半導體業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "2637.TW",
@@ -43,7 +43,7 @@
             "yoy": 28.6,
             "mom": 14.33,
             "industry": "航運業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "2949.TWO",
@@ -57,7 +57,7 @@
             "yoy": 18.0,
             "mom": 21.45,
             "industry": "數位雲端",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "3374.TWO",
@@ -71,7 +71,7 @@
             "yoy": 23.8,
             "mom": 24.43,
             "industry": "半導體業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "3489.TWO",
@@ -85,7 +85,7 @@
             "yoy": 122.5,
             "mom": 20.63,
             "industry": "建材營造業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "5488.TWO",
@@ -99,7 +99,7 @@
             "yoy": 23.4,
             "mom": 24.62,
             "industry": "電子零組件業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "5519.TW",
@@ -108,12 +108,12 @@
             "sma200": 27.31,
             "high120": 32.81,
             "ratio": 1.09,
-            "pb": 1.34,
+            "pb": 1.41,
             "eps": 4.69,
             "yoy": -9.5,
             "mom": 16.57,
             "industry": "建材營造業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6142.TW",
@@ -127,7 +127,7 @@
             "yoy": 2.9,
             "mom": 19.68,
             "industry": "通信網路業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         }
     ]
 }
