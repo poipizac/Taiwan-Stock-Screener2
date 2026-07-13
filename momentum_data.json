@@ -1,51 +1,51 @@
 {
-    "scan_date": "2026-07-10",
-    "data_date": "2026-07-10",
+    "scan_date": "2026-07-13",
+    "data_date": "2026-07-13",
     "empty_today": false,
     "data": [
         {
-            "ticker": "2356.TW",
-            "stock_id": "2356",
-            "name": "英業達",
-            "price": 69.8,
-            "volume": 143018285,
-            "avg_vol_5d": 24279657.0,
-            "yoy": "27.6%",
-            "投信近3日買賣超(張)": 12517.3,
-            "consecutive_days": 2
+            "ticker": "2357.TW",
+            "stock_id": "2357",
+            "name": "華碩",
+            "price": 704.0,
+            "volume": 6756876,
+            "avg_vol_5d": 3260096.0,
+            "yoy": "41.1%",
+            "投信近3日買賣超(張)": 29.4,
+            "consecutive_days": 1
         },
         {
-            "ticker": "2637.TW",
-            "stock_id": "2637",
-            "name": "慧洋-KY",
-            "price": 83.0,
-            "volume": 7920154,
-            "avg_vol_5d": 3184458.0,
-            "yoy": "28.6%",
-            "投信近3日買賣超(張)": 487.5,
-            "consecutive_days": 2
+            "ticker": "2408.TW",
+            "stock_id": "2408",
+            "name": "南亞科",
+            "price": 423.0,
+            "volume": 130256509,
+            "avg_vol_5d": 57141611.0,
+            "yoy": "582.9%",
+            "投信近3日買賣超(張)": 4744.8,
+            "consecutive_days": 1
         },
         {
-            "ticker": "3211.TWO",
-            "stock_id": "3211",
-            "name": "順達",
-            "price": 454.0,
-            "volume": 27782373,
-            "avg_vol_5d": 6411502.0,
-            "yoy": "41.5%",
-            "投信近3日買賣超(張)": 3027.0,
-            "consecutive_days": 2
+            "ticker": "3374.TWO",
+            "stock_id": "3374",
+            "name": "精材",
+            "price": 358.0,
+            "volume": 28531493,
+            "avg_vol_5d": 13500115.0,
+            "yoy": "23.8%",
+            "投信近3日買賣超(張)": 42.9,
+            "consecutive_days": 1
         },
         {
-            "ticker": "4764.TW",
-            "stock_id": "4764",
-            "name": "雙鍵",
-            "price": 336.0,
-            "volume": 4531530,
-            "avg_vol_5d": 1488418.0,
-            "yoy": "24.7%",
-            "投信近3日買賣超(張)": 984.0,
-            "consecutive_days": 3
+            "ticker": "4162.TWO",
+            "stock_id": "4162",
+            "name": "智擎",
+            "price": 66.0,
+            "volume": 2324467,
+            "avg_vol_5d": 799295.0,
+            "yoy": "28.0%",
+            "投信近3日買賣超(張)": 100.0,
+            "consecutive_days": 1
         }
     ]
 }
