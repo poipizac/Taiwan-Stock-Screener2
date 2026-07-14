@@ -1,36 +1,56 @@
 {
-    "scan_date": "2026-07-13",
-    "data_date": "2026-07-13",
+    "scan_date": "2026-07-14",
+    "data_date": "2026-07-14",
     "error_msg": "",
     "data": [
+        {
+            "ticker": "4542.TWO",
+            "name": "科嶠",
+            "end_date": "115/07/28",
+            "close": 342.5,
+            "pb": 14.19,
+            "yoy": 11.6,
+            "mom": -23.8,
+            "industry": "電子零組件業"
+        },
+        {
+            "ticker": "4556.TWO",
+            "name": "旭然",
+            "end_date": "115/07/28",
+            "close": 120.5,
+            "pb": 5.57,
+            "yoy": 18.5,
+            "mom": 67.06,
+            "industry": "其他業"
+        },
         {
             "ticker": "8027.TWO",
             "name": "鈦昇",
             "end_date": "115/07/27",
-            "close": 241.0,
-            "pb": 9.28,
+            "close": 234.5,
+            "pb": 8.53,
             "yoy": 21.4,
-            "mom": 11.32,
+            "mom": 8.31,
             "industry": "電機機械"
         },
         {
             "ticker": "4707.TWO",
             "name": "磐亞",
             "end_date": "115/07/22",
-            "close": 38.4,
-            "pb": 2.4,
-            "yoy": -6.9,
-            "mom": 31.06,
-            "industry": "化學工業"
+            "close": 0,
+            "pb": 0,
+            "yoy": 0,
+            "mom": 0,
+            "industry": "未知"
         },
         {
             "ticker": "6174.TWO",
             "name": "安碁",
             "end_date": "115/07/22",
-            "close": 56.5,
+            "close": 56.2,
             "pb": 4.26,
             "yoy": 15.7,
-            "mom": 14.23,
+            "mom": 13.63,
             "industry": "電子零組件業"
         },
         {
@@ -47,41 +67,31 @@
             "ticker": "3147.TWO",
             "name": "大綜",
             "end_date": "115/07/17",
-            "close": 240.5,
+            "close": 222.5,
             "pb": 6.56,
             "yoy": -5.1,
-            "mom": -4.56,
+            "mom": -11.71,
             "industry": "資訊服務業"
         },
         {
             "ticker": "3230.TWO",
             "name": "錦明",
             "end_date": "115/07/17",
-            "close": 55.4,
+            "close": 53.7,
             "pb": 5.04,
             "yoy": -14.9,
-            "mom": 19.27,
+            "mom": 15.61,
             "industry": "光電業"
         },
         {
             "ticker": "6217.TWO",
             "name": "中探針",
             "end_date": "115/07/17",
-            "close": 242.5,
+            "close": 229.5,
             "pb": 9.36,
             "yoy": 36.5,
-            "mom": -5.27,
+            "mom": -10.35,
             "industry": "電子零組件業"
-        },
-        {
-            "ticker": "8024.TWO",
-            "name": "佑華",
-            "end_date": "115/07/13",
-            "close": 16.85,
-            "pb": 1.9,
-            "yoy": -20.5,
-            "mom": 9.42,
-            "industry": "半導體業"
         }
     ]
 }
