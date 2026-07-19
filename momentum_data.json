@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-07-18",
-    "data_date": "2026-07-18",
+    "scan_date": "2026-07-19",
+    "data_date": "2026-07-19",
     "empty_today": false,
     "data": [
         {
@@ -12,7 +12,7 @@
             "avg_vol_5d": 17628617.0,
             "yoy": "25.3%",
             "投信近3日買賣超(張)": 8281.5,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3017.TW",
@@ -23,7 +23,7 @@
             "avg_vol_5d": 2473817.0,
             "yoy": "110.2%",
             "投信近3日買賣超(張)": 278.7,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3324.TWO",
@@ -34,7 +34,7 @@
             "avg_vol_5d": 1167598.0,
             "yoy": "93.7%",
             "投信近3日買賣超(張)": 4.6,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3491.TWO",
@@ -45,7 +45,29 @@
             "avg_vol_5d": 1002827.0,
             "yoy": "64.5%",
             "投信近3日買賣超(張)": 105.4,
-            "consecutive_days": 3
+            "consecutive_days": 4
+        },
+        {
+            "ticker": "6177.TW",
+            "stock_id": "6177",
+            "name": "達麗",
+            "price": 47.5,
+            "volume": 2435277,
+            "avg_vol_5d": 1210785.0,
+            "yoy": "724.6%",
+            "投信近3日買賣超(張)": 50.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6739.TWO",
+            "stock_id": "6739",
+            "name": "竹陞科技",
+            "price": 1120.0,
+            "volume": 668040,
+            "avg_vol_5d": 188867.0,
+            "yoy": "92.3%",
+            "投信近3日買賣超(張)": 2.0,
+            "consecutive_days": 1
         }
     ]
 }

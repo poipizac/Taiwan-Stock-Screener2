@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-07-18",
-    "data_date": "2026-07-18",
+    "scan_date": "2026-07-19",
+    "data_date": "2026-07-19",
     "empty_today": false,
     "data": [
         {
@@ -15,7 +15,7 @@
             "yoy": -14.2,
             "mom": 5.63,
             "industry": "食品工業",
-            "consecutive_days": 4
+            "consecutive_days": 5
         },
         {
             "ticker": "1216.TW",
@@ -29,7 +29,7 @@
             "yoy": 3.4,
             "mom": 7.38,
             "industry": "食品工業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "1726.TW",
@@ -43,7 +43,7 @@
             "yoy": 4.2,
             "mom": 2.94,
             "industry": "化學工業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "2008.TW",
@@ -57,7 +57,7 @@
             "yoy": -23.6,
             "mom": 5.33,
             "industry": "鋼鐵工業",
-            "consecutive_days": 4
+            "consecutive_days": 5
         },
         {
             "ticker": "2886.TW",
@@ -71,7 +71,7 @@
             "yoy": 12.0,
             "mom": 3.25,
             "industry": "金融保險業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3288.TWO",
@@ -85,7 +85,7 @@
             "yoy": 4.0,
             "mom": 30.32,
             "industry": "電子零組件業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "4139.TWO",
@@ -99,7 +99,7 @@
             "yoy": -3.6,
             "mom": 54.47,
             "industry": "生技醫療業",
-            "consecutive_days": 6
+            "consecutive_days": 7
         },
         {
             "ticker": "5450.TWO",
@@ -113,7 +113,7 @@
             "yoy": 0.2,
             "mom": 14.43,
             "industry": "其他業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "8342.TWO",
@@ -127,7 +127,7 @@
             "yoy": 1.4,
             "mom": 0.44,
             "industry": "其他業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         }
     ]
 }
