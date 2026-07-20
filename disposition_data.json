@@ -1,6 +1,137 @@
 {
-    "scan_date": "2026-07-19",
-    "data_date": "2026-07-19",
-    "error_msg": "TWSE Error: Expecting value: line 1 column 1 (char 0) | TPEx HTTP 520",
-    "data": []
+    "scan_date": "2026-07-20",
+    "data_date": "2026-07-20",
+    "error_msg": "",
+    "data": [
+        {
+            "ticker": "4139.TWO",
+            "name": "馬光-KY",
+            "end_date": "115/08/03",
+            "close": 37.5,
+            "pb": 3.98,
+            "yoy": -3.6,
+            "mom": 52.44,
+            "industry": "生技醫療業"
+        },
+        {
+            "ticker": "8383.TWO",
+            "name": "千附",
+            "end_date": "115/07/31",
+            "close": 80.2,
+            "pb": 2.31,
+            "yoy": 23.6,
+            "mom": 26.38,
+            "industry": "半導體業"
+        },
+        {
+            "ticker": "6173.TWO",
+            "name": "信昌電",
+            "end_date": "115/07/30",
+            "close": 175.0,
+            "pb": 3.36,
+            "yoy": 7.7,
+            "mom": -43.27,
+            "industry": "電子零組件業"
+        },
+        {
+            "ticker": "6907.TWO",
+            "name": "雅特力-KY",
+            "end_date": "115/07/30",
+            "close": 212.5,
+            "pb": 8.9,
+            "yoy": 74.7,
+            "mom": 46.07,
+            "industry": "半導體業"
+        },
+        {
+            "ticker": "7714.TWO",
+            "name": "創泓科技",
+            "end_date": "115/07/30",
+            "close": 183.0,
+            "pb": 0,
+            "yoy": 0.0,
+            "mom": 20.79,
+            "industry": "數位雲端"
+        },
+        {
+            "ticker": "8096.TWO",
+            "name": "擎亞",
+            "end_date": "115/07/29",
+            "close": 128.0,
+            "pb": 6.6,
+            "yoy": -30.0,
+            "mom": -17.15,
+            "industry": "電子通路業"
+        },
+        {
+            "ticker": "8291.TWO",
+            "name": "尚茂",
+            "end_date": "115/07/29",
+            "close": 33.05,
+            "pb": 8.84,
+            "yoy": 188.9,
+            "mom": -20.36,
+            "industry": "電子零組件業"
+        },
+        {
+            "ticker": "4542.TWO",
+            "name": "科嶠",
+            "end_date": "115/07/28",
+            "close": 295.0,
+            "pb": 11.83,
+            "yoy": 11.6,
+            "mom": -34.37,
+            "industry": "電子零組件業"
+        },
+        {
+            "ticker": "4556.TWO",
+            "name": "旭然",
+            "end_date": "115/07/28",
+            "close": 114.5,
+            "pb": 5.75,
+            "yoy": 18.5,
+            "mom": 58.74,
+            "industry": "其他業"
+        },
+        {
+            "ticker": "8027.TWO",
+            "name": "鈦昇",
+            "end_date": "115/07/27",
+            "close": 194.0,
+            "pb": 7.47,
+            "yoy": 21.4,
+            "mom": -10.39,
+            "industry": "電機機械"
+        },
+        {
+            "ticker": "4707.TWO",
+            "name": "磐亞",
+            "end_date": "115/07/22",
+            "close": 36.45,
+            "pb": 2.28,
+            "yoy": -6.9,
+            "mom": 24.4,
+            "industry": "化學工業"
+        },
+        {
+            "ticker": "6174.TWO",
+            "name": "安碁",
+            "end_date": "115/07/22",
+            "close": 48.7,
+            "pb": 3.67,
+            "yoy": 15.7,
+            "mom": -1.54,
+            "industry": "電子零組件業"
+        },
+        {
+            "ticker": "6617.TWO",
+            "name": "共信-KY",
+            "end_date": "115/07/21",
+            "close": 100.0,
+            "pb": 5.05,
+            "yoy": 24.1,
+            "mom": 43.47,
+            "industry": "生技醫療業"
+        }
+    ]
 }
