@@ -1,17 +1,39 @@
 {
-    "scan_date": "2026-07-21",
-    "data_date": "2026-07-21",
+    "scan_date": "2026-07-22",
+    "data_date": "2026-07-22",
     "empty_today": false,
     "data": [
         {
-            "ticker": "5515.TW",
-            "stock_id": "5515",
-            "name": "建國",
-            "price": 44.25,
-            "volume": 1122370,
-            "avg_vol_5d": 456429.0,
-            "yoy": "38.8%",
-            "投信近3日買賣超(張)": 58.0,
+            "ticker": "2897.TW",
+            "stock_id": "2897",
+            "name": "王道銀行",
+            "price": 10.5,
+            "volume": 13219425,
+            "avg_vol_5d": 5945524.0,
+            "yoy": "25.4%",
+            "投信近3日買賣超(張)": 32.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "3189.TW",
+            "stock_id": "3189",
+            "name": "景碩",
+            "price": 796.0,
+            "volume": 25513197,
+            "avg_vol_5d": 7843449.0,
+            "yoy": "28.8%",
+            "投信近3日買賣超(張)": 2799.2,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6669.TW",
+            "stock_id": "6669",
+            "name": "緯穎",
+            "price": 5500.0,
+            "volume": 3842491,
+            "avg_vol_5d": 1050581.0,
+            "yoy": "62.0%",
+            "投信近3日買賣超(張)": 259.0,
             "consecutive_days": 1
         }
     ]
