@@ -1,21 +1,21 @@
 {
-    "scan_date": "2026-07-24",
-    "data_date": "2026-07-24",
+    "scan_date": "2026-07-25",
+    "data_date": "2026-07-25",
     "empty_today": false,
     "data": [
         {
             "ticker": "1459.TW",
             "name": "聯發",
             "close": 15.8,
-            "sma200": 13.07,
+            "sma200": 13.09,
             "high120": 15.8,
-            "ratio": 1.03,
+            "ratio": 1.05,
             "pb": 1.06,
             "eps": 1.85,
             "yoy": -18.2,
             "mom": -10.14,
             "industry": "紡織纖維",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3685.TWO",
@@ -29,7 +29,7 @@
             "yoy": 48.1,
             "mom": 41.38,
             "industry": "電機機械",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "4706.TWO",
@@ -43,7 +43,7 @@
             "yoy": 8.3,
             "mom": 8.02,
             "industry": "化學工業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "5533.TW",
@@ -57,7 +57,7 @@
             "yoy": -1.1,
             "mom": 6.3,
             "industry": "建材營造業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "6577.TWO",
@@ -71,7 +71,7 @@
             "yoy": 0.8,
             "mom": 29.49,
             "industry": "電腦及週邊設備業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         }
     ]
 }
