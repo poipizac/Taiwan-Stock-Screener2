@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-07-25",
-    "data_date": "2026-07-25",
+    "scan_date": "2026-07-26",
+    "data_date": "2026-07-26",
     "empty_today": false,
     "data": [
         {
@@ -12,7 +12,7 @@
             "avg_vol_5d": 7996410.0,
             "yoy": "20.9%",
             "投信近3日買賣超(張)": 619.0,
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "3081.TWO",
@@ -23,7 +23,7 @@
             "avg_vol_5d": 1784856.0,
             "yoy": "99.0%",
             "投信近3日買賣超(張)": 1046.5,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3163.TWO",
@@ -34,7 +34,7 @@
             "avg_vol_5d": 3009100.0,
             "yoy": "25.2%",
             "投信近3日買賣超(張)": 2.0,
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "3231.TW",
@@ -45,51 +45,7 @@
             "avg_vol_5d": 86680198.0,
             "yoy": "144.3%",
             "投信近3日買賣超(張)": 10373.3,
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "4991.TWO",
-            "stock_id": "4991",
-            "name": "環宇-KY",
-            "price": 417.0,
-            "volume": 12344877,
-            "avg_vol_5d": 5705287.0,
-            "yoy": "51.0%",
-            "投信近3日買賣超(張)": 92.0,
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "6139.TW",
-            "stock_id": "6139",
-            "name": "亞翔",
-            "price": 840.0,
-            "volume": 10881459,
-            "avg_vol_5d": 3214711.0,
-            "yoy": "68.5%",
-            "投信近3日買賣超(張)": 882.0,
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "6579.TW",
-            "stock_id": "6579",
-            "name": "研揚",
-            "price": 180.5,
-            "volume": 4580869,
-            "avg_vol_5d": 1067483.0,
-            "yoy": "23.1%",
-            "投信近3日買賣超(張)": 2.0,
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "6830.TW",
-            "stock_id": "6830",
-            "name": "汎銓",
-            "price": 363.5,
-            "volume": 3184105,
-            "avg_vol_5d": 1190999.0,
-            "yoy": "24.5%",
-            "投信近3日買賣超(張)": 11.0,
-            "consecutive_days": 1
+            "consecutive_days": 3
         }
     ]
 }
