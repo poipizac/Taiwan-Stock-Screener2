@@ -1,51 +1,29 @@
 {
-    "scan_date": "2026-07-26",
-    "data_date": "2026-07-26",
+    "scan_date": "2026-07-27",
+    "data_date": "2026-07-27",
     "empty_today": false,
     "data": [
         {
-            "ticker": "2455.TW",
-            "stock_id": "2455",
-            "name": "全新",
-            "price": 333.0,
-            "volume": 16041965,
-            "avg_vol_5d": 7996410.0,
-            "yoy": "20.9%",
-            "投信近3日買賣超(張)": 619.0,
-            "consecutive_days": 4
-        },
-        {
-            "ticker": "3081.TWO",
-            "stock_id": "3081",
-            "name": "聯亞",
-            "price": 1760.0,
-            "volume": 9961629,
-            "avg_vol_5d": 1784856.0,
-            "yoy": "99.0%",
-            "投信近3日買賣超(張)": 1046.5,
-            "consecutive_days": 3
-        },
-        {
-            "ticker": "3163.TWO",
-            "stock_id": "3163",
-            "name": "波若威",
-            "price": 705.0,
-            "volume": 9416656,
-            "avg_vol_5d": 3009100.0,
-            "yoy": "25.2%",
+            "ticker": "1419.TW",
+            "stock_id": "1419",
+            "name": "新紡",
+            "price": 69.5,
+            "volume": 303033,
+            "avg_vol_5d": 94563.0,
+            "yoy": "36.6%",
             "投信近3日買賣超(張)": 2.0,
-            "consecutive_days": 4
+            "consecutive_days": 1
         },
         {
-            "ticker": "3231.TW",
-            "stock_id": "3231",
-            "name": "緯創",
-            "price": 179.0,
-            "volume": 177361366,
-            "avg_vol_5d": 86680198.0,
-            "yoy": "144.3%",
-            "投信近3日買賣超(張)": 10373.3,
-            "consecutive_days": 3
+            "ticker": "3105.TWO",
+            "stock_id": "3105",
+            "name": "穩懋",
+            "price": 355.0,
+            "volume": 37361867,
+            "avg_vol_5d": 17672974.0,
+            "yoy": "28.4%",
+            "投信近3日買賣超(張)": 119.9,
+            "consecutive_days": 1
         }
     ]
 }
