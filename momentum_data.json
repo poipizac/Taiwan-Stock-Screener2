@@ -1,28 +1,17 @@
 {
-    "scan_date": "2026-07-27",
-    "data_date": "2026-07-27",
+    "scan_date": "2026-07-28",
+    "data_date": "2026-07-28",
     "empty_today": false,
     "data": [
         {
-            "ticker": "1419.TW",
-            "stock_id": "1419",
-            "name": "新紡",
-            "price": 69.5,
-            "volume": 303033,
-            "avg_vol_5d": 94563.0,
-            "yoy": "36.6%",
-            "投信近3日買賣超(張)": 2.0,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "3105.TWO",
-            "stock_id": "3105",
-            "name": "穩懋",
-            "price": 355.0,
-            "volume": 37361867,
-            "avg_vol_5d": 17672974.0,
-            "yoy": "28.4%",
-            "投信近3日買賣超(張)": 119.9,
+            "ticker": "5269.TW",
+            "stock_id": "5269",
+            "name": "祥碩",
+            "price": 1455.0,
+            "volume": 1582519,
+            "avg_vol_5d": 386990.0,
+            "yoy": "39.4%",
+            "投信近3日買賣超(張)": 12.0,
             "consecutive_days": 1
         }
     ]
