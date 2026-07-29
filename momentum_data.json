@@ -1,18 +1,40 @@
 {
-    "scan_date": "2026-07-28",
-    "data_date": "2026-07-28",
+    "scan_date": "2026-07-29",
+    "data_date": "2026-07-29",
     "empty_today": false,
     "data": [
+        {
+            "ticker": "1419.TW",
+            "stock_id": "1419",
+            "name": "新紡",
+            "price": 70.1,
+            "volume": 501733,
+            "avg_vol_5d": 154797.0,
+            "yoy": "36.6%",
+            "投信近3日買賣超(張)": 2.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "3260.TWO",
+            "stock_id": "3260",
+            "name": "威剛",
+            "price": 394.0,
+            "volume": 30963023,
+            "avg_vol_5d": 7699171.0,
+            "yoy": "163.4%",
+            "投信近3日買賣超(張)": 157.0,
+            "consecutive_days": 1
+        },
         {
             "ticker": "5269.TW",
             "stock_id": "5269",
             "name": "祥碩",
-            "price": 1455.0,
-            "volume": 1582519,
-            "avg_vol_5d": 386990.0,
+            "price": 1450.0,
+            "volume": 1505644,
+            "avg_vol_5d": 567972.0,
             "yoy": "39.4%",
-            "投信近3日買賣超(張)": 12.0,
-            "consecutive_days": 1
+            "投信近3日買賣超(張)": 9.0,
+            "consecutive_days": 2
         }
     ]
 }
