@@ -1,40 +1,51 @@
 {
-    "scan_date": "2026-07-29",
-    "data_date": "2026-07-29",
+    "scan_date": "2026-07-31",
+    "data_date": "2026-07-31",
     "empty_today": false,
     "data": [
         {
-            "ticker": "1419.TW",
-            "stock_id": "1419",
-            "name": "新紡",
-            "price": 70.1,
-            "volume": 501733,
-            "avg_vol_5d": 154797.0,
-            "yoy": "36.6%",
-            "投信近3日買賣超(張)": 2.0,
+            "ticker": "2308.TW",
+            "stock_id": "2308",
+            "name": "台達電",
+            "price": 1640.0,
+            "volume": 31264247,
+            "avg_vol_5d": 14248689.0,
+            "yoy": "47.7%",
+            "投信近3日買賣超(張)": 2650.2,
             "consecutive_days": 1
         },
         {
-            "ticker": "3260.TWO",
-            "stock_id": "3260",
-            "name": "威剛",
-            "price": 394.0,
-            "volume": 30963023,
-            "avg_vol_5d": 7699171.0,
-            "yoy": "163.4%",
-            "投信近3日買賣超(張)": 157.0,
+            "ticker": "2347.TW",
+            "stock_id": "2347",
+            "name": "聯強",
+            "price": 93.7,
+            "volume": 11820735,
+            "avg_vol_5d": 3180423.0,
+            "yoy": "38.3%",
+            "投信近3日買賣超(張)": 178.0,
             "consecutive_days": 1
         },
         {
-            "ticker": "5269.TW",
-            "stock_id": "5269",
-            "name": "祥碩",
-            "price": 1450.0,
-            "volume": 1505644,
-            "avg_vol_5d": 567972.0,
-            "yoy": "39.4%",
-            "投信近3日買賣超(張)": 9.0,
-            "consecutive_days": 2
+            "ticker": "2357.TW",
+            "stock_id": "2357",
+            "name": "華碩",
+            "price": 810.0,
+            "volume": 9719440,
+            "avg_vol_5d": 4359830.0,
+            "yoy": "41.1%",
+            "投信近3日買賣超(張)": 764.1,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "2883.TW",
+            "stock_id": "2883",
+            "name": "凱基金",
+            "price": 30.85,
+            "volume": 88398247,
+            "avg_vol_5d": 43723222.0,
+            "yoy": "150.5%",
+            "投信近3日買賣超(張)": 6639.2,
+            "consecutive_days": 1
         }
     ]
 }
