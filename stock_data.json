@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-08-01",
-    "data_date": "2026-08-01",
+    "scan_date": "2026-08-02",
+    "data_date": "2026-08-02",
     "empty_today": false,
     "data": [
         {
@@ -15,7 +15,7 @@
             "yoy": -18.2,
             "mom": -10.14,
             "industry": "紡織纖維",
-            "consecutive_days": 9
+            "consecutive_days": 10
         },
         {
             "ticker": "3489.TWO",
@@ -29,7 +29,7 @@
             "yoy": 122.5,
             "mom": 10.16,
             "industry": "建材營造業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "6863.TW",
@@ -43,7 +43,7 @@
             "yoy": 1.1,
             "mom": 47.44,
             "industry": "通信網路業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "8411.TW",
@@ -57,7 +57,7 @@
             "yoy": 23.9,
             "mom": 9.88,
             "industry": "其他業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         }
     ]
 }
