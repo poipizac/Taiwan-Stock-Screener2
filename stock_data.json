@@ -1,34 +1,20 @@
 {
-    "scan_date": "2026-08-03",
-    "data_date": "2026-08-03",
+    "scan_date": "2026-08-04",
+    "data_date": "2026-08-04",
     "empty_today": false,
     "data": [
         {
-            "ticker": "3489.TWO",
-            "name": "森寶",
-            "close": 24.3,
-            "sma200": 18.97,
-            "high120": 24.3,
-            "ratio": 1.06,
-            "pb": 1.83,
-            "eps": -0.08,
-            "yoy": 122.5,
-            "mom": 9.95,
-            "industry": "建材營造業",
-            "consecutive_days": 4
-        },
-        {
-            "ticker": "6669.TW",
-            "name": "緯穎",
-            "close": 5925.0,
-            "sma200": 4297.04,
-            "high120": 5925.0,
-            "ratio": 1.26,
-            "pb": 7.86,
-            "eps": 287.83,
-            "yoy": 62.0,
-            "mom": 9.93,
-            "industry": "電腦及週邊設備業",
+            "ticker": "2059.TW",
+            "name": "川湖",
+            "close": 9495.0,
+            "sma200": 4552.75,
+            "high120": 9495.0,
+            "ratio": 1.76,
+            "pb": 28.7,
+            "eps": 110.69,
+            "yoy": 37.8,
+            "mom": 20.96,
+            "industry": "電子零組件業",
             "consecutive_days": 1
         }
     ]
