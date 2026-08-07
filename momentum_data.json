@@ -1,84 +1,18 @@
 {
-    "scan_date": "2026-08-06",
-    "data_date": "2026-08-06",
+    "scan_date": "2026-08-07",
+    "data_date": "2026-08-07",
     "empty_today": false,
     "data": [
-        {
-            "ticker": "1815.TWO",
-            "stock_id": "1815",
-            "name": "富喬",
-            "price": 86.8,
-            "volume": 40647484,
-            "avg_vol_5d": 19670290.0,
-            "yoy": "36.1%",
-            "投信近3日買賣超(張)": 8238.0,
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "2455.TW",
-            "stock_id": "2455",
-            "name": "全新",
-            "price": 372.0,
-            "volume": 35089064,
-            "avg_vol_5d": 7265971.0,
-            "yoy": "35.2%",
-            "投信近3日買賣超(張)": 302.0,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "2535.TW",
-            "stock_id": "2535",
-            "name": "達欣工",
-            "price": 93.0,
-            "volume": 1173190,
-            "avg_vol_5d": 422063.0,
-            "yoy": "55.6%",
-            "投信近3日買賣超(張)": 85.0,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "3017.TW",
-            "stock_id": "3017",
-            "name": "奇鋐",
-            "price": 2940.0,
-            "volume": 9388432,
-            "avg_vol_5d": 4223694.0,
-            "yoy": "110.2%",
-            "投信近3日買賣超(張)": 1959.4,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "3036.TW",
-            "stock_id": "3036",
-            "name": "文曄",
-            "price": 233.5,
-            "volume": 23366270,
-            "avg_vol_5d": 11542295.0,
-            "yoy": "99.8%",
-            "投信近3日買賣超(張)": 1520.0,
-            "consecutive_days": 2
-        },
         {
             "ticker": "3081.TWO",
             "stock_id": "3081",
             "name": "聯亞",
-            "price": 2375.0,
-            "volume": 5141892,
-            "avg_vol_5d": 1241457.0,
+            "price": 2305.0,
+            "volume": 5998633,
+            "avg_vol_5d": 1256411.0,
             "yoy": "99.0%",
-            "投信近3日買賣超(張)": 191.0,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "3105.TWO",
-            "stock_id": "3105",
-            "name": "穩懋",
-            "price": 382.0,
-            "volume": 40961272,
-            "avg_vol_5d": 16031463.0,
-            "yoy": "39.1%",
-            "投信近3日買賣超(張)": 867.4,
-            "consecutive_days": 1
+            "投信近3日買賣超(張)": 583.5,
+            "consecutive_days": 2
         }
     ]
 }
