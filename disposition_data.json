@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-08-07",
-    "data_date": "2026-08-07",
+    "scan_date": "2026-08-08",
+    "data_date": "2026-08-08",
     "error_msg": "TWSE Error: Expecting value: line 1 column 1 (char 0) | TPEx HTTP 520",
     "data": []
 }

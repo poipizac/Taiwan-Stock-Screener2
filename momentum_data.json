@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-08-07",
-    "data_date": "2026-08-07",
+    "scan_date": "2026-08-08",
+    "data_date": "2026-08-08",
     "empty_today": false,
     "data": [
         {
@@ -8,11 +8,11 @@
             "stock_id": "3081",
             "name": "聯亞",
             "price": 2305.0,
-            "volume": 5998633,
+            "volume": 5704064,
             "avg_vol_5d": 1256411.0,
             "yoy": "99.0%",
             "投信近3日買賣超(張)": 583.5,
-            "consecutive_days": 2
+            "consecutive_days": 3
         }
     ]
 }

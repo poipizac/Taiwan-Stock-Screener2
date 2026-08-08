@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-08-07",
-    "data_date": "2026-08-07",
+    "scan_date": "2026-08-08",
+    "data_date": "2026-08-08",
     "empty_today": false,
     "data": [
         {
@@ -15,7 +15,7 @@
             "yoy": 3.8,
             "mom": 18.63,
             "industry": "鋼鐵工業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "2031.TW",
@@ -29,7 +29,7 @@
             "yoy": -9.0,
             "mom": 18.73,
             "industry": "鋼鐵工業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2059.TW",
@@ -38,12 +38,12 @@
             "sma200": 4652.2,
             "high120": 11110.0,
             "ratio": 1.86,
-            "pb": 37.78,
+            "pb": 31.37,
             "eps": 111.1,
             "yoy": 156.1,
             "mom": 41.53,
             "industry": "電子零組件業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "2425.TW",
@@ -57,7 +57,7 @@
             "yoy": -0.9,
             "mom": 12.67,
             "industry": "電腦及週邊設備業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         }
     ]
 }
