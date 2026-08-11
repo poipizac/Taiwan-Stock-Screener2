@@ -1,28 +1,39 @@
 {
-    "scan_date": "2026-08-10",
-    "data_date": "2026-08-10",
+    "scan_date": "2026-08-11",
+    "data_date": "2026-08-11",
     "empty_today": false,
     "data": [
         {
-            "ticker": "3264.TWO",
-            "stock_id": "3264",
-            "name": "欣銓",
-            "price": 222.5,
-            "volume": 15861815,
-            "avg_vol_5d": 6625179.0,
-            "yoy": "32.4%",
-            "投信近3日買賣超(張)": 6298.6,
+            "ticker": "3026.TW",
+            "stock_id": "3026",
+            "name": "禾伸堂",
+            "price": 646.0,
+            "volume": 22659675,
+            "avg_vol_5d": 1932192.0,
+            "yoy": "25.2%",
+            "投信近3日買賣超(張)": 1321.0,
             "consecutive_days": 1
         },
         {
-            "ticker": "6531.TW",
-            "stock_id": "6531",
-            "name": "愛普*",
-            "price": 923.0,
-            "volume": 5766982,
-            "avg_vol_5d": 1879046.0,
-            "yoy": "77.8%",
-            "投信近3日買賣超(張)": 128.3,
+            "ticker": "3044.TW",
+            "stock_id": "3044",
+            "name": "健鼎",
+            "price": 441.5,
+            "volume": 8893940,
+            "avg_vol_5d": 2814726.0,
+            "yoy": "22.4%",
+            "投信近3日買賣超(張)": 903.7,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "3090.TW",
+            "stock_id": "3090",
+            "name": "日電貿",
+            "price": 174.5,
+            "volume": 32363061,
+            "avg_vol_5d": 12283743.0,
+            "yoy": "26.7%",
+            "投信近3日買賣超(張)": 420.9,
             "consecutive_days": 1
         }
     ]
