@@ -1,40 +1,73 @@
 {
-    "scan_date": "2026-08-12",
-    "data_date": "2026-08-12",
+    "scan_date": "2026-08-13",
+    "data_date": "2026-08-13",
     "empty_today": false,
     "data": [
-        {
-            "ticker": "1560.TW",
-            "stock_id": "1560",
-            "name": "中砂",
-            "price": 728.0,
-            "volume": 3306447,
-            "avg_vol_5d": 855392.0,
-            "yoy": "29.4%",
-            "投信近3日買賣超(張)": 21.5,
-            "consecutive_days": 1
-        },
         {
             "ticker": "2356.TW",
             "stock_id": "2356",
             "name": "英業達",
-            "price": 69.0,
-            "volume": 79680251,
-            "avg_vol_5d": 21954312.0,
+            "price": 68.8,
+            "volume": 71365973,
+            "avg_vol_5d": 28742228.0,
             "yoy": "44.6%",
-            "投信近3日買賣超(張)": 837.4,
+            "投信近3日買賣超(張)": 1175.8,
+            "consecutive_days": 2
+        },
+        {
+            "ticker": "2376.TW",
+            "stock_id": "2376",
+            "name": "技嘉",
+            "price": 393.5,
+            "volume": 18476170,
+            "avg_vol_5d": 8068620.0,
+            "yoy": "59.8%",
+            "投信近3日買賣超(張)": 281.9,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "2542.TW",
+            "stock_id": "2542",
+            "name": "興富發",
+            "price": 46.4,
+            "volume": 16821094,
+            "avg_vol_5d": 5006186.0,
+            "yoy": "1361.1%",
+            "投信近3日買賣超(張)": 2239.1,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "3017.TW",
+            "stock_id": "3017",
+            "name": "奇鋐",
+            "price": 3200.0,
+            "volume": 10528167,
+            "avg_vol_5d": 4453818.0,
+            "yoy": "110.2%",
+            "投信近3日買賣超(張)": 284.1,
             "consecutive_days": 1
         },
         {
             "ticker": "3026.TW",
             "stock_id": "3026",
             "name": "禾伸堂",
-            "price": 685.0,
-            "volume": 24133428,
-            "avg_vol_5d": 5683610.0,
+            "price": 691.0,
+            "volume": 24899604,
+            "avg_vol_5d": 10196718.0,
             "yoy": "25.2%",
-            "投信近3日買賣超(張)": 2331.0,
-            "consecutive_days": 2
+            "投信近3日買賣超(張)": 3004.0,
+            "consecutive_days": 3
+        },
+        {
+            "ticker": "3044.TW",
+            "stock_id": "3044",
+            "name": "健鼎",
+            "price": 495.0,
+            "volume": 14118842,
+            "avg_vol_5d": 3553593.0,
+            "yoy": "22.4%",
+            "投信近3日買賣超(張)": 1045.2,
+            "consecutive_days": 1
         }
     ]
 }
