@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-08-14",
-    "data_date": "2026-08-14",
+    "scan_date": "2026-08-15",
+    "data_date": "2026-08-15",
     "empty_today": false,
     "data": [
         {
@@ -8,66 +8,66 @@
             "stock_id": "2382",
             "name": "廣達",
             "price": 327.5,
-            "volume": 42294448,
+            "volume": 41703201,
             "avg_vol_5d": 19353535.0,
-            "yoy": "66.6%",
+            "yoy": "105.6%",
             "投信近3日買賣超(張)": 1905.6,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2883.TW",
             "stock_id": "2883",
             "name": "凱基金",
             "price": 31.65,
-            "volume": 58388616,
+            "volume": 58546012,
             "avg_vol_5d": 28347997.0,
             "yoy": "150.5%",
             "投信近3日買賣超(張)": 35314.2,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2887.TW",
             "stock_id": "2887",
             "name": "台新新光金",
             "price": 37.75,
-            "volume": 100568902,
+            "volume": 100227268,
             "avg_vol_5d": 40948585.0,
             "yoy": "274.7%",
             "投信近3日買賣超(張)": 39122.9,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2890.TW",
             "stock_id": "2890",
             "name": "永豐金",
             "price": 40.55,
-            "volume": 35405074,
+            "volume": 35312077,
             "avg_vol_5d": 15985862.0,
             "yoy": "39.2%",
             "投信近3日買賣超(張)": 16097.6,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3532.TW",
             "stock_id": "3532",
             "name": "台勝科",
             "price": 356.0,
-            "volume": 15464501,
+            "volume": 15147553,
             "avg_vol_5d": 5456839.0,
             "yoy": "20.6%",
             "投信近3日買賣超(張)": 1649.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3693.TWO",
             "stock_id": "3693",
             "name": "營邦",
             "price": 536.0,
-            "volume": 2390273,
+            "volume": 2333650,
             "avg_vol_5d": 1116259.0,
             "yoy": "37.8%",
             "投信近3日買賣超(張)": 5.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         }
     ]
 }
