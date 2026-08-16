@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-08-15",
-    "data_date": "2026-08-15",
+    "scan_date": "2026-08-16",
+    "data_date": "2026-08-16",
     "empty_today": false,
     "data": [
         {
@@ -12,7 +12,7 @@
             "avg_vol_5d": 19353535.0,
             "yoy": "105.6%",
             "投信近3日買賣超(張)": 1905.6,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "2883.TW",
@@ -23,7 +23,7 @@
             "avg_vol_5d": 28347997.0,
             "yoy": "150.5%",
             "投信近3日買賣超(張)": 35314.2,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "2887.TW",
@@ -34,7 +34,7 @@
             "avg_vol_5d": 40948585.0,
             "yoy": "274.7%",
             "投信近3日買賣超(張)": 39122.9,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "2890.TW",
@@ -45,7 +45,7 @@
             "avg_vol_5d": 15985862.0,
             "yoy": "39.2%",
             "投信近3日買賣超(張)": 16097.6,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3532.TW",
@@ -56,7 +56,7 @@
             "avg_vol_5d": 5456839.0,
             "yoy": "20.6%",
             "投信近3日買賣超(張)": 1649.0,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3693.TWO",
@@ -67,7 +67,29 @@
             "avg_vol_5d": 1116259.0,
             "yoy": "37.8%",
             "投信近3日買賣超(張)": 5.0,
-            "consecutive_days": 2
+            "consecutive_days": 3
+        },
+        {
+            "ticker": "8046.TW",
+            "stock_id": "8046",
+            "name": "南電",
+            "price": 1305.0,
+            "volume": 22660843,
+            "avg_vol_5d": 8122567.0,
+            "yoy": "41.7%",
+            "投信近3日買賣超(張)": 4025.1,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "8996.TW",
+            "stock_id": "8996",
+            "name": "高力",
+            "price": 1280.0,
+            "volume": 6097431,
+            "avg_vol_5d": 2863295.0,
+            "yoy": "237.6%",
+            "投信近3日買賣超(張)": 2889.0,
+            "consecutive_days": 1
         }
     ]
 }
