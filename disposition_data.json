@@ -1,137 +1,87 @@
 {
-    "scan_date": "2026-08-17",
-    "data_date": "2026-08-17",
+    "scan_date": "2026-08-18",
+    "data_date": "2026-08-18",
     "error_msg": "",
     "data": [
+        {
+            "ticker": "3498.TWO",
+            "name": "陽程",
+            "end_date": "115/08/25",
+            "close": 174.0,
+            "pb": 4.64,
+            "yoy": 75.1,
+            "mom": 93.33,
+            "industry": "其他電子業"
+        },
         {
             "ticker": "5475.TWO",
             "name": "德宏",
             "end_date": "115/08/21",
-            "close": 169.0,
-            "pb": 22.56,
+            "close": 182.5,
+            "pb": 24.36,
             "yoy": 90.9,
-            "mom": 52.25,
+            "mom": 64.41,
             "industry": "電子零組件業"
         },
         {
             "ticker": "6716.TWO",
             "name": "應廣",
             "end_date": "115/08/21",
-            "close": 130.0,
-            "pb": 4.5,
+            "close": 137.5,
+            "pb": 4.76,
             "yoy": 43.8,
-            "mom": 67.53,
+            "mom": 77.19,
             "industry": "半導體業"
         },
         {
             "ticker": "4979.TWO",
             "name": "華星光",
             "end_date": "115/08/20",
-            "close": 545.0,
-            "pb": 18.6,
+            "close": 528.0,
+            "pb": 18.02,
             "yoy": 11.9,
-            "mom": 47.3,
+            "mom": 42.7,
             "industry": "通信網路業"
         },
         {
             "ticker": "4991.TWO",
             "name": "環宇-KY",
             "end_date": "115/08/20",
-            "close": 488.0,
-            "pb": 13.84,
+            "close": 485.0,
+            "pb": 13.76,
             "yoy": 51.0,
-            "mom": 38.24,
+            "mom": 37.39,
             "industry": "半導體業"
         },
         {
             "ticker": "3163.TWO",
             "name": "波若威",
             "end_date": "115/08/21",
-            "close": 733.0,
-            "pb": 17.96,
+            "close": 711.0,
+            "pb": 17.43,
             "yoy": 9.9,
-            "mom": 34.74,
+            "mom": 30.7,
             "industry": "通信網路業"
         },
         {
             "ticker": "4931.TWO",
             "name": "新盛力",
             "end_date": "115/08/21",
-            "close": 269.5,
-            "pb": 13.3,
+            "close": 259.5,
+            "pb": 10.58,
             "yoy": 140.1,
-            "mom": 51.83,
+            "mom": 46.2,
             "industry": "電腦及週邊設備業"
-        },
-        {
-            "ticker": "1815.TWO",
-            "name": "富喬",
-            "end_date": "115/08/17",
-            "close": 96.5,
-            "pb": 4.09,
-            "yoy": 49.8,
-            "mom": 45.55,
-            "industry": "電子零組件業"
-        },
-        {
-            "ticker": "3081.TWO",
-            "name": "聯亞",
-            "end_date": "115/08/17",
-            "close": 2790.0,
-            "pb": 67.76,
-            "yoy": 120.8,
-            "mom": 71.17,
-            "industry": "通信網路業"
-        },
-        {
-            "ticker": "4971.TWO",
-            "name": "IET-KY",
-            "end_date": "115/08/17",
-            "close": 528.0,
-            "pb": 10.09,
-            "yoy": 22.8,
-            "mom": 51.94,
-            "industry": "半導體業"
-        },
-        {
-            "ticker": "5351.TWO",
-            "name": "鈺創",
-            "end_date": "115/08/17",
-            "close": 135.5,
-            "pb": 6.17,
-            "yoy": 557.8,
-            "mom": 86.38,
-            "industry": "半導體業"
-        },
-        {
-            "ticker": "6217.TWO",
-            "name": "中探針",
-            "end_date": "115/08/17",
-            "close": 171.0,
-            "pb": 6.6,
-            "yoy": 38.8,
-            "mom": 54.05,
-            "industry": "電子零組件業"
         },
         {
             "ticker": "3362.TWO",
             "name": "先進光",
             "end_date": "115/08/20",
-            "close": 178.5,
-            "pb": 6.98,
+            "close": 175.0,
+            "pb": 6.84,
             "yoy": 9.7,
-            "mom": 3.78,
+            "mom": 1.74,
             "industry": "光電業"
-        },
-        {
-            "ticker": "4556.TWO",
-            "name": "旭然",
-            "end_date": "115/08/17",
-            "close": 84.7,
-            "pb": 4.25,
-            "yoy": 18.5,
-            "mom": 6.94,
-            "industry": "其他業"
         }
     ]
 }
