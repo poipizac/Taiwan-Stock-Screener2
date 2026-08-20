@@ -1,62 +1,84 @@
 {
-    "scan_date": "2026-08-19",
-    "data_date": "2026-08-19",
+    "scan_date": "2026-08-20",
+    "data_date": "2026-08-20",
     "empty_today": false,
     "data": [
         {
             "ticker": "1815.TWO",
             "stock_id": "1815",
             "name": "富喬",
-            "price": 98.0,
-            "volume": 42834850,
-            "avg_vol_5d": 19782120.0,
+            "price": 107.0,
+            "volume": 134323618,
+            "avg_vol_5d": 27077191.0,
             "yoy": "49.8%",
-            "投信近3日買賣超(張)": 300.7,
-            "consecutive_days": 2
+            "投信近3日買賣超(張)": 3639.2,
+            "consecutive_days": 3
+        },
+        {
+            "ticker": "2428.TW",
+            "stock_id": "2428",
+            "name": "興勤",
+            "price": 267.0,
+            "volume": 5187942,
+            "avg_vol_5d": 2186938.0,
+            "yoy": "31.3%",
+            "投信近3日買賣超(張)": 2356.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "2486.TW",
+            "stock_id": "2486",
+            "name": "一詮",
+            "price": 251.0,
+            "volume": 16718566,
+            "avg_vol_5d": 7788935.0,
+            "yoy": "29.1%",
+            "投信近3日買賣超(張)": 694.0,
+            "consecutive_days": 1
         },
         {
             "ticker": "2637.TW",
             "stock_id": "2637",
             "name": "慧洋-KY",
-            "price": 91.8,
-            "volume": 11187672,
-            "avg_vol_5d": 1875581.0,
+            "price": 94.7,
+            "volume": 9271045,
+            "avg_vol_5d": 3807125.0,
             "yoy": "28.6%",
-            "投信近3日買賣超(張)": 179.0,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "2884.TW",
-            "stock_id": "2884",
-            "name": "玉山金",
-            "price": 37.8,
-            "volume": 99892818,
-            "avg_vol_5d": 45109728.0,
-            "yoy": "34.4%",
-            "投信近3日買賣超(張)": 67193.7,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "3265.TWO",
-            "stock_id": "3265",
-            "name": "台星科",
-            "price": 180.5,
-            "volume": 5817117,
-            "avg_vol_5d": 2639187.0,
-            "yoy": "20.2%",
-            "投信近3日買賣超(張)": 2716.0,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "3450.TW",
-            "stock_id": "3450",
-            "name": "聯鈞",
-            "price": 567.0,
-            "volume": 20452693,
-            "avg_vol_5d": 5777794.0,
-            "yoy": "61.0%",
-            "投信近3日買賣超(張)": 4053.0,
+            "投信近3日買賣超(張)": 594.0,
             "consecutive_days": 2
+        },
+        {
+            "ticker": "3167.TW",
+            "stock_id": "3167",
+            "name": "大量",
+            "price": 762.0,
+            "volume": 9926574,
+            "avg_vol_5d": 2997286.0,
+            "yoy": "125.0%",
+            "投信近3日買賣超(張)": 684.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6173.TWO",
+            "stock_id": "6173",
+            "name": "信昌電",
+            "price": 221.0,
+            "volume": 39918175,
+            "avg_vol_5d": 19006799.0,
+            "yoy": "23.9%",
+            "投信近3日買賣超(張)": 3.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6472.TW",
+            "stock_id": "6472",
+            "name": "保瑞",
+            "price": 445.5,
+            "volume": 3064085,
+            "avg_vol_5d": 465298.0,
+            "yoy": "21.0%",
+            "投信近3日買賣超(張)": 468.0,
+            "consecutive_days": 1
         }
     ]
 }
