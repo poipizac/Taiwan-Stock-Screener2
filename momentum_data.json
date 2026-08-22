@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-08-21",
-    "data_date": "2026-08-21",
+    "scan_date": "2026-08-22",
+    "data_date": "2026-08-22",
     "empty_today": false,
     "data": [
         {
@@ -8,65 +8,87 @@
             "stock_id": "1708",
             "name": "東鹼",
             "price": 51.4,
-            "volume": 9425923,
+            "volume": 9406563,
             "avg_vol_5d": 2970547.0,
             "yoy": "21.1%",
             "投信近3日買賣超(張)": 2.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "1815.TWO",
             "stock_id": "1815",
             "name": "富喬",
             "price": 112.0,
-            "volume": 120849381,
+            "volume": 119990475,
             "avg_vol_5d": 52894451.0,
             "yoy": "49.8%",
             "投信近3日買賣超(張)": 7484.0,
-            "consecutive_days": 4
+            "consecutive_days": 5
         },
         {
             "ticker": "2606.TW",
             "stock_id": "2606",
             "name": "裕民",
             "price": 72.6,
-            "volume": 15882211,
+            "volume": 15803681,
             "avg_vol_5d": 5371665.0,
             "yoy": "38.5%",
             "投信近3日買賣超(張)": 512.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2637.TW",
             "stock_id": "2637",
             "name": "慧洋-KY",
             "price": 102.0,
-            "volume": 17844239,
+            "volume": 17725750,
             "avg_vol_5d": 5313238.0,
-            "yoy": "28.6%",
+            "yoy": "37.5%",
             "投信近3日買賣超(張)": 421.0,
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "3135.TW",
             "stock_id": "3135",
             "name": "凌航",
             "price": 170.5,
-            "volume": 3110691,
+            "volume": 3078240,
             "avg_vol_5d": 1476352.0,
             "yoy": "320.1%",
             "投信近3日買賣超(張)": 318.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3260.TWO",
             "stock_id": "3260",
             "name": "威剛",
             "price": 422.5,
-            "volume": 21356766,
+            "volume": 20701259,
             "avg_vol_5d": 7347312.0,
             "yoy": "197.4%",
             "投信近3日買賣超(張)": 100.0,
+            "consecutive_days": 2
+        },
+        {
+            "ticker": "6213.TW",
+            "stock_id": "6213",
+            "name": "聯茂",
+            "price": 513.0,
+            "volume": 38302079,
+            "avg_vol_5d": 3114834.0,
+            "yoy": "29.9%",
+            "投信近3日買賣超(張)": 334.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6472.TW",
+            "stock_id": "6472",
+            "name": "保瑞",
+            "price": 455.0,
+            "volume": 2968149,
+            "avg_vol_5d": 971485.0,
+            "yoy": "21.0%",
+            "投信近3日買賣超(張)": 975.0,
             "consecutive_days": 1
         }
     ]
