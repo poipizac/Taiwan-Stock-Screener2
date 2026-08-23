@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-08-22",
-    "data_date": "2026-08-22",
+    "scan_date": "2026-08-23",
+    "data_date": "2026-08-23",
     "empty_today": false,
     "data": [
         {
@@ -12,7 +12,7 @@
             "avg_vol_5d": 2970547.0,
             "yoy": "21.1%",
             "投信近3日買賣超(張)": 2.0,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "1815.TWO",
@@ -23,7 +23,7 @@
             "avg_vol_5d": 52894451.0,
             "yoy": "49.8%",
             "投信近3日買賣超(張)": 7484.0,
-            "consecutive_days": 5
+            "consecutive_days": 6
         },
         {
             "ticker": "2606.TW",
@@ -34,7 +34,7 @@
             "avg_vol_5d": 5371665.0,
             "yoy": "38.5%",
             "投信近3日買賣超(張)": 512.0,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "2637.TW",
@@ -45,7 +45,7 @@
             "avg_vol_5d": 5313238.0,
             "yoy": "37.5%",
             "投信近3日買賣超(張)": 421.0,
-            "consecutive_days": 4
+            "consecutive_days": 5
         },
         {
             "ticker": "3135.TW",
@@ -56,7 +56,7 @@
             "avg_vol_5d": 1476352.0,
             "yoy": "320.1%",
             "投信近3日買賣超(張)": 318.0,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3260.TWO",
@@ -67,7 +67,7 @@
             "avg_vol_5d": 7347312.0,
             "yoy": "197.4%",
             "投信近3日買賣超(張)": 100.0,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "6213.TW",
@@ -78,7 +78,7 @@
             "avg_vol_5d": 3114834.0,
             "yoy": "29.9%",
             "投信近3日買賣超(張)": 334.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6472.TW",
@@ -89,7 +89,7 @@
             "avg_vol_5d": 971485.0,
             "yoy": "21.0%",
             "投信近3日買賣超(張)": 975.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         }
     ]
 }
