@@ -1,16 +1,36 @@
 {
-    "scan_date": "2026-08-25",
-    "data_date": "2026-08-25",
+    "scan_date": "2026-08-26",
+    "data_date": "2026-08-26",
     "error_msg": "",
     "data": [
+        {
+            "ticker": "3362.TWO",
+            "name": "先進光",
+            "end_date": "115/09/04",
+            "close": 202.0,
+            "pb": 7.39,
+            "yoy": -12.6,
+            "mom": 17.44,
+            "industry": "光電業"
+        },
+        {
+            "ticker": "5314.TWO",
+            "name": "世紀*",
+            "end_date": "115/09/02",
+            "close": 34.55,
+            "pb": 5.52,
+            "yoy": 153.7,
+            "mom": 176.73,
+            "industry": "其他業"
+        },
         {
             "ticker": "3234.TWO",
             "name": "光環",
             "end_date": "115/09/01",
-            "close": 182.5,
-            "pb": 29.23,
+            "close": 180.5,
+            "pb": 28.91,
             "yoy": 28.1,
-            "mom": 90.7,
+            "mom": 88.61,
             "industry": "通信網路業"
         },
         {
@@ -18,7 +38,7 @@
             "name": "西勝",
             "end_date": "115/08/31",
             "close": 12.45,
-            "pb": 2.47,
+            "pb": 2.63,
             "yoy": -6.6,
             "mom": -23.38,
             "industry": "電腦及週邊設備業"
@@ -27,70 +47,60 @@
             "ticker": "4304.TWO",
             "name": "勝昱",
             "end_date": "115/08/31",
-            "close": 25.15,
-            "pb": 5.12,
+            "close": 26.3,
+            "pb": 5.35,
             "yoy": 28.8,
-            "mom": 52.89,
+            "mom": 59.88,
             "industry": "塑膠工業"
         },
         {
             "ticker": "4971.TWO",
             "name": "IET-KY",
             "end_date": "115/08/31",
-            "close": 554.0,
-            "pb": 10.58,
+            "close": 552.0,
+            "pb": 10.55,
             "yoy": 22.8,
-            "mom": 59.42,
+            "mom": 58.85,
             "industry": "半導體業"
         },
         {
             "ticker": "3498.TWO",
             "name": "陽程",
             "end_date": "115/08/28",
-            "close": 200.0,
-            "pb": 4.85,
+            "close": 203.5,
+            "pb": 4.93,
             "yoy": 74.7,
-            "mom": 122.22,
+            "mom": 126.11,
             "industry": "其他電子業"
-        },
-        {
-            "ticker": "5314.TWO",
-            "name": "世紀*",
-            "end_date": "115/08/28",
-            "close": 31.45,
-            "pb": 5.03,
-            "yoy": 153.7,
-            "mom": 151.9,
-            "industry": "其他業"
         },
         {
             "ticker": "5321.TWO",
             "name": "美而快",
             "end_date": "115/08/28",
-            "close": 81.0,
-            "pb": 5.68,
+            "close": 81.1,
+            "pb": 5.69,
             "yoy": -22.5,
-            "mom": 51.97,
+            "mom": 52.16,
             "industry": "數位雲端"
         },
         {
             "ticker": "3490.TWO",
             "name": "單井",
             "end_date": "115/08/26",
-            "close": 54.6,
-            "pb": 2.38,
-            "yoy": 1.9,
-            "mom": 97.11,
+            "close": 53.6,
+            "pb": 2.34,
+            "yoy": 13.9,
+            "mom": 93.5,
             "industry": "光電業"
         },
         {
             "ticker": "5475.TWO",
             "name": "德宏",
             "end_date": "115/08/26",
-            "close": 173.0,
-            "pb": 20.19,
+            "close": 181.0,
+            "pb": 21.13,
             "yoy": 159.3,
-            "mom": 55.86,
+            "mom": 63.06,
             "industry": "電子零組件業"
         }
     ]
