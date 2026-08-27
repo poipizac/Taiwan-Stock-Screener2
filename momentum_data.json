@@ -1,17 +1,61 @@
 {
-    "scan_date": "2026-08-26",
-    "data_date": "2026-08-26",
+    "scan_date": "2026-08-27",
+    "data_date": "2026-08-27",
     "empty_today": false,
     "data": [
         {
-            "ticker": "2476.TW",
-            "stock_id": "2476",
-            "name": "鉅祥",
-            "price": 125.5,
-            "volume": 3528104,
-            "avg_vol_5d": 1670947.0,
-            "yoy": "41.7%",
-            "投信近3日買賣超(張)": 8.0,
+            "ticker": "1303.TW",
+            "stock_id": "1303",
+            "name": "南亞",
+            "price": 227.5,
+            "volume": 144669947,
+            "avg_vol_5d": 71555141.0,
+            "yoy": "27.3%",
+            "投信近3日買賣超(張)": 11144.2,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "2351.TW",
+            "stock_id": "2351",
+            "name": "順德",
+            "price": 240.0,
+            "volume": 18877864,
+            "avg_vol_5d": 5523046.0,
+            "yoy": "37.2%",
+            "投信近3日買賣超(張)": 323.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "4551.TW",
+            "stock_id": "4551",
+            "name": "智伸科",
+            "price": 170.0,
+            "volume": 2109223,
+            "avg_vol_5d": 446035.0,
+            "yoy": "25.0%",
+            "投信近3日買賣超(張)": 134.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6584.TWO",
+            "stock_id": "6584",
+            "name": "南俊國際",
+            "price": 620.0,
+            "volume": 776597,
+            "avg_vol_5d": 378536.0,
+            "yoy": "40.8%",
+            "投信近3日買賣超(張)": 1.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6670.TW",
+            "stock_id": "6670",
+            "name": "復盛應用",
+            "price": 277.5,
+            "volume": 760352,
+            "avg_vol_5d": 78429.0,
+            "yoy": "22.9%",
+            "投信近3日買賣超(張)": 36.4,
             "consecutive_days": 1
         }
     ]
