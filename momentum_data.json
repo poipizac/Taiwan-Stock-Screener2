@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-08-29",
-    "data_date": "2026-08-29",
+    "scan_date": "2026-08-30",
+    "data_date": "2026-08-30",
     "empty_today": false,
     "data": [
         {
@@ -12,7 +12,7 @@
             "avg_vol_5d": 86627709.0,
             "yoy": "27.3%",
             "投信近3日買賣超(張)": 14569.3,
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "2449.TW",
@@ -23,7 +23,7 @@
             "avg_vol_5d": 11645009.0,
             "yoy": "33.2%",
             "投信近3日買賣超(張)": 1954.1,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3105.TWO",
@@ -34,7 +34,7 @@
             "avg_vol_5d": 23605598.0,
             "yoy": "39.1%",
             "投信近3日買賣超(張)": 8449.4,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3374.TWO",
@@ -45,6 +45,39 @@
             "avg_vol_5d": 14045552.0,
             "yoy": "42.2%",
             "投信近3日買賣超(張)": 3334.8,
+            "consecutive_days": 2
+        },
+        {
+            "ticker": "4764.TW",
+            "stock_id": "4764",
+            "name": "雙鍵",
+            "price": 249.5,
+            "volume": 2807374,
+            "avg_vol_5d": 1351106.0,
+            "yoy": "27.9%",
+            "投信近3日買賣超(張)": 600.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "4953.TWO",
+            "stock_id": "4953",
+            "name": "緯軟",
+            "price": 124.5,
+            "volume": 292161,
+            "avg_vol_5d": 116091.0,
+            "yoy": "33.1%",
+            "投信近3日買賣超(張)": 2.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6781.TW",
+            "stock_id": "6781",
+            "name": "AES-KY",
+            "price": 1130.0,
+            "volume": 1210822,
+            "avg_vol_5d": 535572.0,
+            "yoy": "31.7%",
+            "投信近3日買賣超(張)": 0.3,
             "consecutive_days": 1
         }
     ]
