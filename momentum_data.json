@@ -1,138 +1,28 @@
 {
-    "scan_date": "2026-09-01",
-    "data_date": "2026-09-01",
+    "scan_date": "2026-09-02",
+    "data_date": "2026-09-02",
     "empty_today": false,
     "data": [
-        {
-            "ticker": "1409.TW",
-            "stock_id": "1409",
-            "name": "新纖",
-            "price": 25.65,
-            "volume": 65363328,
-            "avg_vol_5d": 13003549.0,
-            "yoy": "25.0%",
-            "投信近3日買賣超(張)": 155.0,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "2357.TW",
-            "stock_id": "2357",
-            "name": "華碩",
-            "price": 1010.0,
-            "volume": 5643359,
-            "avg_vol_5d": 2687495.0,
-            "yoy": "37.1%",
-            "投信近3日買賣超(張)": 1624.9,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "2395.TW",
-            "stock_id": "2395",
-            "name": "研華",
-            "price": 711.0,
-            "volume": 4697259,
-            "avg_vol_5d": 2189063.0,
-            "yoy": "46.5%",
-            "投信近3日買賣超(張)": 426.9,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "2449.TW",
-            "stock_id": "2449",
-            "name": "京元電子",
-            "price": 279.0,
-            "volume": 53222618,
-            "avg_vol_5d": 25072485.0,
-            "yoy": "33.2%",
-            "投信近3日買賣超(張)": 6705.9,
-            "consecutive_days": 3
-        },
         {
             "ticker": "2455.TW",
             "stock_id": "2455",
             "name": "全新",
-            "price": 524.0,
-            "volume": 28043556,
-            "avg_vol_5d": 9128736.0,
-            "yoy": "35.2%",
-            "投信近3日買賣超(張)": 1988.0,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "2897.TW",
-            "stock_id": "2897",
-            "name": "王道銀行",
-            "price": 10.6,
-            "volume": 13082643,
-            "avg_vol_5d": 4161028.0,
-            "yoy": "25.4%",
-            "投信近3日買賣超(張)": 1252.0,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "3680.TWO",
-            "stock_id": "3680",
-            "name": "家登",
             "price": 542.0,
-            "volume": 3064444,
-            "avg_vol_5d": 1166528.0,
-            "yoy": "35.4%",
-            "投信近3日買賣超(張)": 45.0,
-            "consecutive_days": 1
+            "volume": 33983283,
+            "avg_vol_5d": 13824819.0,
+            "yoy": "35.2%",
+            "投信近3日買賣超(張)": 3458.0,
+            "consecutive_days": 2
         },
         {
-            "ticker": "3706.TW",
-            "stock_id": "3706",
-            "name": "神達",
-            "price": 95.7,
-            "volume": 27868765,
-            "avg_vol_5d": 6697326.0,
-            "yoy": "53.8%",
-            "投信近3日買賣超(張)": 1584.6,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "4958.TW",
-            "stock_id": "4958",
-            "name": "臻鼎-KY",
-            "price": 535.0,
-            "volume": 71678638,
-            "avg_vol_5d": 26988346.0,
-            "yoy": "26.8%",
-            "投信近3日買賣超(張)": 7358.6,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "5434.TW",
-            "stock_id": "5434",
-            "name": "崇越",
-            "price": 540.0,
-            "volume": 1018366,
-            "avg_vol_5d": 477789.0,
-            "yoy": "22.6%",
-            "投信近3日買賣超(張)": 103.1,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "6505.TW",
-            "stock_id": "6505",
-            "name": "台塑化",
-            "price": 76.7,
-            "volume": 30321088,
-            "avg_vol_5d": 14196811.0,
-            "yoy": "25.7%",
-            "投信近3日買賣超(張)": 62.8,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "8150.TW",
-            "stock_id": "8150",
-            "name": "南茂",
-            "price": 93.2,
-            "volume": 49469862,
-            "avg_vol_5d": 21257860.0,
-            "yoy": "28.7%",
-            "投信近3日買賣超(張)": 46.0,
+            "ticker": "3231.TW",
+            "stock_id": "3231",
+            "name": "緯創",
+            "price": 185.5,
+            "volume": 83888898,
+            "avg_vol_5d": 32604865.0,
+            "yoy": "62.4%",
+            "投信近3日買賣超(張)": 8936.5,
             "consecutive_days": 1
         }
     ]
