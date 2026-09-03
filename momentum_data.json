@@ -1,28 +1,105 @@
 {
-    "scan_date": "2026-09-02",
-    "data_date": "2026-09-02",
+    "scan_date": "2026-09-03",
+    "data_date": "2026-09-03",
     "empty_today": false,
     "data": [
         {
-            "ticker": "2455.TW",
-            "stock_id": "2455",
-            "name": "全新",
-            "price": 542.0,
-            "volume": 33983283,
-            "avg_vol_5d": 13824819.0,
-            "yoy": "35.2%",
-            "投信近3日買賣超(張)": 3458.0,
-            "consecutive_days": 2
+            "ticker": "1723.TW",
+            "stock_id": "1723",
+            "name": "中碳",
+            "price": 86.9,
+            "volume": 937236,
+            "avg_vol_5d": 389615.0,
+            "yoy": "42.7%",
+            "投信近3日買賣超(張)": 55.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "2605.TW",
+            "stock_id": "2605",
+            "name": "新興",
+            "price": 35.5,
+            "volume": 16495372,
+            "avg_vol_5d": 8219128.0,
+            "yoy": "23.0%",
+            "投信近3日買賣超(張)": 1.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "2884.TW",
+            "stock_id": "2884",
+            "name": "玉山金",
+            "price": 43.2,
+            "volume": 96542747,
+            "avg_vol_5d": 40093194.0,
+            "yoy": "34.4%",
+            "投信近3日買賣超(張)": 10439.8,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "2897.TW",
+            "stock_id": "2897",
+            "name": "王道銀行",
+            "price": 10.9,
+            "volume": 16171679,
+            "avg_vol_5d": 7257111.0,
+            "yoy": "29.3%",
+            "投信近3日買賣超(張)": 2782.0,
+            "consecutive_days": 1
         },
         {
             "ticker": "3231.TW",
             "stock_id": "3231",
             "name": "緯創",
-            "price": 185.5,
-            "volume": 83888898,
-            "avg_vol_5d": 32604865.0,
+            "price": 188.5,
+            "volume": 97125296,
+            "avg_vol_5d": 45122149.0,
             "yoy": "62.4%",
-            "投信近3日買賣超(張)": 8936.5,
+            "投信近3日買賣超(張)": 22271.6,
+            "consecutive_days": 2
+        },
+        {
+            "ticker": "6177.TW",
+            "stock_id": "6177",
+            "name": "達麗",
+            "price": 48.75,
+            "volume": 2828813,
+            "avg_vol_5d": 907897.0,
+            "yoy": "600.4%",
+            "投信近3日買賣超(張)": 709.5,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6291.TWO",
+            "stock_id": "6291",
+            "name": "沛亨",
+            "price": 458.0,
+            "volume": 4423623,
+            "avg_vol_5d": 1211521.0,
+            "yoy": "36.0%",
+            "投信近3日買賣超(張)": 1.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6442.TW",
+            "stock_id": "6442",
+            "name": "光聖",
+            "price": 1770.0,
+            "volume": 7855954,
+            "avg_vol_5d": 2817548.0,
+            "yoy": "26.5%",
+            "投信近3日買賣超(張)": 642.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6510.TWO",
+            "stock_id": "6510",
+            "name": "精測",
+            "price": 3350.0,
+            "volume": 1928957,
+            "avg_vol_5d": 843749.0,
+            "yoy": "34.9%",
+            "投信近3日買賣超(張)": 759.0,
             "consecutive_days": 1
         }
     ]
