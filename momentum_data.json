@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-09-04",
-    "data_date": "2026-09-04",
+    "scan_date": "2026-09-05",
+    "data_date": "2026-09-05",
     "empty_today": false,
     "data": [
         {
@@ -8,33 +8,33 @@
             "stock_id": "2353",
             "name": "宏碁",
             "price": 32.7,
-            "volume": 40003283,
+            "volume": 39871742,
             "avg_vol_5d": 14122721.0,
             "yoy": "28.2%",
             "投信近3日買賣超(張)": 3246.6,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2464.TW",
             "stock_id": "2464",
             "name": "盟立",
             "price": 211.0,
-            "volume": 54686175,
+            "volume": 54295175,
             "avg_vol_5d": 18961301.0,
             "yoy": "32.6%",
             "投信近3日買賣超(張)": 120.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2520.TW",
             "stock_id": "2520",
             "name": "冠德",
             "price": 37.1,
-            "volume": 3572658,
+            "volume": 3543807,
             "avg_vol_5d": 1492939.0,
             "yoy": "56.6%",
             "投信近3日買賣超(張)": 632.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         }
     ]
 }

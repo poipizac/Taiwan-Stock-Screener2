@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-09-04",
-    "data_date": "2026-09-04",
+    "scan_date": "2026-09-05",
+    "data_date": "2026-09-05",
     "error_msg": "",
     "data": [
         {
@@ -88,60 +88,10 @@
             "name": "世紀*",
             "end_date": "115/09/07",
             "close": 32.0,
-            "pb": 5.11,
+            "pb": 21.53,
             "yoy": 153.7,
             "mom": -11.11,
             "industry": "其他業"
-        },
-        {
-            "ticker": "3163.TWO",
-            "name": "波若威",
-            "end_date": "115/09/04",
-            "close": 775.0,
-            "pb": 18.99,
-            "yoy": 9.9,
-            "mom": 4.59,
-            "industry": "通信網路業"
-        },
-        {
-            "ticker": "3441.TWO",
-            "name": "聯一光",
-            "end_date": "115/09/04",
-            "close": 143.0,
-            "pb": 6.91,
-            "yoy": 52.7,
-            "mom": 5.15,
-            "industry": "光電業"
-        },
-        {
-            "ticker": "4188.TWO",
-            "name": "安克",
-            "end_date": "115/09/04",
-            "close": 14.45,
-            "pb": 1.78,
-            "yoy": -17.7,
-            "mom": -2.69,
-            "industry": "生技醫療業"
-        },
-        {
-            "ticker": "6103.TWO",
-            "name": "合邦",
-            "end_date": "115/09/04",
-            "close": 37.2,
-            "pb": 3.38,
-            "yoy": -6.7,
-            "mom": -16.4,
-            "industry": "半導體業"
-        },
-        {
-            "ticker": "3362.TWO",
-            "name": "先進光",
-            "end_date": "115/09/04",
-            "close": 210.0,
-            "pb": 7.9,
-            "yoy": -12.6,
-            "mom": 3.96,
-            "industry": "光電業"
         }
     ]
 }
