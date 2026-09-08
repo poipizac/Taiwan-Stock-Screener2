@@ -1,40 +1,51 @@
 {
-    "scan_date": "2026-09-06",
-    "data_date": "2026-09-06",
+    "scan_date": "2026-09-08",
+    "data_date": "2026-09-08",
     "empty_today": false,
     "data": [
         {
-            "ticker": "2353.TW",
-            "stock_id": "2353",
-            "name": "宏碁",
-            "price": 32.7,
-            "volume": 39871742,
-            "avg_vol_5d": 14122721.0,
-            "yoy": "28.2%",
-            "投信近3日買賣超(張)": 3246.6,
-            "consecutive_days": 3
+            "ticker": "2360.TW",
+            "stock_id": "2360",
+            "name": "致茂",
+            "price": 2265.0,
+            "volume": 4846807,
+            "avg_vol_5d": 1450463.0,
+            "yoy": "109.6%",
+            "投信近3日買賣超(張)": 565.2,
+            "consecutive_days": 1
         },
         {
-            "ticker": "2464.TW",
-            "stock_id": "2464",
-            "name": "盟立",
-            "price": 211.0,
-            "volume": 54295175,
-            "avg_vol_5d": 18961301.0,
-            "yoy": "32.6%",
-            "投信近3日買賣超(張)": 120.0,
-            "consecutive_days": 3
+            "ticker": "3167.TW",
+            "stock_id": "3167",
+            "name": "大量",
+            "price": 938.0,
+            "volume": 16026482,
+            "avg_vol_5d": 3470715.0,
+            "yoy": "125.0%",
+            "投信近3日買賣超(張)": 499.0,
+            "consecutive_days": 1
         },
         {
-            "ticker": "2520.TW",
-            "stock_id": "2520",
-            "name": "冠德",
-            "price": 37.1,
-            "volume": 3543807,
-            "avg_vol_5d": 1492939.0,
-            "yoy": "56.6%",
-            "投信近3日買賣超(張)": 632.0,
-            "consecutive_days": 3
+            "ticker": "3260.TWO",
+            "stock_id": "3260",
+            "name": "威剛",
+            "price": 414.0,
+            "volume": 13173670,
+            "avg_vol_5d": 5697322.0,
+            "yoy": "197.4%",
+            "投信近3日買賣超(張)": 133.8,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "3624.TWO",
+            "stock_id": "3624",
+            "name": "光頡",
+            "price": 96.6,
+            "volume": 18642817,
+            "avg_vol_5d": 8464433.0,
+            "yoy": "26.8%",
+            "投信近3日買賣超(張)": 400.0,
+            "consecutive_days": 1
         }
     ]
 }
