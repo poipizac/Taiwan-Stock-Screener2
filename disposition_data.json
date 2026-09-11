@@ -1,117 +1,77 @@
 {
-    "scan_date": "2026-09-10",
-    "data_date": "2026-09-10",
+    "scan_date": "2026-09-11",
+    "data_date": "2026-09-11",
     "error_msg": "",
     "data": [
         {
             "ticker": "4979.TWO",
             "name": "華星光",
             "end_date": "115/09/17",
-            "close": 571.0,
-            "pb": 18.26,
+            "close": 531.0,
+            "pb": 16.98,
             "yoy": 18.5,
-            "mom": -6.24,
+            "mom": -12.81,
             "industry": "通信網路業"
         },
         {
             "ticker": "6538.TWO",
             "name": "倉和",
             "end_date": "115/09/17",
-            "close": 338.5,
-            "pb": 6.48,
+            "close": 368.0,
+            "pb": 7.04,
             "yoy": -1.8,
-            "mom": 64.72,
+            "mom": 79.08,
             "industry": "電子零組件業"
         },
         {
             "ticker": "7772.TWO",
             "name": "耀穎(../../mainboard/listed/company-detail.html?code=7772)",
             "end_date": "115/09/17",
-            "close": 123.0,
-            "pb": 3.21,
+            "close": 132.0,
+            "pb": 3.44,
             "yoy": -9.9,
-            "mom": 38.98,
+            "mom": 49.15,
             "industry": "未知"
         },
         {
             "ticker": "4304.TWO",
             "name": "勝昱",
             "end_date": "115/09/16",
-            "close": 18.0,
-            "pb": 3.66,
+            "close": 17.2,
+            "pb": 3.5,
             "yoy": 28.8,
-            "mom": -28.85,
+            "mom": -32.02,
             "industry": "塑膠工業"
         },
         {
             "ticker": "6872.TWO",
             "name": "浩宇生醫",
             "end_date": "115/09/16",
-            "close": 26.75,
+            "close": 24.85,
             "pb": 0,
             "yoy": 0.0,
-            "mom": 89.05,
+            "mom": 75.62,
             "industry": "生技醫療業"
         },
         {
             "ticker": "6620.TWO",
             "name": "漢達",
             "end_date": "115/09/15",
-            "close": 126.5,
-            "pb": 4.09,
+            "close": 124.0,
+            "pb": 4.01,
             "yoy": -72.1,
-            "mom": 36.17,
+            "mom": 33.48,
             "industry": "生技醫療業"
         },
         {
             "ticker": "3324.TWO",
             "name": "雙鴻",
             "end_date": "115/09/14",
-            "close": 1440.0,
-            "pb": 10.1,
+            "close": 1360.0,
+            "pb": 9.54,
             "yoy": 64.0,
-            "mom": 15.2,
+            "mom": 8.8,
             "industry": "其他電子業"
-        },
-        {
-            "ticker": "3664.TWO",
-            "name": "安瑞-KY",
-            "end_date": "115/09/10",
-            "close": 7.58,
-            "pb": 5.64,
-            "yoy": -70.2,
-            "mom": 9.86,
-            "industry": "通信網路業"
-        },
-        {
-            "ticker": "4991.TWO",
-            "name": "環宇-KY",
-            "end_date": "115/09/10",
-            "close": 488.0,
-            "pb": 13.29,
-            "yoy": 57.2,
-            "mom": -9.46,
-            "industry": "半導體業"
-        },
-        {
-            "ticker": "3374.TWO",
-            "name": "精材",
-            "end_date": "115/09/10",
-            "close": 488.0,
-            "pb": 13.43,
-            "yoy": 42.2,
-            "mom": 15.5,
-            "industry": "半導體業"
-        },
-        {
-            "ticker": "8358.TWO",
-            "name": "金居",
-            "end_date": "115/09/10",
-            "close": 521.0,
-            "pb": 14.14,
-            "yoy": 40.1,
-            "mom": -3.52,
-            "industry": "電子零組件業"
         }
     ]
 }
