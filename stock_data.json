@@ -1,22 +1,8 @@
 {
-    "scan_date": "2026-09-11",
-    "data_date": "2026-09-11",
+    "scan_date": "2026-09-12",
+    "data_date": "2026-09-12",
     "empty_today": false,
     "data": [
-        {
-            "ticker": "2884.TW",
-            "name": "玉山金",
-            "close": 46.3,
-            "sma200": 33.13,
-            "high120": 46.3,
-            "ratio": 1.3,
-            "pb": 2.66,
-            "eps": 2.12,
-            "yoy": 34.4,
-            "mom": 16.48,
-            "industry": "金融保險業",
-            "consecutive_days": 1
-        },
         {
             "ticker": "2883.TW",
             "name": "凱基金",
@@ -29,7 +15,21 @@
             "yoy": -24.6,
             "mom": 11.82,
             "industry": "金融保險業",
-            "consecutive_days": 1
+            "consecutive_days": 2
+        },
+        {
+            "ticker": "2884.TW",
+            "name": "玉山金",
+            "close": 46.3,
+            "sma200": 33.13,
+            "high120": 46.3,
+            "ratio": 1.3,
+            "pb": 2.66,
+            "eps": 2.12,
+            "yoy": 34.4,
+            "mom": 16.48,
+            "industry": "金融保險業",
+            "consecutive_days": 2
         },
         {
             "ticker": "2897.TW",
@@ -43,7 +43,7 @@
             "yoy": 29.3,
             "mom": 6.28,
             "industry": "金融保險業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3045.TW",
@@ -57,7 +57,7 @@
             "yoy": 4.1,
             "mom": 4.31,
             "industry": "通信網路業",
-            "consecutive_days": 9
+            "consecutive_days": 10
         },
         {
             "ticker": "3229.TW",
@@ -71,7 +71,7 @@
             "yoy": 69.5,
             "mom": 26.4,
             "industry": "電子零組件業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "5880.TW",
@@ -85,7 +85,7 @@
             "yoy": 27.1,
             "mom": 6.46,
             "industry": "金融保險業",
-            "consecutive_days": 4
+            "consecutive_days": 5
         },
         {
             "ticker": "7713.TWO",
@@ -95,11 +95,11 @@
             "high120": 75.0,
             "ratio": 1.07,
             "pb": 2.84,
-            "eps": 5.37,
+            "eps": 5.38,
             "yoy": 24.2,
             "mom": 2.04,
             "industry": "生技醫療業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         }
     ]
 }

@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-09-11",
-    "data_date": "2026-09-11",
+    "scan_date": "2026-09-12",
+    "data_date": "2026-09-12",
     "empty_today": false,
     "data": [
         {
@@ -8,55 +8,55 @@
             "stock_id": "2495",
             "name": "普安",
             "price": 37.45,
-            "volume": 2133767,
+            "volume": 2122080,
             "avg_vol_5d": 983522.0,
             "yoy": "52.0%",
             "投信近3日買賣超(張)": 20.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2851.TW",
             "stock_id": "2851",
             "name": "中再保",
             "price": 47.15,
-            "volume": 5723879,
+            "volume": 5693870,
             "avg_vol_5d": 2705777.0,
             "yoy": "24.5%",
             "投信近3日買賣超(張)": 92.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3624.TWO",
             "stock_id": "3624",
             "name": "光頡",
             "price": 124.5,
-            "volume": 64828087,
+            "volume": 64587944,
             "avg_vol_5d": 18358049.0,
             "yoy": "26.8%",
             "投信近3日買賣超(張)": 2304.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6505.TW",
             "stock_id": "6505",
             "name": "台塑化",
             "price": 83.6,
-            "volume": 54912315,
+            "volume": 54751242,
             "avg_vol_5d": 27088954.0,
             "yoy": "25.7%",
             "投信近3日買賣超(張)": 11747.9,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6739.TWO",
             "stock_id": "6739",
             "name": "竹陞科技",
             "price": 1270.0,
-            "volume": 1790371,
+            "volume": 1661077,
             "avg_vol_5d": 326308.0,
             "yoy": "100.2%",
             "投信近3日買賣超(張)": 16.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         }
     ]
 }
