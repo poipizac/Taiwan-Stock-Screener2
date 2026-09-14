@@ -1,16 +1,26 @@
 {
-    "scan_date": "2026-09-13",
-    "data_date": "2026-09-13",
+    "scan_date": "2026-09-14",
+    "data_date": "2026-09-14",
     "error_msg": "",
     "data": [
+        {
+            "ticker": "8227.TWO",
+            "name": "巨有科技",
+            "end_date": "115/09/21",
+            "close": 239.0,
+            "pb": 7.94,
+            "yoy": 121.7,
+            "mom": 53.99,
+            "industry": "半導體業"
+        },
         {
             "ticker": "4979.TWO",
             "name": "華星光",
             "end_date": "115/09/17",
             "close": 531.0,
-            "pb": 16.98,
+            "pb": 17.49,
             "yoy": 18.5,
-            "mom": -12.81,
+            "mom": -10.18,
             "industry": "通信網路業"
         },
         {
@@ -18,19 +28,19 @@
             "name": "倉和",
             "end_date": "115/09/17",
             "close": 368.0,
-            "pb": 7.04,
+            "pb": 7.13,
             "yoy": -1.8,
-            "mom": 79.08,
+            "mom": 81.27,
             "industry": "電子零組件業"
         },
         {
             "ticker": "7772.TWO",
             "name": "耀穎(../../mainboard/listed/company-detail.html?code=7772)",
             "end_date": "115/09/17",
-            "close": 132.0,
-            "pb": 3.44,
+            "close": 126.0,
+            "pb": 3.29,
             "yoy": -9.9,
-            "mom": 49.15,
+            "mom": 42.37,
             "industry": "未知"
         },
         {
@@ -50,7 +60,7 @@
             "close": 24.85,
             "pb": 0,
             "yoy": 0.0,
-            "mom": 75.62,
+            "mom": 59.01,
             "industry": "生技醫療業"
         },
         {
@@ -58,9 +68,9 @@
             "name": "漢達",
             "end_date": "115/09/15",
             "close": 124.0,
-            "pb": 4.01,
+            "pb": 4.11,
             "yoy": -72.1,
-            "mom": 33.48,
+            "mom": 36.71,
             "industry": "生技醫療業"
         },
         {
@@ -68,9 +78,9 @@
             "name": "雙鴻",
             "end_date": "115/09/14",
             "close": 1360.0,
-            "pb": 9.54,
+            "pb": 9.16,
             "yoy": 64.0,
-            "mom": 8.8,
+            "mom": 4.4,
             "industry": "其他電子業"
         }
     ]

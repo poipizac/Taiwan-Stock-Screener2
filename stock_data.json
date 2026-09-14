@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-09-13",
-    "data_date": "2026-09-13",
+    "scan_date": "2026-09-14",
+    "data_date": "2026-09-14",
     "empty_today": false,
     "data": [
         {
@@ -13,23 +13,9 @@
             "pb": 2.66,
             "eps": 2.12,
             "yoy": 34.4,
-            "mom": 16.48,
+            "mom": 16.6,
             "industry": "金融保險業",
-            "consecutive_days": 3
-        },
-        {
-            "ticker": "2897.TW",
-            "name": "王道銀行",
-            "close": 11.0,
-            "sma200": 9.5,
-            "high120": 11.0,
-            "ratio": 1.13,
-            "pb": 0.85,
-            "eps": 0.63,
-            "yoy": 29.3,
-            "mom": 6.28,
-            "industry": "金融保險業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "2883.TW",
@@ -38,12 +24,26 @@
             "sma200": 22.91,
             "high120": 37.85,
             "ratio": 1.58,
-            "pb": 1.42,
+            "pb": 1.45,
             "eps": 1.74,
             "yoy": -24.6,
-            "mom": 11.82,
+            "mom": 14.62,
             "industry": "金融保險業",
-            "consecutive_days": 3
+            "consecutive_days": 4
+        },
+        {
+            "ticker": "2897.TW",
+            "name": "王道銀行",
+            "close": 11.0,
+            "sma200": 9.5,
+            "high120": 11.0,
+            "ratio": 1.13,
+            "pb": 0.87,
+            "eps": 0.63,
+            "yoy": 29.3,
+            "mom": 8.7,
+            "industry": "金融保險業",
+            "consecutive_days": 4
         },
         {
             "ticker": "3045.TW",
@@ -52,12 +52,12 @@
             "sma200": 107.32,
             "high120": 121.0,
             "ratio": 1.1,
-            "pb": 4.38,
+            "pb": 4.4,
             "eps": 5.23,
             "yoy": 4.1,
-            "mom": 4.31,
+            "mom": 4.74,
             "industry": "通信網路業",
-            "consecutive_days": 11
+            "consecutive_days": 12
         },
         {
             "ticker": "3229.TW",
@@ -66,12 +66,12 @@
             "sma200": 33.9,
             "high120": 67.5,
             "ratio": 1.62,
-            "pb": 6.36,
+            "pb": 6.31,
             "eps": 1.33,
             "yoy": 69.5,
-            "mom": 26.4,
+            "mom": 25.28,
             "industry": "電子零組件業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "5880.TW",
@@ -80,12 +80,12 @@
             "sma200": 23.04,
             "high120": 27.2,
             "ratio": 1.15,
-            "pb": 1.51,
+            "pb": 1.52,
             "eps": 1.33,
             "yoy": 27.1,
-            "mom": 6.46,
+            "mom": 7.44,
             "industry": "金融保險業",
-            "consecutive_days": 6
+            "consecutive_days": 7
         },
         {
             "ticker": "7713.TWO",
@@ -94,12 +94,12 @@
             "sma200": 69.25,
             "high120": 75.0,
             "ratio": 1.07,
-            "pb": 2.84,
+            "pb": 2.78,
             "eps": 5.38,
             "yoy": 24.2,
-            "mom": 2.04,
+            "mom": 0.0,
             "industry": "生技醫療業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         }
     ]
 }
