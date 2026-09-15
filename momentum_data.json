@@ -1,29 +1,40 @@
 {
-    "scan_date": "2026-09-13",
-    "data_date": "2026-09-13",
+    "scan_date": "2026-09-15",
+    "data_date": "2026-09-15",
     "empty_today": false,
     "data": [
         {
-            "ticker": "2495.TW",
-            "stock_id": "2495",
-            "name": "普安",
-            "price": 37.45,
-            "volume": 2122080,
-            "avg_vol_5d": 983522.0,
-            "yoy": "52.0%",
-            "投信近3日買賣超(張)": 20.0,
-            "consecutive_days": 3
+            "ticker": "2441.TW",
+            "stock_id": "2441",
+            "name": "超豐",
+            "price": 115.0,
+            "volume": 6091527,
+            "avg_vol_5d": 3009832.0,
+            "yoy": "22.3%",
+            "投信近3日買賣超(張)": 82.0,
+            "consecutive_days": 1
         },
         {
-            "ticker": "2851.TW",
-            "stock_id": "2851",
-            "name": "中再保",
-            "price": 47.15,
-            "volume": 5693870,
-            "avg_vol_5d": 2705777.0,
-            "yoy": "24.5%",
-            "投信近3日買賣超(張)": 92.0,
-            "consecutive_days": 3
+            "ticker": "3016.TW",
+            "stock_id": "3016",
+            "name": "嘉晶",
+            "price": 110.0,
+            "volume": 30860558,
+            "avg_vol_5d": 13891112.0,
+            "yoy": "37.1%",
+            "投信近3日買賣超(張)": 7.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "4953.TWO",
+            "stock_id": "4953",
+            "name": "緯軟",
+            "price": 121.0,
+            "volume": 711066,
+            "avg_vol_5d": 233406.0,
+            "yoy": "33.1%",
+            "投信近3日買賣超(張)": 12.0,
+            "consecutive_days": 1
         }
     ]
 }
