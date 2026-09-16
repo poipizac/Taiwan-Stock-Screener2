@@ -1,76 +1,66 @@
 {
-    "scan_date": "2026-09-15",
-    "data_date": "2026-09-15",
+    "scan_date": "2026-09-16",
+    "data_date": "2026-09-16",
     "error_msg": "",
     "data": [
         {
             "ticker": "8227.TWO",
             "name": "巨有科技",
             "end_date": "115/09/21",
-            "close": 249.5,
-            "pb": 8.22,
+            "close": 272.0,
+            "pb": 8.96,
             "yoy": 121.7,
-            "mom": 59.42,
+            "mom": 73.8,
             "industry": "半導體業"
         },
         {
             "ticker": "4979.TWO",
             "name": "華星光",
             "end_date": "115/09/17",
-            "close": 509.0,
-            "pb": 16.28,
+            "close": 547.0,
+            "pb": 17.49,
             "yoy": 18.5,
-            "mom": -16.42,
+            "mom": -10.18,
             "industry": "通信網路業"
         },
         {
             "ticker": "6538.TWO",
             "name": "倉和",
             "end_date": "115/09/17",
-            "close": 365.0,
-            "pb": 6.98,
+            "close": 380.5,
+            "pb": 7.28,
             "yoy": -1.8,
-            "mom": 77.62,
+            "mom": 85.16,
             "industry": "電子零組件業"
         },
         {
             "ticker": "7772.TWO",
             "name": "耀穎(../../mainboard/listed/company-detail.html?code=7772)",
             "end_date": "115/09/17",
-            "close": 130.0,
-            "pb": 3.39,
+            "close": 133.0,
+            "pb": 3.47,
             "yoy": -9.9,
-            "mom": 46.89,
+            "mom": 50.28,
             "industry": "未知"
         },
         {
             "ticker": "4304.TWO",
             "name": "勝昱",
             "end_date": "115/09/16",
-            "close": 15.5,
-            "pb": 3.15,
+            "close": 14.3,
+            "pb": 2.91,
             "yoy": 28.8,
-            "mom": -38.74,
+            "mom": -43.48,
             "industry": "塑膠工業"
         },
         {
             "ticker": "6872.TWO",
             "name": "浩宇生醫",
             "end_date": "115/09/16",
-            "close": 22.9,
+            "close": 23.1,
             "pb": 0,
             "yoy": 0.0,
-            "mom": 61.84,
-            "industry": "生技醫療業"
-        },
-        {
-            "ticker": "6620.TWO",
-            "name": "漢達",
-            "end_date": "115/09/15",
-            "close": 122.0,
-            "pb": 3.95,
-            "yoy": -72.1,
-            "mom": 31.32,
+            "mom": 63.25,
             "industry": "生技醫療業"
         }
     ]
