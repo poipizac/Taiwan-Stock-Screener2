@@ -1,67 +1,77 @@
 {
-    "scan_date": "2026-09-16",
-    "data_date": "2026-09-16",
+    "scan_date": "2026-09-17",
+    "data_date": "2026-09-17",
     "error_msg": "",
     "data": [
         {
+            "ticker": "3441.TWO",
+            "name": "聯一光",
+            "end_date": "115/09/30",
+            "close": 192.5,
+            "pb": 9.3,
+            "yoy": 52.7,
+            "mom": 41.54,
+            "industry": "光電業"
+        },
+        {
+            "ticker": "3467.TWO",
+            "name": "台灣精材",
+            "end_date": "115/09/24",
+            "close": 73.5,
+            "pb": 0,
+            "yoy": 0.0,
+            "mom": 48.94,
+            "industry": "半導體業"
+        },
+        {
             "ticker": "8227.TWO",
             "name": "巨有科技",
-            "end_date": "115/09/21",
-            "close": 272.0,
-            "pb": 8.96,
+            "end_date": "115/09/24",
+            "close": 258.0,
+            "pb": 8.5,
             "yoy": 121.7,
-            "mom": 73.8,
+            "mom": 64.86,
             "industry": "半導體業"
+        },
+        {
+            "ticker": "8358.TWO",
+            "name": "金居",
+            "end_date": "115/09/24",
+            "close": 478.5,
+            "pb": 12.99,
+            "yoy": 40.1,
+            "mom": -11.39,
+            "industry": "電子零組件業"
         },
         {
             "ticker": "4979.TWO",
             "name": "華星光",
             "end_date": "115/09/17",
-            "close": 547.0,
-            "pb": 17.49,
+            "close": 556.0,
+            "pb": 17.78,
             "yoy": 18.5,
-            "mom": -10.18,
+            "mom": -8.7,
             "industry": "通信網路業"
         },
         {
             "ticker": "6538.TWO",
             "name": "倉和",
             "end_date": "115/09/17",
-            "close": 380.5,
-            "pb": 7.28,
+            "close": 353.0,
+            "pb": 6.76,
             "yoy": -1.8,
-            "mom": 85.16,
+            "mom": 71.78,
             "industry": "電子零組件業"
         },
         {
             "ticker": "7772.TWO",
             "name": "耀穎(../../mainboard/listed/company-detail.html?code=7772)",
             "end_date": "115/09/17",
-            "close": 133.0,
-            "pb": 3.47,
+            "close": 146.0,
+            "pb": 3.81,
             "yoy": -9.9,
-            "mom": 50.28,
+            "mom": 64.97,
             "industry": "未知"
-        },
-        {
-            "ticker": "4304.TWO",
-            "name": "勝昱",
-            "end_date": "115/09/16",
-            "close": 14.3,
-            "pb": 2.91,
-            "yoy": 28.8,
-            "mom": -43.48,
-            "industry": "塑膠工業"
-        },
-        {
-            "ticker": "6872.TWO",
-            "name": "浩宇生醫",
-            "end_date": "115/09/16",
-            "close": 23.1,
-            "pb": 0,
-            "yoy": 0.0,
-            "mom": 63.25,
-            "industry": "生技醫療業"
         }
     ]
 }
