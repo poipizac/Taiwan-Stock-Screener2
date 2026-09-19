@@ -1,6 +1,57 @@
 {
-    "scan_date": "2026-09-18",
-    "data_date": "2026-09-18",
-    "error_msg": "TWSE Error: Expecting value: line 1 column 1 (char 0) | TPEx HTTP 520",
-    "data": []
+    "scan_date": "2026-09-19",
+    "data_date": "2026-09-19",
+    "error_msg": "",
+    "data": [
+        {
+            "ticker": "6221.TWO",
+            "name": "晉泰",
+            "end_date": "115/09/29",
+            "close": 31.5,
+            "pb": 1.75,
+            "yoy": -29.0,
+            "mom": 45.5,
+            "industry": "資訊服務業"
+        },
+        {
+            "ticker": "3441.TWO",
+            "name": "聯一光",
+            "end_date": "115/09/30",
+            "close": 185.5,
+            "pb": 8.96,
+            "yoy": 52.7,
+            "mom": 36.4,
+            "industry": "光電業"
+        },
+        {
+            "ticker": "3467.TWO",
+            "name": "台灣精材",
+            "end_date": "115/09/24",
+            "close": 77.4,
+            "pb": 0,
+            "yoy": 0.0,
+            "mom": 56.84,
+            "industry": "半導體業"
+        },
+        {
+            "ticker": "8227.TWO",
+            "name": "巨有科技",
+            "end_date": "115/09/24",
+            "close": 279.0,
+            "pb": 9.19,
+            "yoy": 121.7,
+            "mom": 78.27,
+            "industry": "半導體業"
+        },
+        {
+            "ticker": "8358.TWO",
+            "name": "金居",
+            "end_date": "115/09/24",
+            "close": 499.5,
+            "pb": 13.56,
+            "yoy": 40.1,
+            "mom": -7.5,
+            "industry": "電子零組件業"
+        }
+    ]
 }

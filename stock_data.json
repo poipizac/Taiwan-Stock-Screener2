@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-09-18",
-    "data_date": "2026-09-18",
+    "scan_date": "2026-09-19",
+    "data_date": "2026-09-19",
     "empty_today": false,
     "data": [
         {
@@ -15,7 +15,7 @@
             "yoy": 2.6,
             "mom": 7.26,
             "industry": "觀光餐旅",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "1437.TW",
@@ -29,21 +29,7 @@
             "yoy": 18.9,
             "mom": 3.44,
             "industry": "其他業",
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "1558.TW",
-            "name": "伸興",
-            "close": 111.0,
-            "sma200": 92.07,
-            "high120": 111.0,
-            "ratio": 1.17,
-            "pb": 1.38,
-            "eps": 7.92,
-            "yoy": 5.1,
-            "mom": 7.25,
-            "industry": "電機機械",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "1560.TW",
@@ -56,6 +42,20 @@
             "eps": 11.74,
             "yoy": 17.9,
             "mom": 31.19,
+            "industry": "電機機械",
+            "consecutive_days": 3
+        },
+        {
+            "ticker": "1558.TW",
+            "name": "伸興",
+            "close": 111.0,
+            "sma200": 92.07,
+            "high120": 111.0,
+            "ratio": 1.17,
+            "pb": 1.38,
+            "eps": 7.91,
+            "yoy": 5.1,
+            "mom": 7.25,
             "industry": "電機機械",
             "consecutive_days": 2
         },
@@ -71,6 +71,34 @@
             "yoy": 7.2,
             "mom": 7.01,
             "industry": "生技醫療業",
+            "consecutive_days": 3
+        },
+        {
+            "ticker": "2033.TW",
+            "name": "佳大",
+            "close": 33.9,
+            "sma200": 17.17,
+            "high120": 33.9,
+            "ratio": 1.63,
+            "pb": 2.56,
+            "eps": 0.34,
+            "yoy": -7.5,
+            "mom": 30.38,
+            "industry": "鋼鐵工業",
+            "consecutive_days": 3
+        },
+        {
+            "ticker": "2030.TW",
+            "name": "彰源",
+            "close": 24.95,
+            "sma200": 17.12,
+            "high120": 24.95,
+            "ratio": 1.37,
+            "pb": 1.29,
+            "eps": 1.95,
+            "yoy": 26.2,
+            "mom": 10.15,
+            "industry": "鋼鐵工業",
             "consecutive_days": 2
         },
         {
@@ -85,35 +113,7 @@
             "yoy": 4.0,
             "mom": 4.38,
             "industry": "鋼鐵工業",
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "2033.TW",
-            "name": "佳大",
-            "close": 33.9,
-            "sma200": 17.17,
-            "high120": 33.9,
-            "ratio": 1.63,
-            "pb": 2.56,
-            "eps": 0.34,
-            "yoy": -7.5,
-            "mom": 30.38,
-            "industry": "鋼鐵工業",
             "consecutive_days": 2
-        },
-        {
-            "ticker": "2030.TW",
-            "name": "彰源",
-            "close": 24.95,
-            "sma200": 17.12,
-            "high120": 24.95,
-            "ratio": 1.37,
-            "pb": 1.29,
-            "eps": 1.96,
-            "yoy": 26.2,
-            "mom": 10.15,
-            "industry": "鋼鐵工業",
-            "consecutive_days": 1
         },
         {
             "ticker": "2107.TW",
@@ -127,7 +127,7 @@
             "yoy": 38.3,
             "mom": 1.49,
             "industry": "橡膠工業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2412.TW",
@@ -141,7 +141,7 @@
             "yoy": 8.2,
             "mom": 6.99,
             "industry": "通信網路業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "2849.TW",
@@ -155,7 +155,7 @@
             "yoy": 27.5,
             "mom": 14.44,
             "industry": "金融保險業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3094.TW",
@@ -169,7 +169,7 @@
             "yoy": 35.5,
             "mom": 27.65,
             "industry": "半導體業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3226.TWO",
@@ -183,7 +183,7 @@
             "yoy": -33.1,
             "mom": 7.56,
             "industry": "電機機械",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3287.TWO",
@@ -197,7 +197,7 @@
             "yoy": 0.9,
             "mom": 11.15,
             "industry": "電腦及週邊設備業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3443.TW",
@@ -207,11 +207,11 @@
             "high120": 7150.0,
             "ratio": 1.67,
             "pb": 71.16,
-            "eps": 39.0,
+            "eps": 38.61,
             "yoy": 127.6,
             "mom": 17.21,
             "industry": "半導體業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3605.TW",
@@ -225,7 +225,7 @@
             "yoy": 20.2,
             "mom": 10.79,
             "industry": "電子零組件業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3705.TW",
@@ -239,7 +239,7 @@
             "yoy": -9.2,
             "mom": 2.87,
             "industry": "生技醫療業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "5283.TW",
@@ -253,7 +253,7 @@
             "yoy": 0.4,
             "mom": 7.44,
             "industry": "電器電纜",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6168.TW",
@@ -267,7 +267,7 @@
             "yoy": 7.0,
             "mom": 36.56,
             "industry": "光電業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6218.TWO",
@@ -281,7 +281,7 @@
             "yoy": 6.8,
             "mom": 52.1,
             "industry": "通信網路業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6221.TWO",
@@ -295,7 +295,7 @@
             "yoy": -29.0,
             "mom": 45.5,
             "industry": "資訊服務業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6668.TW",
@@ -309,7 +309,7 @@
             "yoy": 9.7,
             "mom": 11.93,
             "industry": "光電業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6885.TW",
@@ -323,7 +323,7 @@
             "yoy": 151.7,
             "mom": 36.8,
             "industry": "生技醫療業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         }
     ]
 }
