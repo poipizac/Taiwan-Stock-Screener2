@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-09-19",
-    "data_date": "2026-09-19",
+    "scan_date": "2026-09-20",
+    "data_date": "2026-09-20",
     "empty_today": false,
     "data": [
         {
@@ -15,49 +15,35 @@
             "yoy": 2.6,
             "mom": 7.26,
             "industry": "觀光餐旅",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "1437.TW",
             "name": "勤益控",
             "close": 33.1,
-            "sma200": 30.84,
+            "sma200": 30.85,
             "high120": 33.1,
-            "ratio": 1.04,
+            "ratio": 1.05,
             "pb": 0.78,
             "eps": 4.3,
             "yoy": 18.9,
             "mom": 3.44,
             "industry": "其他業",
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "1560.TW",
-            "name": "中砂",
-            "close": 896.0,
-            "sma200": 559.32,
-            "high120": 896.0,
-            "ratio": 1.37,
-            "pb": 14.78,
-            "eps": 11.74,
-            "yoy": 17.9,
-            "mom": 31.19,
-            "industry": "電機機械",
             "consecutive_days": 3
         },
         {
             "ticker": "1558.TW",
             "name": "伸興",
             "close": 111.0,
-            "sma200": 92.07,
+            "sma200": 92.16,
             "high120": 111.0,
-            "ratio": 1.17,
+            "ratio": 1.18,
             "pb": 1.38,
             "eps": 7.91,
             "yoy": 5.1,
             "mom": 7.25,
             "industry": "電機機械",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "1734.TW",
@@ -71,41 +57,13 @@
             "yoy": 7.2,
             "mom": 7.01,
             "industry": "生技醫療業",
-            "consecutive_days": 3
-        },
-        {
-            "ticker": "2033.TW",
-            "name": "佳大",
-            "close": 33.9,
-            "sma200": 17.17,
-            "high120": 33.9,
-            "ratio": 1.63,
-            "pb": 2.56,
-            "eps": 0.34,
-            "yoy": -7.5,
-            "mom": 30.38,
-            "industry": "鋼鐵工業",
-            "consecutive_days": 3
-        },
-        {
-            "ticker": "2030.TW",
-            "name": "彰源",
-            "close": 24.95,
-            "sma200": 17.12,
-            "high120": 24.95,
-            "ratio": 1.37,
-            "pb": 1.29,
-            "eps": 1.95,
-            "yoy": 26.2,
-            "mom": 10.15,
-            "industry": "鋼鐵工業",
-            "consecutive_days": 2
+            "consecutive_days": 4
         },
         {
             "ticker": "2034.TW",
             "name": "允強",
             "close": 21.45,
-            "sma200": 19.69,
+            "sma200": 19.7,
             "high120": 21.45,
             "ratio": 1.05,
             "pb": 1.26,
@@ -113,13 +71,13 @@
             "yoy": 4.0,
             "mom": 4.38,
             "industry": "鋼鐵工業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "2107.TW",
             "name": "厚生",
             "close": 27.3,
-            "sma200": 24.57,
+            "sma200": 24.59,
             "high120": 27.3,
             "ratio": 1.09,
             "pb": 0.55,
@@ -127,49 +85,35 @@
             "yoy": 38.3,
             "mom": 1.49,
             "industry": "橡膠工業",
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "2412.TW",
-            "name": "中華電",
-            "close": 145.5,
-            "sma200": 132.48,
-            "high120": 145.5,
-            "ratio": 1.07,
-            "pb": 3.08,
-            "eps": 5.08,
-            "yoy": 8.2,
-            "mom": 6.99,
-            "industry": "通信網路業",
             "consecutive_days": 3
         },
         {
             "ticker": "2849.TW",
             "name": "安泰銀",
             "close": 16.25,
-            "sma200": 13.57,
+            "sma200": 13.59,
             "high120": 16.25,
-            "ratio": 1.17,
+            "ratio": 1.18,
             "pb": 0.88,
             "eps": 0.86,
             "yoy": 27.5,
             "mom": 14.44,
             "industry": "金融保險業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3094.TW",
             "name": "聯傑",
             "close": 51.7,
-            "sma200": 30.59,
+            "sma200": 30.73,
             "high120": 51.7,
-            "ratio": 1.44,
+            "ratio": 1.45,
             "pb": 4.14,
             "eps": 0.62,
             "yoy": 35.5,
             "mom": 27.65,
             "industry": "半導體業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3226.TWO",
@@ -183,49 +127,21 @@
             "yoy": -33.1,
             "mom": 7.56,
             "industry": "電機機械",
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "3287.TWO",
-            "name": "廣寰科",
-            "close": 42.35,
-            "sma200": 30.21,
-            "high120": 42.35,
-            "ratio": 1.2,
-            "pb": 2.3,
-            "eps": 7.97,
-            "yoy": 0.9,
-            "mom": 11.15,
-            "industry": "電腦及週邊設備業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3443.TW",
             "name": "創意",
             "close": 7150.0,
-            "sma200": 3728.05,
+            "sma200": 3752.97,
             "high120": 7150.0,
-            "ratio": 1.67,
+            "ratio": 1.7,
             "pb": 71.16,
             "eps": 38.61,
             "yoy": 127.6,
             "mom": 17.21,
             "industry": "半導體業",
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "3605.TW",
-            "name": "宏致",
-            "close": 154.0,
-            "sma200": 78.35,
-            "high120": 154.0,
-            "ratio": 1.68,
-            "pb": 3.01,
-            "eps": 4.0,
-            "yoy": 20.2,
-            "mom": 10.79,
-            "industry": "電子零組件業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3705.TW",
@@ -239,91 +155,35 @@
             "yoy": -9.2,
             "mom": 2.87,
             "industry": "生技醫療業",
-            "consecutive_days": 3
-        },
-        {
-            "ticker": "5283.TW",
-            "name": "禾聯碩",
-            "close": 56.3,
-            "sma200": 48.89,
-            "high120": 56.3,
-            "ratio": 1.1,
-            "pb": 1.14,
-            "eps": 5.57,
-            "yoy": 0.4,
-            "mom": 7.44,
-            "industry": "電器電纜",
-            "consecutive_days": 2
+            "consecutive_days": 4
         },
         {
             "ticker": "6168.TW",
             "name": "宏齊",
             "close": 38.85,
-            "sma200": 24.61,
+            "sma200": 24.71,
             "high120": 38.85,
-            "ratio": 1.27,
+            "ratio": 1.3,
             "pb": 2.23,
             "eps": 0.32,
             "yoy": 7.0,
             "mom": 36.56,
             "industry": "光電業",
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "6218.TWO",
-            "name": "豪勉",
-            "close": 61.6,
-            "sma200": 31.88,
-            "high120": 61.6,
-            "ratio": 1.55,
-            "pb": 3.95,
-            "eps": 1.68,
-            "yoy": 6.8,
-            "mom": 52.1,
-            "industry": "通信網路業",
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "6221.TWO",
-            "name": "晉泰",
-            "close": 31.5,
-            "sma200": 24.89,
-            "high120": 31.5,
-            "ratio": 1.01,
-            "pb": 1.75,
-            "eps": 2.34,
-            "yoy": -29.0,
-            "mom": 45.5,
-            "industry": "資訊服務業",
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "6668.TW",
-            "name": "中揚光",
-            "close": 49.25,
-            "sma200": 37.63,
-            "high120": 49.25,
-            "ratio": 1.13,
-            "pb": 2.37,
-            "eps": -2.2,
-            "yoy": 9.7,
-            "mom": 11.93,
-            "industry": "光電業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "6885.TW",
             "name": "全福生技",
             "close": 31.6,
-            "sma200": 24.68,
+            "sma200": 24.69,
             "high120": 31.6,
-            "ratio": 1.11,
+            "ratio": 1.13,
             "pb": 2.73,
             "eps": -3.24,
             "yoy": 151.7,
             "mom": 36.8,
             "industry": "生技醫療業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         }
     ]
 }
