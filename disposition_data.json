@@ -1,26 +1,56 @@
 {
-    "scan_date": "2026-09-23",
-    "data_date": "2026-09-23",
+    "scan_date": "2026-09-24",
+    "data_date": "2026-09-24",
     "error_msg": "",
     "data": [
+        {
+            "ticker": "3374.TWO",
+            "name": "精材",
+            "end_date": "115/10/05",
+            "close": 472.0,
+            "pb": 12.36,
+            "yoy": 42.2,
+            "mom": 6.27,
+            "industry": "半導體業"
+        },
+        {
+            "ticker": "4542.TWO",
+            "name": "科嶠",
+            "end_date": "115/10/05",
+            "close": 331.5,
+            "pb": 12.03,
+            "yoy": 51.3,
+            "mom": 11.95,
+            "industry": "電子零組件業"
+        },
+        {
+            "ticker": "4979.TWO",
+            "name": "華星光",
+            "end_date": "115/10/05",
+            "close": 590.0,
+            "pb": 18.0,
+            "yoy": 18.5,
+            "mom": -7.55,
+            "industry": "通信網路業"
+        },
         {
             "ticker": "2221.TWO",
             "name": "大甲",
             "end_date": "115/10/06",
             "close": 158.5,
-            "pb": 6.19,
+            "pb": 6.4,
             "yoy": 23.3,
-            "mom": 108.55,
+            "mom": 115.79,
             "industry": "其他業"
         },
         {
             "ticker": "7772.TWO",
             "name": "耀穎(../../mainboard/listed/company-detail.html?code=7772)",
             "end_date": "115/10/02",
-            "close": 173.5,
-            "pb": 4.52,
+            "close": 180.0,
+            "pb": 4.69,
             "yoy": -9.9,
-            "mom": 96.05,
+            "mom": 103.39,
             "industry": "未知"
         },
         {
@@ -28,9 +58,9 @@
             "name": "豪勉",
             "end_date": "115/10/05",
             "close": 61.3,
-            "pb": 3.94,
+            "pb": 4.08,
             "yoy": 6.8,
-            "mom": 51.36,
+            "mom": 57.04,
             "industry": "通信網路業"
         },
         {
@@ -38,9 +68,9 @@
             "name": "圓祥生技(../../mainboard/listed/company-detail.html?code=6945)",
             "end_date": "115/10/01",
             "close": 137.0,
-            "pb": 5.71,
+            "pb": 5.76,
             "yoy": 0.0,
-            "mom": 39.37,
+            "mom": 40.39,
             "industry": "未知"
         },
         {
@@ -48,9 +78,9 @@
             "name": "世紀*",
             "end_date": "115/09/30",
             "close": 26.0,
-            "pb": 17.5,
+            "pb": 17.77,
             "yoy": 153.7,
-            "mom": -27.66,
+            "mom": -26.55,
             "industry": "其他業"
         },
         {
@@ -58,9 +88,9 @@
             "name": "晉泰",
             "end_date": "115/09/29",
             "close": 31.6,
-            "pb": 1.75,
+            "pb": 1.78,
             "yoy": -29.0,
-            "mom": 45.96,
+            "mom": 48.73,
             "industry": "資訊服務業"
         },
         {
@@ -68,9 +98,9 @@
             "name": "聯一光",
             "end_date": "115/09/30",
             "close": 177.5,
-            "pb": 8.57,
+            "pb": 8.74,
             "yoy": 52.7,
-            "mom": 30.51,
+            "mom": 33.09,
             "industry": "光電業"
         },
         {
@@ -80,7 +110,7 @@
             "close": 86.5,
             "pb": 0,
             "yoy": 0.0,
-            "mom": 75.28,
+            "mom": 65.15,
             "industry": "半導體業"
         },
         {
@@ -88,9 +118,9 @@
             "name": "巨有科技",
             "end_date": "115/09/24",
             "close": 310.0,
-            "pb": 10.22,
+            "pb": 10.1,
             "yoy": 121.7,
-            "mom": 98.08,
+            "mom": 95.85,
             "industry": "半導體業"
         },
         {
@@ -98,9 +128,9 @@
             "name": "金居",
             "end_date": "115/09/24",
             "close": 497.0,
-            "pb": 13.49,
+            "pb": 13.87,
             "yoy": 40.1,
-            "mom": -7.96,
+            "mom": -5.37,
             "industry": "電子零組件業"
         }
     ]
