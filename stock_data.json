@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-09-25",
-    "data_date": "2026-09-25",
+    "scan_date": "2026-09-26",
+    "data_date": "2026-09-26",
     "empty_today": false,
     "data": [
         {
@@ -15,7 +15,7 @@
             "yoy": 26.2,
             "mom": 34.22,
             "industry": "鋼鐵工業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3016.TW",
@@ -29,21 +29,7 @@
             "yoy": 37.1,
             "mom": 55.34,
             "industry": "半導體業",
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "3226.TWO",
-            "name": "龍鋒",
-            "close": 58.5,
-            "sma200": 47.8,
-            "high120": 58.5,
-            "ratio": 1.19,
-            "pb": 2.03,
-            "eps": 0.18,
-            "yoy": -33.1,
-            "mom": 10.59,
-            "industry": "電機機械",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3219.TWO",
@@ -57,7 +43,21 @@
             "yoy": 31.1,
             "mom": 25.82,
             "industry": "其他電子業",
-            "consecutive_days": 2
+            "consecutive_days": 3
+        },
+        {
+            "ticker": "3226.TWO",
+            "name": "龍鋒",
+            "close": 58.5,
+            "sma200": 47.8,
+            "high120": 58.5,
+            "ratio": 1.19,
+            "pb": 2.03,
+            "eps": 0.18,
+            "yoy": -33.1,
+            "mom": 10.59,
+            "industry": "電機機械",
+            "consecutive_days": 3
         },
         {
             "ticker": "3653.TW",
@@ -71,7 +71,7 @@
             "yoy": 40.4,
             "mom": 15.53,
             "industry": "電子零組件業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "5465.TWO",
@@ -85,7 +85,7 @@
             "yoy": -39.6,
             "mom": 40.45,
             "industry": "電腦及週邊設備業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "5903.TWO",
@@ -99,7 +99,7 @@
             "yoy": 6.5,
             "mom": 1.08,
             "industry": "居家生活",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6672.TW",
@@ -113,7 +113,7 @@
             "yoy": 46.3,
             "mom": 22.73,
             "industry": "電子零組件業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6933.TW",
@@ -127,7 +127,7 @@
             "yoy": 40.4,
             "mom": 34.62,
             "industry": "電腦及週邊設備業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "8424.TWO",
@@ -141,7 +141,7 @@
             "yoy": 0.3,
             "mom": 2.91,
             "industry": "建材營造業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "9960.TWO",
@@ -151,11 +151,11 @@
             "high120": 39.35,
             "ratio": 1.23,
             "pb": 1.87,
-            "eps": 2.37,
+            "eps": 2.27,
             "yoy": 23.5,
             "mom": 30.08,
             "industry": "運動休閒",
-            "consecutive_days": 1
+            "consecutive_days": 2
         }
     ]
 }

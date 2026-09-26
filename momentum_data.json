@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-09-25",
-    "data_date": "2026-09-25",
+    "scan_date": "2026-09-26",
+    "data_date": "2026-09-26",
     "empty_today": false,
     "data": [
         {
@@ -12,18 +12,7 @@
             "avg_vol_5d": 1025709.0,
             "yoy": "40.4%",
             "投信近3日買賣超(張)": 310.9,
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "6533.TW",
-            "stock_id": "6533",
-            "name": "晶心科",
-            "price": 276.0,
-            "volume": 6486551,
-            "avg_vol_5d": 2918999.0,
-            "yoy": "102.6%",
-            "投信近3日買賣超(張)": 10.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         }
     ]
 }
