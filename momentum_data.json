@@ -1,28 +1,50 @@
 {
-    "scan_date": "2026-09-28",
-    "data_date": "2026-09-28",
+    "scan_date": "2026-09-29",
+    "data_date": "2026-09-29",
     "empty_today": false,
     "data": [
         {
-            "ticker": "3653.TW",
-            "stock_id": "3653",
-            "name": "健策",
-            "price": 6920.0,
-            "volume": 2665225,
-            "avg_vol_5d": 1025709.0,
-            "yoy": "40.4%",
-            "投信近3日買賣超(張)": 310.9,
-            "consecutive_days": 3
+            "ticker": "4551.TW",
+            "stock_id": "4551",
+            "name": "智伸科",
+            "price": 179.5,
+            "volume": 2691234,
+            "avg_vol_5d": 692049.0,
+            "yoy": "25.0%",
+            "投信近3日買賣超(張)": 131.0,
+            "consecutive_days": 1
         },
         {
-            "ticker": "6533.TW",
-            "stock_id": "6533",
-            "name": "晶心科",
-            "price": 276.0,
-            "volume": 6486551,
-            "avg_vol_5d": 2918999.0,
-            "yoy": "102.6%",
-            "投信近3日買賣超(張)": 10.0,
+            "ticker": "6462.TWO",
+            "stock_id": "6462",
+            "name": "神盾",
+            "price": 103.0,
+            "volume": 1127686,
+            "avg_vol_5d": 477073.0,
+            "yoy": "36.7%",
+            "投信近3日買賣超(張)": 60.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6505.TW",
+            "stock_id": "6505",
+            "name": "台塑化",
+            "price": 94.3,
+            "volume": 40532933,
+            "avg_vol_5d": 15414326.0,
+            "yoy": "25.7%",
+            "投信近3日買賣超(張)": 8494.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6937.TW",
+            "stock_id": "6937",
+            "name": "天虹",
+            "price": 308.0,
+            "volume": 1184592,
+            "avg_vol_5d": 560100.0,
+            "yoy": "40.2%",
+            "投信近3日買賣超(張)": 0.0,
             "consecutive_days": 1
         }
     ]
