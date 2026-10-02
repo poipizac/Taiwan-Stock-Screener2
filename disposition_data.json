@@ -1,36 +1,46 @@
 {
-    "scan_date": "2026-10-01",
-    "data_date": "2026-10-01",
+    "scan_date": "2026-10-02",
+    "data_date": "2026-10-02",
     "error_msg": "",
     "data": [
+        {
+            "ticker": "4174.TWO",
+            "name": "浩鼎",
+            "end_date": "115/10/12",
+            "close": 43.1,
+            "pb": 3.72,
+            "yoy": 19.8,
+            "mom": 7.14,
+            "industry": "生技醫療業"
+        },
         {
             "ticker": "8084.TWO",
             "name": "巨虹",
             "end_date": "115/10/08",
-            "close": 26.85,
-            "pb": 3.3,
+            "close": 24.2,
+            "pb": 2.97,
             "yoy": -9.9,
-            "mom": 0,
+            "mom": -18.81,
             "industry": "電子通路業"
         },
         {
             "ticker": "8227.TWO",
             "name": "巨有科技",
             "end_date": "115/10/08",
-            "close": 370.5,
-            "pb": 11.98,
+            "close": 363.5,
+            "pb": 12.19,
             "yoy": 121.7,
-            "mom": 0,
+            "mom": -0.13,
             "industry": "半導體業"
         },
         {
             "ticker": "2221.TWO",
             "name": "大甲",
             "end_date": "115/10/12",
-            "close": 197.5,
-            "pb": 6.99,
+            "close": 179.0,
+            "pb": 7.34,
             "yoy": 23.3,
-            "mom": 0,
+            "mom": -4.81,
             "industry": "其他業"
         },
         {
@@ -38,80 +48,70 @@
             "name": "倚強科",
             "end_date": "115/10/07",
             "close": 131.5,
-            "pb": 6.21,
+            "pb": 6.07,
             "yoy": 31.1,
-            "mom": 0,
+            "mom": -2.28,
             "industry": "其他電子業"
         },
         {
             "ticker": "7792.TWO",
             "name": "安葆",
             "end_date": "115/10/06",
-            "close": 424.0,
-            "pb": 5.92,
+            "close": 421.0,
+            "pb": 5.97,
             "yoy": 14.3,
-            "mom": 0,
+            "mom": 0.24,
             "industry": "其他電子業"
         },
         {
             "ticker": "3374.TWO",
             "name": "精材",
             "end_date": "115/10/05",
-            "close": 454.5,
-            "pb": 12.55,
+            "close": 456.0,
+            "pb": 12.87,
             "yoy": 42.2,
-            "mom": 0,
+            "mom": 2.86,
             "industry": "半導體業"
         },
         {
             "ticker": "4542.TWO",
             "name": "科嶠",
             "end_date": "115/10/05",
-            "close": 344.0,
-            "pb": 12.03,
+            "close": 328.0,
+            "pb": 12.35,
             "yoy": 51.3,
-            "mom": 0,
+            "mom": -2.18,
             "industry": "電子零組件業"
         },
         {
             "ticker": "4979.TWO",
             "name": "華星光",
             "end_date": "115/10/05",
-            "close": 569.0,
-            "pb": 17.81,
+            "close": 557.0,
+            "pb": 18.71,
             "yoy": 18.5,
-            "mom": 0,
+            "mom": 2.81,
             "industry": "通信網路業"
         },
         {
             "ticker": "7772.TWO",
             "name": "耀穎(../../mainboard/listed/company-detail.html?code=7772)",
             "end_date": "115/10/02",
-            "close": 184.0,
-            "pb": 4.8,
+            "close": 186.0,
+            "pb": 4.85,
             "yoy": -9.9,
-            "mom": 0,
+            "mom": 5.68,
             "industry": "未知"
         },
         {
             "ticker": "6218.TWO",
             "name": "豪勉",
             "end_date": "115/10/05",
-            "close": 61.9,
-            "pb": 4.03,
+            "close": 62.8,
+            "pb": 4.13,
             "yoy": 6.8,
-            "mom": 0,
+            "mom": 4.04,
             "industry": "通信網路業"
-        },
-        {
-            "ticker": "6945.TWO",
-            "name": "圓祥生技(../../mainboard/listed/company-detail.html?code=6945)",
-            "end_date": "115/10/01",
-            "close": 148.5,
-            "pb": 5.96,
-            "yoy": 0.0,
-            "mom": 0,
-            "industry": "未知"
         }
     ]
 }
