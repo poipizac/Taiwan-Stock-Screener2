@@ -1,76 +1,116 @@
 {
-    "scan_date": "2026-10-06",
-    "data_date": "2026-10-06",
+    "scan_date": "2026-10-07",
+    "data_date": "2026-10-07",
     "error_msg": "",
     "data": [
+        {
+            "ticker": "3441.TWO",
+            "name": "聯一光",
+            "end_date": "115/10/19",
+            "close": 255.0,
+            "pb": 12.03,
+            "yoy": 52.7,
+            "mom": 34.96,
+            "industry": "光電業"
+        },
+        {
+            "ticker": "4174.TWO",
+            "name": "浩鼎",
+            "end_date": "115/10/15",
+            "close": 50.8,
+            "pb": 4.61,
+            "yoy": 19.8,
+            "mom": 32.91,
+            "industry": "生技醫療業"
+        },
+        {
+            "ticker": "4760.TWO",
+            "name": "勤凱",
+            "end_date": "115/10/15",
+            "close": 335.0,
+            "pb": 8.12,
+            "yoy": 64.3,
+            "mom": 27.24,
+            "industry": "其他電子業"
+        },
+        {
+            "ticker": "5205.TWO",
+            "name": "中茂",
+            "end_date": "115/10/15",
+            "close": 27.55,
+            "pb": 5.5,
+            "yoy": 43.0,
+            "mom": 60.32,
+            "industry": "綠能環保"
+        },
+        {
+            "ticker": "8358.TWO",
+            "name": "金居",
+            "end_date": "115/10/15",
+            "close": 551.0,
+            "pb": 14.9,
+            "yoy": 40.1,
+            "mom": 10.91,
+            "industry": "電子零組件業"
+        },
         {
             "ticker": "4556.TWO",
             "name": "旭然",
             "end_date": "115/10/14",
-            "close": 125.5,
-            "pb": 7.01,
+            "close": 137.5,
+            "pb": 7.39,
             "yoy": 0.3,
-            "mom": 35.47,
+            "mom": 42.86,
             "industry": "其他業"
         },
         {
             "ticker": "5013.TWO",
             "name": "強新",
             "end_date": "115/10/14",
-            "close": 51.5,
-            "pb": 1.62,
+            "close": 47.95,
+            "pb": 1.78,
             "yoy": 16.5,
-            "mom": 23.74,
+            "mom": 36.0,
             "industry": "鋼鐵工業"
         },
         {
             "ticker": "8084.TWO",
             "name": "巨虹",
             "end_date": "115/10/14",
-            "close": 19.65,
-            "pb": 2.41,
+            "close": 17.7,
+            "pb": 2.18,
             "yoy": -9.9,
-            "mom": -34.08,
+            "mom": -40.6,
             "industry": "電子通路業"
         },
         {
             "ticker": "3455.TWO",
             "name": "由田",
             "end_date": "115/10/13",
-            "close": 283.5,
-            "pb": 6.92,
+            "close": 277.5,
+            "pb": 7.01,
             "yoy": -5.7,
-            "mom": 3.93,
+            "mom": 5.24,
             "industry": "光電業"
         },
         {
             "ticker": "6708.TWO",
             "name": "天擎",
             "end_date": "115/10/13",
-            "close": 68.6,
-            "pb": 5.42,
+            "close": 72.9,
+            "pb": 5.09,
             "yoy": -4.6,
-            "mom": 41.01,
+            "mom": 32.5,
             "industry": "半導體業"
-        },
-        {
-            "ticker": "4174.TWO",
-            "name": "浩鼎",
-            "end_date": "115/10/12",
-            "close": 46.2,
-            "pb": 4.49,
-            "yoy": 19.8,
-            "mom": 29.59,
-            "industry": "生技醫療業"
         },
         {
             "ticker": "8227.TWO",
             "name": "巨有科技",
             "end_date": "115/10/08",
-            "close": 366.0,
-            "pb": 12.19,
+            "close": 370.0,
+            "pb": 12.26,
             "yoy": 121.7,
-            "mom": -0.13,
+            "mom": 0.4,
             "industry": "半導體業"
         },
         {
@@ -78,29 +118,19 @@
             "name": "大甲",
             "end_date": "115/10/12",
             "close": 186.0,
-            "pb": 7.26,
+            "pb": 7.4,
             "yoy": 23.3,
-            "mom": -5.82,
+            "mom": -4.05,
             "industry": "其他業"
         },
         {
             "ticker": "3219.TWO",
             "name": "倚強科",
             "end_date": "115/10/07",
-            "close": 128.0,
-            "pb": 6.64,
+            "close": 140.5,
+            "pb": 6.14,
             "yoy": 31.1,
-            "mom": 6.84,
-            "industry": "其他電子業"
-        },
-        {
-            "ticker": "7792.TWO",
-            "name": "安葆",
-            "end_date": "115/10/06",
-            "close": 438.5,
-            "pb": 6.35,
-            "yoy": 14.3,
-            "mom": 6.49,
+            "mom": -1.14,
             "industry": "其他電子業"
         }
     ]
