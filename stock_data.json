@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-10-09",
-    "data_date": "2026-10-09",
+    "scan_date": "2026-10-10",
+    "data_date": "2026-10-10",
     "empty_today": false,
     "data": [
         {
@@ -15,7 +15,7 @@
             "yoy": -4.5,
             "mom": 1.54,
             "industry": "水泥工業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "1325.TW",
@@ -29,7 +29,7 @@
             "yoy": -21.2,
             "mom": 17.95,
             "industry": "塑膠工業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2340.TW",
@@ -43,7 +43,7 @@
             "yoy": 5.1,
             "mom": 29.66,
             "industry": "半導體業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2466.TW",
@@ -57,7 +57,7 @@
             "yoy": -1.9,
             "mom": 59.44,
             "industry": "光電業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2607.TW",
@@ -71,7 +71,7 @@
             "yoy": 20.1,
             "mom": 5.02,
             "industry": "航運業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3265.TWO",
@@ -85,21 +85,7 @@
             "yoy": 20.2,
             "mom": 28.23,
             "industry": "半導體業",
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "3564.TWO",
-            "name": "其陽",
-            "close": 66.9,
-            "sma200": 46.47,
-            "high120": 66.9,
-            "ratio": 1.2,
-            "pb": 2.86,
-            "eps": 0.36,
-            "yoy": 18.0,
-            "mom": 32.21,
-            "industry": "通信網路業",
-            "consecutive_days": 1
+            "consecutive_days": 3
         },
         {
             "ticker": "3597.TWO",
@@ -113,7 +99,21 @@
             "yoy": 30.9,
             "mom": 43.77,
             "industry": "電子零組件業",
-            "consecutive_days": 4
+            "consecutive_days": 5
+        },
+        {
+            "ticker": "3564.TWO",
+            "name": "其陽",
+            "close": 66.9,
+            "sma200": 46.47,
+            "high120": 66.9,
+            "ratio": 1.2,
+            "pb": 2.86,
+            "eps": 0.36,
+            "yoy": 18.0,
+            "mom": 32.21,
+            "industry": "通信網路業",
+            "consecutive_days": 2
         },
         {
             "ticker": "3631.TWO",
@@ -127,7 +127,7 @@
             "yoy": 34.3,
             "mom": 16.17,
             "industry": "電子零組件業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "4430.TWO",
@@ -141,7 +141,7 @@
             "yoy": 8.8,
             "mom": 10.14,
             "industry": "其他業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "5205.TWO",
@@ -155,7 +155,7 @@
             "yoy": 43.0,
             "mom": 76.19,
             "industry": "綠能環保",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "6170.TWO",
@@ -169,7 +169,7 @@
             "yoy": -2.6,
             "mom": 1.95,
             "industry": "通信網路業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6504.TW",
@@ -183,7 +183,7 @@
             "yoy": 7.0,
             "mom": 12.86,
             "industry": "其他業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "8996.TW",
@@ -197,7 +197,7 @@
             "yoy": 54.9,
             "mom": 6.54,
             "industry": "電機機械",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "9919.TW",
@@ -211,7 +211,7 @@
             "yoy": 0.2,
             "mom": 16.25,
             "industry": "其他業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         }
     ]
 }
