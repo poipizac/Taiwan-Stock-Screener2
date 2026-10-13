@@ -1,40 +1,117 @@
 {
-    "scan_date": "2026-10-11",
-    "data_date": "2026-10-11",
+    "scan_date": "2026-10-13",
+    "data_date": "2026-10-13",
     "empty_today": false,
     "data": [
         {
-            "ticker": "1590.TW",
-            "stock_id": "1590",
-            "name": "亞德客-KY",
-            "price": 1205.0,
-            "volume": 1791155,
-            "avg_vol_5d": 663904.0,
-            "yoy": "35.9%",
-            "投信近3日買賣超(張)": 2.4,
-            "consecutive_days": 3
+            "ticker": "2603.TW",
+            "stock_id": "2603",
+            "name": "長榮",
+            "price": 264.0,
+            "volume": 61066058,
+            "avg_vol_5d": 13181427.0,
+            "yoy": "21.6%",
+            "投信近3日買賣超(張)": 5134.0,
+            "consecutive_days": 1
         },
         {
-            "ticker": "6214.TW",
-            "stock_id": "6214",
-            "name": "精誠",
-            "price": 192.0,
-            "volume": 1149444,
-            "avg_vol_5d": 517622.0,
-            "yoy": "51.9%",
-            "投信近3日買賣超(張)": 31.2,
-            "consecutive_days": 3
+            "ticker": "2615.TW",
+            "stock_id": "2615",
+            "name": "萬海",
+            "price": 121.5,
+            "volume": 34541316,
+            "avg_vol_5d": 15917408.0,
+            "yoy": "23.1%",
+            "投信近3日買賣超(張)": 645.0,
+            "consecutive_days": 1
         },
         {
-            "ticker": "6415.TW",
-            "stock_id": "6415",
-            "name": "矽力*-KY",
-            "price": 462.5,
-            "volume": 4305912,
-            "avg_vol_5d": 2009468.0,
-            "yoy": "31.5%",
-            "投信近3日買賣超(張)": 4.0,
-            "consecutive_days": 3
+            "ticker": "2851.TW",
+            "stock_id": "2851",
+            "name": "中再保",
+            "price": 49.3,
+            "volume": 4077656,
+            "avg_vol_5d": 1958725.0,
+            "yoy": "24.5%",
+            "投信近3日買賣超(張)": 33.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "2880.TW",
+            "stock_id": "2880",
+            "name": "華南金",
+            "price": 49.35,
+            "volume": 23198622,
+            "avg_vol_5d": 9115347.0,
+            "yoy": "32.0%",
+            "投信近3日買賣超(張)": 1312.6,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "2885.TW",
+            "stock_id": "2885",
+            "name": "元大金",
+            "price": 70.6,
+            "volume": 38097083,
+            "avg_vol_5d": 18469663.0,
+            "yoy": "53.9%",
+            "投信近3日買賣超(張)": 4161.2,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "3033.TW",
+            "stock_id": "3033",
+            "name": "威健",
+            "price": 42.9,
+            "volume": 12851071,
+            "avg_vol_5d": 1902752.0,
+            "yoy": "32.2%",
+            "投信近3日買賣超(張)": 44.1,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "3605.TW",
+            "stock_id": "3605",
+            "name": "宏致",
+            "price": 183.0,
+            "volume": 42578378,
+            "avg_vol_5d": 15470041.0,
+            "yoy": "20.2%",
+            "投信近3日買賣超(張)": 2039.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6505.TW",
+            "stock_id": "6505",
+            "name": "台塑化",
+            "price": 119.0,
+            "volume": 68632728,
+            "avg_vol_5d": 31836883.0,
+            "yoy": "25.7%",
+            "投信近3日買賣超(張)": 45485.6,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6548.TWO",
+            "stock_id": "6548",
+            "name": "長科*",
+            "price": 86.6,
+            "volume": 20724742,
+            "avg_vol_5d": 9002267.0,
+            "yoy": "32.8%",
+            "投信近3日買賣超(張)": 5487.0,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "8996.TW",
+            "stock_id": "8996",
+            "name": "高力",
+            "price": 1715.0,
+            "volume": 6735021,
+            "avg_vol_5d": 954264.0,
+            "yoy": "54.9%",
+            "投信近3日買賣超(張)": 962.0,
+            "consecutive_days": 1
         }
     ]
 }
