@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-10-16",
-    "data_date": "2026-10-16",
+    "scan_date": "2026-10-17",
+    "data_date": "2026-10-17",
     "empty_today": false,
     "data": [
         {
@@ -15,7 +15,7 @@
             "yoy": 0.0,
             "mom": 12.31,
             "industry": "資訊服務業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2727.TW",
@@ -29,7 +29,7 @@
             "yoy": 16.8,
             "mom": 5.08,
             "industry": "觀光餐旅",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3354.TWO",
@@ -43,7 +43,7 @@
             "yoy": 55.8,
             "mom": 30.02,
             "industry": "電子零組件業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3705.TW",
@@ -57,7 +57,7 @@
             "yoy": -9.2,
             "mom": 9.35,
             "industry": "生技醫療業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "4566.TW",
@@ -71,7 +71,7 @@
             "yoy": 18.5,
             "mom": 10.39,
             "industry": "電機機械",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "4903.TWO",
@@ -85,7 +85,7 @@
             "yoy": 17.8,
             "mom": 35.99,
             "industry": "通信網路業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6668.TW",
@@ -99,7 +99,7 @@
             "yoy": 9.7,
             "mom": 45.16,
             "industry": "光電業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6751.TWO",
@@ -113,7 +113,7 @@
             "yoy": -26.8,
             "mom": 22.47,
             "industry": "資訊服務業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6925.TWO",
@@ -127,7 +127,7 @@
             "yoy": 5.2,
             "mom": 22.63,
             "industry": "數位雲端",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "8437.TWO",
@@ -141,7 +141,7 @@
             "yoy": -1.4,
             "mom": 46.08,
             "industry": "其他業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         }
     ]
 }

@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-10-16",
-    "data_date": "2026-10-16",
+    "scan_date": "2026-10-17",
+    "data_date": "2026-10-17",
     "error_msg": "",
     "data": [
         {
@@ -112,26 +112,6 @@
             "yoy": -9.9,
             "mom": -48.04,
             "industry": "電子通路業"
-        },
-        {
-            "ticker": "5475.TWO",
-            "name": "德宏",
-            "end_date": "115/10/16",
-            "close": 198.5,
-            "pb": 23.17,
-            "yoy": 159.3,
-            "mom": 10.58,
-            "industry": "電子零組件業"
-        },
-        {
-            "ticker": "6708.TWO",
-            "name": "天擎",
-            "end_date": "115/10/16",
-            "close": 55.0,
-            "pb": 4.09,
-            "yoy": -4.6,
-            "mom": 6.38,
-            "industry": "半導體業"
         },
         {
             "ticker": "3441.TWO",
