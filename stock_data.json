@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-10-18",
-    "data_date": "2026-10-18",
+    "scan_date": "2026-10-19",
+    "data_date": "2026-10-19",
     "empty_today": false,
     "data": [
         {
@@ -10,12 +10,12 @@
             "sma200": 36.58,
             "high120": 51.1,
             "ratio": 1.22,
-            "pb": 2.86,
+            "pb": 2.76,
             "eps": 1.36,
             "yoy": 0.0,
-            "mom": 12.31,
+            "mom": 8.35,
             "industry": "資訊服務業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "2727.TW",
@@ -24,12 +24,12 @@
             "sma200": 218.7,
             "high120": 248.0,
             "ratio": 1.09,
-            "pb": 4.83,
+            "pb": 4.81,
             "eps": 17.47,
             "yoy": 16.8,
-            "mom": 5.08,
+            "mom": 4.66,
             "industry": "觀光餐旅",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "3354.TWO",
@@ -38,12 +38,12 @@
             "sma200": 27.21,
             "high120": 41.8,
             "ratio": 1.23,
-            "pb": 3.77,
+            "pb": 4.15,
             "eps": -0.45,
             "yoy": 55.8,
-            "mom": 30.02,
+            "mom": 42.92,
             "industry": "電子零組件業",
-            "consecutive_days": 4
+            "consecutive_days": 5
         },
         {
             "ticker": "3705.TW",
@@ -52,12 +52,12 @@
             "sma200": 53.85,
             "high120": 62.0,
             "ratio": 1.1,
-            "pb": 2.12,
+            "pb": 2.05,
             "eps": 3.36,
             "yoy": -9.2,
-            "mom": 9.35,
+            "mom": 5.64,
             "industry": "生技醫療業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "4566.TW",
@@ -66,12 +66,12 @@
             "sma200": 64.03,
             "high120": 81.8,
             "ratio": 1.2,
-            "pb": 1.78,
+            "pb": 1.75,
             "eps": 2.52,
             "yoy": 18.5,
-            "mom": 10.39,
+            "mom": 8.23,
             "industry": "電機機械",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "4903.TWO",
@@ -80,12 +80,12 @@
             "sma200": 41.66,
             "high120": 58.0,
             "ratio": 1.17,
-            "pb": 5.23,
+            "pb": 4.84,
             "eps": 1.28,
             "yoy": 17.8,
-            "mom": 35.99,
+            "mom": 25.91,
             "industry": "通信網路業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "6668.TW",
@@ -94,12 +94,12 @@
             "sma200": 38.88,
             "high120": 68.3,
             "ratio": 1.44,
-            "pb": 3.28,
+            "pb": 2.95,
             "eps": -2.19,
             "yoy": 9.7,
-            "mom": 45.16,
+            "mom": 30.71,
             "industry": "光電業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "6751.TWO",
@@ -108,12 +108,12 @@
             "sma200": 47.19,
             "high120": 54.5,
             "ratio": 1.03,
-            "pb": 1.3,
+            "pb": 1.43,
             "eps": 5.75,
             "yoy": -26.8,
-            "mom": 22.47,
+            "mom": 34.61,
             "industry": "資訊服務業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "6925.TWO",
@@ -122,12 +122,12 @@
             "sma200": 67.27,
             "high120": 90.5,
             "ratio": 1.12,
-            "pb": 4.65,
+            "pb": 4.8,
             "eps": 2.92,
             "yoy": 5.2,
-            "mom": 22.63,
+            "mom": 26.56,
             "industry": "數位雲端",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "8437.TWO",
@@ -136,12 +136,12 @@
             "sma200": 12.16,
             "high120": 14.9,
             "ratio": 0.96,
-            "pb": 0.29,
+            "pb": 0.27,
             "eps": -1.53,
             "yoy": -1.4,
-            "mom": 46.08,
+            "mom": 35.78,
             "industry": "其他業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         }
     ]
 }
