@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-10-25",
-    "data_date": "2026-10-25",
+    "scan_date": "2026-10-26",
+    "data_date": "2026-10-26",
     "empty_today": false,
     "data": [
         {
@@ -15,7 +15,7 @@
             "yoy": 8.2,
             "mom": 10.1,
             "industry": "通信網路業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "2468.TW",
@@ -29,7 +29,7 @@
             "yoy": 0.0,
             "mom": 20.88,
             "industry": "資訊服務業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "2880.TW",
@@ -43,7 +43,7 @@
             "yoy": 32.0,
             "mom": 10.92,
             "industry": "金融保險業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "4904.TW",
@@ -57,7 +57,7 @@
             "yoy": 9.8,
             "mom": 11.11,
             "industry": "通信網路業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "7584.TWO",
@@ -71,7 +71,7 @@
             "yoy": 12.7,
             "mom": 17.94,
             "industry": "文化創意業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "8099.TWO",
@@ -85,7 +85,7 @@
             "yoy": 36.2,
             "mom": 29.87,
             "industry": "資訊服務業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         }
     ]
 }
