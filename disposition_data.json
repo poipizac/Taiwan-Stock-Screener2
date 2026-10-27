@@ -1,36 +1,76 @@
 {
-    "scan_date": "2026-10-26",
-    "data_date": "2026-10-26",
+    "scan_date": "2026-10-27",
+    "data_date": "2026-10-27",
     "error_msg": "",
     "data": [
+        {
+            "ticker": "3354.TWO",
+            "name": "律勝",
+            "end_date": "115/11/03",
+            "close": 50.1,
+            "pb": 4.52,
+            "yoy": 55.8,
+            "mom": 55.83,
+            "industry": "電子零組件業"
+        },
+        {
+            "ticker": "5475.TWO",
+            "name": "德宏",
+            "end_date": "115/11/03",
+            "close": 183.0,
+            "pb": 21.36,
+            "yoy": 159.3,
+            "mom": 1.95,
+            "industry": "電子零組件業"
+        },
+        {
+            "ticker": "6751.TWO",
+            "name": "智聯服務",
+            "end_date": "115/11/03",
+            "close": 77.2,
+            "pb": 1.84,
+            "yoy": -26.8,
+            "mom": 73.48,
+            "industry": "資訊服務業"
+        },
+        {
+            "ticker": "6925.TWO",
+            "name": "意藍",
+            "end_date": "115/11/03",
+            "close": 111.5,
+            "pb": 5.73,
+            "yoy": 5.2,
+            "mom": 51.08,
+            "industry": "數位雲端"
+        },
         {
             "ticker": "4542.TWO",
             "name": "科嶠",
             "end_date": "115/11/03",
-            "close": 345.0,
-            "pb": 12.66,
+            "close": 358.0,
+            "pb": 13.14,
             "yoy": 51.3,
-            "mom": 0.29,
+            "mom": 4.07,
             "industry": "電子零組件業"
         },
         {
             "ticker": "5205.TWO",
             "name": "中茂",
             "end_date": "115/10/30",
-            "close": 24.6,
-            "pb": 4.46,
+            "close": 22.15,
+            "pb": 4.02,
             "yoy": 43.0,
-            "mom": 30.16,
+            "mom": 17.2,
             "industry": "綠能環保"
         },
         {
             "ticker": "8358.TWO",
             "name": "金居",
             "end_date": "115/10/30",
-            "close": 438.5,
-            "pb": 11.9,
+            "close": 420.5,
+            "pb": 11.42,
             "yoy": 40.1,
-            "mom": -11.41,
+            "mom": -15.05,
             "industry": "電子零組件業"
         },
         {
@@ -47,30 +87,20 @@
             "ticker": "3287.TWO",
             "name": "廣寰科",
             "end_date": "115/10/29",
-            "close": 63.1,
-            "pb": 3.42,
+            "close": 61.0,
+            "pb": 3.31,
             "yoy": 0.9,
-            "mom": 49.7,
+            "mom": 44.72,
             "industry": "電腦及週邊設備業"
-        },
-        {
-            "ticker": "3354.TWO",
-            "name": "律勝",
-            "end_date": "115/10/28",
-            "close": 49.95,
-            "pb": 4.51,
-            "yoy": 55.8,
-            "mom": 55.37,
-            "industry": "電子零組件業"
         },
         {
             "ticker": "6716.TWO",
             "name": "應廣",
             "end_date": "115/10/27",
-            "close": 93.0,
-            "pb": 3.31,
+            "close": 90.6,
+            "pb": 3.23,
             "yoy": 43.8,
-            "mom": -18.42,
+            "mom": -20.53,
             "industry": "半導體業"
         }
     ]
