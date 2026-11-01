@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-10-31",
-    "data_date": "2026-10-31",
+    "scan_date": "2026-11-01",
+    "data_date": "2026-11-01",
     "empty_today": false,
     "data": [
         {
@@ -12,7 +12,7 @@
             "avg_vol_5d": 5945987.0,
             "yoy": "21.6%",
             "投信近3日買賣超(張)": 2024.2,
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3563.TW",
@@ -23,7 +23,7 @@
             "avg_vol_5d": 360489.0,
             "yoy": "42.4%",
             "投信近3日買賣超(張)": 400.0,
-            "consecutive_days": 1
+            "consecutive_days": 2
         }
     ]
 }

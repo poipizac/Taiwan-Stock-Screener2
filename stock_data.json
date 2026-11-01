@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-10-31",
-    "data_date": "2026-10-31",
+    "scan_date": "2026-11-01",
+    "data_date": "2026-11-01",
     "empty_today": false,
     "data": [
         {
@@ -15,7 +15,7 @@
             "yoy": -1.5,
             "mom": 16.31,
             "industry": "食品工業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "1236.TW",
@@ -29,7 +29,7 @@
             "yoy": 1.7,
             "mom": 5.3,
             "industry": "食品工業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2412.TW",
@@ -39,11 +39,11 @@
             "high120": 160.0,
             "ratio": 1.15,
             "pb": 3.39,
-            "eps": 5.15,
+            "eps": 5.09,
             "yoy": 8.2,
             "mom": 11.5,
             "industry": "通信網路業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2516.TW",
@@ -57,7 +57,7 @@
             "yoy": -20.3,
             "mom": 5.86,
             "industry": "建材營造業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2603.TW",
@@ -71,7 +71,7 @@
             "yoy": 21.6,
             "mom": 13.36,
             "industry": "航運業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2801.TW",
@@ -85,7 +85,7 @@
             "yoy": 13.6,
             "mom": 11.23,
             "industry": "金融保險業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3332.TWO",
@@ -99,7 +99,7 @@
             "yoy": 12.1,
             "mom": 26.22,
             "industry": "電子零組件業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "4116.TWO",
@@ -113,7 +113,7 @@
             "yoy": 7.1,
             "mom": 11.06,
             "industry": "生技醫療業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "4526.TW",
@@ -127,7 +127,7 @@
             "yoy": 20.2,
             "mom": 64.46,
             "industry": "電機機械",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "4568.TWO",
@@ -141,21 +141,7 @@
             "yoy": 8.2,
             "mom": 31.31,
             "industry": "電機機械",
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "6199.TWO",
-            "name": "天品",
-            "close": 160.5,
-            "sma200": 105.53,
-            "high120": 160.5,
-            "ratio": 1.43,
-            "pb": 9.35,
-            "eps": 2.67,
-            "yoy": 558.0,
-            "mom": 25.88,
-            "industry": "其他業",
-            "consecutive_days": 1
+            "consecutive_days": 3
         },
         {
             "ticker": "6212.TWO",
@@ -169,6 +155,20 @@
             "yoy": 0.9,
             "mom": 4.01,
             "industry": "建材營造業",
+            "consecutive_days": 3
+        },
+        {
+            "ticker": "6199.TWO",
+            "name": "天品",
+            "close": 160.5,
+            "sma200": 105.53,
+            "high120": 160.5,
+            "ratio": 1.43,
+            "pb": 9.35,
+            "eps": 2.67,
+            "yoy": 558.0,
+            "mom": 25.88,
+            "industry": "其他業",
             "consecutive_days": 2
         },
         {
@@ -183,7 +183,7 @@
             "yoy": -2.7,
             "mom": 31.48,
             "industry": "資訊服務業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "7704.TWO",
@@ -197,7 +197,7 @@
             "yoy": 6.1,
             "mom": 42.18,
             "industry": "半導體業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "8272.TWO",
@@ -207,11 +207,11 @@
             "high120": 78.1,
             "ratio": 0.97,
             "pb": 0,
-            "eps": 4.98,
+            "eps": 4.53,
             "yoy": 0.0,
             "mom": 21.09,
             "industry": "資訊服務業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         }
     ]
 }
