@@ -1,117 +1,77 @@
 {
-    "scan_date": "2026-11-03",
-    "data_date": "2026-11-03",
+    "scan_date": "2026-11-04",
+    "data_date": "2026-11-04",
     "error_msg": "",
     "data": [
+        {
+            "ticker": "8099.TWO",
+            "name": "大世科",
+            "end_date": "115/11/11",
+            "close": 134.5,
+            "pb": 8.79,
+            "yoy": 36.2,
+            "mom": 28.7,
+            "industry": "資訊服務業"
+        },
+        {
+            "ticker": "8272.TWO",
+            "name": "全景軟體",
+            "end_date": "115/11/11",
+            "close": 94.4,
+            "pb": 0,
+            "yoy": 0.0,
+            "mom": 31.88,
+            "industry": "資訊服務業"
+        },
         {
             "ticker": "8291.TWO",
             "name": "尚茂",
             "end_date": "115/11/09",
-            "close": 30.9,
-            "pb": 8.38,
+            "close": 27.85,
+            "pb": 7.73,
             "yoy": 190.4,
-            "mom": -17.85,
+            "mom": -24.19,
             "industry": "電子零組件業"
         },
         {
             "ticker": "3374.TWO",
             "name": "精材",
             "end_date": "115/11/10",
-            "close": 471.5,
-            "pb": 11.83,
+            "close": 430.0,
+            "pb": 12.3,
             "yoy": 42.2,
-            "mom": -11.89,
+            "mom": -8.4,
             "industry": "半導體業"
         },
         {
             "ticker": "3691.TWO",
             "name": "碩禾",
             "end_date": "115/11/06",
-            "close": 145.0,
-            "pb": 2.03,
+            "close": 134.0,
+            "pb": 2.23,
             "yoy": 113.5,
-            "mom": -4.96,
+            "mom": 4.26,
             "industry": "光電業"
-        },
-        {
-            "ticker": "8099.TWO",
-            "name": "大世科",
-            "end_date": "115/11/06",
-            "close": 122.5,
-            "pb": 8.24,
-            "yoy": 36.2,
-            "mom": 20.63,
-            "industry": "資訊服務業"
         },
         {
             "ticker": "4577.TWO",
             "name": "達航科技",
             "end_date": "115/11/05",
-            "close": 132.5,
-            "pb": 6.19,
+            "close": 120.0,
+            "pb": 6.6,
             "yoy": 56.4,
-            "mom": -5.88,
+            "mom": 0.39,
             "industry": "其他電子業"
         },
         {
             "ticker": "3441.TWO",
             "name": "聯一光",
             "end_date": "115/11/06",
-            "close": 180.0,
-            "pb": 7.82,
+            "close": 162.0,
+            "pb": 7.87,
             "yoy": 52.7,
-            "mom": -8.73,
+            "mom": -8.17,
             "industry": "光電業"
-        },
-        {
-            "ticker": "3354.TWO",
-            "name": "律勝",
-            "end_date": "115/11/03",
-            "close": 47.3,
-            "pb": 3.84,
-            "yoy": 55.8,
-            "mom": -16.8,
-            "industry": "電子零組件業"
-        },
-        {
-            "ticker": "5475.TWO",
-            "name": "德宏",
-            "end_date": "115/11/03",
-            "close": 194.0,
-            "pb": 21.24,
-            "yoy": 159.3,
-            "mom": 2.82,
-            "industry": "電子零組件業"
-        },
-        {
-            "ticker": "6751.TWO",
-            "name": "智聯服務",
-            "end_date": "115/11/03",
-            "close": 85.0,
-            "pb": 1.83,
-            "yoy": -26.8,
-            "mom": -1.03,
-            "industry": "資訊服務業"
-        },
-        {
-            "ticker": "6925.TWO",
-            "name": "意藍",
-            "end_date": "115/11/03",
-            "close": 113.5,
-            "pb": 5.27,
-            "yoy": 5.2,
-            "mom": -18.65,
-            "industry": "數位雲端"
-        },
-        {
-            "ticker": "4542.TWO",
-            "name": "科嶠",
-            "end_date": "115/11/03",
-            "close": 319.0,
-            "pb": 10.55,
-            "yoy": 51.3,
-            "mom": -13.4,
-            "industry": "電子零組件業"
         }
     ]
 }
