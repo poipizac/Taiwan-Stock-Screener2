@@ -1,76 +1,66 @@
 {
-    "scan_date": "2026-11-05",
-    "data_date": "2026-11-05",
+    "scan_date": "2026-11-06",
+    "data_date": "2026-11-06",
     "error_msg": "",
     "data": [
         {
             "ticker": "8099.TWO",
             "name": "大世科",
             "end_date": "115/11/11",
-            "close": 143.5,
-            "pb": 9.31,
+            "close": 152.0,
+            "pb": 9.09,
             "yoy": 36.2,
-            "mom": 36.32,
+            "mom": 33.18,
             "industry": "資訊服務業"
         },
         {
             "ticker": "8272.TWO",
             "name": "全景軟體",
             "end_date": "115/11/11",
-            "close": 103.0,
+            "close": 92.7,
             "pb": 0,
             "yoy": 0.0,
-            "mom": 18.69,
+            "mom": 13.06,
             "industry": "資訊服務業"
         },
         {
             "ticker": "8291.TWO",
             "name": "尚茂",
             "end_date": "115/11/09",
-            "close": 25.7,
-            "pb": 7.07,
+            "close": 23.5,
+            "pb": 6.47,
             "yoy": 190.4,
-            "mom": -30.68,
+            "mom": -36.58,
             "industry": "電子零組件業"
         },
         {
             "ticker": "3374.TWO",
             "name": "精材",
             "end_date": "115/11/10",
-            "close": 447.0,
-            "pb": 11.08,
+            "close": 402.5,
+            "pb": 10.32,
             "yoy": 42.2,
-            "mom": -17.52,
+            "mom": -23.16,
             "industry": "半導體業"
         },
         {
             "ticker": "3691.TWO",
             "name": "碩禾",
             "end_date": "115/11/06",
-            "close": 147.0,
-            "pb": 2.11,
+            "close": 139.0,
+            "pb": 2.05,
             "yoy": 113.5,
-            "mom": -1.42,
+            "mom": -4.26,
             "industry": "光電業"
-        },
-        {
-            "ticker": "4577.TWO",
-            "name": "達航科技",
-            "end_date": "115/11/05",
-            "close": 128.0,
-            "pb": 5.96,
-            "yoy": 56.4,
-            "mom": -9.41,
-            "industry": "其他電子業"
         },
         {
             "ticker": "3441.TWO",
             "name": "聯一光",
             "end_date": "115/11/06",
-            "close": 163.0,
-            "pb": 7.1,
+            "close": 147.0,
+            "pb": 7.0,
             "yoy": 52.7,
-            "mom": -17.18,
+            "mom": -18.31,
             "industry": "光電業"
         }
     ]
