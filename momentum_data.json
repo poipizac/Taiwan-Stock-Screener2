@@ -1,29 +1,18 @@
 {
-    "scan_date": "2026-11-01",
-    "data_date": "2026-11-01",
+    "scan_date": "2026-11-07",
+    "data_date": "2026-11-07",
     "empty_today": false,
     "data": [
         {
-            "ticker": "2603.TW",
-            "stock_id": "2603",
-            "name": "長榮",
-            "price": 271.5,
-            "volume": 22660189,
-            "avg_vol_5d": 5945987.0,
-            "yoy": "21.6%",
-            "投信近3日買賣超(張)": 2024.2,
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "3563.TW",
-            "stock_id": "3563",
-            "name": "牧德",
-            "price": 680.0,
-            "volume": 764160,
-            "avg_vol_5d": 360489.0,
-            "yoy": "42.4%",
-            "投信近3日買賣超(張)": 400.0,
-            "consecutive_days": 2
+            "ticker": "3213.TWO",
+            "stock_id": "3213",
+            "name": "茂訊",
+            "price": 120.0,
+            "volume": 577012,
+            "avg_vol_5d": 274454.0,
+            "yoy": "35.7%",
+            "投信近3日買賣超(張)": 14.7,
+            "consecutive_days": 1
         }
     ]
 }

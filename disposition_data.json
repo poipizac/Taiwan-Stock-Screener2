@@ -1,13 +1,13 @@
 {
-    "scan_date": "2026-11-06",
-    "data_date": "2026-11-06",
+    "scan_date": "2026-11-07",
+    "data_date": "2026-11-07",
     "error_msg": "",
     "data": [
         {
             "ticker": "8099.TWO",
             "name": "大世科",
             "end_date": "115/11/11",
-            "close": 152.0,
+            "close": 148.5,
             "pb": 9.09,
             "yoy": 36.2,
             "mom": 33.18,
@@ -17,7 +17,7 @@
             "ticker": "8272.TWO",
             "name": "全景軟體",
             "end_date": "115/11/11",
-            "close": 92.7,
+            "close": 88.3,
             "pb": 0,
             "yoy": 0.0,
             "mom": 13.06,
@@ -27,7 +27,7 @@
             "ticker": "8291.TWO",
             "name": "尚茂",
             "end_date": "115/11/09",
-            "close": 23.5,
+            "close": 21.5,
             "pb": 6.47,
             "yoy": 190.4,
             "mom": -36.58,
@@ -37,31 +37,11 @@
             "ticker": "3374.TWO",
             "name": "精材",
             "end_date": "115/11/10",
-            "close": 402.5,
+            "close": 375.0,
             "pb": 10.32,
             "yoy": 42.2,
             "mom": -23.16,
             "industry": "半導體業"
-        },
-        {
-            "ticker": "3691.TWO",
-            "name": "碩禾",
-            "end_date": "115/11/06",
-            "close": 139.0,
-            "pb": 2.05,
-            "yoy": 113.5,
-            "mom": -4.26,
-            "industry": "光電業"
-        },
-        {
-            "ticker": "3441.TWO",
-            "name": "聯一光",
-            "end_date": "115/11/06",
-            "close": 147.0,
-            "pb": 7.0,
-            "yoy": 52.7,
-            "mom": -18.31,
-            "industry": "光電業"
         }
     ]
 }
