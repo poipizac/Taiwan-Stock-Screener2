@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-11-07",
-    "data_date": "2026-11-07",
+    "scan_date": "2026-11-08",
+    "data_date": "2026-11-08",
     "empty_today": false,
     "data": [
         {
@@ -12,6 +12,28 @@
             "avg_vol_5d": 274454.0,
             "yoy": "35.7%",
             "投信近3日買賣超(張)": 14.7,
+            "consecutive_days": 2
+        },
+        {
+            "ticker": "6446.TW",
+            "stock_id": "6446",
+            "name": "藥華藥",
+            "price": 1270.0,
+            "volume": 6906539,
+            "avg_vol_5d": 2752038.0,
+            "yoy": "90.3%",
+            "投信近3日買賣超(張)": 672.2,
+            "consecutive_days": 1
+        },
+        {
+            "ticker": "6472.TW",
+            "stock_id": "6472",
+            "name": "保瑞",
+            "price": 399.5,
+            "volume": 2310035,
+            "avg_vol_5d": 746064.0,
+            "yoy": "21.0%",
+            "投信近3日買賣超(張)": 42.0,
             "consecutive_days": 1
         }
     ]

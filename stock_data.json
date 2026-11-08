@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-11-07",
-    "data_date": "2026-11-07",
+    "scan_date": "2026-11-08",
+    "data_date": "2026-11-08",
     "empty_today": false,
     "data": [
         {
@@ -15,7 +15,7 @@
             "yoy": 49.8,
             "mom": 26.25,
             "industry": "其他業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "4155.TW",
@@ -29,7 +29,7 @@
             "yoy": 2.2,
             "mom": 6.55,
             "industry": "生技醫療業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6212.TWO",
@@ -43,7 +43,7 @@
             "yoy": 0.9,
             "mom": 1.43,
             "industry": "建材營造業",
-            "consecutive_days": 9
+            "consecutive_days": 10
         }
     ]
 }
