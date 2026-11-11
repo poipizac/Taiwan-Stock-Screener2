@@ -1,47 +1,37 @@
 {
-    "scan_date": "2026-11-10",
-    "data_date": "2026-11-10",
+    "scan_date": "2026-11-11",
+    "data_date": "2026-11-11",
     "error_msg": "",
     "data": [
         {
             "ticker": "4542.TWO",
             "name": "科嶠",
             "end_date": "115/11/16",
-            "close": 225.0,
-            "pb": 11.75,
+            "close": 245.5,
+            "pb": 12.4,
             "yoy": 51.3,
-            "mom": -26.05,
+            "mom": -21.99,
             "industry": "電子零組件業"
         },
         {
             "ticker": "8099.TWO",
             "name": "大世科",
             "end_date": "115/11/11",
-            "close": 140.5,
-            "pb": 8.39,
+            "close": 137.0,
+            "pb": 9.22,
             "yoy": 36.2,
-            "mom": 22.87,
+            "mom": 34.98,
             "industry": "資訊服務業"
         },
         {
             "ticker": "8272.TWO",
             "name": "全景軟體",
             "end_date": "115/11/11",
-            "close": 87.0,
+            "close": 88.5,
             "pb": 0,
             "yoy": 0.0,
-            "mom": 13.32,
+            "mom": 24.58,
             "industry": "資訊服務業"
-        },
-        {
-            "ticker": "3374.TWO",
-            "name": "精材",
-            "end_date": "115/11/10",
-            "close": 404.0,
-            "pb": 11.81,
-            "yoy": 42.2,
-            "mom": -13.01,
-            "industry": "半導體業"
         }
     ]
 }
