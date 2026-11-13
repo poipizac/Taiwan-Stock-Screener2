@@ -1,16 +1,16 @@
 {
-    "scan_date": "2026-11-12",
-    "data_date": "2026-11-12",
+    "scan_date": "2026-11-13",
+    "data_date": "2026-11-13",
     "error_msg": "",
     "data": [
         {
             "ticker": "4542.TWO",
             "name": "科嶠",
             "end_date": "115/11/16",
-            "close": 259.0,
-            "pb": 11.18,
+            "close": 233.5,
+            "pb": 12.28,
             "yoy": 51.3,
-            "mom": -29.67,
+            "mom": -22.74,
             "industry": "電子零組件業"
         }
     ]
