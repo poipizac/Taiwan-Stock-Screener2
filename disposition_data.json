@@ -1,13 +1,13 @@
 {
-    "scan_date": "2026-11-13",
-    "data_date": "2026-11-13",
+    "scan_date": "2026-11-14",
+    "data_date": "2026-11-14",
     "error_msg": "",
     "data": [
         {
             "ticker": "4542.TWO",
             "name": "科嶠",
             "end_date": "115/11/16",
-            "close": 233.5,
+            "close": 256.5,
             "pb": 12.28,
             "yoy": 51.3,
             "mom": -22.74,
