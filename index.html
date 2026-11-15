@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>全台股市場 10 倍股掃描儀表板</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" rel="stylesheet">
     <style>
         body {
             background-color: #f1f3f5;
@@ -28,16 +29,19 @@
 
         .btn-strategy {
             border-radius: 30px;
-            padding: 12px 35px;
+            padding: 12px 30px;
             font-weight: 700;
-            margin: 0 12px;
+            margin: 6px 8px;
             border: 2px solid #243b55;
             background: white;
+            color: #243b55;
             transition: all 0.3s ease;
+            user-select: none;
         }
 
         .btn-check:checked+.btn-strategy {
             background-color: #243b55;
+            border-color: #243b55;
             color: white;
             transform: scale(1.05);
         }
@@ -63,6 +67,18 @@
         .btn-check:checked+.btn-kd-rsi {
             background-color: #198754;
             border-color: #198754;
+            color: white;
+        }
+
+        /* 處置股按鈕特殊樣式 */
+        .btn-disposition {
+            border-color: #f59f00;
+            color: #b45309;
+        }
+
+        .btn-check:checked+.btn-disposition {
+            background-color: #f59f00;
+            border-color: #f59f00;
             color: white;
         }
 
@@ -109,35 +125,41 @@
         .kd-rsi-row {
             background-color: #f4fbf7 !important;
         }
+
+        .status-box {
+            padding: 45px 20px;
+            border-radius: 12px;
+            background-color: #f8f9fa;
+            border: 1px dashed #ced4da;
+        }
     </style>
 </head>
 
 <body>
     <div class="header-info text-center">
         <h1>🔍 台股選股儀表板 -Funnel Strategy-</h1>
-        <p>全市場強勢股濾網 | 10倍股潛力掃描 | 🚀 短線爆量投信突破股 | 📈 周KD金叉強勢股</p>
+        <p>全市場強勢股濾網 | 10倍股潛力掃描 | 🚀 短線爆量投信突破股 | 📈 周KD金叉強勢股（支援動態交集篩選）</p>
     </div>
 
     <div class="strategy-selector">
-        <input type="radio" class="btn-check" name="strategy" id="strat_original" autocomplete="off" checked=""
-            onclick="switchDataSource('stock_data.json', 'original')">
+        <div class="mb-2 fw-bold text-secondary">📌 動態交集篩選器（可單選或複選取交集）：</div>
+
+        <!-- 三個核心動態交集 Checkbox -->
+        <input type="checkbox" class="btn-check intersection-check" id="chk_ten_fold" value="ten_fold" autocomplete="off" checked>
+        <label class="btn btn-outline-dark btn-strategy" for="chk_ten_fold">🚀 10倍股潛力掃描</label>
+
+        <input type="checkbox" class="btn-check intersection-check" id="chk_momentum" value="momentum" autocomplete="off">
+        <label class="btn btn-outline-danger btn-strategy btn-momentum" for="chk_momentum">🔥 短線爆量投信突破股</label>
+
+        <input type="checkbox" class="btn-check intersection-check" id="chk_kd_rsi" value="kd_rsi" autocomplete="off">
+        <label class="btn btn-outline-success btn-strategy btn-kd-rsi" for="chk_kd_rsi">📈 周KD金叉強勢股</label>
+
+        <!-- 原有單一檢視分頁（與交集篩選自動切換） -->
+        <input type="checkbox" class="btn-check single-mode-check" id="strat_original" value="original" autocomplete="off">
         <label class="btn btn-outline-dark btn-strategy" for="strat_original">📋 全市場強勢股一覽</label>
 
-        <input type="radio" class="btn-check" name="strategy" id="strat_ten_fold" autocomplete="off"
-            onclick="switchDataSource('stock_data.json', 'ten_fold')">
-        <label class="btn btn-outline-dark btn-strategy" for="strat_ten_fold">🚀 10倍股選股 (中長線)</label>
-
-        <input type="radio" class="btn-check" name="strategy" id="strat_momentum" autocomplete="off"
-            onclick="switchDataSource('momentum_data.json', 'momentum')">
-        <label class="btn btn-outline-danger btn-strategy btn-momentum" for="strat_momentum">🔥 投信爆量突破股 (短線)</label>
-
-        <input type="radio" class="btn-check" name="strategy" id="strat_disposition" autocomplete="off"
-            onclick="switchDataSource('disposition_data.json', 'disposition')">
-        <label class="btn btn-outline-warning btn-strategy" for="strat_disposition">⚠️ 處置股一覽</label>
-
-        <input type="radio" class="btn-check" name="strategy" id="strat_kd_rsi" autocomplete="off"
-            onclick="switchDataSource('kd_rsi_data.json', 'kd_rsi')">
-        <label class="btn btn-outline-success btn-strategy btn-kd-rsi" for="strat_kd_rsi">📈 周KD金叉強勢股</label>
+        <input type="checkbox" class="btn-check single-mode-check" id="strat_disposition" value="disposition" autocomplete="off">
+        <label class="btn btn-outline-warning btn-strategy btn-disposition" for="strat_disposition">⚠️ 處置股一覽</label>
 
         <div id="dataDateDisplay" class="text-muted mt-3" style="font-size: 0.95em;"></div>
     </div>
@@ -146,6 +168,11 @@
         <div id="loader" class="text-center py-5">
             <div class="spinner-grow text-primary" role="status"></div>
             <p class="mt-3 text-muted">正在載入選股數據，請稍候...</p>
+        </div>
+
+        <!-- 防呆與空交集提示區塊 -->
+        <div id="emptyNotice" class="status-box text-center my-3" style="display:none;">
+            <h5 id="emptyNoticeText" class="mb-0 fw-bold text-secondary"></h5>
         </div>
 
         <table id="stockTable" class="table table-hover" width="100%" style="display:none;">
@@ -163,53 +190,56 @@
     <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
     <script>
         let table;
-        let currentStrategy = 'original';
-        let currentSource = 'stock_data.json';
+
+        const STRATEGY_META = {
+            ten_fold: {
+                label: '10倍股潛力掃描',
+                source: 'stock_data.json'
+            },
+            momentum: {
+                label: '短線爆量投信突破股',
+                source: 'momentum_data.json'
+            },
+            kd_rsi: {
+                label: '周KD金叉強勢股',
+                source: 'kd_rsi_data.json'
+            },
+            original: {
+                label: '全市場強勢股一覽',
+                source: 'stock_data.json'
+            },
+            disposition: {
+                label: '處置股一覽',
+                source: 'disposition_data.json'
+            }
+        };
 
         $(document).ready(function () {
-            fetchData();
+            // 監聽三個核心動態交集 Checkbox 的變化
+            $('.intersection-check').on('change', function () {
+                if ($(this).is(':checked')) {
+                    $('.single-mode-check').prop('checked', false);
+                }
+                handleFilterChange();
+            });
+
+            // 監聽單一檢視分頁按鈕
+            $('.single-mode-check').on('change', function () {
+                if ($(this).is(':checked')) {
+                    $('.single-mode-check').not(this).prop('checked', false);
+                    $('.intersection-check').prop('checked', false);
+                }
+                handleFilterChange();
+            });
+
+            // 初始載入
+            handleFilterChange();
         });
 
-        async function switchDataSource(source, strategy) {
-            currentSource = source;
-            currentStrategy = strategy;
-            $('#loader').show();
-            $('#stockTable').hide();
-            await fetchData();
-        }
-
-        async function fetchData() {
-            try {
-                const res = await fetch(currentSource + '?t=' + new Date().getTime());
-                const result = await res.json();
-
-                // 支援新版 {"data": [...]} 與舊版純陣列結構
-                const stockList = Array.isArray(result) ? result : (result.data || []);
-
-                // 更新日期顯示邏輯
-                if (Array.isArray(result)) {
-                    $('#dataDateDisplay').html(`📊 目前顯示策略共篩選出 <strong>${stockList.length}</strong> 檔符合條件標的`);
-                } else {
-                    const scanDate = result.scan_date || result.last_run || "未知";
-                    const dataDate = result.data_date || result.last_run || "未知";
-                    const isEmpty = result.empty_today === true;
-
-                    if (!isEmpty) {
-                        $('#dataDateDisplay').html(`🗓️ 此策略目前顯示之資料日期：<strong>${dataDate}</strong>`);
-                    } else {
-                        $('#dataDateDisplay').html(`🗓️ 此策略目前顯示之資料日期：<strong>${dataDate}</strong> <span class="text-danger fw-bold">(⚠️ 系統於 ${scanDate} 掃描，當日無符合條件之標的，維持顯示舊有資料)</span>`);
-                    }
-                }
-
-                if ($.fn.DataTable.isDataTable('#stockTable')) {
-                    $('#stockTable').DataTable().destroy();
-                }
-
-                renderTable(stockList);
-            } catch (err) {
-                console.error("載入 JSON 失敗", err);
-                $('#loader').html('<p class="text-danger">資料載入失敗，可能尚無選股結果或檔案不存在。</p>');
-            }
+        // 標準化 Ticker 作為交集 Key
+        function getTickerKey(item) {
+            const raw = item.ticker || item.代號 || item.stock_id || '';
+            return String(raw).trim().toUpperCase();
         }
 
         function getColorClass(val) {
@@ -218,170 +248,268 @@
             return val > 0 ? "up-red" : "down-green";
         }
 
-        function renderTable(stockList) {
+        // 根據策略代碼動態 fetch 對應的 JSON 並過濾
+        async function fetchStrategyJson(strategyKey) {
+            const meta = STRATEGY_META[strategyKey];
+            const res = await fetch(meta.source + '?t=' + new Date().getTime());
+            if (!res.ok) {
+                throw new Error(`載入 ${meta.source} 失敗`);
+            }
+            const rawJson = await res.json();
+            let list = Array.isArray(rawJson) ? rawJson : (rawJson.data || []);
+
+            // 針對 stock_data.json 依據策略套用對應技術面條件
+            if (strategyKey === 'original') {
+                list = list.filter(s => {
+                    const close = parseFloat(s.close);
+                    const sma200 = parseFloat(s.sma200);
+                    return !isNaN(close) && !isNaN(sma200) ? (close > sma200) : true;
+                });
+            } else if (strategyKey === 'ten_fold') {
+                list = list.filter(s => {
+                    const close = parseFloat(s.close);
+                    const sma200 = parseFloat(s.sma200);
+                    const h120 = parseFloat(s.high120);
+                    const ratio = parseFloat(s.ratio);
+                    if (!isNaN(close) && !isNaN(sma200) && !isNaN(h120) && !isNaN(ratio)) {
+                        return (close > sma200 && close >= h120 && ratio < 2.0);
+                    }
+                    return true;
+                });
+            }
+
+            return {
+                key: strategyKey,
+                label: meta.label,
+                raw: rawJson,
+                list: list
+            };
+        }
+
+        async function handleFilterChange() {
+            const checkedIntersections = $('.intersection-check:checked').map(function () {
+                return $(this).val();
+            }).get();
+
+            const checkedSingle = $('.single-mode-check:checked').map(function () {
+                return $(this).val();
+            }).get();
+
+            const activeStrategies = checkedIntersections.length > 0 ? checkedIntersections : checkedSingle;
+
+            if ($.fn.DataTable.isDataTable('#stockTable')) {
+                $('#stockTable').DataTable().destroy();
+            }
+
+            // 防呆 1：完全沒有勾選任何策略
+            if (activeStrategies.length === 0) {
+                $('#loader').hide();
+                $('#stockTable').hide();
+                $('#dataDateDisplay').empty();
+                $('#emptyNoticeText').removeClass('text-danger').addClass('text-secondary')
+                    .text('請至少勾選一項策略進行篩選');
+                $('#emptyNotice').show();
+                return;
+            }
+
+            $('#emptyNotice').hide();
+            $('#stockTable').hide();
+            $('#loader').show();
+
+            try {
+                // 平行讀取所有被勾選策略對應的 JSON 檔案
+                const results = await Promise.all(
+                    activeStrategies.map(key => fetchStrategyJson(key))
+                );
+
+                // 為每個被勾選策略建立 Ticker -> 股票資料 Map
+                const strategyMaps = results.map(r => {
+                    const map = new Map();
+                    r.list.forEach(item => {
+                        const key = getTickerKey(item);
+                        if (key) {
+                            map.set(key, item);
+                        }
+                    });
+                    return map;
+                });
+
+                // 以『股票代號 (Ticker)』為 Key，嚴格計算交集 (Intersection)
+                const baseMap = strategyMaps[0];
+                const intersectedTickers = Array.from(baseMap.keys()).filter(ticker =>
+                    strategyMaps.every(map => map.has(ticker))
+                );
+
+                // 合併同一檔股票於各策略 JSON 中的欄位資料
+                const intersectedStocks = intersectedTickers.map(ticker => {
+                    const merged = { ticker };
+                    strategyMaps.forEach(map => {
+                        const item = map.get(ticker);
+                        if (item) {
+                            Object.assign(merged, item);
+                            merged.ticker = item.ticker || item.代號 || merged.ticker;
+                            merged.name = item.name || item.名稱 || merged.name;
+                            if (item.close !== undefined) merged.close = item.close;
+                            if (item.price !== undefined && merged.close === undefined) merged.close = item.price;
+                            if (item.現價 !== undefined && merged.close === undefined) merged.close = item.現價;
+                        }
+                    });
+                    return merged;
+                });
+
+                $('#loader').hide();
+
+                // 更新上方條件與數量顯示
+                const summaryText = results.map(r => `${r.label} (${r.list.length}檔)`).join(' ∩ ');
+                $('#dataDateDisplay').html(
+                    `🎯 篩選條件：<strong>${summaryText}</strong> ｜ 符合交集共 <strong class="text-primary">${intersectedStocks.length}</strong> 檔`
+                );
+
+                // 防呆 2：有勾選但無交集股票
+                if (intersectedStocks.length === 0) {
+                    $('#emptyNoticeText').removeClass('text-danger').addClass('text-secondary')
+                        .text('目前無符合交集條件之標的');
+                    $('#emptyNotice').show();
+                    return;
+                }
+
+                renderTable(intersectedStocks, activeStrategies);
+
+            } catch (err) {
+                console.error("載入 JSON 失敗", err);
+                $('#loader').hide();
+                $('#stockTable').hide();
+                $('#emptyNoticeText').removeClass('text-secondary').addClass('text-danger')
+                    .text('資料載入失敗，可能尚無選股結果或檔案不存在。');
+                $('#emptyNotice').show();
+            }
+        }
+
+        function renderTable(stockList, activeStrategies) {
             const head = $('#tableHead');
             const body = $('#stockBody');
             head.empty();
             body.empty();
 
-            // 根據不同策略顯示不同標題
-            if (currentStrategy === 'momentum') {
-                head.append(`
-                    <tr>
-                        <th>代號</th>
-                        <th>標的名稱</th>
-                        <th>現價</th>
-                        <th>今日成交量</th>
-                        <th>5日均量</th>
-                        <th>營收YoY%</th>
-                        <th>投信買超(張)</th>
-                        <th>連續進榜(天)</th>
-                    </tr>
-                `);
-            } else if (currentStrategy === 'disposition') {
-                head.append(`
-                    <tr>
-                        <th>代號</th>
-                        <th>標的名稱</th>
-                        <th>現價</th>
-                        <th>PB</th>
-                        <th>YoY%</th>
-                        <th>MoM%</th>
-                        <th>解除處置日期</th>
-                        <th>產業分類</th>
-                    </tr>
-                `);
-            } else if (currentStrategy === 'kd_rsi') {
-                head.append(`
-                    <tr>
-                        <th>代號</th>
-                        <th>標的名稱</th>
-                        <th>現價</th>
-                        <th>周K</th>
-                        <th>周D</th>
-                        <th>日RSI</th>
-                    </tr>
-                `);
-            } else {
-                head.append(`
-                    <tr>
-                        <th>代號</th>
-                        <th>標的名稱</th>
-                        <th>現價</th>
-                        <th>PB</th>
-                        <th>YoY%</th>
-                        <th>MoM%</th>
-                        <th class="col-indicator">乖離倍數</th>
-                        <th>產業分類</th>
-                        <th>連續進榜(天)</th>
-                    </tr>
-                `);
+            const hasTenFoldOrOrig = activeStrategies.includes('ten_fold') || activeStrategies.includes('original');
+            const hasMomentum = activeStrategies.includes('momentum');
+            const hasKdRsi = activeStrategies.includes('kd_rsi');
+            const hasDisposition = activeStrategies.includes('disposition');
+
+            // 1. 動態建構表頭
+            let headRow = `<tr>
+                <th>代號</th>
+                <th>標的名稱</th>
+                <th>現價</th>`;
+
+            if (hasTenFoldOrOrig) {
+                headRow += `
+                    <th>PB</th>
+                    <th>YoY%</th>
+                    <th>MoM%</th>
+                    <th class="col-indicator">乖離倍數</th>
+                    <th>產業分類</th>`;
             }
 
-            stockList.forEach(s => {
-                let row = '';
-                if (currentStrategy === 'momentum') {
-                    const days = s.consecutive_days || s['連續進榜(天)'] || 1;
-                    const daysClass = days >= 3 ? "up-red" : "";
-                    row = `<tr class="momentum-row">
-                        <td><code>${s.ticker || s.代號}</code></td>
-                        <td class="fw-bold"><a href="https://tw.stock.yahoo.com/quote/${s.ticker || s.代號}" target="_blank" style="text-decoration:none;">${s.name || s.名稱}</a></td>
-                        <td class="text-center fw-bold">${s.price || s.現價}</td>
-                        <td class="text-center">${parseInt(s.volume || s.今日成交量).toLocaleString()}</td>
-                        <td class="text-center">${parseInt(s.avg_vol_5d || s['5日均量']).toLocaleString()}</td>
-                        <td class="text-center ${getColorClass(s.yoy || s['營收YoY%'])}">${s.yoy || s['營收YoY%']}</td>
-                        <td class="text-center text-primary fw-bold">${s['投信近3日買賣超(張)'] || 0}</td>
-                        <td class="text-center ${daysClass}">${days}</td>
-                    </tr>`;
-                } else if (currentStrategy === 'disposition') {
-                    row = `<tr class="disposition-row">
-                        <td><code>${s.ticker}</code></td>
-                        <td class="fw-bold"><a href="https://tw.stock.yahoo.com/quote/${s.ticker}" target="_blank" style="text-decoration:none;">${s.name}</a></td>
-                        <td class="text-center fw-bold">${s.close}</td>
-                        <td class="text-center ${getColorClass(s.pb)}">${s.pb}</td>
-                        <td class="text-center ${getColorClass(s.yoy)}">${s.yoy}%</td>
-                        <td class="text-center ${getColorClass(s.mom)}">${s.mom}%</td>
-                        <td class="text-center text-danger fw-bold">${s.end_date}</td>
-                        <td><span class="badge-sector">${s.industry}</span></td>
-                    </tr>`;
-                } else if (currentStrategy === 'kd_rsi') {
-                    const tickerCode = s.ticker || s.stock_id || '';
-                    const priceVal = s.close !== undefined ? s.close : s.price;
-                    row = `<tr class="kd-rsi-row">
-                        <td><code>${tickerCode}</code></td>
-                        <td class="fw-bold"><a href="https://tw.stock.yahoo.com/quote/${tickerCode}" target="_blank" style="text-decoration:none;">${s.name}</a></td>
-                        <td class="text-center fw-bold">${priceVal}</td>
-                        <td class="text-center up-red">${s.weekly_k}</td>
-                        <td class="text-center">${s.weekly_d}</td>
-                        <td class="text-center text-primary fw-bold">${s.daily_rsi}</td>
-                    </tr>`;
-                } else {
-                    const days = s.consecutive_days || 1;
-                    const daysClass = days >= 3 ? "up-red" : "";
-                    row = `<tr data-sma200="${s.sma200}" data-high120="${s.high120}">
-                        <td><code>${s.ticker}</code></td>
-                        <td class="fw-bold"><a href="https://tw.stock.yahoo.com/quote/${s.ticker}" target="_blank" style="text-decoration:none;">${s.name}</a></td>
-                        <td class="text-center fw-bold">${s.close}</td>
-                        <td class="text-center ${getColorClass(s.pb)}">${s.pb}</td>
-                        <td class="text-center ${getColorClass(s.yoy)}">${s.yoy}%</td>
-                        <td class="text-center ${getColorClass(s.mom)}">${s.mom}%</td>
-                        <td class="text-center col-indicator font-monospace">${s.ratio}</td>
-                        <td><span class="badge-sector">${s.industry}</span></td>
-                        <td class="text-center ${daysClass}">${days}</td>
-                    </tr>`;
+            if (hasMomentum) {
+                headRow += `
+                    <th>今日成交量</th>
+                    <th>5日均量</th>`;
+                if (!hasTenFoldOrOrig) {
+                    headRow += `<th>營收YoY%</th>`;
                 }
+                headRow += `<th>投信買超(張)</th>`;
+            }
+
+            if (hasKdRsi) {
+                headRow += `
+                    <th>周K</th>
+                    <th>周D</th>
+                    <th>日RSI</th>`;
+            }
+
+            if (hasDisposition) {
+                headRow += `
+                    <th>PB</th>
+                    <th>YoY%</th>
+                    <th>MoM%</th>
+                    <th>解除處置日期</th>
+                    <th>產業分類</th>`;
+            }
+
+            headRow += `</tr>`;
+            head.append(headRow);
+
+            // 2. 動態渲染資料列
+            stockList.forEach(s => {
+                const ticker = s.ticker || s.代號 || s.stock_id || '';
+                const name = s.name || s.名稱 || ticker;
+                const price = s.close !== undefined ? s.close : (s.price !== undefined ? s.price : s.現價);
+
+                let rowClass = '';
+                if (activeStrategies.length === 1 && hasMomentum) rowClass = 'momentum-row';
+                if (activeStrategies.length === 1 && hasKdRsi) rowClass = 'kd-rsi-row';
+
+                let row = `<tr class="${rowClass}">
+                    <td><code>${ticker}</code></td>
+                    <td class="fw-bold"><a href="https://tw.stock.yahoo.com/quote/${ticker}" target="_blank" style="text-decoration:none;">${name}</a></td>
+                    <td class="text-center fw-bold">${price ?? '-'}</td>`;
+
+                if (hasTenFoldOrOrig) {
+                    row += `
+                        <td class="text-center ${getColorClass(s.pb)}">${s.pb ?? '-'}</td>
+                        <td class="text-center ${getColorClass(s.yoy)}">${s.yoy !== undefined ? s.yoy + '%' : '-'}</td>
+                        <td class="text-center ${getColorClass(s.mom)}">${s.mom !== undefined ? s.mom + '%' : '-'}</td>
+                        <td class="text-center col-indicator font-monospace">${s.ratio ?? '-'}</td>
+                        <td><span class="badge-sector">${s.industry || '未知'}</span></td>`;
+                }
+
+                if (hasMomentum) {
+                    const vol = parseInt(s.volume || s.今日成交量 || 0).toLocaleString();
+                    const avgVol = parseInt(s.avg_vol_5d || s['5日均量'] || 0).toLocaleString();
+                    const yoyStr = s.yoy || s['營收YoY%'] || '-';
+                    const itBuy = s['投信近3日買賣超(張)'] ?? 0;
+
+                    row += `
+                        <td class="text-center">${vol}</td>
+                        <td class="text-center">${avgVol}</td>`;
+                    if (!hasTenFoldOrOrig) {
+                        row += `<td class="text-center ${getColorClass(yoyStr)}">${yoyStr}</td>`;
+                    }
+                    row += `<td class="text-center text-primary fw-bold">${itBuy}</td>`;
+                }
+
+                if (hasKdRsi) {
+                    row += `
+                        <td class="text-center up-red">${s.weekly_k ?? '-'}</td>
+                        <td class="text-center">${s.weekly_d ?? '-'}</td>
+                        <td class="text-center text-primary fw-bold">${s.daily_rsi ?? '-'}</td>`;
+                }
+
+                if (hasDisposition) {
+                    row += `
+                        <td class="text-center ${getColorClass(s.pb)}">${s.pb ?? '-'}</td>
+                        <td class="text-center ${getColorClass(s.yoy)}">${s.yoy !== undefined ? s.yoy + '%' : '-'}</td>
+                        <td class="text-center ${getColorClass(s.mom)}">${s.mom !== undefined ? s.mom + '%' : '-'}</td>
+                        <td class="text-center text-danger fw-bold">${s.end_date || '-'}</td>
+                        <td><span class="badge-sector">${s.industry || '未知'}</span></td>`;
+                }
+
+                row += `</tr>`;
                 body.append(row);
             });
 
-            $('#loader').hide();
             $('#stockTable').show();
 
             // 啟動 DataTables
-            let orderCol = 6;
-            let orderDir = "asc";
-            if (currentStrategy === 'momentum') {
-                orderCol = 7;
-                orderDir = "desc";
-            } else if (currentStrategy === 'disposition') {
-                orderCol = 6;
-                orderDir = "asc";
-            } else if (currentStrategy === 'kd_rsi') {
-                orderCol = 5;
-                orderDir = "desc";
-            }
-
             $.fn.dataTable.ext.search = [];
-
             table = $('#stockTable').DataTable({
                 "language": { "url": "//cdn.datatables.net/plug-ins/1.13.4/i18n/zh-HANT.json" },
-                "order": [[orderCol, orderDir]],
+                "order": [[2, "desc"]],
                 "pageLength": 50,
                 "autoWidth": false,
                 "destroy": true
             });
-
-            // 註冊 DataTables 全域過濾邏輯 (僅針對 stock_data.json)
-            if (currentSource === 'stock_data.json') {
-                $.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
-                    const node = table.row(dataIndex).node();
-                    const close = parseFloat(data[2]);
-                    const ratio = parseFloat(data[6]);
-                    const sma200 = parseFloat($(node).attr('data-sma200'));
-                    const h120 = parseFloat($(node).attr('data-high120'));
-
-                    if (currentStrategy === 'original') {
-                        return (close > sma200);
-                    } else if (currentStrategy === 'ten_fold') {
-                        return (close > sma200 && close >= h120 && ratio < 2.0);
-                    }
-                    return true;
-                });
-                table.draw();
-            } else {
-                // 如果是 momentum，清除篩選器以免影響顯示
-                $.fn.dataTable.ext.search.pop();
-                table.draw();
-            }
         }
     </script>
 </body>
