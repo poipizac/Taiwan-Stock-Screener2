@@ -130,6 +130,20 @@
             "consecutive_days": 2
         },
         {
+            "ticker": "6690.TWO",
+            "name": "安碁資訊",
+            "close": 212.0,
+            "sma200": 166.02,
+            "high120": 212.0,
+            "ratio": 1.15,
+            "pb": 2.04,
+            "eps": 11.19,
+            "yoy": 8.6,
+            "mom": 10.42,
+            "industry": "數位雲端",
+            "consecutive_days": 2
+        },
+        {
             "ticker": "6689.TW",
             "name": "伊雲谷",
             "close": 82.0,
@@ -155,20 +169,6 @@
             "yoy": -2.7,
             "mom": 48.43,
             "industry": "資訊服務業",
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "6690.TWO",
-            "name": "安碁資訊",
-            "close": 212.0,
-            "sma200": 166.02,
-            "high120": 212.0,
-            "ratio": 1.15,
-            "pb": 2.04,
-            "eps": 11.19,
-            "yoy": 8.6,
-            "mom": 10.42,
-            "industry": "數位雲端",
             "consecutive_days": 2
         },
         {
