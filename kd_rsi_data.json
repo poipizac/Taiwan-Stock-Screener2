@@ -1,5 +1,32 @@
 [
     {
+        "ticker": "1235.TW",
+        "stock_id": "1235",
+        "name": "興泰",
+        "close": 34.8,
+        "weekly_k": 28.5,
+        "weekly_d": 24.35,
+        "daily_rsi": 58.7
+    },
+    {
+        "ticker": "1264.TWO",
+        "stock_id": "1264",
+        "name": "德麥",
+        "close": 246.0,
+        "weekly_k": 38.5,
+        "weekly_d": 29.8,
+        "daily_rsi": 54.71
+    },
+    {
+        "ticker": "1323.TW",
+        "stock_id": "1323",
+        "name": "永裕",
+        "close": 21.95,
+        "weekly_k": 56.74,
+        "weekly_d": 56.72,
+        "daily_rsi": 57.59
+    },
+    {
         "ticker": "1451.TW",
         "stock_id": "1451",
         "name": "年興",
@@ -556,6 +583,15 @@
         "weekly_k": 45.79,
         "weekly_d": 35.34,
         "daily_rsi": 63.38
+    },
+    {
+        "ticker": "4148.TW",
+        "stock_id": "4148",
+        "name": "全宇生技-KY",
+        "close": 32.3,
+        "weekly_k": 31.74,
+        "weekly_d": 28.08,
+        "daily_rsi": 63.75
     },
     {
         "ticker": "4153.TWO",
