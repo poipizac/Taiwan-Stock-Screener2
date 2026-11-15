@@ -4,20 +4,6 @@
     "empty_today": false,
     "data": [
         {
-            "ticker": "2471.TW",
-            "name": "資通",
-            "close": 71.1,
-            "sma200": 49.57,
-            "high120": 71.1,
-            "ratio": 1.13,
-            "pb": 3.88,
-            "eps": 4.77,
-            "yoy": 3.2,
-            "mom": 42.2,
-            "industry": "資訊服務業",
-            "consecutive_days": 2
-        },
-        {
             "ticker": "2468.TW",
             "name": "華經",
             "close": 74.2,
@@ -28,6 +14,20 @@
             "eps": 1.36,
             "yoy": 0.0,
             "mom": 39.47,
+            "industry": "資訊服務業",
+            "consecutive_days": 2
+        },
+        {
+            "ticker": "2471.TW",
+            "name": "資通",
+            "close": 71.1,
+            "sma200": 49.57,
+            "high120": 71.1,
+            "ratio": 1.13,
+            "pb": 3.88,
+            "eps": 4.77,
+            "yoy": 3.2,
+            "mom": 42.2,
             "industry": "資訊服務業",
             "consecutive_days": 2
         },
