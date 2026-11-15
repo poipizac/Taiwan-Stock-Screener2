@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-11-14",
-    "data_date": "2026-11-14",
+    "scan_date": "2026-11-15",
+    "data_date": "2026-11-15",
     "empty_today": false,
     "data": [
         {
@@ -15,7 +15,7 @@
             "yoy": 3.2,
             "mom": 42.2,
             "industry": "資訊服務業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2468.TW",
@@ -29,7 +29,7 @@
             "yoy": 0.0,
             "mom": 39.47,
             "industry": "資訊服務業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2618.TW",
@@ -43,7 +43,7 @@
             "yoy": 26.0,
             "mom": 11.83,
             "industry": "航運業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2756.TWO",
@@ -57,7 +57,7 @@
             "yoy": -11.0,
             "mom": 3.01,
             "industry": "觀光餐旅",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "2880.TW",
@@ -71,7 +71,7 @@
             "yoy": 32.0,
             "mom": 2.98,
             "industry": "金融保險業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "3570.TWO",
@@ -85,7 +85,21 @@
             "yoy": 22.6,
             "mom": 24.7,
             "industry": "資訊服務業",
-            "consecutive_days": 2
+            "consecutive_days": 3
+        },
+        {
+            "ticker": "6140.TWO",
+            "name": "訊達",
+            "close": 31.7,
+            "sma200": 20.38,
+            "high120": 31.7,
+            "ratio": 1.23,
+            "pb": 3.47,
+            "eps": -0.52,
+            "yoy": -24.8,
+            "mom": 39.65,
+            "industry": "資訊服務業",
+            "consecutive_days": 3
         },
         {
             "ticker": "6148.TWO",
@@ -98,20 +112,6 @@
             "eps": 1.08,
             "yoy": -34.5,
             "mom": 50.91,
-            "industry": "資訊服務業",
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "6140.TWO",
-            "name": "訊達",
-            "close": 31.7,
-            "sma200": 20.38,
-            "high120": 31.7,
-            "ratio": 1.23,
-            "pb": 3.22,
-            "eps": -0.52,
-            "yoy": -24.8,
-            "mom": 39.65,
             "industry": "資訊服務業",
             "consecutive_days": 2
         },
@@ -127,7 +127,7 @@
             "yoy": 0.9,
             "mom": 6.43,
             "industry": "建材營造業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6689.TW",
@@ -141,7 +141,7 @@
             "yoy": -2.5,
             "mom": 16.64,
             "industry": "數位雲端",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6697.TWO",
@@ -155,7 +155,7 @@
             "yoy": -2.7,
             "mom": 48.43,
             "industry": "資訊服務業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6690.TWO",
@@ -169,7 +169,7 @@
             "yoy": 8.6,
             "mom": 10.42,
             "industry": "數位雲端",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6865.TWO",
@@ -183,7 +183,7 @@
             "yoy": 0.0,
             "mom": 29.11,
             "industry": "數位雲端",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "7584.TWO",
@@ -197,7 +197,7 @@
             "yoy": 32.8,
             "mom": 28.97,
             "industry": "文化創意業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "7765.TW",
@@ -211,7 +211,7 @@
             "yoy": 14.6,
             "mom": 11.36,
             "industry": "數位雲端",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "8272.TWO",
@@ -225,7 +225,7 @@
             "yoy": 0.0,
             "mom": 39.56,
             "industry": "資訊服務業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         }
     ]
 }
