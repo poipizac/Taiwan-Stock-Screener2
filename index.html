@@ -54,6 +54,18 @@
             color: white;
         }
 
+        /* 周KD金叉按鈕特殊樣式 */
+        .btn-kd-rsi {
+            border-color: #198754;
+            color: #198754;
+        }
+
+        .btn-check:checked+.btn-kd-rsi {
+            background-color: #198754;
+            border-color: #198754;
+            color: white;
+        }
+
         .up-red {
             color: #d32f2f !important;
             font-weight: bold;
@@ -93,13 +105,17 @@
         .momentum-row {
             background-color: #fff9f9 !important;
         }
+
+        .kd-rsi-row {
+            background-color: #f4fbf7 !important;
+        }
     </style>
 </head>
 
 <body>
     <div class="header-info text-center">
         <h1>🔍 台股選股儀表板 -Funnel Strategy-</h1>
-        <p>全市場強勢股濾網 | 10倍股潛力掃描 | 🚀 短線爆量投信突破股 已啟動</p>
+        <p>全市場強勢股濾網 | 10倍股潛力掃描 | 🚀 短線爆量投信突破股 | 📈 周KD金叉強勢股</p>
     </div>
 
     <div class="strategy-selector">
@@ -118,6 +134,10 @@
         <input type="radio" class="btn-check" name="strategy" id="strat_disposition" autocomplete="off"
             onclick="switchDataSource('disposition_data.json', 'disposition')">
         <label class="btn btn-outline-warning btn-strategy" for="strat_disposition">⚠️ 處置股一覽</label>
+
+        <input type="radio" class="btn-check" name="strategy" id="strat_kd_rsi" autocomplete="off"
+            onclick="switchDataSource('kd_rsi_data.json', 'kd_rsi')">
+        <label class="btn btn-outline-success btn-strategy btn-kd-rsi" for="strat_kd_rsi">📈 周KD金叉強勢股</label>
 
         <div id="dataDateDisplay" class="text-muted mt-3" style="font-size: 0.95em;"></div>
     </div>
@@ -167,14 +187,18 @@
                 const stockList = Array.isArray(result) ? result : (result.data || []);
 
                 // 更新日期顯示邏輯
-                const scanDate = result.scan_date || result.last_run || "未知";
-                const dataDate = result.data_date || result.last_run || "未知";
-                const isEmpty = result.empty_today === true;
-
-                if (!isEmpty) {
-                    $('#dataDateDisplay').html(`🗓️ 此策略目前顯示之資料日期：<strong>${dataDate}</strong>`);
+                if (Array.isArray(result)) {
+                    $('#dataDateDisplay').html(`📊 目前顯示策略共篩選出 <strong>${stockList.length}</strong> 檔符合條件標的`);
                 } else {
-                    $('#dataDateDisplay').html(`🗓️ 此策略目前顯示之資料日期：<strong>${dataDate}</strong> <span class="text-danger fw-bold">(⚠️ 系統於 ${scanDate} 掃描，當日無符合條件之標的，維持顯示舊有資料)</span>`);
+                    const scanDate = result.scan_date || result.last_run || "未知";
+                    const dataDate = result.data_date || result.last_run || "未知";
+                    const isEmpty = result.empty_today === true;
+
+                    if (!isEmpty) {
+                        $('#dataDateDisplay').html(`🗓️ 此策略目前顯示之資料日期：<strong>${dataDate}</strong>`);
+                    } else {
+                        $('#dataDateDisplay').html(`🗓️ 此策略目前顯示之資料日期：<strong>${dataDate}</strong> <span class="text-danger fw-bold">(⚠️ 系統於 ${scanDate} 掃描，當日無符合條件之標的，維持顯示舊有資料)</span>`);
+                    }
                 }
 
                 if ($.fn.DataTable.isDataTable('#stockTable')) {
@@ -227,6 +251,17 @@
                         <th>產業分類</th>
                     </tr>
                 `);
+            } else if (currentStrategy === 'kd_rsi') {
+                head.append(`
+                    <tr>
+                        <th>代號</th>
+                        <th>標的名稱</th>
+                        <th>現價</th>
+                        <th>周K</th>
+                        <th>周D</th>
+                        <th>日RSI</th>
+                    </tr>
+                `);
             } else {
                 head.append(`
                     <tr>
@@ -269,6 +304,17 @@
                         <td class="text-center text-danger fw-bold">${s.end_date}</td>
                         <td><span class="badge-sector">${s.industry}</span></td>
                     </tr>`;
+                } else if (currentStrategy === 'kd_rsi') {
+                    const tickerCode = s.ticker || s.stock_id || '';
+                    const priceVal = s.close !== undefined ? s.close : s.price;
+                    row = `<tr class="kd-rsi-row">
+                        <td><code>${tickerCode}</code></td>
+                        <td class="fw-bold"><a href="https://tw.stock.yahoo.com/quote/${tickerCode}" target="_blank" style="text-decoration:none;">${s.name}</a></td>
+                        <td class="text-center fw-bold">${priceVal}</td>
+                        <td class="text-center up-red">${s.weekly_k}</td>
+                        <td class="text-center">${s.weekly_d}</td>
+                        <td class="text-center text-primary fw-bold">${s.daily_rsi}</td>
+                    </tr>`;
                 } else {
                     const days = s.consecutive_days || 1;
                     const daysClass = days >= 3 ? "up-red" : "";
@@ -291,8 +337,20 @@
             $('#stockTable').show();
 
             // 啟動 DataTables
-            let orderCol = (currentStrategy === 'momentum') ? 7 : (currentStrategy === 'disposition' ? 6 : 6);
-            let orderDir = (currentStrategy === 'momentum') ? "desc" : (currentStrategy === 'disposition' ? "asc" : "asc");
+            let orderCol = 6;
+            let orderDir = "asc";
+            if (currentStrategy === 'momentum') {
+                orderCol = 7;
+                orderDir = "desc";
+            } else if (currentStrategy === 'disposition') {
+                orderCol = 6;
+                orderDir = "asc";
+            } else if (currentStrategy === 'kd_rsi') {
+                orderCol = 5;
+                orderDir = "desc";
+            }
+
+            $.fn.dataTable.ext.search = [];
 
             table = $('#stockTable').DataTable({
                 "language": { "url": "//cdn.datatables.net/plug-ins/1.13.4/i18n/zh-HANT.json" },
