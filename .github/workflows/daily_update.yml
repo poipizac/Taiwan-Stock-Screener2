@@ -39,6 +39,9 @@ jobs:
           FINMIND_TOKEN: ${{ secrets.FINMIND_TOKEN }}
         run: python momentum_screener_final.py
 
+      - name: Run Weekly KD & Daily RSI Screener
+        run: python fetch_kd_rsi.py
+
       - name: Commit and Push changes
         run: |
           git config --local user.email "action@github.com"
