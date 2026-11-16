@@ -1,22 +1,8 @@
 {
-    "scan_date": "2026-11-15",
-    "data_date": "2026-11-15",
+    "scan_date": "2026-11-16",
+    "data_date": "2026-11-16",
     "empty_today": false,
     "data": [
-        {
-            "ticker": "2468.TW",
-            "name": "華經",
-            "close": 74.2,
-            "sma200": 38.26,
-            "high120": 74.2,
-            "ratio": 1.65,
-            "pb": 4.16,
-            "eps": 1.36,
-            "yoy": 0.0,
-            "mom": 39.47,
-            "industry": "資訊服務業",
-            "consecutive_days": 2
-        },
         {
             "ticker": "2471.TW",
             "name": "資通",
@@ -24,12 +10,26 @@
             "sma200": 49.57,
             "high120": 71.1,
             "ratio": 1.13,
-            "pb": 3.88,
+            "pb": 4.27,
             "eps": 4.77,
             "yoy": 3.2,
-            "mom": 42.2,
+            "mom": 56.4,
             "industry": "資訊服務業",
-            "consecutive_days": 2
+            "consecutive_days": 3
+        },
+        {
+            "ticker": "2468.TW",
+            "name": "華經",
+            "close": 74.2,
+            "sma200": 38.26,
+            "high120": 74.2,
+            "ratio": 1.65,
+            "pb": 4.48,
+            "eps": 1.36,
+            "yoy": 0.0,
+            "mom": 53.38,
+            "industry": "資訊服務業",
+            "consecutive_days": 3
         },
         {
             "ticker": "2618.TW",
@@ -38,12 +38,12 @@
             "sma200": 38.38,
             "high120": 47.75,
             "ratio": 1.18,
-            "pb": 1.75,
+            "pb": 1.74,
             "eps": 4.71,
             "yoy": 26.0,
-            "mom": 11.83,
+            "mom": 11.01,
             "industry": "航運業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "2756.TWO",
@@ -52,12 +52,12 @@
             "sma200": 63.74,
             "high120": 65.0,
             "ratio": 0.98,
-            "pb": 2.83,
+            "pb": 2.77,
             "eps": 3.96,
             "yoy": -11.0,
-            "mom": 3.01,
+            "mom": 1.11,
             "industry": "觀光餐旅",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "2880.TW",
@@ -66,12 +66,12 @@
             "sma200": 37.86,
             "high120": 51.9,
             "ratio": 1.32,
-            "pb": 3.02,
+            "pb": 2.95,
             "eps": 1.88,
             "yoy": 32.0,
-            "mom": 2.98,
+            "mom": 0.6,
             "industry": "金融保險業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "3570.TWO",
@@ -80,12 +80,12 @@
             "sma200": 164.03,
             "high120": 204.5,
             "ratio": 1.03,
-            "pb": 3.27,
+            "pb": 3.14,
             "eps": 14.2,
             "yoy": 22.6,
-            "mom": 24.7,
+            "mom": 19.51,
             "industry": "資訊服務業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "6140.TWO",
@@ -94,12 +94,12 @@
             "sma200": 20.38,
             "high120": 31.7,
             "ratio": 1.23,
-            "pb": 3.47,
+            "pb": 3.81,
             "eps": -0.52,
             "yoy": -24.8,
-            "mom": 39.65,
+            "mom": 53.52,
             "industry": "資訊服務業",
-            "consecutive_days": 3
+            "consecutive_days": 4
         },
         {
             "ticker": "6148.TWO",
@@ -108,12 +108,12 @@
             "sma200": 33.57,
             "high120": 58.1,
             "ratio": 1.39,
-            "pb": 4.47,
+            "pb": 4.92,
             "eps": 1.08,
             "yoy": -34.5,
-            "mom": 50.91,
+            "mom": 65.97,
             "industry": "資訊服務業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "6212.TWO",
@@ -122,40 +122,12 @@
             "sma200": 31.19,
             "high120": 37.25,
             "ratio": 1.14,
-            "pb": 0.99,
+            "pb": 0.94,
             "eps": 2.0,
             "yoy": 0.9,
-            "mom": 6.43,
+            "mom": 1.0,
             "industry": "建材營造業",
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "6697.TWO",
-            "name": "東捷資訊",
-            "close": 80.6,
-            "sma200": 42.91,
-            "high120": 80.6,
-            "ratio": 1.48,
-            "pb": 3.54,
-            "eps": 3.04,
-            "yoy": -2.7,
-            "mom": 48.43,
-            "industry": "資訊服務業",
-            "consecutive_days": 2
-        },
-        {
-            "ticker": "6689.TW",
-            "name": "伊雲谷",
-            "close": 82.0,
-            "sma200": 65.49,
-            "high120": 82.0,
-            "ratio": 1.15,
-            "pb": 1.88,
-            "eps": 2.17,
-            "yoy": -2.5,
-            "mom": 16.64,
-            "industry": "數位雲端",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "6690.TWO",
@@ -164,12 +136,40 @@
             "sma200": 166.02,
             "high120": 212.0,
             "ratio": 1.15,
-            "pb": 2.04,
+            "pb": 2.25,
             "eps": 11.19,
             "yoy": 8.6,
-            "mom": 10.42,
+            "mom": 21.35,
             "industry": "數位雲端",
-            "consecutive_days": 2
+            "consecutive_days": 3
+        },
+        {
+            "ticker": "6689.TW",
+            "name": "伊雲谷",
+            "close": 82.0,
+            "sma200": 65.49,
+            "high120": 82.0,
+            "ratio": 1.15,
+            "pb": 1.86,
+            "eps": 1.93,
+            "yoy": -2.5,
+            "mom": 15.36,
+            "industry": "數位雲端",
+            "consecutive_days": 3
+        },
+        {
+            "ticker": "6697.TWO",
+            "name": "東捷資訊",
+            "close": 80.6,
+            "sma200": 42.91,
+            "high120": 80.6,
+            "ratio": 1.48,
+            "pb": 3.9,
+            "eps": 3.04,
+            "yoy": -2.7,
+            "mom": 63.17,
+            "industry": "資訊服務業",
+            "consecutive_days": 3
         },
         {
             "ticker": "6865.TWO",
@@ -179,11 +179,11 @@
             "high120": 37.7,
             "ratio": 1.07,
             "pb": 0,
-            "eps": -0.87,
+            "eps": -1.89,
             "yoy": 0.0,
-            "mom": 29.11,
+            "mom": 41.95,
             "industry": "數位雲端",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "7584.TWO",
@@ -192,12 +192,12 @@
             "sma200": 29.61,
             "high120": 37.4,
             "ratio": 1.01,
-            "pb": 1.31,
+            "pb": 1.44,
             "eps": -3.56,
             "yoy": 32.8,
-            "mom": 28.97,
+            "mom": 41.72,
             "industry": "文化創意業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "7765.TW",
@@ -206,12 +206,12 @@
             "sma200": 231.86,
             "high120": 269.5,
             "ratio": 1.04,
-            "pb": 5.43,
+            "pb": 5.96,
             "eps": 11.66,
             "yoy": 14.6,
-            "mom": 11.36,
+            "mom": 22.31,
             "industry": "數位雲端",
-            "consecutive_days": 2
+            "consecutive_days": 3
         },
         {
             "ticker": "8272.TWO",
@@ -223,9 +223,9 @@
             "pb": 0,
             "eps": 4.53,
             "yoy": 0.0,
-            "mom": 39.56,
+            "mom": 52.37,
             "industry": "資訊服務業",
-            "consecutive_days": 2
+            "consecutive_days": 3
         }
     ]
 }

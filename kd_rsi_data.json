@@ -1233,15 +1233,6 @@
         "daily_rsi": 57.13
     },
     {
-        "ticker": "6913.TWO",
-        "stock_id": "6913",
-        "name": "鴻呈",
-        "close": 134.5,
-        "weekly_k": 33.32,
-        "weekly_d": 29.24,
-        "daily_rsi": 53.43
-    },
-    {
         "ticker": "6918.TW",
         "stock_id": "6918",
         "name": "愛派司",

@@ -1,16 +1,36 @@
 {
-    "scan_date": "2026-11-15",
-    "data_date": "2026-11-15",
+    "scan_date": "2026-11-16",
+    "data_date": "2026-11-16",
     "error_msg": "",
     "data": [
+        {
+            "ticker": "3441.TWO",
+            "name": "聯一光",
+            "end_date": "115/11/25",
+            "close": 198.0,
+            "pb": 8.92,
+            "yoy": 52.7,
+            "mom": 0.56,
+            "industry": "光電業"
+        },
+        {
+            "ticker": "6751.TWO",
+            "name": "智聯服務",
+            "end_date": "115/11/23",
+            "close": 103.0,
+            "pb": 2.58,
+            "yoy": 40.8,
+            "mom": 46.18,
+            "industry": "資訊服務業"
+        },
         {
             "ticker": "4542.TWO",
             "name": "科嶠",
             "end_date": "115/11/16",
             "close": 256.5,
-            "pb": 12.28,
+            "pb": 11.06,
             "yoy": 51.3,
-            "mom": -22.74,
+            "mom": -30.42,
             "industry": "電子零組件業"
         }
     ]
