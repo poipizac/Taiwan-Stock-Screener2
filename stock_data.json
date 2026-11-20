@@ -1,49 +1,21 @@
 {
-    "scan_date": "2026-11-19",
-    "data_date": "2026-11-19",
+    "scan_date": "2026-11-20",
+    "data_date": "2026-11-20",
     "empty_today": false,
     "data": [
         {
-            "ticker": "2321.TW",
-            "name": "東訊",
-            "close": 34.1,
-            "sma200": 26.86,
-            "high120": 34.1,
-            "ratio": 1.15,
-            "pb": 2.56,
-            "eps": 0.62,
-            "yoy": 4.8,
-            "mom": 2.5,
-            "industry": "通信網路業",
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "5523.TWO",
-            "name": "豐謙",
-            "close": 30.2,
-            "sma200": 29.83,
-            "high120": 30.2,
-            "ratio": 1.01,
-            "pb": 1.38,
-            "eps": -0.1,
-            "yoy": -40.2,
-            "mom": 1.01,
-            "industry": "建材營造業",
-            "consecutive_days": 3
-        },
-        {
             "ticker": "6199.TWO",
             "name": "天品",
-            "close": 171.5,
-            "sma200": 109.17,
-            "high120": 171.5,
+            "close": 172.5,
+            "sma200": 109.46,
+            "high120": 172.5,
             "ratio": 1.54,
-            "pb": 6.43,
-            "eps": 2.67,
+            "pb": 6.32,
+            "eps": 10.75,
             "yoy": 193.2,
-            "mom": 7.48,
+            "mom": 5.61,
             "industry": "其他業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         }
     ]
 }
