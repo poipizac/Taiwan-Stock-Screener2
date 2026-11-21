@@ -1,21 +1,6 @@
 {
-    "scan_date": "2026-11-20",
-    "data_date": "2026-11-20",
-    "empty_today": false,
-    "data": [
-        {
-            "ticker": "6199.TWO",
-            "name": "天品",
-            "close": 172.5,
-            "sma200": 109.46,
-            "high120": 172.5,
-            "ratio": 1.54,
-            "pb": 6.32,
-            "eps": 10.75,
-            "yoy": 193.2,
-            "mom": 5.61,
-            "industry": "其他業",
-            "consecutive_days": 2
-        }
-    ]
+    "scan_date": "2026-11-21",
+    "data_date": "2026-11-21",
+    "empty_today": true,
+    "data": []
 }
