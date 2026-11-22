@@ -1,62 +1,18 @@
 {
-    "scan_date": "2026-11-15",
-    "data_date": "2026-11-15",
+    "scan_date": "2026-11-22",
+    "data_date": "2026-11-22",
     "empty_today": false,
     "data": [
         {
-            "ticker": "2401.TW",
-            "stock_id": "2401",
-            "name": "凌陽",
-            "price": 23.5,
-            "volume": 6122041,
-            "avg_vol_5d": 2286385.0,
-            "yoy": "25.6%",
-            "投信近3日買賣超(張)": 3.0,
-            "consecutive_days": 5
-        },
-        {
-            "ticker": "2480.TW",
-            "stock_id": "2480",
-            "name": "敦陽科",
-            "price": 193.5,
-            "volume": 1629741,
-            "avg_vol_5d": 770181.0,
-            "yoy": "30.9%",
-            "投信近3日買賣超(張)": 13.9,
-            "consecutive_days": 5
-        },
-        {
-            "ticker": "3033.TW",
-            "stock_id": "3033",
-            "name": "威健",
-            "price": 39.3,
-            "volume": 7861636,
-            "avg_vol_5d": 3108988.0,
-            "yoy": "32.2%",
-            "投信近3日買賣超(張)": 43.4,
-            "consecutive_days": 5
-        },
-        {
-            "ticker": "3491.TWO",
-            "stock_id": "3491",
-            "name": "昇達科",
-            "price": 1430.0,
-            "volume": 3604987,
-            "avg_vol_5d": 1710879.0,
-            "yoy": "75.6%",
-            "投信近3日買賣超(張)": 69.0,
-            "consecutive_days": 5
-        },
-        {
-            "ticker": "4953.TWO",
-            "stock_id": "4953",
-            "name": "緯軟",
-            "price": 119.0,
-            "volume": 1125038,
-            "avg_vol_5d": 463362.0,
-            "yoy": "25.6%",
-            "投信近3日買賣超(張)": 15.5,
-            "consecutive_days": 5
+            "ticker": "7788.TW",
+            "stock_id": "7788",
+            "name": "松川精密",
+            "price": 180.5,
+            "volume": 6789698,
+            "avg_vol_5d": 1954645.0,
+            "yoy": "78.8%",
+            "投信近3日買賣超(張)": 2810.0,
+            "consecutive_days": 1
         }
     ]
 }
