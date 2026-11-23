@@ -1,6 +1,21 @@
 {
-    "scan_date": "2026-11-22",
-    "data_date": "2026-11-22",
-    "empty_today": true,
-    "data": []
+    "scan_date": "2026-11-23",
+    "data_date": "2026-11-23",
+    "empty_today": false,
+    "data": [
+        {
+            "ticker": "6614.TW",
+            "name": "資拓宏宇",
+            "close": 44.75,
+            "sma200": 38.27,
+            "high120": 44.75,
+            "ratio": 0.98,
+            "pb": 2.24,
+            "eps": 1.68,
+            "yoy": 15.6,
+            "mom": 28.59,
+            "industry": "數位雲端",
+            "consecutive_days": 1
+        }
+    ]
 }
