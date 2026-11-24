@@ -1,6 +1,6 @@
 {
-    "scan_date": "2026-11-23",
-    "data_date": "2026-11-23",
+    "scan_date": "2026-11-24",
+    "data_date": "2026-11-24",
     "empty_today": false,
     "data": [
         {
@@ -10,12 +10,12 @@
             "sma200": 38.27,
             "high120": 44.75,
             "ratio": 0.98,
-            "pb": 2.24,
-            "eps": 1.68,
-            "yoy": 15.6,
-            "mom": 28.59,
+            "pb": 2.23,
+            "eps": 1.53,
+            "yoy": -4.6,
+            "mom": 22.27,
             "industry": "數位雲端",
-            "consecutive_days": 1
+            "consecutive_days": 2
         }
     ]
 }
