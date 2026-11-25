@@ -117,6 +117,24 @@
         "daily_rsi": 51.92
     },
     {
+        "ticker": "2756.TWO",
+        "stock_id": "2756",
+        "name": "聯發國際",
+        "close": 66.0,
+        "weekly_k": 63.69,
+        "weekly_d": 62.01,
+        "daily_rsi": 61.59
+    },
+    {
+        "ticker": "2836.TW",
+        "stock_id": "2836",
+        "name": "高雄銀",
+        "close": 11.75,
+        "weekly_k": 32.52,
+        "weekly_d": 30.84,
+        "daily_rsi": 50.4
+    },
+    {
         "ticker": "2906.TW",
         "stock_id": "2906",
         "name": "高林",
@@ -180,15 +198,6 @@
         "daily_rsi": 55.8
     },
     {
-        "ticker": "3285.TWO",
-        "stock_id": "3285",
-        "name": "微端",
-        "close": 54.7,
-        "weekly_k": 62.91,
-        "weekly_d": 60.1,
-        "daily_rsi": 63.11
-    },
-    {
         "ticker": "3293.TWO",
         "stock_id": "3293",
         "name": "鈊象",
@@ -196,24 +205,6 @@
         "weekly_k": 66.21,
         "weekly_d": 66.12,
         "daily_rsi": 52.49
-    },
-    {
-        "ticker": "3303.TWO",
-        "stock_id": "3303",
-        "name": "岱稜",
-        "close": 50.0,
-        "weekly_k": 44.21,
-        "weekly_d": 41.98,
-        "daily_rsi": 50.79
-    },
-    {
-        "ticker": "3310.TWO",
-        "stock_id": "3310",
-        "name": "佳穎",
-        "close": 68.2,
-        "weekly_k": 58.27,
-        "weekly_d": 49.76,
-        "daily_rsi": 59.56
     },
     {
         "ticker": "3438.TWO",
@@ -250,15 +241,6 @@
         "weekly_k": 56.88,
         "weekly_d": 52.91,
         "daily_rsi": 54.45
-    },
-    {
-        "ticker": "4163.TWO",
-        "stock_id": "4163",
-        "name": "鐿鈦",
-        "close": 125.5,
-        "weekly_k": 35.33,
-        "weekly_d": 31.61,
-        "daily_rsi": 50.78
     },
     {
         "ticker": "4432.TWO",
@@ -322,6 +304,24 @@
         "weekly_k": 41.58,
         "weekly_d": 40.76,
         "daily_rsi": 50.28
+    },
+    {
+        "ticker": "4994.TW",
+        "stock_id": "4994",
+        "name": "傳奇",
+        "close": 80.5,
+        "weekly_k": 30.79,
+        "weekly_d": 29.15,
+        "daily_rsi": 50.58
+    },
+    {
+        "ticker": "5345.TWO",
+        "stock_id": "5345",
+        "name": "馥鴻",
+        "close": 20.75,
+        "weekly_k": 27.39,
+        "weekly_d": 20.72,
+        "daily_rsi": 61.71
     },
     {
         "ticker": "5523.TWO",
@@ -405,15 +405,6 @@
         "daily_rsi": 52.66
     },
     {
-        "ticker": "6743.TW",
-        "stock_id": "6743",
-        "name": "安普新",
-        "close": 34.25,
-        "weekly_k": 54.38,
-        "weekly_d": 52.48,
-        "daily_rsi": 58.23
-    },
-    {
         "ticker": "6881.TWO",
         "stock_id": "6881",
         "name": "潤德",
@@ -475,15 +466,6 @@
         "weekly_k": 34.17,
         "weekly_d": 33.92,
         "daily_rsi": 51.89
-    },
-    {
-        "ticker": "8112.TW",
-        "stock_id": "8112",
-        "name": "至上",
-        "close": 82.0,
-        "weekly_k": 43.74,
-        "weekly_d": 32.69,
-        "daily_rsi": 54.15
     },
     {
         "ticker": "8367.TW",
