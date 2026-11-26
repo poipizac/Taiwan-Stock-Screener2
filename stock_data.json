@@ -1,27 +1,13 @@
 {
-    "scan_date": "2026-11-25",
-    "data_date": "2026-11-25",
+    "scan_date": "2026-11-26",
+    "data_date": "2026-11-26",
     "empty_today": false,
     "data": [
-        {
-            "ticker": "1341.TW",
-            "name": "富林-KY",
-            "close": 62.0,
-            "sma200": 57.79,
-            "high120": 62.0,
-            "ratio": 1.01,
-            "pb": 2.52,
-            "eps": 4.91,
-            "yoy": 11.0,
-            "mom": 5.46,
-            "industry": "塑膠工業",
-            "consecutive_days": 1
-        },
         {
             "ticker": "5903.TWO",
             "name": "全家",
             "close": 188.5,
-            "sma200": 184.13,
+            "sma200": 184.15,
             "high120": 188.5,
             "ratio": 1.01,
             "pb": 4.52,
@@ -29,34 +15,34 @@
             "yoy": 3.7,
             "mom": 2.17,
             "industry": "居家生活",
-            "consecutive_days": 1
-        },
-        {
-            "ticker": "6655.TW",
-            "name": "科定",
-            "close": 140.0,
-            "sma200": 122.02,
-            "high120": 140.0,
-            "ratio": 1.1,
-            "pb": 3.13,
-            "eps": 5.68,
-            "yoy": 30.0,
-            "mom": -1.32,
-            "industry": "其他業",
-            "consecutive_days": 1
+            "consecutive_days": 2
         },
         {
             "ticker": "6904.TWO",
             "name": "伯鑫",
             "close": 131.0,
-            "sma200": 119.21,
+            "sma200": 119.26,
             "high120": 131.0,
             "ratio": 1.06,
-            "pb": 2.31,
+            "pb": 2.19,
             "eps": 7.04,
             "yoy": 10.7,
-            "mom": 11.02,
+            "mom": 5.08,
             "industry": "其他業",
+            "consecutive_days": 2
+        },
+        {
+            "ticker": "7765.TW",
+            "name": "中華資安",
+            "close": 311.0,
+            "sma200": 233.06,
+            "high120": 311.0,
+            "ratio": 1.2,
+            "pb": 5.98,
+            "eps": 11.66,
+            "yoy": 14.6,
+            "mom": 22.73,
+            "industry": "數位雲端",
             "consecutive_days": 1
         }
     ]
